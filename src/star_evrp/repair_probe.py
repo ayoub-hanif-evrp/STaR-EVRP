@@ -141,8 +141,10 @@ def run_repair_probe(
 
     report.routes_examined = len(selected)
     n_with_alt = 0
-    n_improved = 0
-    n_meet_target = 0
+    n_improved_candidates = 0
+    n_meet_target_candidates = 0
+    routes_improved: set[int] = set()
+    routes_meeting: set[int] = set()
     best_improvements: list[float] = []
 
     for route in selected:
@@ -190,10 +192,12 @@ def run_repair_probe(
                     )
                     stoch = m.reliability
                     if baseline.reliability is not None and stoch > baseline.reliability + 1e-6:
-                        n_improved += 1
+                        n_improved_candidates += 1
+                        routes_improved.add(route.route_id)
                         best_improvements.append(stoch - baseline.reliability)
-                    if stoch >= target_reliability:
-                        n_meet_target += 1
+                    if stoch is not None and stoch >= target_reliability:
+                        n_meet_target_candidates += 1
+                        routes_meeting.add(route.route_id)
                 report.candidates.append(
                     RepairCandidate(
                         route_id=route.route_id,
@@ -240,8 +244,10 @@ def run_repair_probe(
     report.summary = {
         "unreliable_routes_examined": report.routes_examined,
         "routes_with_det_alternative": n_with_alt,
-        "candidates_improving_reliability": n_improved,
-        "candidates_meeting_target": n_meet_target,
+        "routes_with_improvement": len(routes_improved),
+        "routes_meeting_target": len(routes_meeting),
+        "candidates_improving_reliability": n_improved_candidates,
+        "candidates_meeting_target": n_meet_target_candidates,
         "best_reliability_gain": max(best_improvements) if best_improvements else 0.0,
         "diagnostic_scenarios": diagnostic_scenarios,
     }

@@ -1,0 +1,30 @@
+{
+  "instance_key": "C2_10_1",
+  "variant": "B",
+  "family": "C2",
+  "route_id": 21,
+  "method": "B0",
+  "det_feasible": true,
+  "reliability_opt": 0.6845703125,
+  "e_completion_opt": 3911.938596046838,
+  "meets_target_opt": false,
+  "reliability_val": 0.716,
+  "wilson_lo_val": 0.6958377146680282,
+  "meets_target_val_ci": false,
+  "e_completion_val": 3911.5831253505685,
+  "n_scenarios_opt": 1024,
+  "n_scenarios_val": 2000,
+  "runtime_s": 0.12726870004553348,
+  "candidates_examined": 1,
+  "screen_rejects": 0,
+  "budget_snapshot": {
+    "wall_seconds_limit": 25.0,
+    "elapsed_seconds": 0.12494629994034767,
+    "candidates_evaluated": 3,
+    "scenarios_evaluated": 1344,
+    "cache_hits": 0,
+    "exceeded": false
+  },
+  "fingerprint": "b7e6b41eda09e750d7f0dc521c093d03b4275209e9c0af62886f5f49e4f9ee0a",
+  "notes": "below_target_incumbent"
+}

@@ -91,6 +91,8 @@ def main() -> int:
                     summary={
                         "unreliable_routes_examined": 0,
                         "routes_with_det_alternative": 0,
+                        "routes_with_improvement": 0,
+                        "routes_meeting_target": 0,
                         "candidates_improving_reliability": 0,
                         "candidates_meeting_target": 0,
                         "best_reliability_gain": 0.0,

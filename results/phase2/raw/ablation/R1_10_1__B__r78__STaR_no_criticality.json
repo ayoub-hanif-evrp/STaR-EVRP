@@ -1,0 +1,30 @@
+{
+  "instance_key": "R1_10_1",
+  "variant": "B",
+  "family": "R1",
+  "route_id": 78,
+  "method": "STaR_no_criticality",
+  "det_feasible": true,
+  "reliability_opt": 1.0,
+  "e_completion_opt": 1843.731517276114,
+  "meets_target_opt": true,
+  "reliability_val": 1.0,
+  "wilson_lo_val": 0.9980829527187469,
+  "meets_target_val_ci": true,
+  "e_completion_val": 1843.0696963904293,
+  "n_scenarios_opt": 256,
+  "n_scenarios_val": 2000,
+  "runtime_s": 0.09193810005672276,
+  "candidates_examined": 2,
+  "screen_rejects": 17,
+  "budget_snapshot": {
+    "wall_seconds_limit": 25.0,
+    "elapsed_seconds": 0.09138350002467632,
+    "candidates_evaluated": 4,
+    "scenarios_evaluated": 640,
+    "cache_hits": 0,
+    "exceeded": false
+  },
+  "fingerprint": "b1b191b3ddca45f2ecfc463c130b2c5bebd4cb44bd024fac8019ea5c8cb88cec",
+  "notes": ""
+}

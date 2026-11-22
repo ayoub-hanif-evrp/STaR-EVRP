@@ -113,15 +113,23 @@ def _charge_at_station(
 
     clock = service_start + max(0.0, wait_extra)
     if energy_charged is None:
+        # Full recharge to capacity (explicit None convention).
         energy_added = max(0.0, Q - battery)
         battery_after = Q
     else:
-        energy_added = max(0.0, energy_charged)
-        battery_after = min(Q, battery + energy_added)
+        # Explicit amount must be physically exact — never clamp.
+        if not np.isfinite(energy_charged):
+            return clock, battery, wait_early, wait_extra, 0.0, 0.0, service_start, "invalid_charge_amount"
+        if energy_charged < -NUM_TOL:
+            return clock, battery, wait_early, wait_extra, 0.0, 0.0, service_start, "negative_charge"
+        energy_added = float(energy_charged)
+        if energy_added < 0.0:
+            energy_added = 0.0
+        battery_after = battery + energy_added
+        if battery_after > Q + NUM_TOL:
+            return clock, battery, wait_early, wait_extra, 0.0, 0.0, service_start, "overcharge"
 
-    if battery_after > Q + NUM_TOL:
-        return clock, battery, wait_early, wait_extra, 0.0, 0.0, service_start, "overcharge"
-    if energy_added > NUM_TOL and rate <= 0:
+    if energy_added > NUM_TOL and (not np.isfinite(rate) or rate <= 0):
         return clock, battery, wait_early, wait_extra, 0.0, 0.0, service_start, "invalid_rate"
 
     charge_dur = energy_added / rate if energy_added > NUM_TOL else 0.0

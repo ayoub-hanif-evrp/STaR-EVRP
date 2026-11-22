@@ -1,0 +1,33 @@
+# Phase-2 development configuration (24 development instances).
+development_only: true
+holdout_sealed: true
+battery_capacity: 700
+energy_consumption_rate: 1.0
+target_route_reliability: 0.95
+dataset:
+  partition: development
+  variants: [A, B]
+  development_parents_per_family: 2
+  panel_per_family_variant: 6
+simulation:
+  scenario_seed: 20261122
+  master_seed: 20261122
+  N_val: 2000
+budget:
+  wall_seconds: 25.0
+  max_candidate_evals: 50
+  max_scenario_evals: 500000
+  progressive_stages: [64, 256]
+  validation_scenarios: 2000
+star:
+  use_certified_reject: true
+  use_criticality: true
+  use_progressive: true
+  allow_partial_charge: true
+  allow_multi_edit: true
+  nearby_stations: 8
+baselines: [B0, B1, B2, B3]
+outputs:
+  root: results/phase2
+  raw: results/phase2/raw/dev
+  processed: results/phase2/processed

@@ -10,15 +10,14 @@ from tests.conftest import make_synthetic_instance
 
 def test_charging_time_equals_q_over_rs():
     inst = make_synthetic_instance(charging_rate=4.0)
-    Q = inst.ev_specs.battery_capacity
+    Q = 100.0
     cfg = SimulatorConfig(battery_capacity=Q, energy_consumption_rate=1.0)
     sid = inst.station_node_ids[0]
     route = Route(
         route_id=0,
         stops=[
             RouteStop(node_id=0),
-            RouteStop(node_id=1),
-            RouteStop(node_id=sid, energy_charged=20.0),
+            RouteStop(node_id=sid, energy_charged=5.0),
             RouteStop(node_id=0),
         ],
     )
@@ -27,8 +26,8 @@ def test_charging_time_equals_q_over_rs():
     station_stops = [s for s in trace.stops if s.node_id == sid]
     assert len(station_stops) == 1
     st = station_stops[0]
-    assert abs(st.energy_charged - 20.0) < 1e-9
-    assert abs((st.departure_time - st.service_start_time) - 20.0 / 4.0) < 1e-6
+    assert abs(st.energy_charged - 5.0) < 1e-9
+    assert abs((st.departure_time - st.service_start_time) - 5.0 / 4.0) < 1e-6
 
 
 def test_zero_extra_wait_matches_no_wait_path():

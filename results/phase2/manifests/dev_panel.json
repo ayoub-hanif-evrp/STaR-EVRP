@@ -1,0 +1,643 @@
+{
+  "seed": 20261122,
+  "n_per_family_variant": 6,
+  "target_reliability": 0.95,
+  "source_csv": "C:\\Users\\AYOUB\\OneDrive - EMSI\\Bureau\\PHD_WORK\\STaR-EVRP\\results\\raw\\aggregate_routes.csv",
+  "panel": [
+    {
+      "instance_key": "C1_10_1",
+      "variant": "B",
+      "route_id": 85
+    },
+    {
+      "instance_key": "C1_10_1",
+      "variant": "B",
+      "route_id": 74
+    },
+    {
+      "instance_key": "C1_10_10",
+      "variant": "A",
+      "route_id": 81
+    },
+    {
+      "instance_key": "C1_10_10",
+      "variant": "A",
+      "route_id": 95
+    },
+    {
+      "instance_key": "C1_10_10",
+      "variant": "A",
+      "route_id": 89
+    },
+    {
+      "instance_key": "C1_10_10",
+      "variant": "B",
+      "route_id": 80
+    },
+    {
+      "instance_key": "C1_10_10",
+      "variant": "B",
+      "route_id": 83
+    },
+    {
+      "instance_key": "C2_10_1",
+      "variant": "A",
+      "route_id": 29
+    },
+    {
+      "instance_key": "C2_10_1",
+      "variant": "A",
+      "route_id": 28
+    },
+    {
+      "instance_key": "C2_10_1",
+      "variant": "A",
+      "route_id": 31
+    },
+    {
+      "instance_key": "C2_10_1",
+      "variant": "A",
+      "route_id": 32
+    },
+    {
+      "instance_key": "C2_10_1",
+      "variant": "A",
+      "route_id": 19
+    },
+    {
+      "instance_key": "C2_10_1",
+      "variant": "A",
+      "route_id": 33
+    },
+    {
+      "instance_key": "C2_10_1",
+      "variant": "B",
+      "route_id": 21
+    },
+    {
+      "instance_key": "C2_10_1",
+      "variant": "B",
+      "route_id": 32
+    },
+    {
+      "instance_key": "C2_10_1",
+      "variant": "B",
+      "route_id": 23
+    },
+    {
+      "instance_key": "C2_10_1",
+      "variant": "B",
+      "route_id": 15
+    },
+    {
+      "instance_key": "C2_10_1",
+      "variant": "B",
+      "route_id": 19
+    },
+    {
+      "instance_key": "C2_10_1",
+      "variant": "B",
+      "route_id": 11
+    },
+    {
+      "instance_key": "C2_10_10",
+      "variant": "A",
+      "route_id": 17
+    },
+    {
+      "instance_key": "C2_10_10",
+      "variant": "A",
+      "route_id": 20
+    },
+    {
+      "instance_key": "C2_10_10",
+      "variant": "A",
+      "route_id": 24
+    },
+    {
+      "instance_key": "C2_10_10",
+      "variant": "A",
+      "route_id": 36
+    },
+    {
+      "instance_key": "C2_10_10",
+      "variant": "A",
+      "route_id": 33
+    },
+    {
+      "instance_key": "C2_10_10",
+      "variant": "A",
+      "route_id": 34
+    },
+    {
+      "instance_key": "C2_10_10",
+      "variant": "B",
+      "route_id": 19
+    },
+    {
+      "instance_key": "C2_10_10",
+      "variant": "B",
+      "route_id": 30
+    },
+    {
+      "instance_key": "C2_10_10",
+      "variant": "B",
+      "route_id": 8
+    },
+    {
+      "instance_key": "C2_10_10",
+      "variant": "B",
+      "route_id": 21
+    },
+    {
+      "instance_key": "C2_10_10",
+      "variant": "B",
+      "route_id": 26
+    },
+    {
+      "instance_key": "C2_10_10",
+      "variant": "B",
+      "route_id": 10
+    },
+    {
+      "instance_key": "R1_10_1",
+      "variant": "A",
+      "route_id": 52
+    },
+    {
+      "instance_key": "R1_10_1",
+      "variant": "A",
+      "route_id": 30
+    },
+    {
+      "instance_key": "R1_10_1",
+      "variant": "A",
+      "route_id": 47
+    },
+    {
+      "instance_key": "R1_10_1",
+      "variant": "A",
+      "route_id": 15
+    },
+    {
+      "instance_key": "R1_10_1",
+      "variant": "A",
+      "route_id": 60
+    },
+    {
+      "instance_key": "R1_10_1",
+      "variant": "A",
+      "route_id": 38
+    },
+    {
+      "instance_key": "R1_10_1",
+      "variant": "B",
+      "route_id": 78
+    },
+    {
+      "instance_key": "R1_10_1",
+      "variant": "B",
+      "route_id": 57
+    },
+    {
+      "instance_key": "R1_10_1",
+      "variant": "B",
+      "route_id": 42
+    },
+    {
+      "instance_key": "R1_10_1",
+      "variant": "B",
+      "route_id": 75
+    },
+    {
+      "instance_key": "R1_10_1",
+      "variant": "B",
+      "route_id": 16
+    },
+    {
+      "instance_key": "R1_10_1",
+      "variant": "B",
+      "route_id": 56
+    },
+    {
+      "instance_key": "R1_10_10",
+      "variant": "A",
+      "route_id": 87
+    },
+    {
+      "instance_key": "R1_10_10",
+      "variant": "A",
+      "route_id": 48
+    },
+    {
+      "instance_key": "R1_10_10",
+      "variant": "A",
+      "route_id": 69
+    },
+    {
+      "instance_key": "R1_10_10",
+      "variant": "A",
+      "route_id": 36
+    },
+    {
+      "instance_key": "R1_10_10",
+      "variant": "A",
+      "route_id": 31
+    },
+    {
+      "instance_key": "R1_10_10",
+      "variant": "A",
+      "route_id": 56
+    },
+    {
+      "instance_key": "R1_10_10",
+      "variant": "B",
+      "route_id": 63
+    },
+    {
+      "instance_key": "R1_10_10",
+      "variant": "B",
+      "route_id": 76
+    },
+    {
+      "instance_key": "R1_10_10",
+      "variant": "B",
+      "route_id": 42
+    },
+    {
+      "instance_key": "R1_10_10",
+      "variant": "B",
+      "route_id": 62
+    },
+    {
+      "instance_key": "R1_10_10",
+      "variant": "B",
+      "route_id": 28
+    },
+    {
+      "instance_key": "R1_10_10",
+      "variant": "B",
+      "route_id": 40
+    },
+    {
+      "instance_key": "R2_10_1",
+      "variant": "A",
+      "route_id": 8
+    },
+    {
+      "instance_key": "R2_10_1",
+      "variant": "A",
+      "route_id": 9
+    },
+    {
+      "instance_key": "R2_10_1",
+      "variant": "A",
+      "route_id": 25
+    },
+    {
+      "instance_key": "R2_10_1",
+      "variant": "A",
+      "route_id": 10
+    },
+    {
+      "instance_key": "R2_10_1",
+      "variant": "A",
+      "route_id": 33
+    },
+    {
+      "instance_key": "R2_10_1",
+      "variant": "A",
+      "route_id": 24
+    },
+    {
+      "instance_key": "R2_10_1",
+      "variant": "B",
+      "route_id": 7
+    },
+    {
+      "instance_key": "R2_10_1",
+      "variant": "B",
+      "route_id": 6
+    },
+    {
+      "instance_key": "R2_10_1",
+      "variant": "B",
+      "route_id": 3
+    },
+    {
+      "instance_key": "R2_10_1",
+      "variant": "B",
+      "route_id": 24
+    },
+    {
+      "instance_key": "R2_10_1",
+      "variant": "B",
+      "route_id": 12
+    },
+    {
+      "instance_key": "R2_10_1",
+      "variant": "B",
+      "route_id": 19
+    },
+    {
+      "instance_key": "R2_10_10",
+      "variant": "A",
+      "route_id": 4
+    },
+    {
+      "instance_key": "R2_10_10",
+      "variant": "A",
+      "route_id": 16
+    },
+    {
+      "instance_key": "R2_10_10",
+      "variant": "A",
+      "route_id": 15
+    },
+    {
+      "instance_key": "R2_10_10",
+      "variant": "A",
+      "route_id": 5
+    },
+    {
+      "instance_key": "R2_10_10",
+      "variant": "A",
+      "route_id": 19
+    },
+    {
+      "instance_key": "R2_10_10",
+      "variant": "A",
+      "route_id": 17
+    },
+    {
+      "instance_key": "R2_10_10",
+      "variant": "B",
+      "route_id": 7
+    },
+    {
+      "instance_key": "R2_10_10",
+      "variant": "B",
+      "route_id": 19
+    },
+    {
+      "instance_key": "R2_10_10",
+      "variant": "B",
+      "route_id": 5
+    },
+    {
+      "instance_key": "R2_10_10",
+      "variant": "B",
+      "route_id": 13
+    },
+    {
+      "instance_key": "R2_10_10",
+      "variant": "B",
+      "route_id": 21
+    },
+    {
+      "instance_key": "R2_10_10",
+      "variant": "B",
+      "route_id": 6
+    },
+    {
+      "instance_key": "RC1_10_1",
+      "variant": "A",
+      "route_id": 69
+    },
+    {
+      "instance_key": "RC1_10_1",
+      "variant": "A",
+      "route_id": 65
+    },
+    {
+      "instance_key": "RC1_10_1",
+      "variant": "A",
+      "route_id": 37
+    },
+    {
+      "instance_key": "RC1_10_1",
+      "variant": "A",
+      "route_id": 6
+    },
+    {
+      "instance_key": "RC1_10_1",
+      "variant": "A",
+      "route_id": 33
+    },
+    {
+      "instance_key": "RC1_10_1",
+      "variant": "A",
+      "route_id": 7
+    },
+    {
+      "instance_key": "RC1_10_1",
+      "variant": "B",
+      "route_id": 56
+    },
+    {
+      "instance_key": "RC1_10_1",
+      "variant": "B",
+      "route_id": 73
+    },
+    {
+      "instance_key": "RC1_10_1",
+      "variant": "B",
+      "route_id": 66
+    },
+    {
+      "instance_key": "RC1_10_1",
+      "variant": "B",
+      "route_id": 30
+    },
+    {
+      "instance_key": "RC1_10_1",
+      "variant": "B",
+      "route_id": 19
+    },
+    {
+      "instance_key": "RC1_10_1",
+      "variant": "B",
+      "route_id": 41
+    },
+    {
+      "instance_key": "RC1_10_10",
+      "variant": "A",
+      "route_id": 22
+    },
+    {
+      "instance_key": "RC1_10_10",
+      "variant": "A",
+      "route_id": 64
+    },
+    {
+      "instance_key": "RC1_10_10",
+      "variant": "A",
+      "route_id": 78
+    },
+    {
+      "instance_key": "RC1_10_10",
+      "variant": "A",
+      "route_id": 69
+    },
+    {
+      "instance_key": "RC1_10_10",
+      "variant": "A",
+      "route_id": 67
+    },
+    {
+      "instance_key": "RC1_10_10",
+      "variant": "A",
+      "route_id": 33
+    },
+    {
+      "instance_key": "RC1_10_10",
+      "variant": "B",
+      "route_id": 75
+    },
+    {
+      "instance_key": "RC1_10_10",
+      "variant": "B",
+      "route_id": 81
+    },
+    {
+      "instance_key": "RC1_10_10",
+      "variant": "B",
+      "route_id": 48
+    },
+    {
+      "instance_key": "RC1_10_10",
+      "variant": "B",
+      "route_id": 42
+    },
+    {
+      "instance_key": "RC1_10_10",
+      "variant": "B",
+      "route_id": 68
+    },
+    {
+      "instance_key": "RC1_10_10",
+      "variant": "B",
+      "route_id": 61
+    },
+    {
+      "instance_key": "RC2_10_1",
+      "variant": "A",
+      "route_id": 10
+    },
+    {
+      "instance_key": "RC2_10_1",
+      "variant": "A",
+      "route_id": 2
+    },
+    {
+      "instance_key": "RC2_10_1",
+      "variant": "A",
+      "route_id": 4
+    },
+    {
+      "instance_key": "RC2_10_1",
+      "variant": "A",
+      "route_id": 9
+    },
+    {
+      "instance_key": "RC2_10_1",
+      "variant": "A",
+      "route_id": 13
+    },
+    {
+      "instance_key": "RC2_10_1",
+      "variant": "A",
+      "route_id": 17
+    },
+    {
+      "instance_key": "RC2_10_1",
+      "variant": "B",
+      "route_id": 16
+    },
+    {
+      "instance_key": "RC2_10_1",
+      "variant": "B",
+      "route_id": 1
+    },
+    {
+      "instance_key": "RC2_10_1",
+      "variant": "B",
+      "route_id": 4
+    },
+    {
+      "instance_key": "RC2_10_1",
+      "variant": "B",
+      "route_id": 3
+    },
+    {
+      "instance_key": "RC2_10_1",
+      "variant": "B",
+      "route_id": 19
+    },
+    {
+      "instance_key": "RC2_10_1",
+      "variant": "B",
+      "route_id": 7
+    },
+    {
+      "instance_key": "RC2_10_10",
+      "variant": "A",
+      "route_id": 2
+    },
+    {
+      "instance_key": "RC2_10_10",
+      "variant": "A",
+      "route_id": 18
+    },
+    {
+      "instance_key": "RC2_10_10",
+      "variant": "A",
+      "route_id": 14
+    },
+    {
+      "instance_key": "RC2_10_10",
+      "variant": "A",
+      "route_id": 19
+    },
+    {
+      "instance_key": "RC2_10_10",
+      "variant": "A",
+      "route_id": 10
+    },
+    {
+      "instance_key": "RC2_10_10",
+      "variant": "A",
+      "route_id": 3
+    },
+    {
+      "instance_key": "RC2_10_10",
+      "variant": "B",
+      "route_id": 8
+    },
+    {
+      "instance_key": "RC2_10_10",
+      "variant": "B",
+      "route_id": 4
+    },
+    {
+      "instance_key": "RC2_10_10",
+      "variant": "B",
+      "route_id": 2
+    },
+    {
+      "instance_key": "RC2_10_10",
+      "variant": "B",
+      "route_id": 17
+    },
+    {
+      "instance_key": "RC2_10_10",
+      "variant": "B",
+      "route_id": 15
+    },
+    {
+      "instance_key": "RC2_10_10",
+      "variant": "B",
+      "route_id": 16
+    }
+  ]
+}

@@ -31,7 +31,7 @@ def test_replacement_det_feasible_when_energy_ok():
         route_id=0,
         stops=[
             RouteStop(node_id=0),
-            RouteStop(node_id=1001, energy_charged=10.0),
+            RouteStop(node_id=1001, energy_charged=None),
             RouteStop(node_id=1),
             RouteStop(node_id=0),
         ],

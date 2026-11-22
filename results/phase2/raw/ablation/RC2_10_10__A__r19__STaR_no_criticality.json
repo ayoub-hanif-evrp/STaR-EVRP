@@ -1,0 +1,30 @@
+{
+  "instance_key": "RC2_10_10",
+  "variant": "A",
+  "family": "RC2",
+  "route_id": 19,
+  "method": "STaR_no_criticality",
+  "det_feasible": true,
+  "reliability_opt": 0.796875,
+  "e_completion_opt": 6434.476087429758,
+  "meets_target_opt": false,
+  "reliability_val": 0.8175,
+  "wilson_lo_val": 0.7999685143528416,
+  "meets_target_val_ci": false,
+  "e_completion_val": 6434.6228925030555,
+  "n_scenarios_opt": 256,
+  "n_scenarios_val": 2000,
+  "runtime_s": 1.2568488999968395,
+  "candidates_examined": 1,
+  "screen_rejects": 63,
+  "budget_snapshot": {
+    "wall_seconds_limit": 25.0,
+    "elapsed_seconds": 1.255987499956973,
+    "candidates_evaluated": 2,
+    "scenarios_evaluated": 320,
+    "cache_hits": 0,
+    "exceeded": false
+  },
+  "fingerprint": "c1c8456b968365083e60d1e49e69febda5b83b04769233a7ec761e2718a4c77a",
+  "notes": "below_target_incumbent"
+}

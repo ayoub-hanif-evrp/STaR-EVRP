@@ -25,7 +25,7 @@ def _toy_route_with_charge(wait_mu=-3.0, wait_sigma=0.1):
     route = Route(
         stops=[
             RouteStop(node_id=0),
-            RouteStop(node_id=sid, energy_charged=5.0),
+            RouteStop(node_id=sid, energy_charged=None),
             RouteStop(node_id=1),
             RouteStop(node_id=0),
         ]

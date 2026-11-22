@@ -63,7 +63,7 @@ def test_one_station_analytical_agreement_within_tol():
     route = Route(
         stops=[
             RouteStop(node_id=0),
-            RouteStop(node_id=sid, energy_charged=10.0),
+            RouteStop(node_id=sid, energy_charged=None),
             RouteStop(node_id=1),
             RouteStop(node_id=0),
         ]

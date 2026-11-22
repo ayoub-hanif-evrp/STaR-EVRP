@@ -1,0 +1,15 @@
+{
+  "methods": [
+    "STaR_v1",
+    "STaR_no_reject",
+    "STaR_no_criticality",
+    "STaR_no_progressive",
+    "STaR_no_partial",
+    "STaR_single_edit"
+  ],
+  "work_items": 127,
+  "completed": 762,
+  "skipped_resume": 0,
+  "errors": [],
+  "raw_dir": "C:\\Users\\AYOUB\\OneDrive - EMSI\\Bureau\\PHD_WORK\\STaR-EVRP\\results\\phase2\\raw\\ablation"
+}

@@ -54,29 +54,43 @@ def classify_failure_mode(
     *,
     target: float = 0.95,
 ) -> str:
+    """Classify route reliability with explicit CI-based labels (P0-F).
+
+    Confidence: two-sided Wilson interval from ``wilson_ci_low/high``.
+    Sample size must be present in ``scenarios`` for interpretation.
+    """
     if not row.get("det_feasible", True):
         return "deterministically_infeasible"
-    if row.get("num_charging_visits", 0) == 0:
+    if int(row.get("num_charging_visits", 0) or 0) == 0:
         return "no_stochastic_exposure"
     rel = float(row.get("reliability", 0.0))
     hi = float(row.get("wilson_ci_high", 1.0))
     lo = float(row.get("wilson_ci_low", 0.0))
-    if rel >= target and lo >= target - 0.02:
-        return "high_reliability_charging"
+    # One-sided lower bound proxy: use two-sided Wilson lower endpoint.
+    lo1 = float(row.get("wilson_ci_low_onesided", lo))
+    if lo1 >= target:
+        return "proven_above_by_one_sided_CI"
+    if hi < target:
+        # Proven below target at the same confidence level (two-sided upper < target).
+        fc = row.get("failure_counts") or {}
+        cust = int(fc.get("customer_time_window", 0) or 0) + int(
+            fc.get("customer_and_depot_failures", 0) or 0
+        )
+        depot = int(fc.get("depot_closing", 0) or 0) + int(
+            fc.get("customer_and_depot_failures", 0) or 0
+        )
+        if cust and depot:
+            return "proven_below_customer_and_depot"
+        if cust:
+            return "proven_below_customer_time_window"
+        if depot:
+            return "proven_below_depot_return"
+        return "proven_below_by_one_sided_CI"
     if lo < target <= hi:
-        return "uncertainty_near_threshold"
-    fc = row.get("failure_counts") or {}
-    cust = fc.get("customer_time_window", 0)
-    depot = fc.get("depot_closing", 0)
-    if cust and depot:
-        return "customer_and_depot_failures"
-    if cust:
-        return "customer_time_window_failures"
-    if depot:
-        return "depot_return_failures"
-    if rel < target:
-        return "low_reliability_other"
-    return "high_reliability_charging"
+        return "uncertain"
+    if rel >= target:
+        return "empirical_above_uncertified"
+    return "empirical_below_uncertified"
 
 
 def _min_customer_slack(instance: Instance, trace) -> float:
@@ -333,6 +347,20 @@ def run_pilot(project_root: Path | str, config_path: Path | str) -> dict[str, An
 # --- Table generation (Tables 1–6) ---
 
 
+def _latex_escape_cell(value: Any) -> str:
+    s = str(value)
+    repl = {
+        "\\": "\\textbackslash{}",
+        "_": "\\_",
+        "%": "\\%",
+        "&": "\\&",
+        "#": "\\#",
+    }
+    for char, escaped in repl.items():
+        s = s.replace(char, escaped)
+    return s
+
+
 def _write_table_bundle(tables_dir: Path, name: str, headers: list[str], rows: list[list[Any]]) -> None:
     tables_dir.mkdir(parents=True, exist_ok=True)
     stem = tables_dir / name
@@ -344,12 +372,13 @@ def _write_table_bundle(tables_dir: Path, name: str, headers: list[str], rows: l
     for row in rows:
         md_lines.append("| " + " | ".join(str(c) for c in row) + " |")
     (stem.with_suffix(".md")).write_text("\n".join(md_lines) + "\n", encoding="utf-8")
+    tex_headers = [_latex_escape_cell(h) for h in headers]
     tex = ["\\begin{tabular}{" + "l" * len(headers) + "}"]
     tex.append(" \\hline")
-    tex.append(" " + " & ".join(headers) + " \\\\")
+    tex.append(" " + " & ".join(tex_headers) + " \\\\")
     tex.append(" \\hline")
     for row in rows:
-        tex.append(" " + " & ".join(str(c) for c in row) + " \\\\")
+        tex.append(" " + " & ".join(_latex_escape_cell(c) for c in row) + " \\\\")
     tex.append(" \\hline")
     tex.append("\\end{tabular}")
     (stem.with_suffix(".tex")).write_text("\n".join(tex) + "\n", encoding="utf-8")
@@ -500,7 +529,7 @@ def generate_all_tables(project_root: Path | str) -> Path:
                 data.get("instance_key"),
                 s.get("unreliable_routes_examined"),
                 s.get("routes_with_det_alternative"),
-                s.get("candidates_improving_reliability"),
+                s.get("routes_with_improvement", s.get("candidates_improving_reliability")),
                 s.get("best_reliability_gain"),
             ]
         )

@@ -1,0 +1,14 @@
+{
+  "methods": [
+    "B0",
+    "B1",
+    "B2",
+    "B3",
+    "STaR_v1"
+  ],
+  "work_items": 2,
+  "completed": 2,
+  "skipped_resume": 8,
+  "errors": [],
+  "raw_dir": "C:\\Users\\AYOUB\\OneDrive - EMSI\\Bureau\\PHD_WORK\\STaR-EVRP\\results\\phase2\\raw\\smoke"
+}

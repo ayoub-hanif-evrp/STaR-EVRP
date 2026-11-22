@@ -18,7 +18,7 @@ def test_battery_underflow_on_leg():
     assert trace.failure_reason == "battery_infeasible_leg"
 
 
-def test_overcharge_clamped_to_capacity():
+def test_overcharge_rejected_not_clamped():
     inst = make_synthetic_instance()
     Q = inst.ev_specs.battery_capacity
     sid = inst.station_node_ids[0]
@@ -31,10 +31,25 @@ def test_overcharge_clamped_to_capacity():
         ]
     )
     trace = simulate_route_fixed(inst, route, cfg)
-    assert trace.feasible
-    for stop in trace.stops:
-        assert stop.battery_on_departure <= Q + 1e-9
-        assert stop.battery_on_arrival <= Q + 1e-9
+    assert not trace.feasible
+    assert trace.failure_reason == "overcharge"
+
+
+def test_negative_charge_rejected():
+    inst = make_synthetic_instance()
+    Q = inst.ev_specs.battery_capacity
+    sid = inst.station_node_ids[0]
+    cfg = SimulatorConfig(battery_capacity=Q, energy_consumption_rate=0.1)
+    route = Route(
+        stops=[
+            RouteStop(node_id=0),
+            RouteStop(node_id=sid, energy_charged=-5.0),
+            RouteStop(node_id=0),
+        ]
+    )
+    trace = simulate_route_fixed(inst, route, cfg)
+    assert not trace.feasible
+    assert trace.failure_reason == "negative_charge"
 
 
 def test_zero_energy_consumption_leg():
