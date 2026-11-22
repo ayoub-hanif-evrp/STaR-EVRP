@@ -1,0 +1,200 @@
+{
+  "status": "pass",
+  "head": "c657aa69d55178c85b4759475933b36d1bcc2181",
+  "phase25_release": "3532fbe5f7f2b531a445baa82c843d164f57d6c5",
+  "verified_phase25_files": 157,
+  "phase25_replayed_plans": 15960,
+  "phase25_replayed_searches": 11970,
+  "phase25_reconciled": {
+    "STaR": {
+      "n": 570,
+      "R": 0.9601853755482456,
+      "completion": 3303.046898389229,
+      "attained": 530,
+      "scenarios": 13274.722807017544,
+      "wall": 0.022167671407295163
+    },
+    "B3": {
+      "n": 570,
+      "R": 0.9613426877741228,
+      "completion": 3305.3022184531037,
+      "attained": 531,
+      "scenarios": 20020.098245614034,
+      "wall": 0.020152771402673242
+    },
+    "B4": {
+      "n": 570,
+      "R": 0.9404635245339912,
+      "completion": 3336.2584015950615,
+      "attained": 517,
+      "scenarios": 4548.715789473684,
+      "wall": 0.006549602981836519
+    }
+  },
+  "tests_passed": 62,
+  "tests_output": "..............................................................           [100%]\n62 passed in 6.31s\n",
+  "source_blobs": {
+    "configs/experiment_splits.yaml": "334ba293431b0b16c2d6331d6af3b179b8fc974535c919cbbe60edac626e4b3d",
+    "configs/phase3_frozen.yaml": "f55ab289ac935e65193ed455e48ec2e27112df117cd409dba2339439dde2ede4",
+    "docs/PHASE3_PREFLIGHT.md": "96249ff239fb705075ecc818bf97f4b0acb9c62d259c731ea6369e5c8d214d79",
+    "docs/PHASE3_PRE_REGISTERED_ANALYSIS.md": "91fe1d462f1156dede510d3f0b3ae1000a3d3b5c96e4932d98efd72ff88190a1",
+    "prompts/PROMPT_03_POST_PHASE25_FINAL.md": "b777c27bbda3c9d5d3739113cd7d38946dbc88d75ac721ba8b4e84d35642c580",
+    "pyproject.toml": "ae94aec5efaf73a93b080f2e1a69f244bc9aa5bc87b9b8209cb8ab8c2a29be28",
+    "requirements.txt": "ce8c954e5a484b7401459a8dda85a53ed9e7a58f0a75bb8600c2b60bf77acecf",
+    "results/manifests/dataset_inventory.json": "66e6ae86c07649e1b366061bd23c608f7bc93d8e6f0605b1814f5dd16fb0b9ea",
+    "scripts/phase3.py": "647d0b5efcbf24b3b7db63f9760095245ff177326e9633351f6a5d99bf7856a4",
+    "src/star_evrp/__init__.py": "750404ddec01f143301532532b5734adc256c2f571a52746b1a83ce16a4bb359",
+    "src/star_evrp/analysis_phase2.py": "649cf33f8817bf8df13b057ab408fc06af7f6b11ae6322aecc822c8e5f8f1c4c",
+    "src/star_evrp/baseline.py": "18305cb9759ee3bdd26c9ff1695355c7e3df178aebd0ecf407b7f5e1b6e34e26",
+    "src/star_evrp/baseline_optimizers.py": "c8fc9272de4b7574fa25afbed193c61b5ef83e7bf1e02d10c4bfc5fca6668e98",
+    "src/star_evrp/budget.py": "211b7651e7f1da828ace531d6039222940187fb2c47df68855afab08ca448c67",
+    "src/star_evrp/charge_moves.py": "5c4dce3b24af8a837bba4429dd4a964dfe58f25227ee43a4c45f7256b07487da",
+    "src/star_evrp/charge_plan.py": "553e83a6961c4cb7a8dcccf6f50dcd7a134f3023bc25f09b47061f1b18236173",
+    "src/star_evrp/cli.py": "179782f6d7003618dab6f21d49fcf60766a3f0d011dccd6b712acda46ba6134e",
+    "src/star_evrp/competitive_search.py": "e7f4b0418731fd148427a78165529e7e09654a425481ca5e5e599d41e0d815b2",
+    "src/star_evrp/criticality.py": "6855093ec7f05c446942a16527c5f0996da2036b7d72d64fecbe390bc7ff083f",
+    "src/star_evrp/data_loader.py": "caacaa46d8a1fea49ee506bf1e689df86fe7ff356697ab3c228976e036dc01fb",
+    "src/star_evrp/data_validation.py": "c2fa06f66f591e7acf083e1ff1f7e4d2dffb7d03249da4254d2afbd6a6431485",
+    "src/star_evrp/deterministic_simulator.py": "8e226e99dd94fa2691f97bf237e1b651b822ba7324b6e9178f6005d94ca1c01d",
+    "src/star_evrp/experiment_phase2.py": "43d2f1d41094c6454633cd751e2ef3a911e94ff2aa63518286222695ccf1b761",
+    "src/star_evrp/experiment_phase25.py": "bbb141e8b96e7deeb7be248cdf7137798d70acedd4c2ae01191043eb52b3c007",
+    "src/star_evrp/experiment_runner.py": "b861686d1b531516f077aed79c20b2646db6d7b42b835b21eacd95c0c1688a45",
+    "src/star_evrp/geometry.py": "5746b97c36c340da959146d61b28afc8f27b130f1bbce2f9643b4a2580bb6d75",
+    "src/star_evrp/phase3.py": "42ad5475d1e1a4031247a46def65e831159d8f5fe4fc1b9f67a1d75f608f237b",
+    "src/star_evrp/phase3_analysis.py": "2fcd791867a9f6abdabd363f79fdce9e6ce0afab59b9f339a545986cc7629a44",
+    "src/star_evrp/phase3_paper.py": "70d2b5f1464cc598a14f39dec1d95a2e2dac18eb1111492c353c2d20920c8788",
+    "src/star_evrp/plotting.py": "adf1354483f4592111cf7fe66f66e5337820d36079cf413649bc67705c79bd3f",
+    "src/star_evrp/repair_probe.py": "170557fb6e4676e95a5c92740096dab2bbb822ace79618e7b02f0bddfee0e9a4",
+    "src/star_evrp/results_io.py": "ecda8561d06800c870cac14fae204ea98e8aca690cc41240d42a8ad27dc5e469",
+    "src/star_evrp/risk_bounds.py": "f1488dea4240bbd122d563e5976682f528473241dada8bdaf7a1089e60c0fe28",
+    "src/star_evrp/route_evaluator.py": "e200768063617a0bae793f196393fcb9ddcb357cb34ef22ea22695126493e07a",
+    "src/star_evrp/route_validator.py": "2782dcbcce2a067c3e3085879b1efb2bf2d32ee677740f15af87d237a810f4c9",
+    "src/star_evrp/safe_screen.py": "e84fafcf8777e7e71d68e8955eefe54149a906b6650b840c98f4b0841b9cca57",
+    "src/star_evrp/scenario_tapes.py": "e5928078589263c413578ca19f34cf2ed27e85afcaba0856209bd4a8c104d9dc",
+    "src/star_evrp/search_common.py": "eec9012af31351d875ab73d9ad81a3c858d30c06b1d9df700c95edc1c1769ad4",
+    "src/star_evrp/star_optimizer.py": "13654a95aa21fef6c0f9f5e48cee1649add57b2bf3d32fa26b06b7183f89545f",
+    "src/star_evrp/statistics.py": "8bd8e1653a7d8aeb429d37640749f7cda48e854ad8bb4b247c8e32730f53f86a",
+    "src/star_evrp/stochastic_simulator.py": "c0bd26624e2017e3210b757d3b2202231c8a5dabbe543698a8ec79b416de0458",
+    "src/star_evrp/timing.py": "19ebf9fc826da579c3256e32fef7220103389c4ad26ac657ed4e27c3e4f2e3c3",
+    "src/star_evrp/types.py": "922af4e05a067b2b1fd7ec46b5a38d744861c740c0dc0788ae6f311665f54012",
+    "tests/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tests/conftest.py": "7ab5e6a6226c15ecb73be3e23b131e7ede21b95a1921eaa8545018faf3133243",
+    "tests/test_baseline.py": "f9c329a624e71ccb6a110758b09a075139c972572a0eb8d2a84301cb79af082d",
+    "tests/test_battery_feasibility.py": "852388ff4d6c6945719b591e7b5af2674a7c29250ed7c8b1487652ff4731d27f",
+    "tests/test_data_loader.py": "53d8696e52f7a42005b2c7fb7d9cd09dd9658b7f8dd3acfea656416d68335588",
+    "tests/test_data_validation.py": "f69ce6d7fb9acf719dd39344273233225afeb2866999dcf9ac1f22e7eee2c6db",
+    "tests/test_deterministic_simulator.py": "5507a6ab47e67910f6e7d0a5fda816d3d1fed0e7d480188fe9468ff7d24ef9b1",
+    "tests/test_lognormal_waits.py": "20d2955f9df834d98add658f8e39692615ff4a3a3c094b83801ef4da12adbfc9",
+    "tests/test_phase25.py": "8cc2c9ffca8c28c293f5959198f75ff92be2c326093de072f344892d42cd0dc8",
+    "tests/test_phase2_full_route_metrics.py": "f8a513e2097e5b5a8d2f29bb7e95eb4bbb5dc1b7c1d8fca4f0239f191a04b181",
+    "tests/test_phase2_moves_preserve_customers.py": "7e1a0a225be5637b4aae5021890499a90cca2205ea5cc8a1413a82e6233603d0",
+    "tests/test_phase2_safe_bound_upper.py": "c3a3d9a4870eb0ce14fb7bcdfa5732238d879c09ee9ff2de7c503ecd5b26a9ca",
+    "tests/test_phase2_scenario_tapes_crn.py": "af47923ca4571f6201ca8d4c0026758d0bf519b41887755aa35c6fe2dcf1d838",
+    "tests/test_phase2_star_smoke.py": "9286b2ddf7088a7d6625e5b76f2e7bab77beea6813bb03ec20be4864685adb39",
+    "tests/test_phase3.py": "f52a9e7d46c25bd49a0ec92152b49b68304cbafa478524095249006af57b6557",
+    "tests/test_repair_probe.py": "72173b27e027246f8284a795b431c85ff43a82292f12c2c90a9d754559969fe9",
+    "tests/test_reproducibility.py": "737fad02fcb9d06361b3aeb8d48c50f83f040a57dd237a28d95e409e486e33b5",
+    "tests/test_risk_bounds.py": "c24e4e61d13edf2118048531b2d7c0b18a4b4bc2eab35711e2febcd97f3b2e47",
+    "tests/test_stochastic_simulator.py": "7388dc79e5ea9b593d6cacde1459909cfce617cbaa6fa28f04effce806841bb6",
+    "tests/test_time_windows.py": "5dfb30037f32d7a8297e946ff98bfbd17082e06b6c810a02995c0d5b9d958ca7"
+  },
+  "dataset_files_verified": 244,
+  "split": {
+    "development": 24,
+    "holdout": 96,
+    "parents": 48
+  },
+  "phase25_png": [
+    {
+      "name": "fig07_validation_before_after.png",
+      "px": [
+        2160,
+        1880
+      ],
+      "dpi": 400,
+      "sha256": "6b44d1f3cc30caed771074a9f1734ebe0986e1ce2a5f31a65c4e0e18ba6aa8fd"
+    },
+    {
+      "name": "fig08_equal_budget_attainment.png",
+      "px": [
+        2800,
+        1500
+      ],
+      "dpi": 400,
+      "sha256": "5e6b696ff3344b822020939611f32c8f5a5d2705ba7c368943a649e0ffe5f0fa"
+    },
+    {
+      "name": "fig09_paired_star_b4.png",
+      "px": [
+        2920,
+        1400
+      ],
+      "dpi": 400,
+      "sha256": "03fa4a107a2399f114d2df461d9d6f3cd363d7fd41431571085a63ad71741d58"
+    },
+    {
+      "name": "fig10_reliability_runtime.png",
+      "px": [
+        2640,
+        1560
+      ],
+      "dpi": 400,
+      "sha256": "4ca0511aa3746855841c8ffb9207b39c9cadc2b347da504a335859ff27f3efb2"
+    },
+    {
+      "name": "fig11_reliability_scenarios.png",
+      "px": [
+        2640,
+        1560
+      ],
+      "dpi": 400,
+      "sha256": "9e251098f6efbcd945f3069235aa606bf23e6d77fc889f5d7f977bd0064ce848"
+    },
+    {
+      "name": "fig12_completion_examples.png",
+      "px": [
+        3200,
+        1400
+      ],
+      "dpi": 400,
+      "sha256": "9340ca74d012fbcd01c1c01ad3720e71a77ac187631f6e273ba4225cecfd0688"
+    },
+    {
+      "name": "fig13_partial_ablation.png",
+      "px": [
+        2640,
+        1440
+      ],
+      "dpi": 400,
+      "sha256": "67cf457bbfd2caa18561137d8114a25407cd63ee76340b0694bb9b14384f8781"
+    },
+    {
+      "name": "fig14_family_stress.png",
+      "px": [
+        3200,
+        1520
+      ],
+      "dpi": 400,
+      "sha256": "b553c3878715228cd58da19082f97e05e65b1a2acdaed12c17293e7b61b840d8"
+    },
+    {
+      "name": "fig15_component_efficiency.png",
+      "px": [
+        3200,
+        1480
+      ],
+      "dpi": 400,
+      "sha256": "9ec44c086b49b28937e3a9dee1b3a5792bca79886d8c8b20bb57cfff55884c12"
+    },
+    {
+      "name": "fig16_partial_charge_mechanism.png",
+      "px": [
+        3200,
+        1400
+      ],
+      "dpi": 400,
+      "sha256": "82d63cf8a82b35dc1eb74a992450a229667061bd97863291c81255fb1c8d5f8d"
+    }
+  ],
+  "holdout_outcomes_accessed": false
+}
