@@ -1,0 +1,10 @@
+{
+  "status": "pass",
+  "commit": "c657aa69d55178c85b4759475933b36d1bcc2181",
+  "tag": "star-phase3-freeze-v1",
+  "cases": 96,
+  "plans": 37136,
+  "raw_plan_files": 1248,
+  "figures": 10,
+  "table_families": 11
+}

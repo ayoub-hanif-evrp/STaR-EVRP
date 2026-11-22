@@ -16,10 +16,21 @@ python -B scripts/phase3.py analyze --output results/phase3_reproduction
 python -B scripts/phase3.py audit --output results/phase3_reproduction
 ```
 
-The first two Phase 3 commands assume HEAD is the tagged clean executable commit (not a later results commit). For existing outcomes, use the original immutable manifest bundle with equivalent committed executable files and dependency versions; `replay`, `analyze` and `audit` do not rerun optimization. Use `report` to regenerate the Markdown report/manuscript in the repository's `docs/` directory. Avoid writing reports from a separate replication over the original report files.
+The first two Phase 3 commands assume HEAD is the tagged clean executable commit (not a later results commit). For existing outcomes, use the original immutable manifest bundle with equivalent committed executable files and dependency versions; `replay`, `analyze` and `audit` do not rerun optimization. Use `report` to regenerate the base Markdown report/manuscript in the repository's `docs/` directory. The final publication drafts additionally include editorial literature and execution notes; their numerical content comes from the same audited summary. Avoid writing reports from a separate replication over the original report files.
 
 `raw/con` contains generated deposited-CON routes. For each profile `raw/<profile>` and `plans/<profile>` contain gzip-compressed JSON batches with up to 24 original routes across all designated methods. Every batch binds to the freeze, source hashes, exact route/method work keys and baseline digest; rows are SHA-256 protected and linked to each ordered plan. Writes are atomic. Restart `run` at the existing output path to resume missing batches without overwriting completed outcome records. Use one driver per output directory. Never manually repair outcome payloads. If replacing a corrupted batch is needed, archive it and disclose the deviation.
 
 The replay command rebuilds routes from the exact serialized stops, checks customer order/ID and physical validity, confirms customer and fleet coverage on CON, checks the B0/B4 topology restriction, repeats all independent validation and stress draws, and verifies selected scenarios against the scalar simulator. Analysis consumes only complete executed/replayed sets; it generates the report source JSON, 400-DPI PNGs and CSV/TeX/Markdown tables together. The audit verifies run coverage, the frozen revision and raw/derived file hashes. TeX tables exceeding 30 rows use `longtable`.
+
+For a fresh GitHub checkout, unpack the archived CON baseline bundles before replaying. They retain
+their exact audited bytes. Windows Git cannot stage files underneath a directory named `con`, so
+the archive is tracked instead of that directory:
+
+```powershell
+python -m zipfile -e results/phase3/con_bundles.zip results/phase3
+```
+
+Run that command only on a fresh checkout or if the original CON bundles are missing. The audit
+verifies every unpacked baseline hash. The other gzip bundles are tracked directly.
 
 Elapsed seconds depend on scheduling and are not expected to repeat bit-for-bit. The wall guard is cooperative, and route selection can depend on it if it binds. Re-running a frozen optimization is a reproduction, not a new untouched confirmatory experiment.
