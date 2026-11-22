@@ -63,6 +63,11 @@ def wilson_ci(
     return (float(low), float(high))
 
 
+def wilson_lower(successes: int, trials: int, confidence: float = 0.95) -> float:
+    """Pointwise one-sided Wilson lower confidence bound."""
+    return wilson_ci(successes, trials, confidence=2 * confidence - 1)[0]
+
+
 def lognormal_mean(mu: float, sigma: float) -> float:
     return float(np.exp(mu + 0.5 * sigma**2))
 

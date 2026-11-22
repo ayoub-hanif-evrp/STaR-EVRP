@@ -15,4 +15,4 @@ Baseline audited commit: `39a49b12d86fc4f4bfb7966ae1c36bf624ca8212`. Phase 1 art
 
 File: `results/phase2/raw/d1_crosswalk.csv` (127 panel routes, N=2000).
 
-On this panel, recomputed reliability and expected completion matched the Phase 1 stored aggregate values (max absolute reliability difference = 0). The P0-C fix remains required for correctness on truncated early-failure trajectories (unit-tested) and for any future metrics that previously early-stopped.
+**Phase 2.5 erratum:** Reliability matched (maximum absolute difference zero), but expected full completion increased on 46 of 127 routes. The largest change was RC2_10_1 A route 2: 2,324.31 to 6,858.58 benchmark time units, with reliability zero in both audits. The corrected simulator propagates every timing trajectory through the depot even after a deadline miss.

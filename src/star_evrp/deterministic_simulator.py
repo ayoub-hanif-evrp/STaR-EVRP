@@ -6,6 +6,7 @@ from dataclasses import dataclass
 
 import numpy as np
 
+from star_evrp.charge_plan import route_structure_error
 from star_evrp.geometry import leg_distance
 from star_evrp.types import (
     Instance,
@@ -107,7 +108,7 @@ def _charge_at_station(
     rate = instance.charging_rate(station_id)
     wait_early = 0.0
     service_start = arrival
-    if enforce_station_tw and arrival < node.ready_time - NUM_TOL:
+    if enforce_station_tw and arrival < node.ready_time:
         wait_early = node.ready_time - arrival
         service_start = node.ready_time
 
@@ -134,6 +135,8 @@ def _charge_at_station(
 
     charge_dur = energy_added / rate if energy_added > NUM_TOL else 0.0
     clock += charge_dur
+    if enforce_station_tw and clock > node.due_date + NUM_TOL:
+        return clock, battery, wait_early, wait_extra, charge_dur, energy_added, service_start, "station_closing"
     return clock, battery_after, wait_early, wait_extra, charge_dur, energy_added, service_start, None
 
 
@@ -175,11 +178,12 @@ def simulate_route_fixed(
     stops = route.stops or []
     route_id = route.route_id
 
-    if not stops:
+    structural_error = route_structure_error(instance, route)
+    if structural_error:
         return RouteTrace(
             route_id=route_id,
-            feasible=True,
-            failure_reason=None,
+            feasible=False,
+            failure_reason=structural_error,
             total_distance=0.0,
             num_charging_visits=0,
             end_node_id=0,
@@ -683,7 +687,7 @@ def simulate_route(
     config: SimulatorConfig,
 ) -> RouteTrace:
     """Dispatch to explicit-stop or baseline-expansion semantics."""
-    if route.uses_explicit_stops():
+    if route.stops is not None:
         return simulate_route_fixed(instance, route, config)
     if route.customer_indices is not None:
         return simulate_route_baseline_expansion(

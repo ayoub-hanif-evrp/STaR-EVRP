@@ -4,6 +4,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass, field
 from enum import Enum
+from functools import cached_property
 from pathlib import Path
 from typing import Any, Literal
 
@@ -91,9 +92,11 @@ class Instance:
 
     def customer_local_index(self, node_id: int) -> int:
         """Map customer ``node_id`` to local index ``0 .. num_customers-1``."""
-        if node_id not in self.customer_node_ids:
-            raise KeyError(f"Node {node_id} is not a customer on {self.instance_key}")
-        return self.customer_node_ids.index(node_id)
+        return self.customer_local_indices[node_id]
+
+    @cached_property
+    def customer_local_indices(self) -> dict[int, int]:
+        return {node_id: index for index, node_id in enumerate(self.customer_node_ids)}
 
     def index_of(self, node_id: int) -> int:
         return self.node_id_to_index[node_id]

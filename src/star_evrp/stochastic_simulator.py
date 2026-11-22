@@ -16,9 +16,10 @@ from typing import Any
 
 import numpy as np
 
+from star_evrp.charge_plan import route_structure_error
 from star_evrp.deterministic_simulator import SimulatorConfig, simulate_route_fixed
 from star_evrp.geometry import leg_distance
-from star_evrp.statistics import lognormal_mean, make_rng, wilson_ci
+from star_evrp.statistics import lognormal_mean, make_rng, wilson_ci, wilson_lower
 from star_evrp.types import NUM_TOL, Instance, NodeType, Route, RouteStop
 
 
@@ -56,25 +57,10 @@ def evaluate_route_with_waits(
     Aborts only on energy/structural invalidity.
     """
     stops = route.stops or []
-    if not stops:
+    structural_error = route_structure_error(instance, route)
+    if structural_error:
         return TimeOutcome(
-            success=True,
-            energy_valid=True,
-            failure_reason=None,
-            completion=0.0,
-            mean_tardiness=0.0,
-            max_tardiness=0.0,
-            customer_on_time_prop=1.0,
-            any_late_customer=False,
-            late_depot=False,
-            first_failure_time=None,
-            n_customers=0,
-            n_customers_on_time=0,
-        )
-
-    if instance.node(stops[0].node_id).node_type != NodeType.DEPOT:
-        return TimeOutcome(
-            False, False, "route_must_start_at_depot", 0.0, 0.0, 0.0, 0.0, False, False, 0.0, 0, 0
+            False, False, structural_error, 0.0, 0.0, 0.0, 0.0, False, False, 0.0, 0, 0
         )
 
     clock = 0.0
@@ -87,6 +73,8 @@ def evaluate_route_with_waits(
     late_depot = False
     first_failure: float | None = None
     n_on_time = 0
+    load = 0.0
+    late_station = False
 
     def _mark_fail(reason: str, t: float) -> None:
         nonlocal first_failure
@@ -124,7 +112,7 @@ def evaluate_route_with_waits(
             station_k += 1
             node = instance.node(target)
             service_start = arrival
-            if enforce_station_time_windows and arrival < node.ready_time - NUM_TOL:
+            if enforce_station_time_windows and arrival < node.ready_time:
                 service_start = node.ready_time
             clock = service_start + max(0.0, wait_extra)
 
@@ -155,9 +143,17 @@ def evaluate_route_with_waits(
                     )
                 clock += energy_added / rate
             battery = battery_after
+            if enforce_station_time_windows and clock > node.due_date + NUM_TOL:
+                late_station = True
+                _mark_fail("station_closing", clock)
 
         elif ntype == NodeType.CUSTOMER:
             node = instance.node(target)
+            load += node.demand
+            if load > instance.load_capacity + NUM_TOL:
+                return TimeOutcome(
+                    False, False, "load_capacity", clock, 0.0, 0.0, 0.0, False, False, clock, 0, 0
+                )
             start = max(arrival, node.ready_time)
             late = max(0.0, start - node.due_date)
             tardiness.append(late)
@@ -181,15 +177,17 @@ def evaluate_route_with_waits(
         late_depot = True
         _mark_fail("depot_closing", clock)
 
-    success = (not any_late_customer) and (not late_depot) and True
+    success = not (any_late_customer or late_depot or late_station)
     reason = None
     if not success:
         if any_late_customer and late_depot:
             reason = "customer_and_depot_failures"
         elif any_late_customer:
             reason = "customer_time_window"
-        else:
+        elif late_depot:
             reason = "depot_closing"
+        else:
+            reason = "station_closing"
 
     mean_t = float(np.mean(tardiness)) if tardiness else 0.0
     max_t = float(np.max(tardiness)) if tardiness else 0.0
@@ -362,7 +360,7 @@ def simulate_route_stochastic(
             reliability=rel,
             wilson_ci_low=ci[0],
             wilson_ci_high=ci[1],
-            wilson_ci_low_onesided=float(ci[0]),
+            wilson_ci_low_onesided=wilson_lower(succ, num_scenarios),
             num_charging_visits=0,
             zero_charge_route=True,
             det_feasible=det_feasible,
@@ -422,8 +420,7 @@ def simulate_route_stochastic(
 
     rel = successes / num_scenarios if num_scenarios > 0 else 0.0
     ci = wilson_ci(successes, num_scenarios)
-    # One-sided lower Wilson (approx): reuse two-sided low as conservative proxy.
-    ci_lo1 = ci[0]
+    ci_lo1 = wilson_lower(successes, num_scenarios)
 
     return RouteStochasticMetrics(
         instance_key=instance.instance_key,

@@ -2,7 +2,7 @@
 
 **STaR-EVRP** (Slack-Targeted Stochastic Charging Repair) studies whether changing charging decisions—without changing customer sequences—can improve route-level reliability of electric delivery routes under stochastic charging-station waiting times.
 
-Phase 1 (this codebase state) builds the reproducible scientific foundation: dataset ingestion, deposited CON baselines, deterministic/stochastic simulation, safe reliability upper bounds, a limited repair-opportunity probe, tests, PNG figures, and paper tables.
+Phase 1 builds the simulation foundation. Phase 2 is historical; use the corrected development-only Phase 2.5 workflow in `docs/PHASE25_FINAL_REPORT.md` for current experiments. Do not use the legacy Phase 2 drivers to reproduce the corrected comparison.
 
 Primary protocol: **Q = 700**, **h = 1.0**, development set = 24 instances. See `docs/PHASE1_FINAL_REPORT.md` for gate decisions and measured results.
 

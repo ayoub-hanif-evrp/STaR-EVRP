@@ -52,8 +52,10 @@ def generate_z_tape(
     if num_slots <= 0:
         return np.zeros((num_scenarios, 0))
     seed = tape_rng_seed(master_seed, parent_key, variant, route_id, split)
-    rng = make_rng(seed, "tape")
-    return rng.standard_normal((num_scenarios, num_slots))
+    return np.column_stack([
+        make_rng(seed, "slot", slot).standard_normal(num_scenarios)
+        for slot in range(num_slots)
+    ])
 
 
 def z_tape_for_route(

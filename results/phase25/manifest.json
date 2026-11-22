@@ -1,0 +1,333 @@
+{
+  "head": "de78ccb2421862ad880954345c9a97425b3f0c25",
+  "source_note": "Working-tree source identified by hashes, not by HEAD alone",
+  "file_sha256": {
+    "configs/phase25.yaml": "237da988c6fafd6d393d8f5fb64a8cfcbf6a0f30a743ab13e5ac9888871890b9",
+    "configs/experiment_splits.yaml": "334ba293431b0b16c2d6331d6af3b179b8fc974535c919cbbe60edac626e4b3d",
+    "results/phase2/manifests/dev_panel.json": "28f340fc3b274f4bbea652b4545f864fb0aae6d1c8e9c21d7c5302cbf71a2a52",
+    "scripts/run_phase25.py": "e5557d79b3a4bb0ddee7d964972d03e8be935df7f5adcbcd917db7f2d879ab00",
+    "src/star_evrp/__init__.py": "750404ddec01f143301532532b5734adc256c2f571a52746b1a83ce16a4bb359",
+    "src/star_evrp/analysis_phase2.py": "649cf33f8817bf8df13b057ab408fc06af7f6b11ae6322aecc822c8e5f8f1c4c",
+    "src/star_evrp/baseline.py": "18305cb9759ee3bdd26c9ff1695355c7e3df178aebd0ecf407b7f5e1b6e34e26",
+    "src/star_evrp/baseline_optimizers.py": "c8fc9272de4b7574fa25afbed193c61b5ef83e7bf1e02d10c4bfc5fca6668e98",
+    "src/star_evrp/budget.py": "211b7651e7f1da828ace531d6039222940187fb2c47df68855afab08ca448c67",
+    "src/star_evrp/charge_moves.py": "5c4dce3b24af8a837bba4429dd4a964dfe58f25227ee43a4c45f7256b07487da",
+    "src/star_evrp/charge_plan.py": "553e83a6961c4cb7a8dcccf6f50dcd7a134f3023bc25f09b47061f1b18236173",
+    "src/star_evrp/cli.py": "179782f6d7003618dab6f21d49fcf60766a3f0d011dccd6b712acda46ba6134e",
+    "src/star_evrp/competitive_search.py": "e7f4b0418731fd148427a78165529e7e09654a425481ca5e5e599d41e0d815b2",
+    "src/star_evrp/criticality.py": "6855093ec7f05c446942a16527c5f0996da2036b7d72d64fecbe390bc7ff083f",
+    "src/star_evrp/data_loader.py": "caacaa46d8a1fea49ee506bf1e689df86fe7ff356697ab3c228976e036dc01fb",
+    "src/star_evrp/data_validation.py": "c2fa06f66f591e7acf083e1ff1f7e4d2dffb7d03249da4254d2afbd6a6431485",
+    "src/star_evrp/deterministic_simulator.py": "8e226e99dd94fa2691f97bf237e1b651b822ba7324b6e9178f6005d94ca1c01d",
+    "src/star_evrp/experiment_phase2.py": "43d2f1d41094c6454633cd751e2ef3a911e94ff2aa63518286222695ccf1b761",
+    "src/star_evrp/experiment_phase25.py": "bbb141e8b96e7deeb7be248cdf7137798d70acedd4c2ae01191043eb52b3c007",
+    "src/star_evrp/experiment_runner.py": "b861686d1b531516f077aed79c20b2646db6d7b42b835b21eacd95c0c1688a45",
+    "src/star_evrp/geometry.py": "5746b97c36c340da959146d61b28afc8f27b130f1bbce2f9643b4a2580bb6d75",
+    "src/star_evrp/plotting.py": "adf1354483f4592111cf7fe66f66e5337820d36079cf413649bc67705c79bd3f",
+    "src/star_evrp/repair_probe.py": "170557fb6e4676e95a5c92740096dab2bbb822ace79618e7b02f0bddfee0e9a4",
+    "src/star_evrp/results_io.py": "ecda8561d06800c870cac14fae204ea98e8aca690cc41240d42a8ad27dc5e469",
+    "src/star_evrp/risk_bounds.py": "f1488dea4240bbd122d563e5976682f528473241dada8bdaf7a1089e60c0fe28",
+    "src/star_evrp/route_evaluator.py": "e200768063617a0bae793f196393fcb9ddcb357cb34ef22ea22695126493e07a",
+    "src/star_evrp/route_validator.py": "2782dcbcce2a067c3e3085879b1efb2bf2d32ee677740f15af87d237a810f4c9",
+    "src/star_evrp/safe_screen.py": "e84fafcf8777e7e71d68e8955eefe54149a906b6650b840c98f4b0841b9cca57",
+    "src/star_evrp/scenario_tapes.py": "e5928078589263c413578ca19f34cf2ed27e85afcaba0856209bd4a8c104d9dc",
+    "src/star_evrp/search_common.py": "eec9012af31351d875ab73d9ad81a3c858d30c06b1d9df700c95edc1c1769ad4",
+    "src/star_evrp/star_optimizer.py": "13654a95aa21fef6c0f9f5e48cee1649add57b2bf3d32fa26b06b7183f89545f",
+    "src/star_evrp/statistics.py": "8bd8e1653a7d8aeb429d37640749f7cda48e854ad8bb4b247c8e32730f53f86a",
+    "src/star_evrp/stochastic_simulator.py": "c0bd26624e2017e3210b757d3b2202231c8a5dabbe543698a8ec79b416de0458",
+    "src/star_evrp/timing.py": "19ebf9fc826da579c3256e32fef7220103389c4ad26ac657ed4e27c3e4f2e3c3",
+    "src/star_evrp/types.py": "922af4e05a067b2b1fd7ec46b5a38d744861c740c0dc0788ae6f311665f54012",
+    "results/baselines/C1_10_1__A.json": "405481019b24585b6955f4814c3db50368b1f0169e32d66ff9a7605ad35e34a2",
+    "results/baselines/C1_10_1__B.json": "03118f496f7de46045aa64b90a105021dc983960269e085d6e6330a586e9821f",
+    "results/baselines/C1_10_10__A.json": "069746a78576f52333d20234d160e47108bb40a7552c46e424ffa5bfea76eed2",
+    "results/baselines/C1_10_10__B.json": "d2dac390bf55e6393f1a1cd4e261461c45ea3c9f0cbf218520bf9e29b7437d68",
+    "results/baselines/C2_10_1__A.json": "58fbfb2278dad9b7c47a82452b2f2a01117605bd7e95227e57a600b82f958a24",
+    "results/baselines/C2_10_1__B.json": "482265c35e3718cc1c87408e5fb02ec10137700c4290dc45cb8a4ccb517147c8",
+    "results/baselines/C2_10_10__A.json": "7690b56ce46c3be6e5c0a9a2d51a6e0d8e29a2a6c61bfae033dda095a85d5424",
+    "results/baselines/C2_10_10__B.json": "e0ad8ab1e93a3100964481a63c4c12987a7bb629e38c517c56e6595a11a95e74",
+    "results/baselines/R1_10_1__A.json": "f209f4894989e844870c24a70023a027abccfdbac9c3599d89a16db9ce6e73ab",
+    "results/baselines/R1_10_1__B.json": "11d9887be9abb7dffca2864d2c10bed7e397d694766940f54fbe517204bae46e",
+    "results/baselines/R1_10_10__A.json": "6a1626dbdfefa720d5f670c160887819597341298eb5e1553c38bdb5f4258d2e",
+    "results/baselines/R1_10_10__B.json": "941ce2228bbef3089d02c59b7e3dee98ff5d02b983fa77541edc658923f717a6",
+    "results/baselines/R2_10_1__A.json": "379993f6f6302e145f285cc03de8c41dd46877121809efe7fe0e219f6dd2ad0d",
+    "results/baselines/R2_10_1__B.json": "fbaf7c528fd8f580199b91acc741217ebe85fe833d882e614fa14a839b8d0202",
+    "results/baselines/R2_10_10__A.json": "2a16d8a54655a258d6a47de2257ad3c15db6a7866391bbbdd6beccca62781c55",
+    "results/baselines/R2_10_10__B.json": "acf2b51d960e5762130e2fcf3dfa0368ab6f389772ad95b430b11ae759e121e0",
+    "results/baselines/RC1_10_1__A.json": "5aa866bc8749f2d378f82bada78e693dd44492eac7da0aa51afbc5de1e6d6bd5",
+    "results/baselines/RC1_10_1__B.json": "bf8b598d24f4c743da4d4c63494a3c9d222c68b98c09fb338bfaa2ac78925309",
+    "results/baselines/RC1_10_10__A.json": "9be7fca8534f9e4f3844c7b34bfca46fcd1a419bddf745ad08fc9bf1fa74324d",
+    "results/baselines/RC1_10_10__B.json": "5fd9e1d7fddd295a3fc5e864e7f624099bd10369158613c81029b8b7b4fd31e4",
+    "results/baselines/RC2_10_1__A.json": "b5667475ba9f414a7ce4f7a328e4e3988a83d8f8455390b63687e06bd7169a5a",
+    "results/baselines/RC2_10_1__B.json": "d80681c79d256dce872525fb293ba8939f82cbfe666121e5db57faab143eaf2c",
+    "results/baselines/RC2_10_10__A.json": "1bba1df9ed3df3bf6982834ef57b61d79a517b73a7d1b3c1e002daacc828e905",
+    "results/baselines/RC2_10_10__B.json": "84bd29c3c4e58c7e9454c50b6f3ad3991643a32250f55cd0d9edf4369e2cd5ba"
+  },
+  "development_inventory": [
+    {
+      "instance_key": "C1_10_1",
+      "variant": "A",
+      "family": "C1",
+      "parent_key": "C1_10_1",
+      "partition": "development",
+      "instance_sha256": "fbac98a11feb5987bff874763d786fcb6e132745a886f8f3e3b9618749315e55",
+      "stations_sha256": "d7a67285c17a39851c4bf2506098518ff98c03dafdb7863ba8ff76da571ba584"
+    },
+    {
+      "instance_key": "C1_10_1",
+      "variant": "B",
+      "family": "C1",
+      "parent_key": "C1_10_1",
+      "partition": "development",
+      "instance_sha256": "d36d1d3ddf30dedbaf531b8234f7a7d80153760bb5402a28b72c9ad8bf3a518a",
+      "stations_sha256": "d7a67285c17a39851c4bf2506098518ff98c03dafdb7863ba8ff76da571ba584"
+    },
+    {
+      "instance_key": "C1_10_10",
+      "variant": "A",
+      "family": "C1",
+      "parent_key": "C1_10_10",
+      "partition": "development",
+      "instance_sha256": "d0bb3dfdfa5d82bdac90bc118e784b25f44c0cc816237f0ccfb2feb2bd582e12",
+      "stations_sha256": "d7a67285c17a39851c4bf2506098518ff98c03dafdb7863ba8ff76da571ba584"
+    },
+    {
+      "instance_key": "C1_10_10",
+      "variant": "B",
+      "family": "C1",
+      "parent_key": "C1_10_10",
+      "partition": "development",
+      "instance_sha256": "cd90e480068a0643020a6bd4942b16bb0616c84312dfe340d98cf26ff2dfa6b3",
+      "stations_sha256": "d7a67285c17a39851c4bf2506098518ff98c03dafdb7863ba8ff76da571ba584"
+    },
+    {
+      "instance_key": "C2_10_1",
+      "variant": "A",
+      "family": "C2",
+      "parent_key": "C2_10_1",
+      "partition": "development",
+      "instance_sha256": "da1519c56ac8024748720ce0710fa6b8496280de7e5f5ff1abbcb815700e77a8",
+      "stations_sha256": "ee054607455c79e408b781edce61f33142e8e66c0a036fd5489137612b83ecfe"
+    },
+    {
+      "instance_key": "C2_10_1",
+      "variant": "B",
+      "family": "C2",
+      "parent_key": "C2_10_1",
+      "partition": "development",
+      "instance_sha256": "de4f4a2cfe10d4a04c40fd98a25dd9c872ae2299ee7c1f4b409a7efc47dedbbd",
+      "stations_sha256": "ee054607455c79e408b781edce61f33142e8e66c0a036fd5489137612b83ecfe"
+    },
+    {
+      "instance_key": "C2_10_10",
+      "variant": "A",
+      "family": "C2",
+      "parent_key": "C2_10_10",
+      "partition": "development",
+      "instance_sha256": "88d65342e828d2cf21b0d9d3cc4b21dc7d4239dbb08e12f1e2e11f34a797405f",
+      "stations_sha256": "ee054607455c79e408b781edce61f33142e8e66c0a036fd5489137612b83ecfe"
+    },
+    {
+      "instance_key": "C2_10_10",
+      "variant": "B",
+      "family": "C2",
+      "parent_key": "C2_10_10",
+      "partition": "development",
+      "instance_sha256": "1aaf44c6e89d70c63c0aca496b3ee7c84376c0fc38989afacdae31398394ca9b",
+      "stations_sha256": "ee054607455c79e408b781edce61f33142e8e66c0a036fd5489137612b83ecfe"
+    },
+    {
+      "instance_key": "R1_10_1",
+      "variant": "A",
+      "family": "R1",
+      "parent_key": "R1_10_1",
+      "partition": "development",
+      "instance_sha256": "88f747f066fb4a799f461d41840418580cadd5a22cd4b8ccdfc4c0ef1ea3e9f9",
+      "stations_sha256": "7ed086efd5f5a2be87302d68f665f3970ea6de5695e217c86c3893dfe0254932"
+    },
+    {
+      "instance_key": "R1_10_1",
+      "variant": "B",
+      "family": "R1",
+      "parent_key": "R1_10_1",
+      "partition": "development",
+      "instance_sha256": "15cce6c0e21ec0dae0398443a35c223bf77516017285a8957778457cd72afb9e",
+      "stations_sha256": "7ed086efd5f5a2be87302d68f665f3970ea6de5695e217c86c3893dfe0254932"
+    },
+    {
+      "instance_key": "R1_10_10",
+      "variant": "A",
+      "family": "R1",
+      "parent_key": "R1_10_10",
+      "partition": "development",
+      "instance_sha256": "2382348390dc1d30462c6de72a5bfb43e9ef3ec1627692c2e01cccdd7ca65bc0",
+      "stations_sha256": "7ed086efd5f5a2be87302d68f665f3970ea6de5695e217c86c3893dfe0254932"
+    },
+    {
+      "instance_key": "R1_10_10",
+      "variant": "B",
+      "family": "R1",
+      "parent_key": "R1_10_10",
+      "partition": "development",
+      "instance_sha256": "be80a598598b9fa31ac8befe7232a6fe6ae84cc3517ff002865c34fe8d1796ad",
+      "stations_sha256": "7ed086efd5f5a2be87302d68f665f3970ea6de5695e217c86c3893dfe0254932"
+    },
+    {
+      "instance_key": "R2_10_1",
+      "variant": "A",
+      "family": "R2",
+      "parent_key": "R2_10_1",
+      "partition": "development",
+      "instance_sha256": "50af8c7611299daa59533d4ad7a4e075a416449c02b64acceb73af219bac04c1",
+      "stations_sha256": "7ed086efd5f5a2be87302d68f665f3970ea6de5695e217c86c3893dfe0254932"
+    },
+    {
+      "instance_key": "R2_10_1",
+      "variant": "B",
+      "family": "R2",
+      "parent_key": "R2_10_1",
+      "partition": "development",
+      "instance_sha256": "b184fabaa1e41c9a9302b401b2185a6c3c98af1514a9446532f1a97d6a3a7dd4",
+      "stations_sha256": "7ed086efd5f5a2be87302d68f665f3970ea6de5695e217c86c3893dfe0254932"
+    },
+    {
+      "instance_key": "R2_10_10",
+      "variant": "A",
+      "family": "R2",
+      "parent_key": "R2_10_10",
+      "partition": "development",
+      "instance_sha256": "fdc48124035a25e3962fb3c59c7c17e27c2b38e249cf6e8338aa26f4a0e12e46",
+      "stations_sha256": "7ed086efd5f5a2be87302d68f665f3970ea6de5695e217c86c3893dfe0254932"
+    },
+    {
+      "instance_key": "R2_10_10",
+      "variant": "B",
+      "family": "R2",
+      "parent_key": "R2_10_10",
+      "partition": "development",
+      "instance_sha256": "9c0b2e43962d8d0711e46fe04a17fb558dadca7545c0954ca6d24bd09dda9fa5",
+      "stations_sha256": "7ed086efd5f5a2be87302d68f665f3970ea6de5695e217c86c3893dfe0254932"
+    },
+    {
+      "instance_key": "RC1_10_1",
+      "variant": "A",
+      "family": "RC1",
+      "parent_key": "RC1_10_1",
+      "partition": "development",
+      "instance_sha256": "caf16f240593eb6a827504837e897fae8cf45bf0a2a52c7e89ae8f5297187601",
+      "stations_sha256": "8b1934659fe1c6c7239352e90dcf60b7627a890314c8363ead8b7256d0d3e654"
+    },
+    {
+      "instance_key": "RC1_10_1",
+      "variant": "B",
+      "family": "RC1",
+      "parent_key": "RC1_10_1",
+      "partition": "development",
+      "instance_sha256": "8ce80e8ee11c353534d8903d9e1b3eacb8520a6f8d5abfa97f53a093b2a69b03",
+      "stations_sha256": "8b1934659fe1c6c7239352e90dcf60b7627a890314c8363ead8b7256d0d3e654"
+    },
+    {
+      "instance_key": "RC1_10_10",
+      "variant": "A",
+      "family": "RC1",
+      "parent_key": "RC1_10_10",
+      "partition": "development",
+      "instance_sha256": "a1bae2644728f1f3431c1982e7c47307404a87846f3ec5f8707e035f778f7f24",
+      "stations_sha256": "8b1934659fe1c6c7239352e90dcf60b7627a890314c8363ead8b7256d0d3e654"
+    },
+    {
+      "instance_key": "RC1_10_10",
+      "variant": "B",
+      "family": "RC1",
+      "parent_key": "RC1_10_10",
+      "partition": "development",
+      "instance_sha256": "f56baddc57036465a5ca50f2a9dca726ad1fdb4b654dd9429ebdde54b4f64a79",
+      "stations_sha256": "8b1934659fe1c6c7239352e90dcf60b7627a890314c8363ead8b7256d0d3e654"
+    },
+    {
+      "instance_key": "RC2_10_1",
+      "variant": "A",
+      "family": "RC2",
+      "parent_key": "RC2_10_1",
+      "partition": "development",
+      "instance_sha256": "23f31eaec9d80337b91c012cd472e8eee40e3b68a3e0730fb604b17ce0f5b156",
+      "stations_sha256": "8b1934659fe1c6c7239352e90dcf60b7627a890314c8363ead8b7256d0d3e654"
+    },
+    {
+      "instance_key": "RC2_10_1",
+      "variant": "B",
+      "family": "RC2",
+      "parent_key": "RC2_10_1",
+      "partition": "development",
+      "instance_sha256": "123255a3e133478239be2996271b4aaf520a861cacc315f42474b456dfc696fa",
+      "stations_sha256": "8b1934659fe1c6c7239352e90dcf60b7627a890314c8363ead8b7256d0d3e654"
+    },
+    {
+      "instance_key": "RC2_10_10",
+      "variant": "A",
+      "family": "RC2",
+      "parent_key": "RC2_10_10",
+      "partition": "development",
+      "instance_sha256": "c82a95f1f407be612a92b0a6cdcdeafa0971c47e005bf0ccae903dc7dd423e8a",
+      "stations_sha256": "8b1934659fe1c6c7239352e90dcf60b7627a890314c8363ead8b7256d0d3e654"
+    },
+    {
+      "instance_key": "RC2_10_10",
+      "variant": "B",
+      "family": "RC2",
+      "parent_key": "RC2_10_10",
+      "partition": "development",
+      "instance_sha256": "943b99ceb208b4fbc6c325def54ce2c0fefd73731f30a3a99e31a81c11b54549",
+      "stations_sha256": "8b1934659fe1c6c7239352e90dcf60b7627a890314c8363ead8b7256d0d3e654"
+    }
+  ],
+  "config": {
+    "seed": 20261122,
+    "analysis_seed": 18463,
+    "opt_scenarios": 512,
+    "validation_scenarios": 4096,
+    "target": 0.95,
+    "nearby_stations": 3,
+    "battery_capacity": 700,
+    "energy_consumption_rate": 1.0,
+    "primary_profile": "candidates64",
+    "profiles": {
+      "candidates24": {
+        "max_candidate_evals": 24,
+        "max_scenario_evals": 131072,
+        "wall_seconds": 5
+      },
+      "candidates64": {
+        "max_candidate_evals": 64,
+        "max_scenario_evals": 131072,
+        "wall_seconds": 5
+      },
+      "scenarios8192": {
+        "max_candidate_evals": 128,
+        "max_scenario_evals": 8192,
+        "wall_seconds": 5
+      },
+      "wall40ms": {
+        "max_candidate_evals": 256,
+        "max_scenario_evals": 131072,
+        "wall_seconds": 0.04
+      }
+    }
+  },
+  "methods": [
+    "B0",
+    "B1",
+    "B2",
+    "B3",
+    "B4",
+    "STaR",
+    "STaR_no_partial"
+  ],
+  "python": "3.12.10",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "dependencies": {
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "pyyaml": "6.0.3",
+    "matplotlib": "3.11.2"
+  }
+}

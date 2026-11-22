@@ -1,0 +1,2009 @@
+{
+  "rows_sha256": "fca202208d75ba8a9e00a10ea11a33bf52a2eeee5b6bbc2f8ef210d689cefce4",
+  "rows": [
+    {
+      "parent": "C1_10_1",
+      "variant": "B",
+      "family": "C1",
+      "profile": "wall40ms",
+      "route_id": 74,
+      "panel": true,
+      "method": "B0",
+      "search_score": [],
+      "budget": {
+        "wall_seconds_limit": 0.04,
+        "elapsed_seconds": 7.619999814778566e-05,
+        "candidates_evaluated": 1,
+        "scenarios_evaluated": 0,
+        "cache_hits": 0,
+        "deterministic_checks": 1,
+        "generated": 0,
+        "screen_checks": 0,
+        "generation_seconds": 0.0,
+        "deterministic_seconds": 6.559991743415594e-05,
+        "screening_seconds": 0.0,
+        "simulation_seconds": 0.0,
+        "exceeded": false
+      },
+      "selected_moves": [],
+      "screen_rejections": 0,
+      "prefix_rejections": 0,
+      "time_to_opt_target": null,
+      "stops": [
+        {
+          "node_id": 0,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 406,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 820,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 129,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 894,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 672,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 641,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 1109,
+          "energy_charged": 564.6387179177384,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 0,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        }
+      ],
+      "fingerprint": "e515f14ac0d6fd8177ca3b0de546e99b7d5a657124524946813715f7c2baa11f",
+      "validation": {
+        "successes": 4096,
+        "n": 4096,
+        "reliability": 1.0,
+        "wilson95_lower": 0.999339902946086,
+        "wilson95_two_sided": [
+          0.9990630225926348,
+          0.9999999999999999
+        ],
+        "attained": true,
+        "mean_completion": 1763.4869008923201,
+        "p95_completion": 1774.6369564177608,
+        "zero_wait_completion": 1743.346070422403,
+        "distance": 826.2414701968381,
+        "completion_quantiles": [
+          1749.609250835092,
+          1755.2599738894894,
+          1756.6134898226408,
+          1757.6039671230847,
+          1758.4118673999064,
+          1759.2365630914928,
+          1759.902400364221,
+          1760.6269644697343,
+          1761.3076838275392,
+          1761.9268584663787,
+          1762.665235392089,
+          1763.356638020845,
+          1764.1265510622384,
+          1764.9226980059411,
+          1765.7917173534904,
+          1766.8052002621728,
+          1768.0661889734092,
+          1769.5606205217678,
+          1771.469776150366,
+          1774.6369564177608,
+          1795.7941365348756
+        ],
+        "charging": [
+          {
+            "stop": 7,
+            "station": 1109,
+            "energy": 564.6387179177384,
+            "arrival": 1104.6387179177384,
+            "departure": 1481.7433181433034,
+            "charge_duration": 377.1046002255649
+          }
+        ],
+        "timeline": [
+          0.0,
+          361.9503631179778,
+          454.1864310954776,
+          668.669361652241,
+          903.5141061202403,
+          994.5141061202403,
+          1086.75017409774,
+          1481.7433181433034,
+          1743.346070422403
+        ]
+      }
+    },
+    {
+      "parent": "C1_10_1",
+      "variant": "B",
+      "family": "C1",
+      "profile": "wall40ms",
+      "route_id": 74,
+      "panel": true,
+      "method": "B1",
+      "search_score": [
+        1,
+        -1454.801644664381
+      ],
+      "budget": {
+        "wall_seconds_limit": 0.04,
+        "elapsed_seconds": 0.008874200051650405,
+        "candidates_evaluated": 69,
+        "scenarios_evaluated": 0,
+        "cache_hits": 28,
+        "deterministic_checks": 69,
+        "generated": 99,
+        "screen_checks": 0,
+        "generation_seconds": 0.0025653017219156027,
+        "deterministic_seconds": 0.002677100943401456,
+        "screening_seconds": 0.0,
+        "simulation_seconds": 0.0029886994743719697,
+        "exceeded": false
+      },
+      "selected_moves": [
+        "minimal",
+        "relocate",
+        "replace"
+      ],
+      "screen_rejections": 0,
+      "prefix_rejections": 0,
+      "time_to_opt_target": null,
+      "stops": [
+        {
+          "node_id": 0,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 406,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 820,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 129,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 1075,
+          "energy_charged": 112.08956050787646,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 894,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 672,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 641,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 0,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        }
+      ],
+      "fingerprint": "8f81fc2d09d1ac4e5cea476fb5a86b8a86b32ba152207a81a8a04edc1bb9e11b",
+      "validation": {
+        "successes": 4096,
+        "n": 4096,
+        "reliability": 1.0,
+        "wilson95_lower": 0.999339902946086,
+        "wilson95_two_sided": [
+          0.9990630225926348,
+          0.9999999999999999
+        ],
+        "attained": true,
+        "mean_completion": 1454.6876485968983,
+        "p95_completion": 1463.7347505274001,
+        "zero_wait_completion": 1438.345474711706,
+        "distance": 812.0895605078765,
+        "completion_quantiles": [
+          1443.427389458537,
+          1448.0123592228151,
+          1449.1105956023418,
+          1449.9142641649348,
+          1450.5697906004232,
+          1451.238944755432,
+          1451.7792019462377,
+          1452.3671098093691,
+          1452.9194422531025,
+          1453.421837605088,
+          1454.0209531247183,
+          1454.5819539236022,
+          1455.2066576972484,
+          1455.852647534241,
+          1456.5577656925243,
+          1457.3801008960354,
+          1458.4032611285327,
+          1459.615835766866,
+          1461.1649155480125,
+          1463.7347505274001,
+          1480.9015856740768
+        ],
+        "charging": [
+          {
+            "stop": 4,
+            "station": 1075,
+            "energy": 112.08956050787646,
+            "arrival": 773.0245244377976,
+            "departure": 859.2804386416271,
+            "charge_duration": 86.2559142038295
+          }
+        ],
+        "timeline": [
+          0.0,
+          361.9503631179778,
+          454.1864310954776,
+          668.669361652241,
+          859.2804386416271,
+          989.8020378203367,
+          1080.8020378203369,
+          1173.0381057978366,
+          1438.345474711706
+        ]
+      }
+    },
+    {
+      "parent": "C1_10_1",
+      "variant": "B",
+      "family": "C1",
+      "profile": "wall40ms",
+      "route_id": 74,
+      "panel": true,
+      "method": "B2",
+      "search_score": [
+        1,
+        -1479.7486464229153
+      ],
+      "budget": {
+        "wall_seconds_limit": 0.04,
+        "elapsed_seconds": 0.007474799989722669,
+        "candidates_evaluated": 59,
+        "scenarios_evaluated": 0,
+        "cache_hits": 14,
+        "deterministic_checks": 59,
+        "generated": 74,
+        "screen_checks": 0,
+        "generation_seconds": 0.0019526005489751697,
+        "deterministic_seconds": 0.002350199967622757,
+        "screening_seconds": 0.0,
+        "simulation_seconds": 0.0026613997761160135,
+        "exceeded": false
+      },
+      "selected_moves": [
+        "minimal",
+        "replace"
+      ],
+      "screen_rejections": 0,
+      "prefix_rejections": 0,
+      "time_to_opt_target": null,
+      "stops": [
+        {
+          "node_id": 0,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 406,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 820,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 129,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 894,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 672,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 641,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 1262,
+          "energy_charged": 112.20191021906868,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 0,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        }
+      ],
+      "fingerprint": "ee9f6c935d27b62ef3582513a3ef9969ae57318f76933b570852e9ac8fb70cc9",
+      "validation": {
+        "successes": 4096,
+        "n": 4096,
+        "reliability": 1.0,
+        "wilson95_lower": 0.999339902946086,
+        "wilson95_two_sided": [
+          0.9990630225926348,
+          0.9999999999999999
+        ],
+        "attained": true,
+        "mean_completion": 1473.6182876922571,
+        "p95_completion": 1479.6434503596752,
+        "zero_wait_completion": 1462.7347741921437,
+        "distance": 812.2019102190686,
+        "completion_quantiles": [
+          1466.1192130154068,
+          1469.1726978625084,
+          1469.9040981368453,
+          1470.439322991999,
+          1470.8758885836048,
+          1471.3215299242772,
+          1471.6813288390956,
+          1472.0728620102736,
+          1472.4407027669658,
+          1472.775286564332,
+          1473.174283778034,
+          1473.547897460713,
+          1473.9639358655063,
+          1474.3941503009444,
+          1474.863742844064,
+          1475.411399254521,
+          1476.0928005345095,
+          1476.9003474703643,
+          1477.93199912389,
+          1479.6434503596752,
+          1491.0761693715785
+        ],
+        "charging": [
+          {
+            "stop": 7,
+            "station": 1262,
+            "energy": 112.20191021906868,
+            "arrival": 1140.3505472307695,
+            "departure": 1250.8834112038448,
+            "charge_duration": 110.53286397307525
+          }
+        ],
+        "timeline": [
+          0.0,
+          361.9503631179778,
+          454.1864310954776,
+          668.669361652241,
+          903.5141061202403,
+          994.5141061202403,
+          1086.75017409774,
+          1250.8834112038448,
+          1462.7347741921437
+        ]
+      }
+    },
+    {
+      "parent": "C1_10_1",
+      "variant": "B",
+      "family": "C1",
+      "profile": "wall40ms",
+      "route_id": 74,
+      "panel": true,
+      "method": "B3",
+      "search_score": [
+        1,
+        1,
+        -1455.000074530838,
+        1.0
+      ],
+      "budget": {
+        "wall_seconds_limit": 0.04,
+        "elapsed_seconds": 0.00978459999896586,
+        "candidates_evaluated": 69,
+        "scenarios_evaluated": 31232,
+        "cache_hits": 28,
+        "deterministic_checks": 69,
+        "generated": 99,
+        "screen_checks": 0,
+        "generation_seconds": 0.002555000246502459,
+        "deterministic_seconds": 0.002879799692891538,
+        "screening_seconds": 0.0,
+        "simulation_seconds": 0.0031362997833639383,
+        "exceeded": false
+      },
+      "selected_moves": [
+        "minimal",
+        "relocate",
+        "replace"
+      ],
+      "screen_rejections": 0,
+      "prefix_rejections": 0,
+      "time_to_opt_target": 0.0001705000177025795,
+      "stops": [
+        {
+          "node_id": 0,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 406,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 820,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 129,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 1075,
+          "energy_charged": 112.08956050787646,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 894,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 672,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 641,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 0,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        }
+      ],
+      "fingerprint": "8f81fc2d09d1ac4e5cea476fb5a86b8a86b32ba152207a81a8a04edc1bb9e11b",
+      "validation": {
+        "successes": 4096,
+        "n": 4096,
+        "reliability": 1.0,
+        "wilson95_lower": 0.999339902946086,
+        "wilson95_two_sided": [
+          0.9990630225926348,
+          0.9999999999999999
+        ],
+        "attained": true,
+        "mean_completion": 1454.6876485968983,
+        "p95_completion": 1463.7347505274001,
+        "zero_wait_completion": 1438.345474711706,
+        "distance": 812.0895605078765,
+        "completion_quantiles": [
+          1443.427389458537,
+          1448.0123592228151,
+          1449.1105956023418,
+          1449.9142641649348,
+          1450.5697906004232,
+          1451.238944755432,
+          1451.7792019462377,
+          1452.3671098093691,
+          1452.9194422531025,
+          1453.421837605088,
+          1454.0209531247183,
+          1454.5819539236022,
+          1455.2066576972484,
+          1455.852647534241,
+          1456.5577656925243,
+          1457.3801008960354,
+          1458.4032611285327,
+          1459.615835766866,
+          1461.1649155480125,
+          1463.7347505274001,
+          1480.9015856740768
+        ],
+        "charging": [
+          {
+            "stop": 4,
+            "station": 1075,
+            "energy": 112.08956050787646,
+            "arrival": 773.0245244377976,
+            "departure": 859.2804386416271,
+            "charge_duration": 86.2559142038295
+          }
+        ],
+        "timeline": [
+          0.0,
+          361.9503631179778,
+          454.1864310954776,
+          668.669361652241,
+          859.2804386416271,
+          989.8020378203367,
+          1080.8020378203369,
+          1173.0381057978366,
+          1438.345474711706
+        ]
+      }
+    },
+    {
+      "parent": "C1_10_1",
+      "variant": "B",
+      "family": "C1",
+      "profile": "wall40ms",
+      "route_id": 74,
+      "panel": true,
+      "method": "B4",
+      "search_score": [
+        1,
+        1,
+        -1471.0800915151995,
+        1.0
+      ],
+      "budget": {
+        "wall_seconds_limit": 0.04,
+        "elapsed_seconds": 0.0008150999201461673,
+        "candidates_evaluated": 9,
+        "scenarios_evaluated": 2560,
+        "cache_hits": 4,
+        "deterministic_checks": 9,
+        "generated": 12,
+        "screen_checks": 0,
+        "generation_seconds": 6.679992657154799e-05,
+        "deterministic_seconds": 0.00030570023227483034,
+        "screening_seconds": 0.0,
+        "simulation_seconds": 0.000268499949015677,
+        "exceeded": false
+      },
+      "selected_moves": [
+        "minimal"
+      ],
+      "screen_rejections": 0,
+      "prefix_rejections": 0,
+      "time_to_opt_target": 0.00015979993622750044,
+      "stops": [
+        {
+          "node_id": 0,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 406,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 820,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 129,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 894,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 672,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 641,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 1109,
+          "energy_charged": 126.24147019683812,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 0,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        }
+      ],
+      "fingerprint": "069fbf44b2999d1b6224e60a3727ade760dca9c2645ede8a2873569863ac29cc",
+      "validation": {
+        "successes": 4096,
+        "n": 4096,
+        "reliability": 1.0,
+        "wilson95_lower": 0.999339902946086,
+        "wilson95_two_sided": [
+          0.9990630225926348,
+          0.9999999999999999
+        ],
+        "attained": true,
+        "mean_completion": 1470.6950437355044,
+        "p95_completion": 1481.845099260945,
+        "zero_wait_completion": 1450.5542132655874,
+        "distance": 826.2414701968381,
+        "completion_quantiles": [
+          1456.8173936782764,
+          1462.4681167326737,
+          1463.821632665825,
+          1464.812109966269,
+          1465.6200102430907,
+          1466.4447059346771,
+          1467.1105432074053,
+          1467.8351073129186,
+          1468.5158266707235,
+          1469.135001309563,
+          1469.8733782352733,
+          1470.5647808640292,
+          1471.3346939054227,
+          1472.1308408491254,
+          1472.9998601966747,
+          1474.013343105357,
+          1475.2743318165935,
+          1476.768763364952,
+          1478.6779189935503,
+          1481.845099260945,
+          1503.00227937806
+        ],
+        "charging": [
+          {
+            "stop": 7,
+            "station": 1109,
+            "energy": 126.24147019683812,
+            "arrival": 1104.6387179177384,
+            "departure": 1188.9514609864875,
+            "charge_duration": 84.31274306874916
+          }
+        ],
+        "timeline": [
+          0.0,
+          361.9503631179778,
+          454.1864310954776,
+          668.669361652241,
+          903.5141061202403,
+          994.5141061202403,
+          1086.75017409774,
+          1188.9514609864875,
+          1450.5542132655874
+        ]
+      }
+    },
+    {
+      "parent": "C1_10_1",
+      "variant": "B",
+      "family": "C1",
+      "profile": "wall40ms",
+      "route_id": 74,
+      "panel": true,
+      "method": "STaR",
+      "search_score": [
+        1,
+        1,
+        -1455.000074530838,
+        1.0
+      ],
+      "budget": {
+        "wall_seconds_limit": 0.04,
+        "elapsed_seconds": 0.010437299963086843,
+        "candidates_evaluated": 67,
+        "scenarios_evaluated": 14848,
+        "cache_hits": 27,
+        "deterministic_checks": 67,
+        "generated": 96,
+        "screen_checks": 58,
+        "generation_seconds": 0.00240019999910146,
+        "deterministic_seconds": 0.0027689997805282474,
+        "screening_seconds": 0.0008083999855443835,
+        "simulation_seconds": 0.003235200187191367,
+        "exceeded": false
+      },
+      "selected_moves": [
+        "minimal",
+        "relocate",
+        "replace"
+      ],
+      "screen_rejections": 0,
+      "prefix_rejections": 40,
+      "time_to_opt_target": 0.00016089994460344315,
+      "stops": [
+        {
+          "node_id": 0,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 406,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 820,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 129,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 1075,
+          "energy_charged": 112.08956050787646,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 894,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 672,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 641,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 0,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        }
+      ],
+      "fingerprint": "8f81fc2d09d1ac4e5cea476fb5a86b8a86b32ba152207a81a8a04edc1bb9e11b",
+      "validation": {
+        "successes": 4096,
+        "n": 4096,
+        "reliability": 1.0,
+        "wilson95_lower": 0.999339902946086,
+        "wilson95_two_sided": [
+          0.9990630225926348,
+          0.9999999999999999
+        ],
+        "attained": true,
+        "mean_completion": 1454.6876485968983,
+        "p95_completion": 1463.7347505274001,
+        "zero_wait_completion": 1438.345474711706,
+        "distance": 812.0895605078765,
+        "completion_quantiles": [
+          1443.427389458537,
+          1448.0123592228151,
+          1449.1105956023418,
+          1449.9142641649348,
+          1450.5697906004232,
+          1451.238944755432,
+          1451.7792019462377,
+          1452.3671098093691,
+          1452.9194422531025,
+          1453.421837605088,
+          1454.0209531247183,
+          1454.5819539236022,
+          1455.2066576972484,
+          1455.852647534241,
+          1456.5577656925243,
+          1457.3801008960354,
+          1458.4032611285327,
+          1459.615835766866,
+          1461.1649155480125,
+          1463.7347505274001,
+          1480.9015856740768
+        ],
+        "charging": [
+          {
+            "stop": 4,
+            "station": 1075,
+            "energy": 112.08956050787646,
+            "arrival": 773.0245244377976,
+            "departure": 859.2804386416271,
+            "charge_duration": 86.2559142038295
+          }
+        ],
+        "timeline": [
+          0.0,
+          361.9503631179778,
+          454.1864310954776,
+          668.669361652241,
+          859.2804386416271,
+          989.8020378203367,
+          1080.8020378203369,
+          1173.0381057978366,
+          1438.345474711706
+        ]
+      }
+    },
+    {
+      "parent": "C1_10_1",
+      "variant": "B",
+      "family": "C1",
+      "profile": "wall40ms",
+      "route_id": 74,
+      "panel": true,
+      "method": "STaR_no_partial",
+      "search_score": [
+        1,
+        1,
+        -1580.0914438789482,
+        1.0
+      ],
+      "budget": {
+        "wall_seconds_limit": 0.04,
+        "elapsed_seconds": 0.00594870001077652,
+        "candidates_evaluated": 44,
+        "scenarios_evaluated": 4480,
+        "cache_hits": 7,
+        "deterministic_checks": 44,
+        "generated": 55,
+        "screen_checks": 27,
+        "generation_seconds": 0.002118500182405114,
+        "deterministic_seconds": 0.00176100037060678,
+        "screening_seconds": 0.0003023997414857149,
+        "simulation_seconds": 0.0011424997355788946,
+        "exceeded": false
+      },
+      "selected_moves": [
+        "relocate",
+        "relocate",
+        "relocate"
+      ],
+      "screen_rejections": 5,
+      "prefix_rejections": 19,
+      "time_to_opt_target": 0.00016029994003474712,
+      "stops": [
+        {
+          "node_id": 0,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 1109,
+          "energy_charged": 261.6027522790997,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 406,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 820,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 129,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 894,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 672,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 641,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 0,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        }
+      ],
+      "fingerprint": "a2a5a73cf9635ef28f2eb4d85b05b530d19b247ae3340b1f72defafbba62fa7f",
+      "validation": {
+        "successes": 4096,
+        "n": 4096,
+        "reliability": 1.0,
+        "wilson95_lower": 0.999339902946086,
+        "wilson95_two_sided": [
+          0.9990630225926348,
+          0.9999999999999999
+        ],
+        "attained": true,
+        "mean_completion": 1579.706396099253,
+        "p95_completion": 1590.8564516246936,
+        "zero_wait_completion": 1559.5655656293359,
+        "distance": 844.8492413929775,
+        "completion_quantiles": [
+          1565.8287460420252,
+          1571.4794690964225,
+          1572.8329850295736,
+          1573.8234623300175,
+          1574.6313626068393,
+          1575.456058298426,
+          1576.1218955711543,
+          1576.846459676667,
+          1577.5271790344725,
+          1578.1463536733118,
+          1578.884730599022,
+          1579.5761332277777,
+          1580.3460462691712,
+          1581.1421932128744,
+          1582.0112125604235,
+          1583.024695469106,
+          1584.2856841803423,
+          1585.7801157287006,
+          1587.6892713572993,
+          1590.8564516246936,
+          1612.0136317418087
+        ],
+        "charging": [
+          {
+            "stop": 1,
+            "station": 1109,
+            "energy": 261.6027522790997,
+            "arrival": 261.6027522790997,
+            "departure": 436.3190765154583,
+            "charge_duration": 174.7163242363586
+          }
+        ],
+        "timeline": [
+          0.0,
+          436.3190765154583,
+          569.4583857357043,
+          661.6944537132041,
+          876.1773842699675,
+          1111.0221287379668,
+          1202.0221287379668,
+          1294.2581967154665,
+          1559.5655656293359
+        ]
+      }
+    },
+    {
+      "parent": "C1_10_1",
+      "variant": "B",
+      "family": "C1",
+      "profile": "wall40ms",
+      "route_id": 85,
+      "panel": true,
+      "method": "B0",
+      "search_score": [],
+      "budget": {
+        "wall_seconds_limit": 0.04,
+        "elapsed_seconds": 5.4699950851500034e-05,
+        "candidates_evaluated": 1,
+        "scenarios_evaluated": 0,
+        "cache_hits": 0,
+        "deterministic_checks": 1,
+        "generated": 0,
+        "screen_checks": 0,
+        "generation_seconds": 0.0,
+        "deterministic_seconds": 4.730001091957092e-05,
+        "screening_seconds": 0.0,
+        "simulation_seconds": 0.0,
+        "exceeded": false
+      },
+      "selected_moves": [],
+      "screen_rejections": 0,
+      "prefix_rejections": 0,
+      "time_to_opt_target": null,
+      "stops": [
+        {
+          "node_id": 0,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 602,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 759,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 318,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 961,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 710,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 826,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 1141,
+          "energy_charged": 535.0929247424742,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 0,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        }
+      ],
+      "fingerprint": "b7075655c33ab1cc20669000d883f0d926b5f3059e985fdca2d40860624bccec",
+      "validation": {
+        "successes": 1366,
+        "n": 4096,
+        "reliability": 0.33349609375,
+        "wilson95_lower": 0.3214925343964558,
+        "wilson95_two_sided": [
+          0.3192197671811033,
+          0.3480844411156853
+        ],
+        "attained": false,
+        "mean_completion": 1828.3944364814329,
+        "p95_completion": 1843.5384299561017,
+        "zero_wait_completion": 1800.8217135663567,
+        "distance": 733.4310199234051,
+        "completion_quantiles": [
+          1811.207291916177,
+          1817.048722821448,
+          1818.8708748788126,
+          1820.232077653571,
+          1821.3465868383569,
+          1822.330523148335,
+          1823.3446773009327,
+          1824.3241125556324,
+          1825.2165194788904,
+          1826.2006880445979,
+          1827.2491637084925,
+          1828.3402583800662,
+          1829.355448737132,
+          1830.406304583738,
+          1831.7083009192615,
+          1833.1057855329432,
+          1834.7225525341778,
+          1836.7984855159386,
+          1839.4706833801877,
+          1843.5384299561017,
+          1881.6628550223427
+        ],
+        "charging": [
+          {
+            "stop": 7,
+            "station": 1141,
+            "energy": 535.0929247424742,
+            "arrival": 1317.3136520976013,
+            "departure": 1602.4836183854259,
+            "charge_duration": 285.16996628782465
+          }
+        ],
+        "timeline": [
+          0.0,
+          480.0,
+          673.0,
+          842.2275204711091,
+          934.4635884486089,
+          1028.5866940742267,
+          1303.8972442326026,
+          1602.4836183854259,
+          1800.8217135663567
+        ]
+      }
+    },
+    {
+      "parent": "C1_10_1",
+      "variant": "B",
+      "family": "C1",
+      "profile": "wall40ms",
+      "route_id": 85,
+      "panel": true,
+      "method": "B1",
+      "search_score": [
+        1,
+        -1489.6766833532974
+      ],
+      "budget": {
+        "wall_seconds_limit": 0.04,
+        "elapsed_seconds": 0.00661829998716712,
+        "candidates_evaluated": 49,
+        "scenarios_evaluated": 0,
+        "cache_hits": 29,
+        "deterministic_checks": 49,
+        "generated": 80,
+        "screen_checks": 0,
+        "generation_seconds": 0.00221610045991838,
+        "deterministic_seconds": 0.001951600075699389,
+        "screening_seconds": 0.0,
+        "simulation_seconds": 0.0019499995978549123,
+        "exceeded": false
+      },
+      "selected_moves": [
+        "minimal",
+        "replace",
+        "relocate"
+      ],
+      "screen_rejections": 0,
+      "prefix_rejections": 0,
+      "time_to_opt_target": null,
+      "stops": [
+        {
+          "node_id": 0,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 1166,
+          "energy_charged": 12.86114435092145,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 602,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 759,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 318,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 961,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 710,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 826,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 0,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        }
+      ],
+      "fingerprint": "25a139417a22b542f3bc55d129399a72a1612cd1fda762f8133a046d686bf81b",
+      "validation": {
+        "successes": 4096,
+        "n": 4096,
+        "reliability": 1.0,
+        "wilson95_lower": 0.999339902946086,
+        "wilson95_two_sided": [
+          0.9990630225926348,
+          0.9999999999999999
+        ],
+        "attained": true,
+        "mean_completion": 1489.676683353297,
+        "p95_completion": 1489.6766833532974,
+        "zero_wait_completion": 1489.6766833532974,
+        "distance": 712.8611443509213,
+        "completion_quantiles": [
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974
+        ],
+        "charging": [
+          {
+            "stop": 1,
+            "station": 1166,
+            "energy": 12.86114435092145,
+            "arrival": 49.36598018878993,
+            "departure": 61.30872728779769,
+            "charge_duration": 11.942747099007754
+          }
+        ],
+        "timeline": [
+          0.0,
+          61.30872728779769,
+          480.0,
+          673.0,
+          842.2275204711091,
+          934.4635884486089,
+          1028.5866940742267,
+          1303.8972442326026,
+          1489.6766833532974
+        ]
+      }
+    },
+    {
+      "parent": "C1_10_1",
+      "variant": "B",
+      "family": "C1",
+      "profile": "wall40ms",
+      "route_id": 85,
+      "panel": true,
+      "method": "B2",
+      "search_score": [
+        1,
+        -1489.6766833532974
+      ],
+      "budget": {
+        "wall_seconds_limit": 0.04,
+        "elapsed_seconds": 0.006921599968336523,
+        "candidates_evaluated": 49,
+        "scenarios_evaluated": 0,
+        "cache_hits": 29,
+        "deterministic_checks": 49,
+        "generated": 80,
+        "screen_checks": 0,
+        "generation_seconds": 0.0023482005344703794,
+        "deterministic_seconds": 0.0019004996865987778,
+        "screening_seconds": 0.0,
+        "simulation_seconds": 0.0021494999527931213,
+        "exceeded": false
+      },
+      "selected_moves": [
+        "minimal",
+        "replace",
+        "relocate"
+      ],
+      "screen_rejections": 0,
+      "prefix_rejections": 0,
+      "time_to_opt_target": null,
+      "stops": [
+        {
+          "node_id": 0,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 1166,
+          "energy_charged": 12.86114435092145,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 602,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 759,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 318,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 961,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 710,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 826,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 0,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        }
+      ],
+      "fingerprint": "25a139417a22b542f3bc55d129399a72a1612cd1fda762f8133a046d686bf81b",
+      "validation": {
+        "successes": 4096,
+        "n": 4096,
+        "reliability": 1.0,
+        "wilson95_lower": 0.999339902946086,
+        "wilson95_two_sided": [
+          0.9990630225926348,
+          0.9999999999999999
+        ],
+        "attained": true,
+        "mean_completion": 1489.676683353297,
+        "p95_completion": 1489.6766833532974,
+        "zero_wait_completion": 1489.6766833532974,
+        "distance": 712.8611443509213,
+        "completion_quantiles": [
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974
+        ],
+        "charging": [
+          {
+            "stop": 1,
+            "station": 1166,
+            "energy": 12.86114435092145,
+            "arrival": 49.36598018878993,
+            "departure": 61.30872728779769,
+            "charge_duration": 11.942747099007754
+          }
+        ],
+        "timeline": [
+          0.0,
+          61.30872728779769,
+          480.0,
+          673.0,
+          842.2275204711091,
+          934.4635884486089,
+          1028.5866940742267,
+          1303.8972442326026,
+          1489.6766833532974
+        ]
+      }
+    },
+    {
+      "parent": "C1_10_1",
+      "variant": "B",
+      "family": "C1",
+      "profile": "wall40ms",
+      "route_id": 85,
+      "panel": true,
+      "method": "B3",
+      "search_score": [
+        1,
+        1,
+        -1489.676683353297,
+        1.0
+      ],
+      "budget": {
+        "wall_seconds_limit": 0.04,
+        "elapsed_seconds": 0.006939500104635954,
+        "candidates_evaluated": 49,
+        "scenarios_evaluated": 19968,
+        "cache_hits": 29,
+        "deterministic_checks": 49,
+        "generated": 80,
+        "screen_checks": 0,
+        "generation_seconds": 0.0022107999539002776,
+        "deterministic_seconds": 0.0018803999992087483,
+        "screening_seconds": 0.0,
+        "simulation_seconds": 0.002027200418524444,
+        "exceeded": false
+      },
+      "selected_moves": [
+        "minimal",
+        "replace",
+        "relocate"
+      ],
+      "screen_rejections": 0,
+      "prefix_rejections": 0,
+      "time_to_opt_target": 0.0005365000106394291,
+      "stops": [
+        {
+          "node_id": 0,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 1166,
+          "energy_charged": 12.86114435092145,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 602,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 759,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 318,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 961,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 710,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 826,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 0,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        }
+      ],
+      "fingerprint": "25a139417a22b542f3bc55d129399a72a1612cd1fda762f8133a046d686bf81b",
+      "validation": {
+        "successes": 4096,
+        "n": 4096,
+        "reliability": 1.0,
+        "wilson95_lower": 0.999339902946086,
+        "wilson95_two_sided": [
+          0.9990630225926348,
+          0.9999999999999999
+        ],
+        "attained": true,
+        "mean_completion": 1489.676683353297,
+        "p95_completion": 1489.6766833532974,
+        "zero_wait_completion": 1489.6766833532974,
+        "distance": 712.8611443509213,
+        "completion_quantiles": [
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974
+        ],
+        "charging": [
+          {
+            "stop": 1,
+            "station": 1166,
+            "energy": 12.86114435092145,
+            "arrival": 49.36598018878993,
+            "departure": 61.30872728779769,
+            "charge_duration": 11.942747099007754
+          }
+        ],
+        "timeline": [
+          0.0,
+          61.30872728779769,
+          480.0,
+          673.0,
+          842.2275204711091,
+          934.4635884486089,
+          1028.5866940742267,
+          1303.8972442326026,
+          1489.6766833532974
+        ]
+      }
+    },
+    {
+      "parent": "C1_10_1",
+      "variant": "B",
+      "family": "C1",
+      "profile": "wall40ms",
+      "route_id": 85,
+      "panel": true,
+      "method": "B4",
+      "search_score": [
+        1,
+        1,
+        -1561.1173536641486,
+        1.0
+      ],
+      "budget": {
+        "wall_seconds_limit": 0.04,
+        "elapsed_seconds": 0.0013049000408500433,
+        "candidates_evaluated": 10,
+        "scenarios_evaluated": 3072,
+        "cache_hits": 3,
+        "deterministic_checks": 10,
+        "generated": 12,
+        "screen_checks": 0,
+        "generation_seconds": 0.00014680007006973028,
+        "deterministic_seconds": 0.0003859996795654297,
+        "screening_seconds": 0.0,
+        "simulation_seconds": 0.00044319999869912863,
+        "exceeded": false
+      },
+      "selected_moves": [
+        "minimal"
+      ],
+      "screen_rejections": 0,
+      "prefix_rejections": 0,
+      "time_to_opt_target": 0.0005812000017613173,
+      "stops": [
+        {
+          "node_id": 0,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 602,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 759,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 318,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 961,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 710,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 826,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 1141,
+          "energy_charged": 33.4310199234051,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 0,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        }
+      ],
+      "fingerprint": "0e661293abe22e3039b43ad6de9f2ffdeb7e69ef70b1e61e27aab21cfc335af7",
+      "validation": {
+        "successes": 4096,
+        "n": 4096,
+        "reliability": 1.0,
+        "wilson95_lower": 0.999339902946086,
+        "wilson95_two_sided": [
+          0.9990630225926348,
+          0.9999999999999999
+        ],
+        "attained": true,
+        "mean_completion": 1561.041044443984,
+        "p95_completion": 1576.1850379186528,
+        "zero_wait_completion": 1533.468321528908,
+        "distance": 733.4310199234051,
+        "completion_quantiles": [
+          1543.853899878728,
+          1549.6953307839992,
+          1551.5174828413637,
+          1552.878685616122,
+          1553.993194800908,
+          1554.9771311108861,
+          1555.991285263484,
+          1556.9707205181835,
+          1557.8631274414417,
+          1558.847296007149,
+          1559.8957716710436,
+          1560.9868663426173,
+          1562.0020566996834,
+          1563.052912546289,
+          1564.354908881813,
+          1565.7523934954943,
+          1567.369160496729,
+          1569.44509347849,
+          1572.117291342739,
+          1576.1850379186528,
+          1614.3094629848938
+        ],
+        "charging": [
+          {
+            "stop": 7,
+            "station": 1141,
+            "energy": 33.4310199234051,
+            "arrival": 1317.3136520976013,
+            "departure": 1335.1302263479772,
+            "charge_duration": 17.816574250375773
+          }
+        ],
+        "timeline": [
+          0.0,
+          480.0,
+          673.0,
+          842.2275204711091,
+          934.4635884486089,
+          1028.5866940742267,
+          1303.8972442326026,
+          1335.1302263479772,
+          1533.468321528908
+        ]
+      }
+    },
+    {
+      "parent": "C1_10_1",
+      "variant": "B",
+      "family": "C1",
+      "profile": "wall40ms",
+      "route_id": 85,
+      "panel": true,
+      "method": "STaR",
+      "search_score": [
+        1,
+        1,
+        -1489.676683353297,
+        1.0
+      ],
+      "budget": {
+        "wall_seconds_limit": 0.04,
+        "elapsed_seconds": 0.010379699990153313,
+        "candidates_evaluated": 65,
+        "scenarios_evaluated": 17664,
+        "cache_hits": 38,
+        "deterministic_checks": 65,
+        "generated": 105,
+        "screen_checks": 49,
+        "generation_seconds": 0.002694399910978973,
+        "deterministic_seconds": 0.0025493003195151687,
+        "screening_seconds": 0.0005402996903285384,
+        "simulation_seconds": 0.003358700545504689,
+        "exceeded": false
+      },
+      "selected_moves": [
+        "minimal",
+        "replace",
+        "relocate"
+      ],
+      "screen_rejections": 0,
+      "prefix_rejections": 22,
+      "time_to_opt_target": 0.0005953999934718013,
+      "stops": [
+        {
+          "node_id": 0,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 1166,
+          "energy_charged": 12.86114435092145,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 602,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 759,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 318,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 961,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 710,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 826,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 0,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        }
+      ],
+      "fingerprint": "25a139417a22b542f3bc55d129399a72a1612cd1fda762f8133a046d686bf81b",
+      "validation": {
+        "successes": 4096,
+        "n": 4096,
+        "reliability": 1.0,
+        "wilson95_lower": 0.999339902946086,
+        "wilson95_two_sided": [
+          0.9990630225926348,
+          0.9999999999999999
+        ],
+        "attained": true,
+        "mean_completion": 1489.676683353297,
+        "p95_completion": 1489.6766833532974,
+        "zero_wait_completion": 1489.6766833532974,
+        "distance": 712.8611443509213,
+        "completion_quantiles": [
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974
+        ],
+        "charging": [
+          {
+            "stop": 1,
+            "station": 1166,
+            "energy": 12.86114435092145,
+            "arrival": 49.36598018878993,
+            "departure": 61.30872728779769,
+            "charge_duration": 11.942747099007754
+          }
+        ],
+        "timeline": [
+          0.0,
+          61.30872728779769,
+          480.0,
+          673.0,
+          842.2275204711091,
+          934.4635884486089,
+          1028.5866940742267,
+          1303.8972442326026,
+          1489.6766833532974
+        ]
+      }
+    },
+    {
+      "parent": "C1_10_1",
+      "variant": "B",
+      "family": "C1",
+      "profile": "wall40ms",
+      "route_id": 85,
+      "panel": true,
+      "method": "STaR_no_partial",
+      "search_score": [
+        1,
+        1,
+        -1489.676683353297,
+        1.0
+      ],
+      "budget": {
+        "wall_seconds_limit": 0.04,
+        "elapsed_seconds": 0.00876840006094426,
+        "candidates_evaluated": 50,
+        "scenarios_evaluated": 9216,
+        "cache_hits": 4,
+        "deterministic_checks": 50,
+        "generated": 62,
+        "screen_checks": 35,
+        "generation_seconds": 0.003447500290349126,
+        "deterministic_seconds": 0.0019947001710534096,
+        "screening_seconds": 0.0004357999423518777,
+        "simulation_seconds": 0.0020286000799387693,
+        "exceeded": false
+      },
+      "selected_moves": [
+        "relocate",
+        "replace",
+        "replace",
+        "relocate",
+        "relocate",
+        "replace",
+        "replace",
+        "relocate"
+      ],
+      "screen_rejections": 2,
+      "prefix_rejections": 24,
+      "time_to_opt_target": 0.0010361999738961458,
+      "stops": [
+        {
+          "node_id": 0,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 1013,
+          "energy_charged": 237.255136930689,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 602,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 759,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 318,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 961,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 710,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 826,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 0,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        }
+      ],
+      "fingerprint": "61d013f7c2cf1d5811dbb8b0cecbe234657c00acb4dd7e0c0dbf9ebc6e39d05e",
+      "validation": {
+        "successes": 4096,
+        "n": 4096,
+        "reliability": 1.0,
+        "wilson95_lower": 0.999339902946086,
+        "wilson95_two_sided": [
+          0.9990630225926348,
+          0.9999999999999999
+        ],
+        "attained": true,
+        "mean_completion": 1489.687389623287,
+        "p95_completion": 1489.6766833532974,
+        "zero_wait_completion": 1489.6766833532974,
+        "distance": 713.1901450422143,
+        "completion_quantiles": [
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1489.6766833532974,
+          1499.5893679281162
+        ],
+        "charging": [
+          {
+            "stop": 1,
+            "station": 1013,
+            "energy": 237.255136930689,
+            "arrival": 237.25513693068902,
+            "departure": 444.1035562250996,
+            "charge_duration": 206.84841929441063
+          }
+        ],
+        "timeline": [
+          0.0,
+          444.1035562250996,
+          547.705026733835,
+          673.0,
+          842.2275204711091,
+          934.4635884486089,
+          1028.5866940742267,
+          1303.8972442326026,
+          1489.6766833532974
+        ]
+      }
+    }
+  ]
+}

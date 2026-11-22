@@ -24,6 +24,13 @@ class BudgetTracker:
     candidates_evaluated: int = 0
     scenarios_evaluated: int = 0
     cache_hits: int = 0
+    deterministic_checks: int = 0
+    generated: int = 0
+    screen_checks: int = 0
+    generation_seconds: float = 0.0
+    deterministic_seconds: float = 0.0
+    screening_seconds: float = 0.0
+    simulation_seconds: float = 0.0
 
     def elapsed(self) -> float:
         return time.perf_counter() - self.t0
@@ -59,5 +66,12 @@ class BudgetTracker:
             "candidates_evaluated": self.candidates_evaluated,
             "scenarios_evaluated": self.scenarios_evaluated,
             "cache_hits": self.cache_hits,
+            "deterministic_checks": self.deterministic_checks,
+            "generated": self.generated,
+            "screen_checks": self.screen_checks,
+            "generation_seconds": self.generation_seconds,
+            "deterministic_seconds": self.deterministic_seconds,
+            "screening_seconds": self.screening_seconds,
+            "simulation_seconds": self.simulation_seconds,
             "exceeded": self.any_exceeded(),
         }

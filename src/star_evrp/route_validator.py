@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+from star_evrp.charge_plan import customer_local_sequence, route_structure_error
 from star_evrp.deterministic_simulator import SimulatorConfig, simulate_route
 from star_evrp.types import (
     FeasibilityReport,
@@ -22,8 +23,14 @@ def _validate_customer_coverage(
     expected = set(range(instance.num_customers))
 
     for route in routes:
-        if route.customer_indices is not None:
-            for loc in route.customer_indices:
+        if route.stops is not None:
+            indices = [
+                instance.customer_local_index(stop.node_id) for stop in route.stops
+                if stop.node_id in instance.customer_local_indices
+            ]
+        else:
+            indices = route.customer_indices or []
+        for loc in indices:
                 if loc in seen:
                     report.add_issue(
                         "Duplicate customer local index",
@@ -39,19 +46,6 @@ def _validate_customer_coverage(
                         customer_local=loc,
                     )
                 seen.add(loc)
-        elif route.stops:
-            for stop in route.stops:
-                node = instance.node(stop.node_id)
-                if node.node_type == NodeType.CUSTOMER:
-                    loc = instance.customer_local_index(stop.node_id)
-                    if loc in seen:
-                        report.add_issue(
-                            "Duplicate customer in explicit stops",
-                            scope="customer_coverage",
-                            route_id=route.route_id,
-                            node_id=stop.node_id,
-                        )
-                    seen.add(loc)
 
     missing = expected - seen
     extra = seen - expected
@@ -66,23 +60,10 @@ def _validate_customer_coverage(
 
 
 def validate_route_structure(route: Route, instance: Instance, report: FeasibilityReport) -> None:
-    if route.uses_explicit_stops():
-        stops = route.stops or []
-        if not stops:
-            report.add_issue("Explicit route has no stops", route_id=route.route_id, scope="route")
-            return
-        if stops[0].node_id != 0:
-            report.add_issue("Route must start at depot", route_id=route.route_id, scope="route")
-        if stops[-1].node_id != 0:
-            report.add_issue("Route must end at depot", route_id=route.route_id, scope="route")
-        for stop in stops:
-            if stop.node_id not in instance.node_id_to_index:
-                report.add_issue(
-                    "Unknown node in route",
-                    route_id=route.route_id,
-                    node_id=stop.node_id,
-                    scope="route",
-                )
+    if route.stops is not None:
+        error = route_structure_error(instance, route)
+        if error:
+            report.add_issue(error, route_id=route.route_id, scope="route")
 
 
 def validate_solution(
@@ -93,7 +74,7 @@ def validate_solution(
 ) -> FeasibilityReport:
     """Validate fleet, coverage, and per-route physics via independent simulation."""
     report = FeasibilityReport(feasible=True)
-    routes = [r for r in solution.routes if r.customer_indices or r.stops]
+    routes = solution.routes
 
     if len(routes) > instance.fleet_size:
         report.add_issue(
@@ -114,6 +95,10 @@ def validate_solution(
 
     total_distance = 0.0
     for route in routes:
+        if route.stops is None and any(
+            not 0 <= index < instance.num_customers for index in route.customer_indices or []
+        ):
+            continue
         trace = simulate_route(instance, route, config)
         report.traces.append(trace)
         if not trace.feasible:
@@ -151,3 +136,15 @@ def validate_solution(
             )
 
     return report
+
+
+def validate_repair(instance: Instance, original: Route, selected: Route, config: SimulatorConfig):
+    """Check actual visits and replay the selected plan with the reference simulator."""
+    if original.route_id != selected.route_id or route_structure_error(instance, selected):
+        raise ValueError("Invalid repaired route structure or route ID")
+    if customer_local_sequence(instance, original) != customer_local_sequence(instance, selected):
+        raise ValueError("Repair changed customer sequence")
+    trace = simulate_route(instance, selected, config)
+    if not trace.feasible:
+        raise ValueError(f"Invalid repaired route: {trace.failure_reason}")
+    return trace

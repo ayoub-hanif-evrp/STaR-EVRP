@@ -22,12 +22,9 @@ class SearchCandidate:
     def score_key(self, target: float) -> tuple:
         """Higher is better (for max selection)."""
         valid = 1 if self.det_feasible else 0
-        if valid:
-            tgt = 1 if (self.meets_target or self.reliability >= target) else 0
-            # minimize completion -> negate
-            return (valid, tgt, -self.e_completion)
-        # infeasible det: maximize reliability, then minimize completion
-        return (valid, self.reliability, -self.e_completion)
+        if valid and self.reliability >= target:
+            return (valid, 1, -self.e_completion, self.reliability)
+        return (valid, 0, self.reliability, -self.e_completion)
 
 
 def det_feasible(instance: Instance, route: Route, config: SimulatorConfig) -> bool:

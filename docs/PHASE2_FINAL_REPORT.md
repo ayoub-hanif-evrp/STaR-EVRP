@@ -38,7 +38,7 @@ See also `docs/PHASE2_CORRECTIONS.md` and `docs/PHASE2_SAFE_BOUND_PROOF.md`.
 | **P0-E** | Fixed | Probe summaries count **distinct routes**; Phase 2 CRN shares **Z**, not W. |
 | **P0-F** | Fixed | Failure modes use CI-based labels; LaTeX table cells escape `_ % & #`. |
 
-**D1 crosswalk:** `results/phase2/raw/d1_crosswalk.csv`. On the 127-route panel (N=2000), recomputed reliability/completion matched Phase 1 stored aggregates (max |Δrel|=0). Correctness fixes remain mandatory and unit-tested even when panel aggregates did not shift.
+**D1 crosswalk (Phase 2.5 erratum):** `results/phase2/raw/d1_crosswalk.csv`. On the 127-route panel (N=2000), reliability matched Phase 1 (max |Δrel|=0), but full completion increased on 46 routes, by up to 4,534.27 benchmark time units. Historical Phase 1 completion can reflect early termination and must not be used as full-route completion.
 
 ---
 
