@@ -1,0 +1,29 @@
+# Default experiment configuration (full benchmark scope).
+experiment: full_benchmark
+battery_capacity: 700
+energy_consumption_rate: 1.0
+target_route_reliability: 0.95
+dataset:
+  root: dataset
+  families: [C1, C2, R1, R2, RC1, RC2]
+  variants: [A, B]
+  development_parents_per_family: 2
+  holdout_parents_per_family: 8
+simulation:
+  scenarios_per_route: 5000
+  independent_station_visit_waits: true
+  scenario_seed: 20261122
+baseline:
+  method: HC
+  seed: 20261122
+repair_probe:
+  max_routes: 100
+  nearby_stations: 8
+  diagnostic_scenarios: 1000
+  selection_seed: 20261122
+reporting:
+  save_raw_results: true
+  save_route_traces: true
+  generate_png_figures: true
+  generate_csv_tables: true
+  generate_latex_tables: true

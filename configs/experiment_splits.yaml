@@ -1,0 +1,26 @@
+# Frozen development / holdout partition rules (60 Homberger parents × 2 variants).
+#
+# Parents are selected per family by lexicographic sort on the normalized instance stem
+# (e.g. C1_10_1). The first `development_parents_per_family` entries form development;
+# remaining parents form holdout. Variants A and B of the same parent share the partition.
+
+partition_rules:
+  selection: lexicographic_first_n_per_family
+  development_parents_per_family: 2
+  holdout_parents_per_family: 8
+  families: [C1, C2, R1, R2, RC1, RC2]
+  variants:
+    A: variant_A_original_TW
+    B: variant_B_relaxed_TW
+
+# Canonical development parents (first two per family under lexicographic sort).
+development_parents:
+  C1: [C1_10_1, C1_10_10]
+  C2: [C2_10_1, C2_10_10]
+  R1: [R1_10_1, R1_10_10]
+  R2: [R2_10_1, R2_10_10]
+  RC1: [RC1_10_1, RC1_10_10]
+  RC2: [RC2_10_1, RC2_10_10]
+
+holdout_label: holdout
+development_label: development
