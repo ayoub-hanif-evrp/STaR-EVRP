@@ -1,0 +1,6728 @@
+{
+  "instance_key": "RC2_10_10",
+  "variant": "B",
+  "method": "CON",
+  "battery_capacity": 700.0,
+  "energy_consumption_rate": 1.0,
+  "routes": [
+    {
+      "route_id": 0,
+      "customer_indices": [
+        175,
+        792,
+        229,
+        778,
+        870,
+        990,
+        251,
+        100,
+        476,
+        658,
+        58,
+        148,
+        928,
+        271,
+        858,
+        343,
+        685,
+        452,
+        260,
+        659,
+        385,
+        606,
+        604,
+        694,
+        759,
+        205,
+        233,
+        406,
+        243,
+        609,
+        64,
+        373,
+        837,
+        125,
+        348,
+        463,
+        646,
+        867,
+        966,
+        975,
+        921,
+        450,
+        436,
+        546,
+        483,
+        160,
+        5,
+        537,
+        954,
+        4,
+        762,
+        958,
+        960,
+        499,
+        807,
+        753,
+        991,
+        825,
+        474
+      ],
+      "stops": [
+        {
+          "node_id": 0,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 176,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 793,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 230,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 779,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 871,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 991,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 252,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 101,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 477,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 659,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 59,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 149,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 929,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 272,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 859,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 344,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 686,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 453,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 261,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 660,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 386,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 607,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 605,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 695,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 760,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 206,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 234,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 407,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 244,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 610,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 65,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 374,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 838,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 126,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 349,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 464,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 647,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 868,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 967,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 976,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 922,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 451,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 437,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 547,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 484,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 161,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 6,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 538,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 955,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 5,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 763,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 959,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 961,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 500,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 808,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 754,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 1240,
+          "energy_charged": 561.3829111081627,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 992,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 826,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 475,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 0,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        }
+      ]
+    },
+    {
+      "route_id": 1,
+      "customer_indices": [
+        726,
+        274,
+        541,
+        770,
+        982,
+        791,
+        392,
+        92,
+        227,
+        10,
+        86,
+        401,
+        388,
+        988,
+        113,
+        643,
+        555,
+        480,
+        908,
+        893,
+        531,
+        959,
+        209,
+        415,
+        471,
+        65,
+        351,
+        215,
+        690,
+        566,
+        602,
+        80,
+        328,
+        543,
+        340,
+        754,
+        536,
+        930,
+        200,
+        972,
+        62,
+        885,
+        861,
+        439,
+        1,
+        447,
+        875,
+        280,
+        852,
+        147,
+        616,
+        264
+      ],
+      "stops": [
+        {
+          "node_id": 0,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 727,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 275,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 542,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 771,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 983,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 792,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 393,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 93,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 228,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 11,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 87,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 402,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 389,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 989,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 114,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 644,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 556,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 481,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 909,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 894,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 532,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 960,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 210,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 416,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 472,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 66,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 352,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 216,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 691,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 567,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 603,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 81,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 329,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 544,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 341,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 755,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 537,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 931,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 201,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 973,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 63,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 1287,
+          "energy_charged": 591.0277107671552,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 886,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 862,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 440,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 2,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 448,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 876,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 281,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 853,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 148,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 617,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 265,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 0,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        }
+      ]
+    },
+    {
+      "route_id": 2,
+      "customer_indices": [
+        292,
+        705,
+        247,
+        863,
+        500,
+        123,
+        313,
+        345,
+        943,
+        475,
+        752,
+        583,
+        507,
+        816,
+        817,
+        13,
+        303,
+        76,
+        612,
+        634,
+        133,
+        366,
+        844,
+        448,
+        39,
+        617,
+        922,
+        202,
+        929,
+        423,
+        413,
+        44,
+        822,
+        804,
+        736,
+        802,
+        697,
+        6,
+        198,
+        188,
+        466,
+        625,
+        257,
+        506,
+        457,
+        346,
+        733,
+        172,
+        833,
+        236,
+        201,
+        397,
+        596,
+        493,
+        710,
+        668,
+        399,
+        619,
+        748,
+        653,
+        181
+      ],
+      "stops": [
+        {
+          "node_id": 0,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 293,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 706,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 248,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 864,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 501,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 124,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 314,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 346,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 944,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 476,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 753,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 584,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 508,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 817,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 818,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 14,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 304,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 77,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 613,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 635,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 134,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 367,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 845,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 449,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 40,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 618,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 923,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 203,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 930,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 424,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 414,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 45,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 823,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 805,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 737,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 803,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 698,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 1076,
+          "energy_charged": 625.5432909421044,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 7,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 199,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 189,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 467,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 626,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 258,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 507,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 458,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 347,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 734,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 173,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 1018,
+          "energy_charged": 631.5087599547187,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 834,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 237,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 202,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 398,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 597,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 494,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 711,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 669,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 400,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 620,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 749,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 1055,
+          "energy_charged": 555.6931957875192,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 654,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 182,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 1100,
+          "energy_charged": 585.8035703000447,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 0,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        }
+      ]
+    },
+    {
+      "route_id": 3,
+      "customer_indices": [
+        849,
+        270,
+        580,
+        369,
+        224,
+        239,
+        353,
+        973,
+        931,
+        326,
+        106,
+        81,
+        435,
+        905,
+        548,
+        877,
+        361,
+        486,
+        310,
+        854,
+        16,
+        678,
+        237,
+        656,
+        533,
+        36,
+        329,
+        382,
+        143,
+        983,
+        307,
+        250,
+        63,
+        944,
+        741,
+        407,
+        17,
+        285,
+        318,
+        29,
+        695,
+        512,
+        151,
+        568,
+        306,
+        159,
+        510,
+        901,
+        420,
+        381,
+        96,
+        99,
+        534,
+        727
+      ],
+      "stops": [
+        {
+          "node_id": 0,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 850,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 271,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 581,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 370,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 225,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 240,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 354,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 974,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 932,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 327,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 107,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 82,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 436,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 906,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 549,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 878,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 362,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 487,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 311,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 855,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 17,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 679,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 238,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 657,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 534,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 37,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 330,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 1319,
+          "energy_charged": 597.3714456921128,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 383,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 144,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 984,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 308,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 251,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 64,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 945,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 742,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 408,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 18,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 286,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 319,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 30,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 696,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 513,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 152,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 569,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 307,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 160,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 511,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 902,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 421,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 382,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 97,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 100,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 535,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 728,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 1215,
+          "energy_charged": 639.7080309273217,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 0,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        }
+      ]
+    },
+    {
+      "route_id": 4,
+      "customer_indices": [
+        577,
+        786,
+        532,
+        325,
+        263,
+        234,
+        865,
+        932,
+        635,
+        869,
+        324,
+        883,
+        611,
+        766,
+        761,
+        50,
+        708,
+        20,
+        284,
+        73,
+        349,
+        315,
+        272,
+        926,
+        587,
+        882,
+        513,
+        37,
+        299,
+        724,
+        628,
+        297,
+        730,
+        682,
+        259,
+        122,
+        559,
+        572,
+        970,
+        677,
+        953,
+        390,
+        795,
+        539,
+        489,
+        673,
+        238,
+        518,
+        84,
+        950,
+        90,
+        676,
+        737,
+        180,
+        862,
+        757,
+        458,
+        497,
+        523,
+        144
+      ],
+      "stops": [
+        {
+          "node_id": 0,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 578,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 787,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 533,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 326,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 264,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 235,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 866,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 933,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 636,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 870,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 325,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 884,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 612,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 767,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 762,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 51,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 709,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 21,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 285,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 74,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 350,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 316,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 273,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 927,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 588,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 883,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 514,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 38,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 300,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 725,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 629,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 298,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 731,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 683,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 260,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 123,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 560,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 573,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 971,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 1269,
+          "energy_charged": 690.7829633826973,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 678,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 954,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 391,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 796,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 540,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 490,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 674,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 239,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 519,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 85,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 951,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 91,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 1273,
+          "energy_charged": 661.7890487538915,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 677,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 738,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 181,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 863,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 758,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 459,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 498,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 524,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 1152,
+          "energy_charged": 330.15697930202776,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 145,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 1075,
+          "energy_charged": 513.2125491367992,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 0,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        }
+      ]
+    },
+    {
+      "route_id": 5,
+      "customer_indices": [
+        362,
+        142,
+        161,
+        134,
+        359,
+        516,
+        51,
+        425,
+        404,
+        601,
+        805,
+        67,
+        767,
+        232,
+        521,
+        214,
+        873,
+        957,
+        470,
+        890,
+        400,
+        691,
+        514,
+        427,
+        712,
+        689,
+        88,
+        322,
+        302,
+        374,
+        154,
+        706,
+        515,
+        482,
+        491,
+        692,
+        300,
+        763,
+        25,
+        187,
+        776,
+        547,
+        97,
+        23,
+        793,
+        490,
+        853,
+        654,
+        933,
+        888,
+        591,
+        378,
+        389,
+        889,
+        494,
+        774,
+        298,
+        976
+      ],
+      "stops": [
+        {
+          "node_id": 0,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 363,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 143,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 162,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 135,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 360,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 517,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 52,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 426,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 405,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 602,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 806,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 68,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 768,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 233,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 522,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 215,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 874,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 958,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 471,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 891,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 401,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 692,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 515,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 428,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 713,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 690,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 89,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 323,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 303,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 375,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 155,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 707,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 516,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 483,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 492,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 693,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 301,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 764,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 26,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 188,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 777,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 548,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 1142,
+          "energy_charged": 606.6621479221883,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 98,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 24,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 794,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 491,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 854,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 655,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 934,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 889,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 592,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 1331,
+          "energy_charged": 675.4621197272942,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 379,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 390,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 890,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 495,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 775,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 299,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 977,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 0,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        }
+      ]
+    },
+    {
+      "route_id": 6,
+      "customer_indices": [
+        903,
+        304,
+        387,
+        26,
+        354,
+        394,
+        115,
+        899,
+        626,
+        886,
+        683,
+        785,
+        46,
+        614,
+        936,
+        468,
+        644,
+        74,
+        810,
+        49,
+        918,
+        987,
+        856,
+        829,
+        821,
+        600,
+        380,
+        138,
+        495,
+        18,
+        992,
+        574,
+        242,
+        496,
+        771,
+        504,
+        424,
+        788,
+        165,
+        632,
+        564,
+        666,
+        780,
+        469,
+        128,
+        235,
+        204,
+        32,
+        955,
+        501,
+        768,
+        68
+      ],
+      "stops": [
+        {
+          "node_id": 0,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 904,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 305,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 388,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 27,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 355,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 395,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 116,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 900,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 627,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 887,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 684,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 786,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 47,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 615,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 937,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 469,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 645,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 75,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 811,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 1107,
+          "energy_charged": 613.4975483927421,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 50,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 919,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 988,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 857,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 830,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 822,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 601,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 381,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 139,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 496,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 19,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 993,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 575,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 243,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 497,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 772,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 505,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 1310,
+          "energy_charged": 630.1405519912191,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 425,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 789,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 166,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 633,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 565,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 667,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 781,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 470,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 129,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 236,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 205,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 33,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 956,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 1273,
+          "energy_charged": 610.9182963644614,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 502,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 769,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 69,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 0,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        }
+      ]
+    },
+    {
+      "route_id": 7,
+      "customer_indices": [
+        740,
+        87,
+        517,
+        684,
+        544,
+        314,
+        145,
+        104,
+        226,
+        132,
+        723,
+        178,
+        797,
+        701,
+        891,
+        773,
+        827,
+        820,
+        430,
+        210,
+        54,
+        511,
+        472,
+        70,
+        629,
+        252,
+        14,
+        670,
+        261,
+        985,
+        581,
+        55,
+        216,
+        48,
+        438,
+        408,
+        352,
+        679,
+        718,
+        163,
+        403,
+        83,
+        479,
+        711,
+        806,
+        323,
+        760,
+        665,
+        561,
+        978,
+        291,
+        550,
+        254,
+        769,
+        640,
+        153,
+        89,
+        798,
+        66
+      ],
+      "stops": [
+        {
+          "node_id": 0,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 741,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 88,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 518,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 685,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 545,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 315,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 146,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 105,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 227,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 133,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 724,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 179,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 798,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 702,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 892,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 774,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 828,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 821,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 431,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 211,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 55,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 512,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 473,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 71,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 630,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 253,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 15,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 671,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 262,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 986,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 582,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 56,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 1209,
+          "energy_charged": 592.9758154188808,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 217,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 49,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 439,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 409,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 353,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 680,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 719,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 164,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 404,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 84,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 480,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 712,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 807,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 324,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 761,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 666,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 1314,
+          "energy_charged": 650.2600940487708,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 562,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 979,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 292,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 551,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 255,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 770,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 641,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 154,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 1084,
+          "energy_charged": 661.9370400622255,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 90,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 799,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 67,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 0,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        }
+      ]
+    },
+    {
+      "route_id": 8,
+      "customer_indices": [
+        719,
+        527,
+        567,
+        168,
+        440,
+        796,
+        848,
+        714,
+        809,
+        851,
+        698,
+        980,
+        117,
+        563,
+        675,
+        473,
+        95,
+        813,
+        520,
+        735,
+        669,
+        902,
+        179,
+        170,
+        266,
+        320,
+        522,
+        578,
+        840,
+        823,
+        19,
+        454,
+        22,
+        860,
+        444,
+        637,
+        900,
+        818,
+        720,
+        141,
+        286,
+        552,
+        428,
+        749,
+        542,
+        124,
+        631,
+        211,
+        371,
+        449,
+        662,
+        525,
+        410,
+        414,
+        33,
+        729,
+        651,
+        208
+      ],
+      "stops": [
+        {
+          "node_id": 0,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 720,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 528,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 568,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 169,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 441,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 797,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 849,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 715,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 810,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 852,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 699,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 981,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 118,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 564,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 676,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 474,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 96,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 814,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 521,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 736,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 670,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 903,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 180,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 171,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 267,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 321,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 523,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 579,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 841,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 824,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 20,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 455,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 23,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 861,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 445,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 638,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 901,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 1156,
+          "energy_charged": 681.2309223329495,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 819,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 721,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 142,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 287,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 553,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 429,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 750,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 543,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 125,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 632,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 212,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 372,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 450,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 663,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 526,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 411,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 415,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 1219,
+          "energy_charged": 627.7901800260366,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 34,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 730,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 652,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 209,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 0,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        }
+      ]
+    },
+    {
+      "route_id": 9,
+      "customer_indices": [
+        777,
+        671,
+        874,
+        887,
+        590,
+        244,
+        783,
+        149,
+        775,
+        715,
+        949,
+        360,
+        598,
+        755,
+        169,
+        350,
+        492,
+        248,
+        593,
+        895,
+        674,
+        812,
+        551,
+        116,
+        445,
+        575,
+        319,
+        15,
+        130,
+        330,
+        984,
+        570,
+        111,
+        398,
+        560,
+        952,
+        246,
+        411,
+        190,
+        35,
+        429,
+        630,
+        221,
+        206,
+        446,
+        603,
+        158,
+        556,
+        191,
+        290,
+        213,
+        383,
+        268,
+        283,
+        405
+      ],
+      "stops": [
+        {
+          "node_id": 0,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 778,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 672,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 875,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 888,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 591,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 245,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 784,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 150,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 776,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 716,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 950,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 361,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 599,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 756,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 170,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 351,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 493,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 249,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 594,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 896,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 675,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 813,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 552,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 117,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 446,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 576,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 320,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 16,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 131,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 1097,
+          "energy_charged": 669.4350162243686,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 331,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 985,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 571,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 112,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 399,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 561,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 953,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 247,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 412,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 191,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 36,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 1020,
+          "energy_charged": 674.9619579411054,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 430,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 631,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 222,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 207,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 447,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 604,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 159,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 557,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 192,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 291,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 214,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 384,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 269,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 284,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 1008,
+          "energy_charged": 691.6932227287717,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 406,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 0,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        }
+      ]
+    },
+    {
+      "route_id": 10,
+      "customer_indices": [
+        333,
+        790,
+        59,
+        868,
+        586,
+        641,
+        146,
+        834,
+        667,
+        836,
+        866,
+        538,
+        219,
+        995,
+        418,
+        838,
+        465,
+        919,
+        9,
+        745,
+        228,
+        196,
+        832,
+        751,
+        327,
+        584,
+        739,
+        846,
+        24,
+        627,
+        916,
+        464,
+        60,
+        814,
+        824,
+        75,
+        859,
+        502,
+        655,
+        279,
+        137,
+        441,
+        356,
+        358,
+        339,
+        618,
+        347,
+        118,
+        582,
+        192,
+        878,
+        881,
+        162,
+        422,
+        186,
+        894
+      ],
+      "stops": [
+        {
+          "node_id": 0,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 334,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 791,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 60,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 869,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 587,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 642,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 147,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 835,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 668,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 837,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 867,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 539,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 220,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 996,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 419,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 839,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 466,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 920,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 10,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 746,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 229,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 197,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 833,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 1150,
+          "energy_charged": 678.5421252811818,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 752,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 328,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 585,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 740,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 847,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 25,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 628,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 917,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 465,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 61,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 815,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 825,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 76,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 860,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 503,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 656,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 280,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 138,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 442,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 357,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 1092,
+          "energy_charged": 620.0428055345201,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 359,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 340,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 619,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 348,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 119,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 583,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 193,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 879,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 882,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 163,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 1132,
+          "energy_charged": 543.6579477835497,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 423,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 187,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 895,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 0,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        }
+      ]
+    },
+    {
+      "route_id": 11,
+      "customer_indices": [
+        296,
+        709,
+        255,
+        914,
+        638,
+        680,
+        288,
+        103,
+        485,
+        917,
+        927,
+        576,
+        94,
+        896,
+        57,
+        193,
+        597,
+        7,
+        38,
+        28,
+        69,
+        648,
+        842,
+        717,
+        519,
+        183,
+        0,
+        909,
+        935,
+        71,
+        967,
+        223,
+        721,
+        649,
+        426,
+        744,
+        589,
+        713,
+        395,
+        871,
+        910,
+        743,
+        367,
+        295,
+        177,
+        526,
+        789,
+        530,
+        579,
+        756,
+        734,
+        316
+      ],
+      "stops": [
+        {
+          "node_id": 0,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 297,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 710,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 256,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 915,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 639,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 681,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 289,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 104,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 1151,
+          "energy_charged": 481.595551493079,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 486,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 918,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 928,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 577,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 95,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 897,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 58,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 194,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 598,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 1198,
+          "energy_charged": 590.6990005597215,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 8,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 39,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 29,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 70,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 649,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 843,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 718,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 520,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 184,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 1,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 910,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 936,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 72,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 1231,
+          "energy_charged": 603.2444772012947,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 968,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 224,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 722,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 650,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 427,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 745,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 590,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 1069,
+          "energy_charged": 650.7965370903963,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 714,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 396,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 872,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 911,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 744,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 368,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 296,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 178,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 527,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 790,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 531,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 580,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 757,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 735,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 317,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 0,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        }
+      ]
+    },
+    {
+      "route_id": 12,
+      "customer_indices": [
+        341,
+        311,
+        799,
+        136,
+        595,
+        884,
+        732,
+        43,
+        652,
+        478,
+        946,
+        30,
+        189,
+        372,
+        826,
+        529,
+        742,
+        897,
+        915,
+        562,
+        620,
+        309,
+        456,
+        79,
+        693,
+        613,
+        509,
+        253,
+        355,
+        487,
+        417,
+        913,
+        571,
+        815,
+        265,
+        342,
+        421,
+        203,
+        716,
+        686,
+        994,
+        831,
+        27,
+        699,
+        722,
+        41,
+        758,
+        42,
+        508,
+        784,
+        256,
+        540,
+        337,
+        321
+      ],
+      "stops": [
+        {
+          "node_id": 0,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 342,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 312,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 800,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 137,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 596,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 885,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 733,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 44,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 653,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 479,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 947,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 31,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 190,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 373,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 827,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 530,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 743,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 898,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 916,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 563,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 621,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 310,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 457,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 1034,
+          "energy_charged": 538.4579751026669,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 80,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 694,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 614,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 510,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 254,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 356,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 488,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 418,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 914,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 572,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 816,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 266,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 343,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 422,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 204,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 717,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 687,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 1045,
+          "energy_charged": 539.7570260103677,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 995,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 832,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 28,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 700,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 723,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 42,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 1059,
+          "energy_charged": 605.0639626621435,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 759,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 43,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 509,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 785,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 257,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 1193,
+          "energy_charged": 527.0202830069272,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 541,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 338,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 322,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 0,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        }
+      ]
+    },
+    {
+      "route_id": 13,
+      "customer_indices": [
+        999,
+        731,
+        750,
+        174,
+        940,
+        907,
+        21,
+        843,
+        376,
+        363,
+        451,
+        989,
+        56,
+        845,
+        951,
+        197,
+        281,
+        222,
+        273,
+        645,
+        728,
+        277,
+        855,
+        615,
+        40,
+        164,
+        808,
+        681,
+        335,
+        230,
+        872,
+        455,
+        241,
+        336,
+        182,
+        166,
+        700,
+        828,
+        364,
+        287,
+        262,
+        964,
+        107,
+        121,
+        997,
+        503,
+        194,
+        707,
+        968,
+        109,
+        171,
+        332,
+        412,
+        939,
+        434,
+        93,
+        996,
+        554
+      ],
+      "stops": [
+        {
+          "node_id": 0,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 1000,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 732,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 751,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 175,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 941,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 908,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 22,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 844,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 377,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 364,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 452,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 990,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 57,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 846,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 952,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 198,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 282,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 223,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 274,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 646,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 729,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 278,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 856,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 616,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 41,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 165,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 809,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 682,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 336,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 231,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 873,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 456,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 242,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 337,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 183,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 167,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 701,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 829,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 365,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 288,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 263,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 965,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 108,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 122,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 998,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 504,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 195,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 708,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 969,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 110,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 1087,
+          "energy_charged": 698.9373698855015,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 172,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 333,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 413,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 940,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 435,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 94,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 997,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 1185,
+          "energy_charged": 624.3652226929589,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 555,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 0,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        }
+      ]
+    },
+    {
+      "route_id": 14,
+      "customer_indices": [
+        461,
+        747,
+        524,
+        787,
+        305,
+        639,
+        942,
+        850,
+        880,
+        879,
+        633,
+        979,
+        334,
+        585,
+        365,
+        924,
+        986,
+        608,
+        156,
+        11,
+        781,
+        704,
+        101,
+        663,
+        267,
+        738,
+        702,
+        688,
+        308,
+        811,
+        857,
+        588,
+        553,
+        782,
+        549,
+        357,
+        31,
+        923,
+        460,
+        375,
+        317,
+        488,
+        623,
+        61,
+        605,
+        703,
+        746,
+        396,
+        278,
+        110,
+        119,
+        898,
+        912,
+        945,
+        331,
+        431,
+        157,
+        607
+      ],
+      "stops": [
+        {
+          "node_id": 0,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 462,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 748,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 525,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 788,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 306,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 640,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 943,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 851,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 881,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 1225,
+          "energy_charged": 407.54700587561734,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 880,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 634,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 980,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 335,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 586,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 366,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 925,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 987,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 609,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 157,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 12,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 782,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 705,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 102,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 664,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 268,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 739,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 703,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 689,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 309,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 812,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 858,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 589,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 554,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 783,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 550,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 358,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 32,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 924,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 461,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 376,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 318,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 489,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 624,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 62,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 606,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 704,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 747,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 397,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 279,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 1254,
+          "energy_charged": 651.4968222894768,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 111,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 120,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 899,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 913,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 946,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 1150,
+          "energy_charged": 360.61491472106985,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 332,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 432,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 1049,
+          "energy_charged": 436.7420363517018,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 158,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 608,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 1192,
+          "energy_charged": 690.3051669299092,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 0,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        }
+      ]
+    },
+    {
+      "route_id": 15,
+      "customer_indices": [
+        275,
+        965,
+        624,
+        974,
+        904,
+        592,
+        8,
+        276,
+        377,
+        462,
+        3,
+        135,
+        225,
+        443,
+        864,
+        102,
+        528,
+        876,
+        53,
+        258,
+        47,
+        925,
+        819,
+        477,
+        594,
+        764,
+        419,
+        301,
+        794,
+        114,
+        52,
+        152,
+        269,
+        535
+      ],
+      "stops": [
+        {
+          "node_id": 0,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 276,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 966,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 625,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 975,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 905,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 593,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 9,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 1254,
+          "energy_charged": 471.1836311056548,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 277,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 378,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 463,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 4,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 1246,
+          "energy_charged": 488.38376191056915,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 136,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 226,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 444,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 865,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 103,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 529,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 877,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 1273,
+          "energy_charged": 564.5996551093378,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 54,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 259,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 48,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 926,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 820,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 478,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 595,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 765,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 420,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 1102,
+          "energy_charged": 685.7473921612525,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 302,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 795,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 115,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 53,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 153,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 270,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 536,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 0,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        }
+      ]
+    },
+    {
+      "route_id": 16,
+      "customer_indices": [
+        173,
+        34,
+        218,
+        962,
+        344,
+        636,
+        664,
+        453,
+        379,
+        599,
+        481,
+        839,
+        650,
+        391,
+        657,
+        207,
+        105,
+        621,
+        433,
+        282,
+        85,
+        368,
+        167,
+        77,
+        217,
+        12,
+        696,
+        386,
+        245,
+        956
+      ],
+      "stops": [
+        {
+          "node_id": 0,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 174,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 1232,
+          "energy_charged": 314.82965500247417,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 35,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 219,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 963,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 345,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 637,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 665,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 454,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 380,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 1010,
+          "energy_charged": 643.5299296186445,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 600,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 482,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 840,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 651,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 392,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 658,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 1103,
+          "energy_charged": 555.0605501000654,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 208,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 106,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 622,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 434,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 283,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 86,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 369,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 1078,
+          "energy_charged": 596.706761827472,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 168,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 78,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 218,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 13,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 697,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 387,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 246,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 957,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 1262,
+          "energy_charged": 662.5781435790022,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 0,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        }
+      ]
+    },
+    {
+      "route_id": 17,
+      "customer_indices": [
+        961,
+        998,
+        947,
+        772,
+        442,
+        212,
+        199,
+        847,
+        938,
+        498,
+        467,
+        948,
+        2,
+        289,
+        937,
+        977,
+        803,
+        672,
+        120,
+        545,
+        557,
+        384,
+        185,
+        569,
+        642,
+        402,
+        370,
+        835,
+        725,
+        800,
+        140
+      ],
+      "stops": [
+        {
+          "node_id": 0,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 962,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 999,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 948,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 773,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 443,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 213,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 200,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 848,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 939,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 499,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 468,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 949,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 3,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 290,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 1103,
+          "energy_charged": 481.2893570903715,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 938,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 978,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 804,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 673,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 121,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 546,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 1080,
+          "energy_charged": 581.0607689084902,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 558,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 385,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 186,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 570,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 643,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 403,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 371,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 836,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 726,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 1156,
+          "energy_charged": 636.1289823141536,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 801,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 141,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 0,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        }
+      ]
+    },
+    {
+      "route_id": 18,
+      "customer_indices": [
+        558,
+        941,
+        240,
+        293,
+        573,
+        906,
+        129,
+        765,
+        294,
+        45,
+        416,
+        139,
+        127,
+        622,
+        432,
+        841,
+        969,
+        220,
+        184,
+        971,
+        112,
+        892
+      ],
+      "stops": [
+        {
+          "node_id": 0,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 559,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 942,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 241,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 294,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 574,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 1014,
+          "energy_charged": 483.2993246182119,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 907,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 130,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 766,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 295,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 46,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 417,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 140,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 128,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 1036,
+          "energy_charged": 522.5257177081346,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 623,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 433,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 842,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 970,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 221,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 185,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 972,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 1062,
+          "energy_charged": 582.2917239739851,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 113,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 893,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 0,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        }
+      ]
+    },
+    {
+      "route_id": 19,
+      "customer_indices": [
+        126,
+        176,
+        687,
+        565,
+        312,
+        437,
+        72,
+        338,
+        91,
+        963,
+        993,
+        108,
+        155,
+        920,
+        78,
+        150
+      ],
+      "stops": [
+        {
+          "node_id": 0,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 127,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 177,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 688,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 566,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 313,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 438,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 73,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 339,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 92,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 964,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 1082,
+          "energy_charged": 623.4526045777881,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 994,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 109,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 156,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 921,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 79,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 151,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 0,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        }
+      ]
+    },
+    {
+      "route_id": 20,
+      "customer_indices": [
+        981,
+        231,
+        779,
+        610,
+        830,
+        661,
+        801,
+        249,
+        459,
+        911,
+        82
+      ],
+      "stops": [
+        {
+          "node_id": 0,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 982,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 232,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 780,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 611,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 1162,
+          "energy_charged": 472.91815605145416,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 831,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 662,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 802,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 250,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 460,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 1152,
+          "energy_charged": 574.0970699276306,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 912,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 83,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 0,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        }
+      ]
+    },
+    {
+      "route_id": 21,
+      "customer_indices": [
+        934,
+        505,
+        98,
+        393,
+        409,
+        195,
+        660,
+        131,
+        647
+      ],
+      "stops": [
+        {
+          "node_id": 0,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 935,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 506,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 99,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 394,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 410,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 1045,
+          "energy_charged": 421.47324838977977,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 196,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 661,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 132,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 648,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 1221,
+          "energy_charged": 578.900904647357,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 0,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        }
+      ]
+    },
+    {
+      "route_id": 22,
+      "customer_indices": [
+        484
+      ],
+      "stops": [
+        {
+          "node_id": 0,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 485,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        },
+        {
+          "node_id": 0,
+          "energy_charged": null,
+          "wait_extra": 0.0
+        }
+      ]
+    }
+  ],
+  "total_distance": 47054.7523,
+  "feasible": true,
+  "metadata": {
+    "runtime_seconds": 23.596851099980995,
+    "seed": 20261122,
+    "method_requested": "CON",
+    "deposited_method": "CON",
+    "instance_file_sha256": "943b99ceb208b4fbc6c325def54ce2c0fefd73731f30a3a99e31a81c11b54549",
+    "stations_file_sha256": "8b1934659fe1c6c7239352e90dcf60b7627a890314c8363ead8b7256d0d3e654",
+    "num_routes": 23,
+    "validation_feasible": true,
+    "validation_issues": 0
+  }
+}

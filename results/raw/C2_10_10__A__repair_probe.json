@@ -1,0 +1,323 @@
+{
+  "instance_key": "C2_10_10",
+  "variant": "A",
+  "routes_examined": 4,
+  "candidates": [
+    {
+      "route_id": 17,
+      "candidate_id": "r17_baseline",
+      "action": "baseline",
+      "description": "unchanged route",
+      "det_feasible": true,
+      "reliability": 0.0,
+      "baseline_reliability": 0.0,
+      "e_completion": 3930.72470316684,
+      "failure_reason": null
+    },
+    {
+      "route_id": 17,
+      "candidate_id": "r17_rep_29_1116",
+      "action": "replace_station",
+      "description": "visit 29: 1029 -> 1116",
+      "det_feasible": false,
+      "reliability": null,
+      "baseline_reliability": 0.0,
+      "e_completion": null,
+      "failure_reason": "battery_infeasible_leg"
+    },
+    {
+      "route_id": 17,
+      "candidate_id": "r17_rep_29_1187",
+      "action": "replace_station",
+      "description": "visit 29: 1029 -> 1187",
+      "det_feasible": false,
+      "reliability": null,
+      "baseline_reliability": 0.0,
+      "e_completion": null,
+      "failure_reason": "battery_infeasible_leg"
+    },
+    {
+      "route_id": 17,
+      "candidate_id": "r17_rep_29_1202",
+      "action": "replace_station",
+      "description": "visit 29: 1029 -> 1202",
+      "det_feasible": false,
+      "reliability": null,
+      "baseline_reliability": 0.0,
+      "e_completion": null,
+      "failure_reason": "battery_infeasible_leg"
+    },
+    {
+      "route_id": 17,
+      "candidate_id": "r17_rep_29_1225",
+      "action": "replace_station",
+      "description": "visit 29: 1029 -> 1225",
+      "det_feasible": false,
+      "reliability": null,
+      "baseline_reliability": 0.0,
+      "e_completion": null,
+      "failure_reason": "battery_infeasible_leg"
+    },
+    {
+      "route_id": 17,
+      "candidate_id": "r17_rep_29_1251",
+      "action": "replace_station",
+      "description": "visit 29: 1029 -> 1251",
+      "det_feasible": false,
+      "reliability": null,
+      "baseline_reliability": 0.0,
+      "e_completion": null,
+      "failure_reason": "battery_infeasible_leg"
+    },
+    {
+      "route_id": 17,
+      "candidate_id": "r17_rm_29",
+      "action": "remove_charge",
+      "description": "remove station visit at index 29",
+      "det_feasible": false,
+      "reliability": null,
+      "baseline_reliability": 0.0,
+      "e_completion": null,
+      "failure_reason": "battery_infeasible_leg"
+    },
+    {
+      "route_id": 20,
+      "candidate_id": "r20_baseline",
+      "action": "baseline",
+      "description": "unchanged route",
+      "det_feasible": true,
+      "reliability": 0.8,
+      "baseline_reliability": 0.8,
+      "e_completion": 3910.0535546135516,
+      "failure_reason": null
+    },
+    {
+      "route_id": 20,
+      "candidate_id": "r20_rep_32_1068",
+      "action": "replace_station",
+      "description": "visit 32: 1155 -> 1068",
+      "det_feasible": true,
+      "reliability": 0.99,
+      "baseline_reliability": 0.8,
+      "e_completion": 3880.2512027896637,
+      "failure_reason": null
+    },
+    {
+      "route_id": 20,
+      "candidate_id": "r20_rep_32_1229",
+      "action": "replace_station",
+      "description": "visit 32: 1155 -> 1229",
+      "det_feasible": true,
+      "reliability": 0.998,
+      "baseline_reliability": 0.8,
+      "e_completion": 3875.6918432200055,
+      "failure_reason": null
+    },
+    {
+      "route_id": 20,
+      "candidate_id": "r20_rep_32_1288",
+      "action": "replace_station",
+      "description": "visit 32: 1155 -> 1288",
+      "det_feasible": false,
+      "reliability": null,
+      "baseline_reliability": 0.8,
+      "e_completion": null,
+      "failure_reason": "depot_closing"
+    },
+    {
+      "route_id": 20,
+      "candidate_id": "r20_rep_32_1136",
+      "action": "replace_station",
+      "description": "visit 32: 1155 -> 1136",
+      "det_feasible": false,
+      "reliability": null,
+      "baseline_reliability": 0.8,
+      "e_completion": null,
+      "failure_reason": "depot_closing"
+    },
+    {
+      "route_id": 20,
+      "candidate_id": "r20_rep_32_1180",
+      "action": "replace_station",
+      "description": "visit 32: 1155 -> 1180",
+      "det_feasible": false,
+      "reliability": null,
+      "baseline_reliability": 0.8,
+      "e_completion": null,
+      "failure_reason": "depot_closing"
+    },
+    {
+      "route_id": 20,
+      "candidate_id": "r20_rm_32",
+      "action": "remove_charge",
+      "description": "remove station visit at index 32",
+      "det_feasible": false,
+      "reliability": null,
+      "baseline_reliability": 0.8,
+      "e_completion": null,
+      "failure_reason": "battery_infeasible_leg"
+    },
+    {
+      "route_id": 24,
+      "candidate_id": "r24_baseline",
+      "action": "baseline",
+      "description": "unchanged route",
+      "det_feasible": true,
+      "reliability": 0.848,
+      "baseline_reliability": 0.848,
+      "e_completion": 3772.840461663812,
+      "failure_reason": null
+    },
+    {
+      "route_id": 24,
+      "candidate_id": "r24_rep_22_1068",
+      "action": "replace_station",
+      "description": "visit 22: 1155 -> 1068",
+      "det_feasible": true,
+      "reliability": 0.674,
+      "baseline_reliability": 0.848,
+      "e_completion": 3805.8046859171486,
+      "failure_reason": null
+    },
+    {
+      "route_id": 24,
+      "candidate_id": "r24_rep_22_1229",
+      "action": "replace_station",
+      "description": "visit 22: 1155 -> 1229",
+      "det_feasible": true,
+      "reliability": 0.03,
+      "baseline_reliability": 0.848,
+      "e_completion": 3815.790628155097,
+      "failure_reason": null
+    },
+    {
+      "route_id": 24,
+      "candidate_id": "r24_rep_22_1288",
+      "action": "replace_station",
+      "description": "visit 22: 1155 -> 1288",
+      "det_feasible": false,
+      "reliability": null,
+      "baseline_reliability": 0.848,
+      "e_completion": null,
+      "failure_reason": "customer_time_window"
+    },
+    {
+      "route_id": 24,
+      "candidate_id": "r24_rep_22_1136",
+      "action": "replace_station",
+      "description": "visit 22: 1155 -> 1136",
+      "det_feasible": false,
+      "reliability": null,
+      "baseline_reliability": 0.848,
+      "e_completion": null,
+      "failure_reason": "customer_time_window"
+    },
+    {
+      "route_id": 24,
+      "candidate_id": "r24_rep_22_1180",
+      "action": "replace_station",
+      "description": "visit 22: 1155 -> 1180",
+      "det_feasible": false,
+      "reliability": null,
+      "baseline_reliability": 0.848,
+      "e_completion": null,
+      "failure_reason": "customer_time_window"
+    },
+    {
+      "route_id": 24,
+      "candidate_id": "r24_rm_22",
+      "action": "remove_charge",
+      "description": "remove station visit at index 22",
+      "det_feasible": false,
+      "reliability": null,
+      "baseline_reliability": 0.848,
+      "e_completion": null,
+      "failure_reason": "battery_infeasible_leg"
+    },
+    {
+      "route_id": 29,
+      "candidate_id": "r29_baseline",
+      "action": "baseline",
+      "description": "unchanged route",
+      "det_feasible": true,
+      "reliability": 0.0,
+      "baseline_reliability": 0.0,
+      "e_completion": 3574.437079829576,
+      "failure_reason": null
+    },
+    {
+      "route_id": 29,
+      "candidate_id": "r29_rep_23_1129",
+      "action": "replace_station",
+      "description": "visit 23: 1285 -> 1129",
+      "det_feasible": true,
+      "reliability": 0.0,
+      "baseline_reliability": 0.0,
+      "e_completion": 3913.340677226171,
+      "failure_reason": null
+    },
+    {
+      "route_id": 29,
+      "candidate_id": "r29_rep_23_1287",
+      "action": "replace_station",
+      "description": "visit 23: 1285 -> 1287",
+      "det_feasible": true,
+      "reliability": 1.0,
+      "baseline_reliability": 0.0,
+      "e_completion": 3787.213649455302,
+      "failure_reason": null
+    },
+    {
+      "route_id": 29,
+      "candidate_id": "r29_rep_23_1245",
+      "action": "replace_station",
+      "description": "visit 23: 1285 -> 1245",
+      "det_feasible": false,
+      "reliability": null,
+      "baseline_reliability": 0.0,
+      "e_completion": null,
+      "failure_reason": "customer_time_window"
+    },
+    {
+      "route_id": 29,
+      "candidate_id": "r29_rep_23_1193",
+      "action": "replace_station",
+      "description": "visit 23: 1285 -> 1193",
+      "det_feasible": false,
+      "reliability": null,
+      "baseline_reliability": 0.0,
+      "e_completion": null,
+      "failure_reason": "customer_time_window"
+    },
+    {
+      "route_id": 29,
+      "candidate_id": "r29_rep_23_1299",
+      "action": "replace_station",
+      "description": "visit 23: 1285 -> 1299",
+      "det_feasible": true,
+      "reliability": 1.0,
+      "baseline_reliability": 0.0,
+      "e_completion": 3863.9581315454066,
+      "failure_reason": null
+    },
+    {
+      "route_id": 29,
+      "candidate_id": "r29_rm_23",
+      "action": "remove_charge",
+      "description": "remove station visit at index 23",
+      "det_feasible": false,
+      "reliability": null,
+      "baseline_reliability": 0.0,
+      "e_completion": null,
+      "failure_reason": "battery_infeasible_leg"
+    }
+  ],
+  "summary": {
+    "unreliable_routes_examined": 4,
+    "routes_with_det_alternative": 3,
+    "candidates_improving_reliability": 4,
+    "candidates_meeting_target": 4,
+    "best_reliability_gain": 1.0,
+    "diagnostic_scenarios": 500
+  }
+}

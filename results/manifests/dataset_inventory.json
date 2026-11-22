@@ -1,0 +1,1204 @@
+{
+  "dataset_root": "C:\\Users\\AYOUB\\OneDrive - EMSI\\Bureau\\PHD_WORK\\STaR-EVRP\\dataset\\EVRPTW_ChargingStations_Dataset",
+  "rules": {
+    "selection": "lexicographic_first_n_per_family",
+    "development_parents_per_family": 2
+  },
+  "parents_by_family": {
+    "C1": [
+      "C1_10_1",
+      "C1_10_10",
+      "C1_10_2",
+      "C1_10_3",
+      "C1_10_4",
+      "C1_10_5",
+      "C1_10_6",
+      "C1_10_7",
+      "C1_10_8",
+      "C1_10_9"
+    ],
+    "C2": [
+      "C2_10_1",
+      "C2_10_10",
+      "C2_10_2",
+      "C2_10_3",
+      "C2_10_4",
+      "C2_10_5",
+      "C2_10_6",
+      "C2_10_7",
+      "C2_10_8",
+      "C2_10_9"
+    ],
+    "R1": [
+      "R1_10_1",
+      "R1_10_10",
+      "R1_10_2",
+      "R1_10_3",
+      "R1_10_4",
+      "R1_10_5",
+      "R1_10_6",
+      "R1_10_7",
+      "R1_10_8",
+      "R1_10_9"
+    ],
+    "R2": [
+      "R2_10_1",
+      "R2_10_10",
+      "R2_10_2",
+      "R2_10_3",
+      "R2_10_4",
+      "R2_10_5",
+      "R2_10_6",
+      "R2_10_7",
+      "R2_10_8",
+      "R2_10_9"
+    ],
+    "RC1": [
+      "RC1_10_1",
+      "RC1_10_10",
+      "RC1_10_2",
+      "RC1_10_3",
+      "RC1_10_4",
+      "RC1_10_5",
+      "RC1_10_6",
+      "RC1_10_7",
+      "RC1_10_8",
+      "RC1_10_9"
+    ],
+    "RC2": [
+      "RC2_10_1",
+      "RC2_10_10",
+      "RC2_10_2",
+      "RC2_10_3",
+      "RC2_10_4",
+      "RC2_10_5",
+      "RC2_10_6",
+      "RC2_10_7",
+      "RC2_10_8",
+      "RC2_10_9"
+    ]
+  },
+  "instances": [
+    {
+      "instance_key": "C1_10_1",
+      "variant": "A",
+      "family": "C1",
+      "parent_key": "C1_10_1",
+      "partition": "development",
+      "instance_sha256": "fbac98a11feb5987bff874763d786fcb6e132745a886f8f3e3b9618749315e55",
+      "stations_sha256": "d7a67285c17a39851c4bf2506098518ff98c03dafdb7863ba8ff76da571ba584"
+    },
+    {
+      "instance_key": "C1_10_1",
+      "variant": "B",
+      "family": "C1",
+      "parent_key": "C1_10_1",
+      "partition": "development",
+      "instance_sha256": "d36d1d3ddf30dedbaf531b8234f7a7d80153760bb5402a28b72c9ad8bf3a518a",
+      "stations_sha256": "d7a67285c17a39851c4bf2506098518ff98c03dafdb7863ba8ff76da571ba584"
+    },
+    {
+      "instance_key": "C1_10_10",
+      "variant": "A",
+      "family": "C1",
+      "parent_key": "C1_10_10",
+      "partition": "development",
+      "instance_sha256": "d0bb3dfdfa5d82bdac90bc118e784b25f44c0cc816237f0ccfb2feb2bd582e12",
+      "stations_sha256": "d7a67285c17a39851c4bf2506098518ff98c03dafdb7863ba8ff76da571ba584"
+    },
+    {
+      "instance_key": "C1_10_10",
+      "variant": "B",
+      "family": "C1",
+      "parent_key": "C1_10_10",
+      "partition": "development",
+      "instance_sha256": "cd90e480068a0643020a6bd4942b16bb0616c84312dfe340d98cf26ff2dfa6b3",
+      "stations_sha256": "d7a67285c17a39851c4bf2506098518ff98c03dafdb7863ba8ff76da571ba584"
+    },
+    {
+      "instance_key": "C1_10_2",
+      "variant": "A",
+      "family": "C1",
+      "parent_key": "C1_10_2",
+      "partition": "holdout",
+      "instance_sha256": "3a9af84058dee6ba9bb4371adf80e96e7a602dfee9f5b3cd226b4e00cfb0b142",
+      "stations_sha256": "d7a67285c17a39851c4bf2506098518ff98c03dafdb7863ba8ff76da571ba584"
+    },
+    {
+      "instance_key": "C1_10_2",
+      "variant": "B",
+      "family": "C1",
+      "parent_key": "C1_10_2",
+      "partition": "holdout",
+      "instance_sha256": "e0fa9e682f4d6b013b77321dd77e060101cc5afe7b407b0b22f1035e14f4ef6e",
+      "stations_sha256": "d7a67285c17a39851c4bf2506098518ff98c03dafdb7863ba8ff76da571ba584"
+    },
+    {
+      "instance_key": "C1_10_3",
+      "variant": "A",
+      "family": "C1",
+      "parent_key": "C1_10_3",
+      "partition": "holdout",
+      "instance_sha256": "fa036cb93c7c476233262d1a0de652a11c9383b5bde0eff4120f9424212e3ec4",
+      "stations_sha256": "d7a67285c17a39851c4bf2506098518ff98c03dafdb7863ba8ff76da571ba584"
+    },
+    {
+      "instance_key": "C1_10_3",
+      "variant": "B",
+      "family": "C1",
+      "parent_key": "C1_10_3",
+      "partition": "holdout",
+      "instance_sha256": "8058a97dec13c093a2b865c5a64fcc33bd17a089caca409f916af2215b8f4f57",
+      "stations_sha256": "d7a67285c17a39851c4bf2506098518ff98c03dafdb7863ba8ff76da571ba584"
+    },
+    {
+      "instance_key": "C1_10_4",
+      "variant": "A",
+      "family": "C1",
+      "parent_key": "C1_10_4",
+      "partition": "holdout",
+      "instance_sha256": "81384ffe357af3286b7c83a2a0ac14a2471bb8aa45131f18eca449d619eb1f41",
+      "stations_sha256": "d7a67285c17a39851c4bf2506098518ff98c03dafdb7863ba8ff76da571ba584"
+    },
+    {
+      "instance_key": "C1_10_4",
+      "variant": "B",
+      "family": "C1",
+      "parent_key": "C1_10_4",
+      "partition": "holdout",
+      "instance_sha256": "aa9781c48f2ab1456adadb69227febf0d86e6b255102ed209e5944002d10d4db",
+      "stations_sha256": "d7a67285c17a39851c4bf2506098518ff98c03dafdb7863ba8ff76da571ba584"
+    },
+    {
+      "instance_key": "C1_10_5",
+      "variant": "A",
+      "family": "C1",
+      "parent_key": "C1_10_5",
+      "partition": "holdout",
+      "instance_sha256": "1593264ed8fc28373f56e2c892520c28e4e6b27b2689840fee110ac19f7be24c",
+      "stations_sha256": "d7a67285c17a39851c4bf2506098518ff98c03dafdb7863ba8ff76da571ba584"
+    },
+    {
+      "instance_key": "C1_10_5",
+      "variant": "B",
+      "family": "C1",
+      "parent_key": "C1_10_5",
+      "partition": "holdout",
+      "instance_sha256": "0e3788071bba252971073ecfe488c957db7e887669b26f2955d20710a011c048",
+      "stations_sha256": "d7a67285c17a39851c4bf2506098518ff98c03dafdb7863ba8ff76da571ba584"
+    },
+    {
+      "instance_key": "C1_10_6",
+      "variant": "A",
+      "family": "C1",
+      "parent_key": "C1_10_6",
+      "partition": "holdout",
+      "instance_sha256": "30fef4aa125d6ca82bbdc0d8a314141dad1c5f6848707d4c1b249ee50d7823a9",
+      "stations_sha256": "d7a67285c17a39851c4bf2506098518ff98c03dafdb7863ba8ff76da571ba584"
+    },
+    {
+      "instance_key": "C1_10_6",
+      "variant": "B",
+      "family": "C1",
+      "parent_key": "C1_10_6",
+      "partition": "holdout",
+      "instance_sha256": "72d278412bccc1726bce8dc5056609ae73d4f3b8076a8c79d7f7a134067dee07",
+      "stations_sha256": "d7a67285c17a39851c4bf2506098518ff98c03dafdb7863ba8ff76da571ba584"
+    },
+    {
+      "instance_key": "C1_10_7",
+      "variant": "A",
+      "family": "C1",
+      "parent_key": "C1_10_7",
+      "partition": "holdout",
+      "instance_sha256": "4a86c00d8586b6a3678f0a6ab991719668a6827acec45ef51512575f6d23fb7d",
+      "stations_sha256": "d7a67285c17a39851c4bf2506098518ff98c03dafdb7863ba8ff76da571ba584"
+    },
+    {
+      "instance_key": "C1_10_7",
+      "variant": "B",
+      "family": "C1",
+      "parent_key": "C1_10_7",
+      "partition": "holdout",
+      "instance_sha256": "21173a6bb456e4fe3e20bc6f7313fef8963bb44fd73ea4aa7a83e590ea0bd763",
+      "stations_sha256": "d7a67285c17a39851c4bf2506098518ff98c03dafdb7863ba8ff76da571ba584"
+    },
+    {
+      "instance_key": "C1_10_8",
+      "variant": "A",
+      "family": "C1",
+      "parent_key": "C1_10_8",
+      "partition": "holdout",
+      "instance_sha256": "312c011074cb630c3bc932172bac44492f92b095cf1967327f62aeb3c5f1b66b",
+      "stations_sha256": "d7a67285c17a39851c4bf2506098518ff98c03dafdb7863ba8ff76da571ba584"
+    },
+    {
+      "instance_key": "C1_10_8",
+      "variant": "B",
+      "family": "C1",
+      "parent_key": "C1_10_8",
+      "partition": "holdout",
+      "instance_sha256": "798280fc013464a279a96b7c964885176c2bb2b4160f12adee325cc9255b69ab",
+      "stations_sha256": "d7a67285c17a39851c4bf2506098518ff98c03dafdb7863ba8ff76da571ba584"
+    },
+    {
+      "instance_key": "C1_10_9",
+      "variant": "A",
+      "family": "C1",
+      "parent_key": "C1_10_9",
+      "partition": "holdout",
+      "instance_sha256": "05dd9e9229f341cb3d580e169a5274b31e7cbc82fafe0e2eb97149357c3f0eef",
+      "stations_sha256": "d7a67285c17a39851c4bf2506098518ff98c03dafdb7863ba8ff76da571ba584"
+    },
+    {
+      "instance_key": "C1_10_9",
+      "variant": "B",
+      "family": "C1",
+      "parent_key": "C1_10_9",
+      "partition": "holdout",
+      "instance_sha256": "c82625dffab7491d83153c082f7ef62fa81b97e274ff29e860b4f3b606dacebd",
+      "stations_sha256": "d7a67285c17a39851c4bf2506098518ff98c03dafdb7863ba8ff76da571ba584"
+    },
+    {
+      "instance_key": "C2_10_1",
+      "variant": "A",
+      "family": "C2",
+      "parent_key": "C2_10_1",
+      "partition": "development",
+      "instance_sha256": "da1519c56ac8024748720ce0710fa6b8496280de7e5f5ff1abbcb815700e77a8",
+      "stations_sha256": "ee054607455c79e408b781edce61f33142e8e66c0a036fd5489137612b83ecfe"
+    },
+    {
+      "instance_key": "C2_10_1",
+      "variant": "B",
+      "family": "C2",
+      "parent_key": "C2_10_1",
+      "partition": "development",
+      "instance_sha256": "de4f4a2cfe10d4a04c40fd98a25dd9c872ae2299ee7c1f4b409a7efc47dedbbd",
+      "stations_sha256": "ee054607455c79e408b781edce61f33142e8e66c0a036fd5489137612b83ecfe"
+    },
+    {
+      "instance_key": "C2_10_10",
+      "variant": "A",
+      "family": "C2",
+      "parent_key": "C2_10_10",
+      "partition": "development",
+      "instance_sha256": "88d65342e828d2cf21b0d9d3cc4b21dc7d4239dbb08e12f1e2e11f34a797405f",
+      "stations_sha256": "ee054607455c79e408b781edce61f33142e8e66c0a036fd5489137612b83ecfe"
+    },
+    {
+      "instance_key": "C2_10_10",
+      "variant": "B",
+      "family": "C2",
+      "parent_key": "C2_10_10",
+      "partition": "development",
+      "instance_sha256": "1aaf44c6e89d70c63c0aca496b3ee7c84376c0fc38989afacdae31398394ca9b",
+      "stations_sha256": "ee054607455c79e408b781edce61f33142e8e66c0a036fd5489137612b83ecfe"
+    },
+    {
+      "instance_key": "C2_10_2",
+      "variant": "A",
+      "family": "C2",
+      "parent_key": "C2_10_2",
+      "partition": "holdout",
+      "instance_sha256": "f04bba39f6622c6194cf337f0eccce615bd08c847801a7a736097f0648b171bb",
+      "stations_sha256": "ee054607455c79e408b781edce61f33142e8e66c0a036fd5489137612b83ecfe"
+    },
+    {
+      "instance_key": "C2_10_2",
+      "variant": "B",
+      "family": "C2",
+      "parent_key": "C2_10_2",
+      "partition": "holdout",
+      "instance_sha256": "75feb074ee9e87fcb064cf65fa7ecf46eb868714a0ac476df920744fe29db43a",
+      "stations_sha256": "ee054607455c79e408b781edce61f33142e8e66c0a036fd5489137612b83ecfe"
+    },
+    {
+      "instance_key": "C2_10_3",
+      "variant": "A",
+      "family": "C2",
+      "parent_key": "C2_10_3",
+      "partition": "holdout",
+      "instance_sha256": "ad6855cbda37866874b621a9771306bd8d81b8c0dbe9a4f697cb27f7c60886d5",
+      "stations_sha256": "ee054607455c79e408b781edce61f33142e8e66c0a036fd5489137612b83ecfe"
+    },
+    {
+      "instance_key": "C2_10_3",
+      "variant": "B",
+      "family": "C2",
+      "parent_key": "C2_10_3",
+      "partition": "holdout",
+      "instance_sha256": "9dfe0b8113371478f734e8a5576ee9bcfed2cb289bf9b95fce77bb91d24c2e93",
+      "stations_sha256": "ee054607455c79e408b781edce61f33142e8e66c0a036fd5489137612b83ecfe"
+    },
+    {
+      "instance_key": "C2_10_4",
+      "variant": "A",
+      "family": "C2",
+      "parent_key": "C2_10_4",
+      "partition": "holdout",
+      "instance_sha256": "b22ad9effbbba43885e63c3ecd62ad0cfd46ab19daf12eea07b50ebb7276fd14",
+      "stations_sha256": "ee054607455c79e408b781edce61f33142e8e66c0a036fd5489137612b83ecfe"
+    },
+    {
+      "instance_key": "C2_10_4",
+      "variant": "B",
+      "family": "C2",
+      "parent_key": "C2_10_4",
+      "partition": "holdout",
+      "instance_sha256": "c3dc4cb029b9c4ecc521154b9ef11202670e9e2e4a7b007bd365783577f516ff",
+      "stations_sha256": "ee054607455c79e408b781edce61f33142e8e66c0a036fd5489137612b83ecfe"
+    },
+    {
+      "instance_key": "C2_10_5",
+      "variant": "A",
+      "family": "C2",
+      "parent_key": "C2_10_5",
+      "partition": "holdout",
+      "instance_sha256": "63118b97d0d8488d2086b3d0d351e465105955501d32e10cf81921fb4d2f399d",
+      "stations_sha256": "ee054607455c79e408b781edce61f33142e8e66c0a036fd5489137612b83ecfe"
+    },
+    {
+      "instance_key": "C2_10_5",
+      "variant": "B",
+      "family": "C2",
+      "parent_key": "C2_10_5",
+      "partition": "holdout",
+      "instance_sha256": "b53f1462476a874715aeae96c6fd07418bf5ef5bdfe8d59ec1860294a30d0080",
+      "stations_sha256": "ee054607455c79e408b781edce61f33142e8e66c0a036fd5489137612b83ecfe"
+    },
+    {
+      "instance_key": "C2_10_6",
+      "variant": "A",
+      "family": "C2",
+      "parent_key": "C2_10_6",
+      "partition": "holdout",
+      "instance_sha256": "7d1dd203e9d7ae103ba8ad6961ea3ae1d52b5c75dbf9e7b87d198d8d55909431",
+      "stations_sha256": "ee054607455c79e408b781edce61f33142e8e66c0a036fd5489137612b83ecfe"
+    },
+    {
+      "instance_key": "C2_10_6",
+      "variant": "B",
+      "family": "C2",
+      "parent_key": "C2_10_6",
+      "partition": "holdout",
+      "instance_sha256": "11a3b3b52c92925bb32eddfd589c81668273c9e7e96fc99c1828745e6e48a173",
+      "stations_sha256": "ee054607455c79e408b781edce61f33142e8e66c0a036fd5489137612b83ecfe"
+    },
+    {
+      "instance_key": "C2_10_7",
+      "variant": "A",
+      "family": "C2",
+      "parent_key": "C2_10_7",
+      "partition": "holdout",
+      "instance_sha256": "c4904002bd72c7355268d64f0b5cf4ffbe8aadfb1bbd70166f2d2c5493966fc8",
+      "stations_sha256": "ee054607455c79e408b781edce61f33142e8e66c0a036fd5489137612b83ecfe"
+    },
+    {
+      "instance_key": "C2_10_7",
+      "variant": "B",
+      "family": "C2",
+      "parent_key": "C2_10_7",
+      "partition": "holdout",
+      "instance_sha256": "954bb7e577c4d050a1b3f43e8ff874ae0102836bcbbb9ef2c8ce713a6f7aea36",
+      "stations_sha256": "ee054607455c79e408b781edce61f33142e8e66c0a036fd5489137612b83ecfe"
+    },
+    {
+      "instance_key": "C2_10_8",
+      "variant": "A",
+      "family": "C2",
+      "parent_key": "C2_10_8",
+      "partition": "holdout",
+      "instance_sha256": "b5ca6096ed0f226efc02fe4eaa6c3e536bfc5ae4faff99c31a8054e5319181ae",
+      "stations_sha256": "ee054607455c79e408b781edce61f33142e8e66c0a036fd5489137612b83ecfe"
+    },
+    {
+      "instance_key": "C2_10_8",
+      "variant": "B",
+      "family": "C2",
+      "parent_key": "C2_10_8",
+      "partition": "holdout",
+      "instance_sha256": "558a3b151d19932ee112ecd9165c26d42c5e0f6a211b65b8ac9613ae03947be2",
+      "stations_sha256": "ee054607455c79e408b781edce61f33142e8e66c0a036fd5489137612b83ecfe"
+    },
+    {
+      "instance_key": "C2_10_9",
+      "variant": "A",
+      "family": "C2",
+      "parent_key": "C2_10_9",
+      "partition": "holdout",
+      "instance_sha256": "78f59807a88971331b236d554b9dcdb83c261c85010d2d80a81cc3bd83460bbc",
+      "stations_sha256": "ee054607455c79e408b781edce61f33142e8e66c0a036fd5489137612b83ecfe"
+    },
+    {
+      "instance_key": "C2_10_9",
+      "variant": "B",
+      "family": "C2",
+      "parent_key": "C2_10_9",
+      "partition": "holdout",
+      "instance_sha256": "788ef517839df1847f92b87aa19601b4b92b5dbfc20b71801565ba850aac5cad",
+      "stations_sha256": "ee054607455c79e408b781edce61f33142e8e66c0a036fd5489137612b83ecfe"
+    },
+    {
+      "instance_key": "R1_10_1",
+      "variant": "A",
+      "family": "R1",
+      "parent_key": "R1_10_1",
+      "partition": "development",
+      "instance_sha256": "88f747f066fb4a799f461d41840418580cadd5a22cd4b8ccdfc4c0ef1ea3e9f9",
+      "stations_sha256": "7ed086efd5f5a2be87302d68f665f3970ea6de5695e217c86c3893dfe0254932"
+    },
+    {
+      "instance_key": "R1_10_1",
+      "variant": "B",
+      "family": "R1",
+      "parent_key": "R1_10_1",
+      "partition": "development",
+      "instance_sha256": "15cce6c0e21ec0dae0398443a35c223bf77516017285a8957778457cd72afb9e",
+      "stations_sha256": "7ed086efd5f5a2be87302d68f665f3970ea6de5695e217c86c3893dfe0254932"
+    },
+    {
+      "instance_key": "R1_10_10",
+      "variant": "A",
+      "family": "R1",
+      "parent_key": "R1_10_10",
+      "partition": "development",
+      "instance_sha256": "2382348390dc1d30462c6de72a5bfb43e9ef3ec1627692c2e01cccdd7ca65bc0",
+      "stations_sha256": "7ed086efd5f5a2be87302d68f665f3970ea6de5695e217c86c3893dfe0254932"
+    },
+    {
+      "instance_key": "R1_10_10",
+      "variant": "B",
+      "family": "R1",
+      "parent_key": "R1_10_10",
+      "partition": "development",
+      "instance_sha256": "be80a598598b9fa31ac8befe7232a6fe6ae84cc3517ff002865c34fe8d1796ad",
+      "stations_sha256": "7ed086efd5f5a2be87302d68f665f3970ea6de5695e217c86c3893dfe0254932"
+    },
+    {
+      "instance_key": "R1_10_2",
+      "variant": "A",
+      "family": "R1",
+      "parent_key": "R1_10_2",
+      "partition": "holdout",
+      "instance_sha256": "98dcc477973efcef53dfa88e514dfeab4fc41edb5085da91637170bbbad1c50a",
+      "stations_sha256": "7ed086efd5f5a2be87302d68f665f3970ea6de5695e217c86c3893dfe0254932"
+    },
+    {
+      "instance_key": "R1_10_2",
+      "variant": "B",
+      "family": "R1",
+      "parent_key": "R1_10_2",
+      "partition": "holdout",
+      "instance_sha256": "7f45a41d78d6ac407baf745995198c1e6b1dac2189da4fb630cf263362fee031",
+      "stations_sha256": "7ed086efd5f5a2be87302d68f665f3970ea6de5695e217c86c3893dfe0254932"
+    },
+    {
+      "instance_key": "R1_10_3",
+      "variant": "A",
+      "family": "R1",
+      "parent_key": "R1_10_3",
+      "partition": "holdout",
+      "instance_sha256": "dc9d806cbc518e1e5f7dec314bc6b96976ba3abc5ee4365cd8d03b74c398f21a",
+      "stations_sha256": "7ed086efd5f5a2be87302d68f665f3970ea6de5695e217c86c3893dfe0254932"
+    },
+    {
+      "instance_key": "R1_10_3",
+      "variant": "B",
+      "family": "R1",
+      "parent_key": "R1_10_3",
+      "partition": "holdout",
+      "instance_sha256": "db55d44151d58f887839d8c93da2d7cb85e4544f6be7cfc7bfbda495e655c93a",
+      "stations_sha256": "7ed086efd5f5a2be87302d68f665f3970ea6de5695e217c86c3893dfe0254932"
+    },
+    {
+      "instance_key": "R1_10_4",
+      "variant": "A",
+      "family": "R1",
+      "parent_key": "R1_10_4",
+      "partition": "holdout",
+      "instance_sha256": "0effd7c9677de376cb65b50ca3bf126ef444e692a51a00dc375119fb2e595972",
+      "stations_sha256": "7ed086efd5f5a2be87302d68f665f3970ea6de5695e217c86c3893dfe0254932"
+    },
+    {
+      "instance_key": "R1_10_4",
+      "variant": "B",
+      "family": "R1",
+      "parent_key": "R1_10_4",
+      "partition": "holdout",
+      "instance_sha256": "3b0cac3bc82913daf2bcf92ac446f649201232ce632b4b67a69e6ad097af3e2e",
+      "stations_sha256": "7ed086efd5f5a2be87302d68f665f3970ea6de5695e217c86c3893dfe0254932"
+    },
+    {
+      "instance_key": "R1_10_5",
+      "variant": "A",
+      "family": "R1",
+      "parent_key": "R1_10_5",
+      "partition": "holdout",
+      "instance_sha256": "5957765d30e7ef4a610c6bf58806ceaa343699456238bb1799b362f6ffec1e32",
+      "stations_sha256": "7ed086efd5f5a2be87302d68f665f3970ea6de5695e217c86c3893dfe0254932"
+    },
+    {
+      "instance_key": "R1_10_5",
+      "variant": "B",
+      "family": "R1",
+      "parent_key": "R1_10_5",
+      "partition": "holdout",
+      "instance_sha256": "802b2e5c7a8e741b11fce13fb3be6de349ce9cb54b54ef3e679ddd50569cd352",
+      "stations_sha256": "7ed086efd5f5a2be87302d68f665f3970ea6de5695e217c86c3893dfe0254932"
+    },
+    {
+      "instance_key": "R1_10_6",
+      "variant": "A",
+      "family": "R1",
+      "parent_key": "R1_10_6",
+      "partition": "holdout",
+      "instance_sha256": "d49e0a925b10559ee48c27528fc5354b6ca5dc4e36d91581392b145577a40fe5",
+      "stations_sha256": "7ed086efd5f5a2be87302d68f665f3970ea6de5695e217c86c3893dfe0254932"
+    },
+    {
+      "instance_key": "R1_10_6",
+      "variant": "B",
+      "family": "R1",
+      "parent_key": "R1_10_6",
+      "partition": "holdout",
+      "instance_sha256": "ea543b1c7b05480033ccf52374587bf63151805ac14c82b07a61a4840eff0793",
+      "stations_sha256": "7ed086efd5f5a2be87302d68f665f3970ea6de5695e217c86c3893dfe0254932"
+    },
+    {
+      "instance_key": "R1_10_7",
+      "variant": "A",
+      "family": "R1",
+      "parent_key": "R1_10_7",
+      "partition": "holdout",
+      "instance_sha256": "3f6eebf6ab95cbae4130eccc8d04e8cfc38e817f98b4a662288ba2998d5665d4",
+      "stations_sha256": "7ed086efd5f5a2be87302d68f665f3970ea6de5695e217c86c3893dfe0254932"
+    },
+    {
+      "instance_key": "R1_10_7",
+      "variant": "B",
+      "family": "R1",
+      "parent_key": "R1_10_7",
+      "partition": "holdout",
+      "instance_sha256": "9249b57a1974809026437207eab48452ee645dcde7d3f116daf16c31fd418629",
+      "stations_sha256": "7ed086efd5f5a2be87302d68f665f3970ea6de5695e217c86c3893dfe0254932"
+    },
+    {
+      "instance_key": "R1_10_8",
+      "variant": "A",
+      "family": "R1",
+      "parent_key": "R1_10_8",
+      "partition": "holdout",
+      "instance_sha256": "4363c4ddded399f4b28536bb494aa75a032fe39b954b9a58137a796d06ca18a7",
+      "stations_sha256": "7ed086efd5f5a2be87302d68f665f3970ea6de5695e217c86c3893dfe0254932"
+    },
+    {
+      "instance_key": "R1_10_8",
+      "variant": "B",
+      "family": "R1",
+      "parent_key": "R1_10_8",
+      "partition": "holdout",
+      "instance_sha256": "9102b10e447c0b1386679260b005c1d336115e8f63b7206d2a1ea655b8ffdc64",
+      "stations_sha256": "7ed086efd5f5a2be87302d68f665f3970ea6de5695e217c86c3893dfe0254932"
+    },
+    {
+      "instance_key": "R1_10_9",
+      "variant": "A",
+      "family": "R1",
+      "parent_key": "R1_10_9",
+      "partition": "holdout",
+      "instance_sha256": "a63a10aab676bded580ed44b2cbedc0b8f56aadd330f3c79ff6147c1822d7fe9",
+      "stations_sha256": "7ed086efd5f5a2be87302d68f665f3970ea6de5695e217c86c3893dfe0254932"
+    },
+    {
+      "instance_key": "R1_10_9",
+      "variant": "B",
+      "family": "R1",
+      "parent_key": "R1_10_9",
+      "partition": "holdout",
+      "instance_sha256": "1c076eac4330fe9dd01739b57a40e9fadb69f8b5f45433c515433aa98c0774a5",
+      "stations_sha256": "7ed086efd5f5a2be87302d68f665f3970ea6de5695e217c86c3893dfe0254932"
+    },
+    {
+      "instance_key": "R2_10_1",
+      "variant": "A",
+      "family": "R2",
+      "parent_key": "R2_10_1",
+      "partition": "development",
+      "instance_sha256": "50af8c7611299daa59533d4ad7a4e075a416449c02b64acceb73af219bac04c1",
+      "stations_sha256": "7ed086efd5f5a2be87302d68f665f3970ea6de5695e217c86c3893dfe0254932"
+    },
+    {
+      "instance_key": "R2_10_1",
+      "variant": "B",
+      "family": "R2",
+      "parent_key": "R2_10_1",
+      "partition": "development",
+      "instance_sha256": "b184fabaa1e41c9a9302b401b2185a6c3c98af1514a9446532f1a97d6a3a7dd4",
+      "stations_sha256": "7ed086efd5f5a2be87302d68f665f3970ea6de5695e217c86c3893dfe0254932"
+    },
+    {
+      "instance_key": "R2_10_10",
+      "variant": "A",
+      "family": "R2",
+      "parent_key": "R2_10_10",
+      "partition": "development",
+      "instance_sha256": "fdc48124035a25e3962fb3c59c7c17e27c2b38e249cf6e8338aa26f4a0e12e46",
+      "stations_sha256": "7ed086efd5f5a2be87302d68f665f3970ea6de5695e217c86c3893dfe0254932"
+    },
+    {
+      "instance_key": "R2_10_10",
+      "variant": "B",
+      "family": "R2",
+      "parent_key": "R2_10_10",
+      "partition": "development",
+      "instance_sha256": "9c0b2e43962d8d0711e46fe04a17fb558dadca7545c0954ca6d24bd09dda9fa5",
+      "stations_sha256": "7ed086efd5f5a2be87302d68f665f3970ea6de5695e217c86c3893dfe0254932"
+    },
+    {
+      "instance_key": "R2_10_2",
+      "variant": "A",
+      "family": "R2",
+      "parent_key": "R2_10_2",
+      "partition": "holdout",
+      "instance_sha256": "50dd5683964ece5a241be9c20f443020699e96c8f06df81bbcf0a14b8e7106ef",
+      "stations_sha256": "7ed086efd5f5a2be87302d68f665f3970ea6de5695e217c86c3893dfe0254932"
+    },
+    {
+      "instance_key": "R2_10_2",
+      "variant": "B",
+      "family": "R2",
+      "parent_key": "R2_10_2",
+      "partition": "holdout",
+      "instance_sha256": "2aa71864ae96564b8bf8eb7a7bc1d4c2328969e43e356211c5692b1a544de416",
+      "stations_sha256": "7ed086efd5f5a2be87302d68f665f3970ea6de5695e217c86c3893dfe0254932"
+    },
+    {
+      "instance_key": "R2_10_3",
+      "variant": "A",
+      "family": "R2",
+      "parent_key": "R2_10_3",
+      "partition": "holdout",
+      "instance_sha256": "7886d8e7caf71c6bea6de6da33b37e6331c031560babf86c9866670c4b0c913e",
+      "stations_sha256": "7ed086efd5f5a2be87302d68f665f3970ea6de5695e217c86c3893dfe0254932"
+    },
+    {
+      "instance_key": "R2_10_3",
+      "variant": "B",
+      "family": "R2",
+      "parent_key": "R2_10_3",
+      "partition": "holdout",
+      "instance_sha256": "64fde5cd25cf221927e4f1bd78e036a95ccc43dd6794c9da4a61d6972111135f",
+      "stations_sha256": "7ed086efd5f5a2be87302d68f665f3970ea6de5695e217c86c3893dfe0254932"
+    },
+    {
+      "instance_key": "R2_10_4",
+      "variant": "A",
+      "family": "R2",
+      "parent_key": "R2_10_4",
+      "partition": "holdout",
+      "instance_sha256": "98e7bb3d1380f3438e1b706ed0bcca28e36c871354f4dfecff516facdb7a84b2",
+      "stations_sha256": "7ed086efd5f5a2be87302d68f665f3970ea6de5695e217c86c3893dfe0254932"
+    },
+    {
+      "instance_key": "R2_10_4",
+      "variant": "B",
+      "family": "R2",
+      "parent_key": "R2_10_4",
+      "partition": "holdout",
+      "instance_sha256": "161bb45d2feebacd758510a5d85763d668a885c4a97edaef23c16f813c70c7d9",
+      "stations_sha256": "7ed086efd5f5a2be87302d68f665f3970ea6de5695e217c86c3893dfe0254932"
+    },
+    {
+      "instance_key": "R2_10_5",
+      "variant": "A",
+      "family": "R2",
+      "parent_key": "R2_10_5",
+      "partition": "holdout",
+      "instance_sha256": "9af4ef39ff948e544931c863fc8090a74ead38c8ee155b4c77a5b1edacff7427",
+      "stations_sha256": "7ed086efd5f5a2be87302d68f665f3970ea6de5695e217c86c3893dfe0254932"
+    },
+    {
+      "instance_key": "R2_10_5",
+      "variant": "B",
+      "family": "R2",
+      "parent_key": "R2_10_5",
+      "partition": "holdout",
+      "instance_sha256": "5c011ea35e538e8ee1524609db42f6ec8889c50b83f11fdb3f102a861b3a3b60",
+      "stations_sha256": "7ed086efd5f5a2be87302d68f665f3970ea6de5695e217c86c3893dfe0254932"
+    },
+    {
+      "instance_key": "R2_10_6",
+      "variant": "A",
+      "family": "R2",
+      "parent_key": "R2_10_6",
+      "partition": "holdout",
+      "instance_sha256": "20e83969266678e46c1de9854b76ef231879d5e02204a5dd4717a251cb80d1d8",
+      "stations_sha256": "7ed086efd5f5a2be87302d68f665f3970ea6de5695e217c86c3893dfe0254932"
+    },
+    {
+      "instance_key": "R2_10_6",
+      "variant": "B",
+      "family": "R2",
+      "parent_key": "R2_10_6",
+      "partition": "holdout",
+      "instance_sha256": "fc5fd180b8bdab8bbe7e72afbe9df2719752c7681e627cdd54267c37cb5dbc70",
+      "stations_sha256": "7ed086efd5f5a2be87302d68f665f3970ea6de5695e217c86c3893dfe0254932"
+    },
+    {
+      "instance_key": "R2_10_7",
+      "variant": "A",
+      "family": "R2",
+      "parent_key": "R2_10_7",
+      "partition": "holdout",
+      "instance_sha256": "75aa02348c7f6d58c5e04b7dcfc80d801f22941f168491555fe6159342af9fda",
+      "stations_sha256": "7ed086efd5f5a2be87302d68f665f3970ea6de5695e217c86c3893dfe0254932"
+    },
+    {
+      "instance_key": "R2_10_7",
+      "variant": "B",
+      "family": "R2",
+      "parent_key": "R2_10_7",
+      "partition": "holdout",
+      "instance_sha256": "cd686aab9043bfe80331bfc297a999bf2ce5c31ba5b94443849982d5b249b2cc",
+      "stations_sha256": "7ed086efd5f5a2be87302d68f665f3970ea6de5695e217c86c3893dfe0254932"
+    },
+    {
+      "instance_key": "R2_10_8",
+      "variant": "A",
+      "family": "R2",
+      "parent_key": "R2_10_8",
+      "partition": "holdout",
+      "instance_sha256": "d26864a110e869b5e25f7ea7fefd0d0c0ee52a695db8c9229b4c7a4c0d3a7498",
+      "stations_sha256": "7ed086efd5f5a2be87302d68f665f3970ea6de5695e217c86c3893dfe0254932"
+    },
+    {
+      "instance_key": "R2_10_8",
+      "variant": "B",
+      "family": "R2",
+      "parent_key": "R2_10_8",
+      "partition": "holdout",
+      "instance_sha256": "16127754479d0842cdaaf6c0188f2a78b4c707b9941fd1f9ac13fefb3ca63ec1",
+      "stations_sha256": "7ed086efd5f5a2be87302d68f665f3970ea6de5695e217c86c3893dfe0254932"
+    },
+    {
+      "instance_key": "R2_10_9",
+      "variant": "A",
+      "family": "R2",
+      "parent_key": "R2_10_9",
+      "partition": "holdout",
+      "instance_sha256": "81c9919b2bf11358d554dcc84cb7e75910e76069f6bdc3600fe64d9152767d7f",
+      "stations_sha256": "7ed086efd5f5a2be87302d68f665f3970ea6de5695e217c86c3893dfe0254932"
+    },
+    {
+      "instance_key": "R2_10_9",
+      "variant": "B",
+      "family": "R2",
+      "parent_key": "R2_10_9",
+      "partition": "holdout",
+      "instance_sha256": "fe2b571433247c0531ae8fc2f1e722095b680cc094a2d24515ce5c8e9dc293d7",
+      "stations_sha256": "7ed086efd5f5a2be87302d68f665f3970ea6de5695e217c86c3893dfe0254932"
+    },
+    {
+      "instance_key": "RC1_10_1",
+      "variant": "A",
+      "family": "RC1",
+      "parent_key": "RC1_10_1",
+      "partition": "development",
+      "instance_sha256": "caf16f240593eb6a827504837e897fae8cf45bf0a2a52c7e89ae8f5297187601",
+      "stations_sha256": "8b1934659fe1c6c7239352e90dcf60b7627a890314c8363ead8b7256d0d3e654"
+    },
+    {
+      "instance_key": "RC1_10_1",
+      "variant": "B",
+      "family": "RC1",
+      "parent_key": "RC1_10_1",
+      "partition": "development",
+      "instance_sha256": "8ce80e8ee11c353534d8903d9e1b3eacb8520a6f8d5abfa97f53a093b2a69b03",
+      "stations_sha256": "8b1934659fe1c6c7239352e90dcf60b7627a890314c8363ead8b7256d0d3e654"
+    },
+    {
+      "instance_key": "RC1_10_10",
+      "variant": "A",
+      "family": "RC1",
+      "parent_key": "RC1_10_10",
+      "partition": "development",
+      "instance_sha256": "a1bae2644728f1f3431c1982e7c47307404a87846f3ec5f8707e035f778f7f24",
+      "stations_sha256": "8b1934659fe1c6c7239352e90dcf60b7627a890314c8363ead8b7256d0d3e654"
+    },
+    {
+      "instance_key": "RC1_10_10",
+      "variant": "B",
+      "family": "RC1",
+      "parent_key": "RC1_10_10",
+      "partition": "development",
+      "instance_sha256": "f56baddc57036465a5ca50f2a9dca726ad1fdb4b654dd9429ebdde54b4f64a79",
+      "stations_sha256": "8b1934659fe1c6c7239352e90dcf60b7627a890314c8363ead8b7256d0d3e654"
+    },
+    {
+      "instance_key": "RC1_10_2",
+      "variant": "A",
+      "family": "RC1",
+      "parent_key": "RC1_10_2",
+      "partition": "holdout",
+      "instance_sha256": "51d8795e8981c142d1718e0f440e66559b849bdc3b9c6b77422a3e1a62aa0f5b",
+      "stations_sha256": "8b1934659fe1c6c7239352e90dcf60b7627a890314c8363ead8b7256d0d3e654"
+    },
+    {
+      "instance_key": "RC1_10_2",
+      "variant": "B",
+      "family": "RC1",
+      "parent_key": "RC1_10_2",
+      "partition": "holdout",
+      "instance_sha256": "0534ef0137463c5695171a63518f71af53d7b15c2515d21c7506e128cedc2fc5",
+      "stations_sha256": "8b1934659fe1c6c7239352e90dcf60b7627a890314c8363ead8b7256d0d3e654"
+    },
+    {
+      "instance_key": "RC1_10_3",
+      "variant": "A",
+      "family": "RC1",
+      "parent_key": "RC1_10_3",
+      "partition": "holdout",
+      "instance_sha256": "1f648cb39677983e5366fbca11409b0be7cb5bd377f733687c8ee62c48ce95f5",
+      "stations_sha256": "8b1934659fe1c6c7239352e90dcf60b7627a890314c8363ead8b7256d0d3e654"
+    },
+    {
+      "instance_key": "RC1_10_3",
+      "variant": "B",
+      "family": "RC1",
+      "parent_key": "RC1_10_3",
+      "partition": "holdout",
+      "instance_sha256": "2393c9a01a578979ad532f66e58b879cb78c8502dc66120edcf55d28cb66583e",
+      "stations_sha256": "8b1934659fe1c6c7239352e90dcf60b7627a890314c8363ead8b7256d0d3e654"
+    },
+    {
+      "instance_key": "RC1_10_4",
+      "variant": "A",
+      "family": "RC1",
+      "parent_key": "RC1_10_4",
+      "partition": "holdout",
+      "instance_sha256": "1c546e2c7d16b60d310b150ed28a2d42eb7074fed44e1d38290a48d749cc4386",
+      "stations_sha256": "8b1934659fe1c6c7239352e90dcf60b7627a890314c8363ead8b7256d0d3e654"
+    },
+    {
+      "instance_key": "RC1_10_4",
+      "variant": "B",
+      "family": "RC1",
+      "parent_key": "RC1_10_4",
+      "partition": "holdout",
+      "instance_sha256": "b2cacf68e96356185bc20e915af3ac219e80bb23e0ff61a9e0fcd18f653b4f7e",
+      "stations_sha256": "8b1934659fe1c6c7239352e90dcf60b7627a890314c8363ead8b7256d0d3e654"
+    },
+    {
+      "instance_key": "RC1_10_5",
+      "variant": "A",
+      "family": "RC1",
+      "parent_key": "RC1_10_5",
+      "partition": "holdout",
+      "instance_sha256": "e635a51173abfaf9af599b05c2f7ea85ecd14b17c9ddbcdda7c61d2355dd01cf",
+      "stations_sha256": "8b1934659fe1c6c7239352e90dcf60b7627a890314c8363ead8b7256d0d3e654"
+    },
+    {
+      "instance_key": "RC1_10_5",
+      "variant": "B",
+      "family": "RC1",
+      "parent_key": "RC1_10_5",
+      "partition": "holdout",
+      "instance_sha256": "ce697b2a53131bdf55c051dcb9960c5adf58a89b389b04c3dfb8af0501f3e52d",
+      "stations_sha256": "8b1934659fe1c6c7239352e90dcf60b7627a890314c8363ead8b7256d0d3e654"
+    },
+    {
+      "instance_key": "RC1_10_6",
+      "variant": "A",
+      "family": "RC1",
+      "parent_key": "RC1_10_6",
+      "partition": "holdout",
+      "instance_sha256": "5dec971a26dd3588e943679a1262d8927cb485dad6202067dde6c6aedfe1a415",
+      "stations_sha256": "8b1934659fe1c6c7239352e90dcf60b7627a890314c8363ead8b7256d0d3e654"
+    },
+    {
+      "instance_key": "RC1_10_6",
+      "variant": "B",
+      "family": "RC1",
+      "parent_key": "RC1_10_6",
+      "partition": "holdout",
+      "instance_sha256": "29767905f6ddf0eb75b38a84a9ca2159b6b54408eaaa80743a6fa18e8f49aeec",
+      "stations_sha256": "8b1934659fe1c6c7239352e90dcf60b7627a890314c8363ead8b7256d0d3e654"
+    },
+    {
+      "instance_key": "RC1_10_7",
+      "variant": "A",
+      "family": "RC1",
+      "parent_key": "RC1_10_7",
+      "partition": "holdout",
+      "instance_sha256": "493134d3934ce9bcaada71e689d0b1542369151ba9eac62a9ca43974210c7a50",
+      "stations_sha256": "8b1934659fe1c6c7239352e90dcf60b7627a890314c8363ead8b7256d0d3e654"
+    },
+    {
+      "instance_key": "RC1_10_7",
+      "variant": "B",
+      "family": "RC1",
+      "parent_key": "RC1_10_7",
+      "partition": "holdout",
+      "instance_sha256": "68f8467672248e35c0da91d7e92806e3ef8d529562b488d6cd433b5bb4a6ae17",
+      "stations_sha256": "8b1934659fe1c6c7239352e90dcf60b7627a890314c8363ead8b7256d0d3e654"
+    },
+    {
+      "instance_key": "RC1_10_8",
+      "variant": "A",
+      "family": "RC1",
+      "parent_key": "RC1_10_8",
+      "partition": "holdout",
+      "instance_sha256": "ffb8c7235dbad9d331733b55158eb6e9ed646b9cc1d5e702ddf724c60702d4a7",
+      "stations_sha256": "8b1934659fe1c6c7239352e90dcf60b7627a890314c8363ead8b7256d0d3e654"
+    },
+    {
+      "instance_key": "RC1_10_8",
+      "variant": "B",
+      "family": "RC1",
+      "parent_key": "RC1_10_8",
+      "partition": "holdout",
+      "instance_sha256": "cb7d4da3e0a31f574d4c148a480e8b34182a3e37e0b0592ae927aa71d979a8d2",
+      "stations_sha256": "8b1934659fe1c6c7239352e90dcf60b7627a890314c8363ead8b7256d0d3e654"
+    },
+    {
+      "instance_key": "RC1_10_9",
+      "variant": "A",
+      "family": "RC1",
+      "parent_key": "RC1_10_9",
+      "partition": "holdout",
+      "instance_sha256": "173959342344f123785d358d5995d275284de23d288fd89bb1f22e28a29f4f18",
+      "stations_sha256": "8b1934659fe1c6c7239352e90dcf60b7627a890314c8363ead8b7256d0d3e654"
+    },
+    {
+      "instance_key": "RC1_10_9",
+      "variant": "B",
+      "family": "RC1",
+      "parent_key": "RC1_10_9",
+      "partition": "holdout",
+      "instance_sha256": "33c9b4ff48b51e0c29b7bd0b059582c52789c1ff0e4f44f9f1dca53d8b22cf0e",
+      "stations_sha256": "8b1934659fe1c6c7239352e90dcf60b7627a890314c8363ead8b7256d0d3e654"
+    },
+    {
+      "instance_key": "RC2_10_1",
+      "variant": "A",
+      "family": "RC2",
+      "parent_key": "RC2_10_1",
+      "partition": "development",
+      "instance_sha256": "23f31eaec9d80337b91c012cd472e8eee40e3b68a3e0730fb604b17ce0f5b156",
+      "stations_sha256": "8b1934659fe1c6c7239352e90dcf60b7627a890314c8363ead8b7256d0d3e654"
+    },
+    {
+      "instance_key": "RC2_10_1",
+      "variant": "B",
+      "family": "RC2",
+      "parent_key": "RC2_10_1",
+      "partition": "development",
+      "instance_sha256": "123255a3e133478239be2996271b4aaf520a861cacc315f42474b456dfc696fa",
+      "stations_sha256": "8b1934659fe1c6c7239352e90dcf60b7627a890314c8363ead8b7256d0d3e654"
+    },
+    {
+      "instance_key": "RC2_10_10",
+      "variant": "A",
+      "family": "RC2",
+      "parent_key": "RC2_10_10",
+      "partition": "development",
+      "instance_sha256": "c82a95f1f407be612a92b0a6cdcdeafa0971c47e005bf0ccae903dc7dd423e8a",
+      "stations_sha256": "8b1934659fe1c6c7239352e90dcf60b7627a890314c8363ead8b7256d0d3e654"
+    },
+    {
+      "instance_key": "RC2_10_10",
+      "variant": "B",
+      "family": "RC2",
+      "parent_key": "RC2_10_10",
+      "partition": "development",
+      "instance_sha256": "943b99ceb208b4fbc6c325def54ce2c0fefd73731f30a3a99e31a81c11b54549",
+      "stations_sha256": "8b1934659fe1c6c7239352e90dcf60b7627a890314c8363ead8b7256d0d3e654"
+    },
+    {
+      "instance_key": "RC2_10_2",
+      "variant": "A",
+      "family": "RC2",
+      "parent_key": "RC2_10_2",
+      "partition": "holdout",
+      "instance_sha256": "42d36d4d91024fb05adffab0abc0e4566d23ec12a9decfd28d4f72e587ea3550",
+      "stations_sha256": "8b1934659fe1c6c7239352e90dcf60b7627a890314c8363ead8b7256d0d3e654"
+    },
+    {
+      "instance_key": "RC2_10_2",
+      "variant": "B",
+      "family": "RC2",
+      "parent_key": "RC2_10_2",
+      "partition": "holdout",
+      "instance_sha256": "e3589fb68ac754d550763e104f9ed63bfe177d6957ba6c5f9443b3dba1fdb8eb",
+      "stations_sha256": "8b1934659fe1c6c7239352e90dcf60b7627a890314c8363ead8b7256d0d3e654"
+    },
+    {
+      "instance_key": "RC2_10_3",
+      "variant": "A",
+      "family": "RC2",
+      "parent_key": "RC2_10_3",
+      "partition": "holdout",
+      "instance_sha256": "216a08f708885cb744dd22ac84b321115db0268a90b9fbe0a0dd937afbe600dd",
+      "stations_sha256": "8b1934659fe1c6c7239352e90dcf60b7627a890314c8363ead8b7256d0d3e654"
+    },
+    {
+      "instance_key": "RC2_10_3",
+      "variant": "B",
+      "family": "RC2",
+      "parent_key": "RC2_10_3",
+      "partition": "holdout",
+      "instance_sha256": "81bc00064fc05776058b9a1cd49183a5ec7f33d23a240e0f7adacf49b6dfb88c",
+      "stations_sha256": "8b1934659fe1c6c7239352e90dcf60b7627a890314c8363ead8b7256d0d3e654"
+    },
+    {
+      "instance_key": "RC2_10_4",
+      "variant": "A",
+      "family": "RC2",
+      "parent_key": "RC2_10_4",
+      "partition": "holdout",
+      "instance_sha256": "fbe975b9915877f1728d68d6e0df13a0925a3ea2d9adce0416e43def5307a55b",
+      "stations_sha256": "8b1934659fe1c6c7239352e90dcf60b7627a890314c8363ead8b7256d0d3e654"
+    },
+    {
+      "instance_key": "RC2_10_4",
+      "variant": "B",
+      "family": "RC2",
+      "parent_key": "RC2_10_4",
+      "partition": "holdout",
+      "instance_sha256": "d1260fa9ebdcccb9921b6e3954787b77128c1f3a2907daba7171402db9472936",
+      "stations_sha256": "8b1934659fe1c6c7239352e90dcf60b7627a890314c8363ead8b7256d0d3e654"
+    },
+    {
+      "instance_key": "RC2_10_5",
+      "variant": "A",
+      "family": "RC2",
+      "parent_key": "RC2_10_5",
+      "partition": "holdout",
+      "instance_sha256": "31fbb1f0d8d8c355a2ba9213969f54f435bbc4fbc5a9b913d6cb1ab61c0ae3fa",
+      "stations_sha256": "8b1934659fe1c6c7239352e90dcf60b7627a890314c8363ead8b7256d0d3e654"
+    },
+    {
+      "instance_key": "RC2_10_5",
+      "variant": "B",
+      "family": "RC2",
+      "parent_key": "RC2_10_5",
+      "partition": "holdout",
+      "instance_sha256": "8ee62595c6f896ecbcf22a87dc4c0702e398422f79322eed81c6807d9206b9ff",
+      "stations_sha256": "8b1934659fe1c6c7239352e90dcf60b7627a890314c8363ead8b7256d0d3e654"
+    },
+    {
+      "instance_key": "RC2_10_6",
+      "variant": "A",
+      "family": "RC2",
+      "parent_key": "RC2_10_6",
+      "partition": "holdout",
+      "instance_sha256": "362d0644cd913918a2e9706882e37c42d92af236ed935037f7cb1eeaf04d4f99",
+      "stations_sha256": "8b1934659fe1c6c7239352e90dcf60b7627a890314c8363ead8b7256d0d3e654"
+    },
+    {
+      "instance_key": "RC2_10_6",
+      "variant": "B",
+      "family": "RC2",
+      "parent_key": "RC2_10_6",
+      "partition": "holdout",
+      "instance_sha256": "4804799d9faa4d1ccd9640c7f422065b1b654af37a2b5b191762a145ea7c992e",
+      "stations_sha256": "8b1934659fe1c6c7239352e90dcf60b7627a890314c8363ead8b7256d0d3e654"
+    },
+    {
+      "instance_key": "RC2_10_7",
+      "variant": "A",
+      "family": "RC2",
+      "parent_key": "RC2_10_7",
+      "partition": "holdout",
+      "instance_sha256": "058ce0e2e4b5957c7f441fd931183eced46c2277369d084d4a5ad321b458ebf4",
+      "stations_sha256": "8b1934659fe1c6c7239352e90dcf60b7627a890314c8363ead8b7256d0d3e654"
+    },
+    {
+      "instance_key": "RC2_10_7",
+      "variant": "B",
+      "family": "RC2",
+      "parent_key": "RC2_10_7",
+      "partition": "holdout",
+      "instance_sha256": "4f5271187f8da2b8e17c66993401e95ee3138a25c1350e36caa81c7bf10e005e",
+      "stations_sha256": "8b1934659fe1c6c7239352e90dcf60b7627a890314c8363ead8b7256d0d3e654"
+    },
+    {
+      "instance_key": "RC2_10_8",
+      "variant": "A",
+      "family": "RC2",
+      "parent_key": "RC2_10_8",
+      "partition": "holdout",
+      "instance_sha256": "3eae34f5c4ecd332d600be0f1efa1e9ffc8ec792112a3c5352f75892cead6845",
+      "stations_sha256": "8b1934659fe1c6c7239352e90dcf60b7627a890314c8363ead8b7256d0d3e654"
+    },
+    {
+      "instance_key": "RC2_10_8",
+      "variant": "B",
+      "family": "RC2",
+      "parent_key": "RC2_10_8",
+      "partition": "holdout",
+      "instance_sha256": "1b70f95d90afb27fb8a34ffb415eb34c7fd9b066d3924395645d27de50563c04",
+      "stations_sha256": "8b1934659fe1c6c7239352e90dcf60b7627a890314c8363ead8b7256d0d3e654"
+    },
+    {
+      "instance_key": "RC2_10_9",
+      "variant": "A",
+      "family": "RC2",
+      "parent_key": "RC2_10_9",
+      "partition": "holdout",
+      "instance_sha256": "acbc19281e30da9a6654f8b97b4a904590847e4af97016a6d82ac98a5a50559d",
+      "stations_sha256": "8b1934659fe1c6c7239352e90dcf60b7627a890314c8363ead8b7256d0d3e654"
+    },
+    {
+      "instance_key": "RC2_10_9",
+      "variant": "B",
+      "family": "RC2",
+      "parent_key": "RC2_10_9",
+      "partition": "holdout",
+      "instance_sha256": "f2cb8efcb8a5657d62a2a17c9368ec6287dda1b66d855b0cd8a84b6f6f614eba",
+      "stations_sha256": "8b1934659fe1c6c7239352e90dcf60b7627a890314c8363ead8b7256d0d3e654"
+    }
+  ],
+  "inventory": {
+    "num_instances": 120,
+    "by_variant_family_partition": {
+      "A/C1/development": 2,
+      "A/C1/holdout": 8,
+      "A/C2/development": 2,
+      "A/C2/holdout": 8,
+      "A/R1/development": 2,
+      "A/R1/holdout": 8,
+      "A/R2/development": 2,
+      "A/R2/holdout": 8,
+      "A/RC1/development": 2,
+      "A/RC1/holdout": 8,
+      "A/RC2/development": 2,
+      "A/RC2/holdout": 8,
+      "B/C1/development": 2,
+      "B/C1/holdout": 8,
+      "B/C2/development": 2,
+      "B/C2/holdout": 8,
+      "B/R1/development": 2,
+      "B/R1/holdout": 8,
+      "B/R2/development": 2,
+      "B/R2/holdout": 8,
+      "B/RC1/development": 2,
+      "B/RC1/holdout": 8,
+      "B/RC2/development": 2,
+      "B/RC2/holdout": 8
+    },
+    "unique_parents": 60
+  },
+  "provenance": {
+    "timestamp_utc": "2026-11-22T15:15:11.605653+00:00",
+    "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "config_experiment": "baseline_stochastic_audit",
+    "scenario_seed": 20261122,
+    "baseline_seed": 20261122
+  }
+}

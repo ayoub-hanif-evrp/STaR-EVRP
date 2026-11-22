@@ -1,0 +1,92 @@
+{
+  "instance_key": "C1_10_10",
+  "variant": "A",
+  "routes_examined": 1,
+  "candidates": [
+    {
+      "route_id": 81,
+      "candidate_id": "r81_baseline",
+      "action": "baseline",
+      "description": "unchanged route",
+      "det_feasible": true,
+      "reliability": 0.002,
+      "baseline_reliability": 0.002,
+      "e_completion": 1832.7177959380722,
+      "failure_reason": null
+    },
+    {
+      "route_id": 81,
+      "candidate_id": "r81_rep_8_1224",
+      "action": "replace_station",
+      "description": "visit 8: 1273 -> 1224",
+      "det_feasible": false,
+      "reliability": null,
+      "baseline_reliability": 0.002,
+      "e_completion": null,
+      "failure_reason": "depot_closing"
+    },
+    {
+      "route_id": 81,
+      "candidate_id": "r81_rep_8_1109",
+      "action": "replace_station",
+      "description": "visit 8: 1273 -> 1109",
+      "det_feasible": true,
+      "reliability": 1.0,
+      "baseline_reliability": 0.002,
+      "e_completion": 1752.4782786150076,
+      "failure_reason": null
+    },
+    {
+      "route_id": 81,
+      "candidate_id": "r81_rep_8_1007",
+      "action": "replace_station",
+      "description": "visit 8: 1273 -> 1007",
+      "det_feasible": false,
+      "reliability": null,
+      "baseline_reliability": 0.002,
+      "e_completion": null,
+      "failure_reason": "depot_closing"
+    },
+    {
+      "route_id": 81,
+      "candidate_id": "r81_rep_8_1014",
+      "action": "replace_station",
+      "description": "visit 8: 1273 -> 1014",
+      "det_feasible": false,
+      "reliability": null,
+      "baseline_reliability": 0.002,
+      "e_completion": null,
+      "failure_reason": "depot_closing"
+    },
+    {
+      "route_id": 81,
+      "candidate_id": "r81_rep_8_1122",
+      "action": "replace_station",
+      "description": "visit 8: 1273 -> 1122",
+      "det_feasible": false,
+      "reliability": null,
+      "baseline_reliability": 0.002,
+      "e_completion": null,
+      "failure_reason": "depot_closing"
+    },
+    {
+      "route_id": 81,
+      "candidate_id": "r81_rm_8",
+      "action": "remove_charge",
+      "description": "remove station visit at index 8",
+      "det_feasible": false,
+      "reliability": null,
+      "baseline_reliability": 0.002,
+      "e_completion": null,
+      "failure_reason": "battery_infeasible_leg"
+    }
+  ],
+  "summary": {
+    "unreliable_routes_examined": 1,
+    "routes_with_det_alternative": 1,
+    "candidates_improving_reliability": 1,
+    "candidates_meeting_target": 1,
+    "best_reliability_gain": 0.998,
+    "diagnostic_scenarios": 500
+  }
+}

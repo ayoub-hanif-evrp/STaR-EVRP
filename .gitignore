@@ -41,22 +41,6 @@ htmlcov/
 .mypy_cache/
 .ruff_cache/
 
-# Project outputs (keep directory placeholders via .gitkeep)
-results/manifests/*
-!results/manifests/.gitkeep
-results/baselines/*
-!results/baselines/.gitkeep
-results/raw/*
-!results/raw/.gitkeep
-results/processed/*
-!results/processed/.gitkeep
-results/figures/*
-!results/figures/.gitkeep
-results/tables/*
-!results/tables/.gitkeep
-results/reports/*
-!results/reports/.gitkeep
-
 # Local config overrides
 *.local.yaml
 .env

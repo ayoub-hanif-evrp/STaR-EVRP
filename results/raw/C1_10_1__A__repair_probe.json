@@ -1,0 +1,14 @@
+{
+  "instance_key": "C1_10_1",
+  "variant": "A",
+  "routes_examined": 0,
+  "candidates": [],
+  "summary": {
+    "unreliable_routes_examined": 0,
+    "routes_with_det_alternative": 0,
+    "candidates_improving_reliability": 0,
+    "candidates_meeting_target": 0,
+    "best_reliability_gain": 0.0,
+    "note": "no_unreliable_charging_routes_in_audit"
+  }
+}
