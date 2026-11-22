@@ -1,0 +1,9 @@
+# Phase 3 preflight
+
+The Phase 2.5 release identifies the producing checkout by source and input hashes. The Phase 3 preflight compares 157 committed producer inputs/artifacts across the release and the published run manifests, allowing only Git line-ending normalization. It verifies Phase 2.5 plan/search replay counts and recomputes the primary development statistics from per-route records, not the written report.
+
+`python -B scripts/phase3.py preflight` checks the 24/96 disjoint paired split, source-file hashes, final source revision, PNG dimensions and DPI, runs the full pytest suite, and replays a development-only seven-method smoke test under a separate final-validation stream. No holdout route is solved or scored in the preflight command. The input-file hash check is bytewise and does not optimize or simulate holdout instances.
+
+The audited Phase 2.5 optimizer remains byte-for-byte unchanged. Inspect `competitive_search.py`, `route_evaluator.py`, `timing.py`, `search_common.py`, `charge_plan.py` and the scalar simulator for incumbent ranking, count accounting, fixed-plan rejection, phase-independent tapes and independent validation. B3 restarts enumeration from each accepted plan; B4 permits only amounts. Tests cover exact plan identity and reconstruction, reference/vector equivalence including station windows and full completion after lateness, zero-charge determinism, customer preservation, caps, bound necessity, ordinal prefix stability, phase separation, and serialization/replay. The attained flag uses a one-sided 95% Wilson lower bound; uncertainty intervals use the actual two-sided calculation.
+
+Machine-readable result: `results/phase3/manifests/preflight.json`. The tag-bound freeze refuses a different code revision, failed preflight or modified tracked snapshot. A separate post-tag smoke marker is required before use of the holdout runner.

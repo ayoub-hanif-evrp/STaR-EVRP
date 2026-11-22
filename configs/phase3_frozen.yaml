@@ -1,0 +1,39 @@
+phase25_release: 3532fbe5f7f2b531a445baa82c843d164f57d6c5
+tag: star-phase3-freeze-v1
+target: 0.95
+battery_capacity: 700
+energy_consumption_rate: 1.0
+station_windows: false
+nearby_stations: 3
+opt_samples: 512
+validation_samples: 10000
+statistical_seed: 312406
+bootstrap_draws: 9999
+validation_seed: 20261123
+stress_seed: 20261124
+validation_scalar_checks: 5
+workers: 6
+batch_routes: 24
+primary: c64
+profiles:
+  c64:
+    limits: {max_candidate_evals: 64, max_scenario_evals: 131072, wall_seconds: 5}
+    seed: 20261122
+    methods: [B0, B1, B2, B3, B4, STaR, STaR_no_partial]
+  c24:
+    limits: {max_candidate_evals: 24, max_scenario_evals: 131072, wall_seconds: 5}
+    seed: 20261122
+    methods: [B3, B4, STaR]
+  s8192:
+    limits: {max_candidate_evals: 128, max_scenario_evals: 8192, wall_seconds: 5}
+    seed: 20261122
+    methods: [B3, B4, STaR]
+  c64_seed2:
+    limits: {max_candidate_evals: 64, max_scenario_evals: 131072, wall_seconds: 5}
+    seed: 20261127
+    methods: [B3, B4, STaR]
+stress_methods: [B0, B3, B4, STaR]
+stress:
+  scale125: {scale: 1.25, sigma: 1, rho: 0}
+  sigma125: {scale: 1, sigma: 1.25, rho: 0}
+  copula035: {scale: 1, sigma: 1, rho: 0.35}
