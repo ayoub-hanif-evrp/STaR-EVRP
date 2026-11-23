@@ -1,0 +1,10 @@
+Claim,Exhibits,Estimate,Uncertainty,Status,Prohibited extrapolation
+STaR improves estimated reliability over implemented B4,F01/T03/S01,"+1.24 pp [0.86, 1.65]",95% family-stratified percentile cluster interval,Sole confirmatory contrast,No fleet guarantee or optimal quantity-only comparator
+Secondary STaR–B3 reliability difference,T03/F03,"+0.32 pp [0.13, 0.49]",95% unadjusted parent-cluster interval,Exploratory,No general or simultaneous superiority claim
+STaR uses fewer draws than B3 but is slower,F04/F05/T02/S05,34.59% fewer draws; +2.18 ms,Savings denominator: B3 mean; paired time interval in T03,Exploratory,Not a wall-clock speedup
+"Same c64 maximum, unequal work",S03/S04/S15,"20.18 vs 62.67 trials (B4, STaR)",All routes; no-limit counts are inferred from counters,Post-hoc descriptive,No equal actual effort or global quantity optimum
+Mean entire depot-return time is lower than B4,T03/F03,-33.15 native time units,"95% [-34.86, -31.48]",Exploratory,Native units are not known minutes
+The topology-changing stratum accounts for most observed gain,F07/T06,See route-weighted stratum contributions in T06,Post-selection strata,Post-hoc descriptive,Not a causal decomposition
+"STaR has unresolved routes, chiefly R2/RC2",F06/S06,110 nonattainments,Validation Wilson classification,Descriptive,No proof of irreparability
+Synthetic wait stresses are fixed-plan checks,F08/T07,Three separate perturbations,"10,000 draws per plan/model",Descriptive sensitivity,No real queue or unseen network validation
+Station attribute content is heavily shared,T01/S12,4 byte-distinct CSV contents,SHA-256 identity across 120 problems,Dataset audit,No claim of 120 independent charger networks

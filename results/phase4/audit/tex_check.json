@@ -1,0 +1,11 @@
+{
+  "command": [
+    "tectonic.EXE",
+    "--only-cached",
+    "--keep-logs",
+    "check_tables.tex"
+  ],
+  "returncode": 0,
+  "status": "pass",
+  "tables": 22
+}

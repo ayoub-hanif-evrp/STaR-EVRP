@@ -1,0 +1,8 @@
+Method,Scoring and move set,Search MC
+B0,Original CON plan; no search,0
+B1,Deterministic mean-wait score; topology and quantity edits,0
+B2,Independent-visit uniform quantile; probability 0.95^(1/K); both edit types,0
+B3,Iterative first improvement; topology and quantity edits,512/full score
+B4,"First improvement; quantities only, fixed ordered station positions",512/full score
+STaR,"Criticality order, fixed-plan and prefix screens; both edit types","128 prefix, up to 512"
+STaR_no_partial,STaR topology moves with full recharge schedules; no quantity moves,"128 prefix, up to 512"

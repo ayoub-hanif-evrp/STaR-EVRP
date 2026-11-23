@@ -1,0 +1,413 @@
+{
+  "data": {
+    "parents": [
+      {
+        "competitor": "B4",
+        "family": "C1",
+        "mean_difference": 0.0,
+        "metric": "reliability",
+        "paired_routes": 8,
+        "parent": "C1_10_2"
+      },
+      {
+        "competitor": "B4",
+        "family": "C1",
+        "mean_difference": -1.1764705882351646e-05,
+        "metric": "reliability",
+        "paired_routes": 17,
+        "parent": "C1_10_3"
+      },
+      {
+        "competitor": "B4",
+        "family": "C1",
+        "mean_difference": -0.0007538461538461563,
+        "metric": "reliability",
+        "paired_routes": 13,
+        "parent": "C1_10_4"
+      },
+      {
+        "competitor": "B4",
+        "family": "C1",
+        "mean_difference": 0.0,
+        "metric": "reliability",
+        "paired_routes": 3,
+        "parent": "C1_10_5"
+      },
+      {
+        "competitor": "B4",
+        "family": "C1",
+        "mean_difference": 0.0,
+        "metric": "reliability",
+        "paired_routes": 9,
+        "parent": "C1_10_6"
+      },
+      {
+        "competitor": "B4",
+        "family": "C1",
+        "mean_difference": 0.0,
+        "metric": "reliability",
+        "paired_routes": 11,
+        "parent": "C1_10_7"
+      },
+      {
+        "competitor": "B4",
+        "family": "C1",
+        "mean_difference": -0.0006785714285714252,
+        "metric": "reliability",
+        "paired_routes": 14,
+        "parent": "C1_10_8"
+      },
+      {
+        "competitor": "B4",
+        "family": "C1",
+        "mean_difference": 0.0,
+        "metric": "reliability",
+        "paired_routes": 11,
+        "parent": "C1_10_9"
+      },
+      {
+        "competitor": "B4",
+        "family": "C2",
+        "mean_difference": 0.0,
+        "metric": "reliability",
+        "paired_routes": 48,
+        "parent": "C2_10_2"
+      },
+      {
+        "competitor": "B4",
+        "family": "C2",
+        "mean_difference": 5.106382978723314e-05,
+        "metric": "reliability",
+        "paired_routes": 47,
+        "parent": "C2_10_3"
+      },
+      {
+        "competitor": "B4",
+        "family": "C2",
+        "mean_difference": 0.017536170212765958,
+        "metric": "reliability",
+        "paired_routes": 47,
+        "parent": "C2_10_4"
+      },
+      {
+        "competitor": "B4",
+        "family": "C2",
+        "mean_difference": 0.0,
+        "metric": "reliability",
+        "paired_routes": 33,
+        "parent": "C2_10_5"
+      },
+      {
+        "competitor": "B4",
+        "family": "C2",
+        "mean_difference": 0.0,
+        "metric": "reliability",
+        "paired_routes": 34,
+        "parent": "C2_10_6"
+      },
+      {
+        "competitor": "B4",
+        "family": "C2",
+        "mean_difference": 0.0,
+        "metric": "reliability",
+        "paired_routes": 44,
+        "parent": "C2_10_7"
+      },
+      {
+        "competitor": "B4",
+        "family": "C2",
+        "mean_difference": -1.4705882352939557e-05,
+        "metric": "reliability",
+        "paired_routes": 34,
+        "parent": "C2_10_8"
+      },
+      {
+        "competitor": "B4",
+        "family": "C2",
+        "mean_difference": 0.0002441860465116268,
+        "metric": "reliability",
+        "paired_routes": 43,
+        "parent": "C2_10_9"
+      },
+      {
+        "competitor": "B4",
+        "family": "R1",
+        "mean_difference": -0.00032040816326530595,
+        "metric": "reliability",
+        "paired_routes": 98,
+        "parent": "R1_10_2"
+      },
+      {
+        "competitor": "B4",
+        "family": "R1",
+        "mean_difference": -9.247311827957046e-05,
+        "metric": "reliability",
+        "paired_routes": 93,
+        "parent": "R1_10_3"
+      },
+      {
+        "competitor": "B4",
+        "family": "R1",
+        "mean_difference": -0.00020399999999999973,
+        "metric": "reliability",
+        "paired_routes": 75,
+        "parent": "R1_10_4"
+      },
+      {
+        "competitor": "B4",
+        "family": "R1",
+        "mean_difference": -0.00019518072289156617,
+        "metric": "reliability",
+        "paired_routes": 83,
+        "parent": "R1_10_5"
+      },
+      {
+        "competitor": "B4",
+        "family": "R1",
+        "mean_difference": -8.932038834951443e-05,
+        "metric": "reliability",
+        "paired_routes": 103,
+        "parent": "R1_10_6"
+      },
+      {
+        "competitor": "B4",
+        "family": "R1",
+        "mean_difference": 0.012453846153846156,
+        "metric": "reliability",
+        "paired_routes": 78,
+        "parent": "R1_10_7"
+      },
+      {
+        "competitor": "B4",
+        "family": "R1",
+        "mean_difference": -0.0003049999999999997,
+        "metric": "reliability",
+        "paired_routes": 80,
+        "parent": "R1_10_8"
+      },
+      {
+        "competitor": "B4",
+        "family": "R1",
+        "mean_difference": -0.00036511627906976726,
+        "metric": "reliability",
+        "paired_routes": 86,
+        "parent": "R1_10_9"
+      },
+      {
+        "competitor": "B4",
+        "family": "R2",
+        "mean_difference": 0.08468983050847458,
+        "metric": "reliability",
+        "paired_routes": 59,
+        "parent": "R2_10_2"
+      },
+      {
+        "competitor": "B4",
+        "family": "R2",
+        "mean_difference": 0.03148518518518518,
+        "metric": "reliability",
+        "paired_routes": 54,
+        "parent": "R2_10_3"
+      },
+      {
+        "competitor": "B4",
+        "family": "R2",
+        "mean_difference": 0.01575510204081633,
+        "metric": "reliability",
+        "paired_routes": 49,
+        "parent": "R2_10_4"
+      },
+      {
+        "competitor": "B4",
+        "family": "R2",
+        "mean_difference": 0.03752727272727273,
+        "metric": "reliability",
+        "paired_routes": 55,
+        "parent": "R2_10_5"
+      },
+      {
+        "competitor": "B4",
+        "family": "R2",
+        "mean_difference": 0.03470909090909091,
+        "metric": "reliability",
+        "paired_routes": 55,
+        "parent": "R2_10_6"
+      },
+      {
+        "competitor": "B4",
+        "family": "R2",
+        "mean_difference": 0.025372727272727276,
+        "metric": "reliability",
+        "paired_routes": 55,
+        "parent": "R2_10_7"
+      },
+      {
+        "competitor": "B4",
+        "family": "R2",
+        "mean_difference": 0.022721276595744678,
+        "metric": "reliability",
+        "paired_routes": 47,
+        "parent": "R2_10_8"
+      },
+      {
+        "competitor": "B4",
+        "family": "R2",
+        "mean_difference": 0.06090925925925927,
+        "metric": "reliability",
+        "paired_routes": 54,
+        "parent": "R2_10_9"
+      },
+      {
+        "competitor": "B4",
+        "family": "RC1",
+        "mean_difference": 0.02056792452830189,
+        "metric": "reliability",
+        "paired_routes": 53,
+        "parent": "RC1_10_2"
+      },
+      {
+        "competitor": "B4",
+        "family": "RC1",
+        "mean_difference": -0.00018103448275862182,
+        "metric": "reliability",
+        "paired_routes": 58,
+        "parent": "RC1_10_3"
+      },
+      {
+        "competitor": "B4",
+        "family": "RC1",
+        "mean_difference": -0.0006416666666666664,
+        "metric": "reliability",
+        "paired_routes": 60,
+        "parent": "RC1_10_4"
+      },
+      {
+        "competitor": "B4",
+        "family": "RC1",
+        "mean_difference": 0.004530952380952381,
+        "metric": "reliability",
+        "paired_routes": 42,
+        "parent": "RC1_10_5"
+      },
+      {
+        "competitor": "B4",
+        "family": "RC1",
+        "mean_difference": -7.999999999999119e-06,
+        "metric": "reliability",
+        "paired_routes": 50,
+        "parent": "RC1_10_6"
+      },
+      {
+        "competitor": "B4",
+        "family": "RC1",
+        "mean_difference": -0.0001457142857142887,
+        "metric": "reliability",
+        "paired_routes": 35,
+        "parent": "RC1_10_7"
+      },
+      {
+        "competitor": "B4",
+        "family": "RC1",
+        "mean_difference": 0.0,
+        "metric": "reliability",
+        "paired_routes": 47,
+        "parent": "RC1_10_8"
+      },
+      {
+        "competitor": "B4",
+        "family": "RC1",
+        "mean_difference": 0.0,
+        "metric": "reliability",
+        "paired_routes": 34,
+        "parent": "RC1_10_9"
+      },
+      {
+        "competitor": "B4",
+        "family": "RC2",
+        "mean_difference": 0.04186666666666667,
+        "metric": "reliability",
+        "paired_routes": 54,
+        "parent": "RC2_10_2"
+      },
+      {
+        "competitor": "B4",
+        "family": "RC2",
+        "mean_difference": 0.005865384615384614,
+        "metric": "reliability",
+        "paired_routes": 52,
+        "parent": "RC2_10_3"
+      },
+      {
+        "competitor": "B4",
+        "family": "RC2",
+        "mean_difference": 0.0007000000000000001,
+        "metric": "reliability",
+        "paired_routes": 46,
+        "parent": "RC2_10_4"
+      },
+      {
+        "competitor": "B4",
+        "family": "RC2",
+        "mean_difference": 0.014030188679245282,
+        "metric": "reliability",
+        "paired_routes": 53,
+        "parent": "RC2_10_5"
+      },
+      {
+        "competitor": "B4",
+        "family": "RC2",
+        "mean_difference": 0.016776,
+        "metric": "reliability",
+        "paired_routes": 50,
+        "parent": "RC2_10_6"
+      },
+      {
+        "competitor": "B4",
+        "family": "RC2",
+        "mean_difference": 0.040431372549019615,
+        "metric": "reliability",
+        "paired_routes": 51,
+        "parent": "RC2_10_7"
+      },
+      {
+        "competitor": "B4",
+        "family": "RC2",
+        "mean_difference": 0.046822448979591834,
+        "metric": "reliability",
+        "paired_routes": 49,
+        "parent": "RC2_10_8"
+      },
+      {
+        "competitor": "B4",
+        "family": "RC2",
+        "mean_difference": 0.004648936170212767,
+        "metric": "reliability",
+        "paired_routes": 47,
+        "parent": "RC2_10_9"
+      }
+    ],
+    "pooled": {
+      "competitor": "B4",
+      "estimate": 0.012420292977165015,
+      "lower95": 0.008630955453232267,
+      "metric": "reliability",
+      "n": 2321,
+      "parent_equal_estimate": 0.01116016839652518,
+      "parent_equal_lower95": 0.007901556923050246,
+      "parent_equal_upper95": 0.014686748214612725,
+      "parents": 48,
+      "profile": "c64",
+      "status": "confirmatory",
+      "upper95": 0.016503459913289817
+    }
+  },
+  "dpi": 400,
+  "freeze": "fb0cfb95a169551051997c247414c4afe683cbdea54186b99e5a584594918373",
+  "physical_mm": [
+    178.0,
+    91.0
+  ],
+  "plot_source_sha256": "b94cad0092e7e15a40dd8a6a81c7767344952533915745b31db9706c2658c1e5",
+  "png_sha256": "0f334f3737f515ae57d98749921d097f398ec529111b795ccf8a2a98237bbc8a",
+  "source": "data/summary.json: paired, parent_effects"
+}

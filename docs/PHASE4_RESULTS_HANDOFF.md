@@ -1,0 +1,11 @@
+# Phase 4 writing-agent handoff
+
+Start with `results/phase4/handoff/README_RESULTS_PACKAGE.md`, then use the exhibit index, claim matrix and citation sheet. The complete writer-only archive is `results/phase4/STaR_EVRP_RESULTS_HANDOFF.zip`; no raw benchmark or experiment files are needed in that archive. Full-precision derived data and exact figure sidecars remain in the repository tree.
+
+- **Claims:** `results/phase4/handoff/CLAIMS_MATRIX.csv` and `results/phase4/handoff/NUMBERS_TO_CITE.csv` distinguish estimates, intervals, units and denominators. In the paper use the STaR–B4 c64 route-weighted reliability contrast as the only confirmatory one. Do not claim that B3 took longer, that each method evaluated the same actual number of plans, or that station tables were held out.
+- **Exhibits:** `results/phase4/handoff/EXHIBIT_INDEX.csv` links each PNG and table format to its tested source data and SHA-256. Main plots are 178 mm wide; the consumed-plan CDF is 85 mm. Use the shipped files without trimming axes or converting units.
+- **Tables:** For `\input` use `booktabs`, `graphicx`, and `longtable`; use longtable in a one-column appendix. Captions and notes are in the handoff. Display precision matches across CSV/TeX/MD, and the decimal estimates for analysis are in `results/phase4/data/summary.json`.
+- **Audit:** `results/phase4/audit/lineage.json` identifies the frozen commit, dataset hashes and compressed bytes. `results/phase4/audit/final_quality_gate.json` records validation and release hashes; `results/phase4/audit/visual_inspection.json` is manual review evidence, and `results/phase4/audit/repeatability.json` identifies the repeat-checked files.
+- **Reproduction:** `python -B scripts/run_phase4_results.py all --project-root . --output results/phase4_repeat` for clean derived exports. No Phase 3 output changes or new optimization. Store the narrow test command's output at `results/phase4/logs/phase4_tests.txt` and full suite output at `results/phase4/logs/full_tests.txt` when reproducing the audit gate; then run `python -B scripts/finalize_phase4_quality.py` after renewed visual inspection.
+
+The Git HEAD and algorithm tag are provenance, not claims that the newly added Phase 4 scripts were in the Phase 3 commit. The handoff includes their actual hashes. No manuscript is part of this delivery.

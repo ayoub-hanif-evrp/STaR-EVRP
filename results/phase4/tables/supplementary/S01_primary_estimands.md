@@ -1,0 +1,4 @@
+| Weighting | Pairs | Parents | Probability diff. | dR (pp) | 95% CI (pp) |
+| --- | --- | --- | --- | --- | --- |
+| Route weighted | 2321 | 48 | 0.0124203 | 1.242 | [0.863, 1.650] |
+| Parent equal | 2321 | 48 | 0.0111602 | 1.116 | [0.790, 1.469] |

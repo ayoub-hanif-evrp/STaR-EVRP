@@ -1,0 +1,19 @@
+| Item | Recorded value |
+| --- | --- |
+| Freeze tag | star-phase3-freeze-v1 |
+| Phase 3 executable | c657aa69d551 |
+| Python | 3.12.10 |
+| Operating system | Windows-11-10.0.26200-SP0 |
+| CPU | Intel64 Family 6 Model 183 Stepping 1 |
+| Logical CPUs | 24 |
+| Parallel workers | 6 |
+| Opt scenarios per full plan | 512 |
+| Validation draws | 10000 |
+| Validation seed | 20261123 |
+| Cluster seed | 312406 |
+| Bootstrap replicates | 9999 |
+| numpy | 2.5.3 |
+| scipy | 1.18.1 |
+| pyyaml | 6.0.3 |
+| matplotlib | 3.11.2 |
+| pytest | 9.1.1 |

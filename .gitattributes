@@ -1,0 +1,5 @@
+/results/phase4/** -text
+/scripts/finalize_phase4_quality.py -text
+/scripts/run_phase4_results.py -text
+/src/star_evrp/phase4_*.py -text
+/tests/test_phase4_results.py -text
