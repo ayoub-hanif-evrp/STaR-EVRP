@@ -1,0 +1,116 @@
+{
+  "caption": "Left: unconditional full depot return on every initially exposed c64 route. Right: lower-bound attainment among routes with CON estimated reliability below 0.95; counts shown over that subset, not over all exposed routes. Both panels are descriptive; paired deteriorations are in the supplementary table.",
+  "cohort": "all120",
+  "data": [
+    {
+      "cohort": "holdout",
+      "mean_completion": 3391.248473150797,
+      "method": "CON",
+      "restoration": {
+        "attained": 0,
+        "cohort": "holdout",
+        "method": "CON",
+        "n": 628,
+        "profile": "c64"
+      }
+    },
+    {
+      "cohort": "all120",
+      "mean_completion": 3423.921614864416,
+      "method": "CON",
+      "restoration": {
+        "attained": 0,
+        "cohort": "all120",
+        "method": "CON",
+        "n": 826,
+        "profile": "c64"
+      }
+    },
+    {
+      "cohort": "holdout",
+      "mean_completion": 3133.8250914267633,
+      "method": "MWR",
+      "restoration": {
+        "attained": 396,
+        "cohort": "holdout",
+        "method": "MWR",
+        "n": 628,
+        "profile": "c64"
+      }
+    },
+    {
+      "cohort": "all120",
+      "mean_completion": 3167.135643106249,
+      "method": "MWR",
+      "restoration": {
+        "attained": 539,
+        "cohort": "all120",
+        "method": "MWR",
+        "n": 826,
+        "profile": "c64"
+      }
+    },
+    {
+      "cohort": "holdout",
+      "mean_completion": 3135.709065287969,
+      "method": "QBR",
+      "restoration": {
+        "attained": 491,
+        "cohort": "holdout",
+        "method": "QBR",
+        "n": 628,
+        "profile": "c64"
+      }
+    },
+    {
+      "cohort": "all120",
+      "mean_completion": 3168.6834599723784,
+      "method": "QBR",
+      "restoration": {
+        "attained": 645,
+        "cohort": "all120",
+        "method": "QBR",
+        "n": 826,
+        "profile": "c64"
+      }
+    },
+    {
+      "cohort": "holdout",
+      "mean_completion": 3135.830504372374,
+      "method": "STaR",
+      "restoration": {
+        "attained": 518,
+        "cohort": "holdout",
+        "method": "STaR",
+        "n": 628,
+        "profile": "c64"
+      }
+    },
+    {
+      "cohort": "all120",
+      "mean_completion": 3168.8010427799404,
+      "method": "STaR",
+      "restoration": {
+        "attained": 677,
+        "cohort": "all120",
+        "method": "STaR",
+        "n": 826,
+        "profile": "c64"
+      }
+    }
+  ],
+  "dpi": 400,
+  "filename": "figures/main/F03_main_methods_completion_and_repair.png",
+  "physical_mm": [
+    178.0,
+    83.0
+  ],
+  "plot_function": "star_evrp.phase5_exhibits.figures",
+  "plot_source_sha256": "69a16b0d89ce9277708b144296da701846ec943ef570b5d81cc50c2cd830dada",
+  "png_sha256": "f3c050a143e103f9e3e658515a7dc32f7fb68be73db99377e3019f454da18082",
+  "profile": "c64",
+  "routes": 2891,
+  "source": "data/summary.json: pool, restoration",
+  "source_map_sha256": "0125d2baa32f2b48bd90b5e73192a8bbe2b36816ec44b163f45442e033d619bb",
+  "summary_sha256": "d370a0bd456ded8b3ebd1e5495e5e07e486b9548b21b225e22ba3fbce9f4242b"
+}

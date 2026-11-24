@@ -1,0 +1,86 @@
+{
+  "caption": "Archived holdout c64 fixed-plan stresses on 2,321 exposed routes per shown method. Each stress changes one synthetic assumption; copula preserves marginals. No reoptimization, real queue calibration, or extrapolation to new station tables.",
+  "cohort": "holdout",
+  "data": [
+    {
+      "full_completion": 3395.652798366908,
+      "lower_bound_attained": 1586,
+      "mean_R": 0.7732697113313227,
+      "method": "CON",
+      "n": 2321,
+      "normal_copula_rho": 0,
+      "sigma_scale": 1,
+      "stress": "scale125",
+      "wait_scale": 1.25
+    },
+    {
+      "full_completion": 3391.7006343662306,
+      "lower_bound_attained": 1631,
+      "mean_R": 0.806430848772081,
+      "method": "CON",
+      "n": 2321,
+      "normal_copula_rho": 0,
+      "sigma_scale": 1.25,
+      "stress": "sigma125",
+      "wait_scale": 1
+    },
+    {
+      "full_completion": 3391.246302667233,
+      "lower_bound_attained": 1689,
+      "mean_R": 0.810197716501508,
+      "method": "CON",
+      "n": 2321,
+      "normal_copula_rho": 0.35,
+      "sigma_scale": 1,
+      "stress": "copula035",
+      "wait_scale": 1
+    },
+    {
+      "full_completion": 3138.51015439349,
+      "lower_bound_attained": 2112,
+      "mean_R": 0.9600321844032744,
+      "method": "STaR",
+      "n": 2321,
+      "normal_copula_rho": 0,
+      "sigma_scale": 1,
+      "stress": "scale125",
+      "wait_scale": 1.25
+    },
+    {
+      "full_completion": 3136.114337552558,
+      "lower_bound_attained": 2150,
+      "mean_R": 0.9699713916415339,
+      "method": "STaR",
+      "n": 2321,
+      "normal_copula_rho": 0,
+      "sigma_scale": 1.25,
+      "stress": "sigma125",
+      "wait_scale": 1
+    },
+    {
+      "full_completion": 3135.8317213091846,
+      "lower_bound_attained": 2201,
+      "mean_R": 0.9732149504523913,
+      "method": "STaR",
+      "n": 2321,
+      "normal_copula_rho": 0.35,
+      "sigma_scale": 1,
+      "stress": "copula035",
+      "wait_scale": 1
+    }
+  ],
+  "dpi": 400,
+  "filename": "figures/main/F07_stress_robustness.png",
+  "physical_mm": [
+    178.0,
+    77.0
+  ],
+  "plot_function": "star_evrp.phase5_exhibits.figures",
+  "plot_source_sha256": "69a16b0d89ce9277708b144296da701846ec943ef570b5d81cc50c2cd830dada",
+  "png_sha256": "f9cd930ae89985a7fb4aa23f58bbc7c5227782b5a0af5db612f6195536cf7215",
+  "profile": "c64",
+  "routes": 2321,
+  "source": "data/summary.json: archived.robustness",
+  "source_map_sha256": "0125d2baa32f2b48bd90b5e73192a8bbe2b36816ec44b163f45442e033d619bb",
+  "summary_sha256": "d370a0bd456ded8b3ebd1e5495e5e07e486b9548b21b225e22ba3fbce9f4242b"
+}

@@ -1,0 +1,104 @@
+{
+  "caption": "All 120 class/variant problems, with 96 holdout and 24 development. Labels are exposed/all original CON routes; only initially station-exposed routes enter the repair comparisons.",
+  "cohort": "all120",
+  "data": [
+    {
+      "development": 3,
+      "family": "C1",
+      "holdout": 67,
+      "total": 1075,
+      "variant": "A"
+    },
+    {
+      "development": 27,
+      "family": "C2",
+      "holdout": 188,
+      "total": 420,
+      "variant": "A"
+    },
+    {
+      "development": 89,
+      "family": "R1",
+      "holdout": 328,
+      "total": 1248,
+      "variant": "A"
+    },
+    {
+      "development": 66,
+      "family": "R2",
+      "holdout": 237,
+      "total": 317,
+      "variant": "A"
+    },
+    {
+      "development": 49,
+      "family": "RC1",
+      "holdout": 216,
+      "total": 1140,
+      "variant": "A"
+    },
+    {
+      "development": 56,
+      "family": "RC2",
+      "holdout": 226,
+      "total": 309,
+      "variant": "A"
+    },
+    {
+      "development": 4,
+      "family": "C1",
+      "holdout": 19,
+      "total": 966,
+      "variant": "B"
+    },
+    {
+      "development": 29,
+      "family": "C2",
+      "holdout": 142,
+      "total": 382,
+      "variant": "B"
+    },
+    {
+      "development": 102,
+      "family": "R1",
+      "holdout": 368,
+      "total": 1146,
+      "variant": "B"
+    },
+    {
+      "development": 48,
+      "family": "R2",
+      "holdout": 191,
+      "total": 245,
+      "variant": "B"
+    },
+    {
+      "development": 52,
+      "family": "RC1",
+      "holdout": 163,
+      "total": 1132,
+      "variant": "B"
+    },
+    {
+      "development": 45,
+      "family": "RC2",
+      "holdout": 176,
+      "total": 226,
+      "variant": "B"
+    }
+  ],
+  "dpi": 400,
+  "filename": "figures/main/F01_benchmark_coverage.png",
+  "physical_mm": [
+    178.0,
+    83.0
+  ],
+  "plot_function": "star_evrp.phase5_exhibits.figures",
+  "plot_source_sha256": "69a16b0d89ce9277708b144296da701846ec943ef570b5d81cc50c2cd830dada",
+  "png_sha256": "68c34ef8790681d3d2a910b8f4f53fd68809e583d0f7daa7634d2fe03faf19f1",
+  "profile": "c64",
+  "routes": 2891,
+  "source": "data/summary.json: population",
+  "source_map_sha256": "0125d2baa32f2b48bd90b5e73192a8bbe2b36816ec44b163f45442e033d619bb",
+  "summary_sha256": "d370a0bd456ded8b3ebd1e5495e5e07e486b9548b21b225e22ba3fbce9f4242b"
+}

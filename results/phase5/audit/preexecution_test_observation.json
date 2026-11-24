@@ -1,0 +1,6 @@
+{
+  "command": "python -B -m pytest -q -p no:cacheprovider tests/test_phase5_ablations.py",
+  "elapsed_s": 3.61,
+  "note": "Observed exit 0 in pre-execution tool output before any production optimization.",
+  "passed": 3
+}

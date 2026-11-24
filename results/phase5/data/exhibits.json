@@ -1,0 +1,436 @@
+{
+  "figures": [
+    {
+      "caption": "All 120 class/variant problems, with 96 holdout and 24 development. Labels are exposed/all original CON routes; only initially station-exposed routes enter the repair comparisons.",
+      "cohort": "all120",
+      "dpi": 400,
+      "filename": "figures/main/F01_benchmark_coverage.png",
+      "physical_mm": [
+        178.0,
+        83.0
+      ],
+      "plot_function": "star_evrp.phase5_exhibits.figures",
+      "plot_source_sha256": "69a16b0d89ce9277708b144296da701846ec943ef570b5d81cc50c2cd830dada",
+      "png_sha256": "68c34ef8790681d3d2a910b8f4f53fd68809e583d0f7daa7634d2fe03faf19f1",
+      "profile": "c64",
+      "routes": 2891,
+      "source": "data/summary.json: population",
+      "source_map_sha256": "0125d2baa32f2b48bd90b5e73192a8bbe2b36816ec44b163f45442e033d619bb",
+      "summary_sha256": "d370a0bd456ded8b3ebd1e5495e5e07e486b9548b21b225e22ba3fbce9f4242b"
+    },
+    {
+      "caption": "Identical c64 rule; 2,321 initially exposed holdout routes; 2,891 all-120 exposed routes including 24 development instances (descriptive). Mean success and individual one-sided Wilson lower-bound attainment are distinct. SLS and FSPC were also tested; see the supplementary evidence and mandatory registered primary disclosure.",
+      "cohort": "all120",
+      "dpi": 400,
+      "filename": "figures/main/F02_main_methods_reliability_attainment.png",
+      "physical_mm": [
+        178.0,
+        83.0
+      ],
+      "plot_function": "star_evrp.phase5_exhibits.figures",
+      "plot_source_sha256": "69a16b0d89ce9277708b144296da701846ec943ef570b5d81cc50c2cd830dada",
+      "png_sha256": "11e80fae1eb7a091fdff88229c94cc955a65e356f3bfaf7f94ed807a8f45b869",
+      "profile": "c64",
+      "routes": 2891,
+      "source": "data/summary.json: pool",
+      "source_map_sha256": "0125d2baa32f2b48bd90b5e73192a8bbe2b36816ec44b163f45442e033d619bb",
+      "summary_sha256": "d370a0bd456ded8b3ebd1e5495e5e07e486b9548b21b225e22ba3fbce9f4242b"
+    },
+    {
+      "caption": "Left: unconditional full depot return on every initially exposed c64 route. Right: lower-bound attainment among routes with CON estimated reliability below 0.95; counts shown over that subset, not over all exposed routes. Both panels are descriptive; paired deteriorations are in the supplementary table.",
+      "cohort": "all120",
+      "dpi": 400,
+      "filename": "figures/main/F03_main_methods_completion_and_repair.png",
+      "physical_mm": [
+        178.0,
+        83.0
+      ],
+      "plot_function": "star_evrp.phase5_exhibits.figures",
+      "plot_source_sha256": "69a16b0d89ce9277708b144296da701846ec943ef570b5d81cc50c2cd830dada",
+      "png_sha256": "f3c050a143e103f9e3e658515a7dc32f7fb68be73db99377e3019f454da18082",
+      "profile": "c64",
+      "routes": 2891,
+      "source": "data/summary.json: pool, restoration",
+      "source_map_sha256": "0125d2baa32f2b48bd90b5e73192a8bbe2b36816ec44b163f45442e033d619bb",
+      "summary_sha256": "d370a0bd456ded8b3ebd1e5495e5e07e486b9548b21b225e22ba3fbce9f4242b"
+    },
+    {
+      "caption": "Exploratory paired differences at c64; positive favors full STaR. Bars denote 95% family-stratified parent-cluster percentile intervals, split by partition for the pooled panel. Unadjusted pointwise intervals; not simultaneous.",
+      "cohort": "all120",
+      "dpi": 400,
+      "filename": "figures/main/F04_ablation_quality.png",
+      "physical_mm": [
+        178.0,
+        77.0
+      ],
+      "plot_function": "star_evrp.phase5_exhibits.figures",
+      "plot_source_sha256": "69a16b0d89ce9277708b144296da701846ec943ef570b5d81cc50c2cd830dada",
+      "png_sha256": "ec87823870cae2161fe0b7d973520fe08acbaebb975b93132598a79da98202ac",
+      "profile": "c64",
+      "routes": 2891,
+      "source": "data/summary.json: paired",
+      "source_map_sha256": "0125d2baa32f2b48bd90b5e73192a8bbe2b36816ec44b163f45442e033d619bb",
+      "summary_sha256": "d370a0bd456ded8b3ebd1e5495e5e07e486b9548b21b225e22ba3fbce9f4242b"
+    },
+    {
+      "caption": "Per-route c64 means with six workers. Holdout full/NPC elapsed times are archived Phase 3, whereas NSP/NAS/NPP are Phase 5. Development full/NPC and new ablations were measured in separate runs. No paired elapsed inference across the archive/new boundary; CPU and consumed plans are tabulated separately. Draw counts are not elapsed time.",
+      "cohort": "all120",
+      "dpi": 400,
+      "filename": "figures/main/F05_ablation_work_and_runtime.png",
+      "physical_mm": [
+        178.0,
+        88.0
+      ],
+      "plot_function": "star_evrp.phase5_exhibits.figures",
+      "plot_source_sha256": "69a16b0d89ce9277708b144296da701846ec943ef570b5d81cc50c2cd830dada",
+      "png_sha256": "0656fec3161f43d2be092ae106b7fee3b864eeca9c23ddfc711f4ef4d08b1e33",
+      "profile": "c64",
+      "routes": 2891,
+      "source": "data/summary.json: pool, work",
+      "source_map_sha256": "0125d2baa32f2b48bd90b5e73192a8bbe2b36816ec44b163f45442e033d619bb",
+      "summary_sha256": "d370a0bd456ded8b3ebd1e5495e5e07e486b9548b21b225e22ba3fbce9f4242b"
+    },
+    {
+      "caption": "All 120 instances including development (descriptive). Family A/B row labels give exposed denominators, cells give attained counts and rounded percentages. Holdout-only strata are available in the family table. R2 and RC2 remain challenging.",
+      "cohort": "all120",
+      "dpi": 400,
+      "filename": "figures/main/F06_family_variant_attainment.png",
+      "physical_mm": [
+        178.0,
+        103.0
+      ],
+      "plot_function": "star_evrp.phase5_exhibits.figures",
+      "plot_source_sha256": "69a16b0d89ce9277708b144296da701846ec943ef570b5d81cc50c2cd830dada",
+      "png_sha256": "2cf08492cb292bc0a885770b4b01eece39760d621448d279cfffd3b0d9e51700",
+      "profile": "c64",
+      "routes": 2891,
+      "source": "data/summary.json: family",
+      "source_map_sha256": "0125d2baa32f2b48bd90b5e73192a8bbe2b36816ec44b163f45442e033d619bb",
+      "summary_sha256": "d370a0bd456ded8b3ebd1e5495e5e07e486b9548b21b225e22ba3fbce9f4242b"
+    },
+    {
+      "caption": "Archived holdout c64 fixed-plan stresses on 2,321 exposed routes per shown method. Each stress changes one synthetic assumption; copula preserves marginals. No reoptimization, real queue calibration, or extrapolation to new station tables.",
+      "cohort": "holdout",
+      "dpi": 400,
+      "filename": "figures/main/F07_stress_robustness.png",
+      "physical_mm": [
+        178.0,
+        77.0
+      ],
+      "plot_function": "star_evrp.phase5_exhibits.figures",
+      "plot_source_sha256": "69a16b0d89ce9277708b144296da701846ec943ef570b5d81cc50c2cd830dada",
+      "png_sha256": "f9cd930ae89985a7fb4aa23f58bbc7c5227782b5a0af5db612f6195536cf7215",
+      "profile": "c64",
+      "routes": 2321,
+      "source": "data/summary.json: archived.robustness",
+      "source_map_sha256": "0125d2baa32f2b48bd90b5e73192a8bbe2b36816ec44b163f45442e033d619bb",
+      "summary_sha256": "d370a0bd456ded8b3ebd1e5495e5e07e486b9548b21b225e22ba3fbce9f4242b"
+    },
+    {
+      "caption": "Four archived holdout c64 methods. Change in lower-bound attainment versus the same method's original model, in percentage points, on 2,321 exposed routes per method. Synthetic stress on fixed selected plans, no reoptimization.",
+      "cohort": "holdout",
+      "dpi": 400,
+      "filename": "figures/supplementary/S07_full_robustness.png",
+      "physical_mm": [
+        178.0,
+        76.0
+      ],
+      "plot_function": "star_evrp.phase5_exhibits.figures",
+      "plot_source_sha256": "69a16b0d89ce9277708b144296da701846ec943ef570b5d81cc50c2cd830dada",
+      "png_sha256": "29f00257e5b0d68dc20571665d5bb522cfba1baf2fd8d0cadee313974c258eea",
+      "profile": "c64",
+      "routes": 2321,
+      "source": "data/summary.json: archived.robustness, pool",
+      "source_map_sha256": "0125d2baa32f2b48bd90b5e73192a8bbe2b36816ec44b163f45442e033d619bb",
+      "summary_sha256": "d370a0bd456ded8b3ebd1e5495e5e07e486b9548b21b225e22ba3fbce9f4242b"
+    },
+    {
+      "caption": "Sole confirmatory result. Route-weighted reliability on 2,321 original holdout route pairs; interval is the archived 95% family-stratified parent cluster bootstrap. Circles are 48 descriptive parent means. Equal cap does not mean equal actual work. Disclose this result in the main text.",
+      "cohort": "holdout",
+      "dpi": 400,
+      "filename": "figures/supplementary/S01_registered_primary_contrast.png",
+      "physical_mm": [
+        178.0,
+        92.0
+      ],
+      "plot_function": "star_evrp.phase5_exhibits.figures",
+      "plot_source_sha256": "69a16b0d89ce9277708b144296da701846ec943ef570b5d81cc50c2cd830dada",
+      "png_sha256": "07d5eeeb79edf68f5841883c41460be85f03400dbd1974bee256df6f64f1c2f2",
+      "profile": "c64",
+      "routes": 2321,
+      "source": "data/summary.json: paired, archived.parent_effects",
+      "source_map_sha256": "0125d2baa32f2b48bd90b5e73192a8bbe2b36816ec44b163f45442e033d619bb",
+      "summary_sha256": "d370a0bd456ded8b3ebd1e5495e5e07e486b9548b21b225e22ba3fbce9f4242b"
+    },
+    {
+      "caption": "Archived 96 holdout instances, exploratory intervals for quality only. Distinct profiles, not a continuous frontier. Profiles (plan cap/draw cap): c64 64/131,072; c24 24/131,072; s8192 128/8,192; c64 seed 2 repeats c64 with a second optimizer seed. Lower search draws at c64 did not make STaR faster than SLS.",
+      "cohort": "holdout",
+      "dpi": 400,
+      "filename": "figures/supplementary/S02_competitive_quality_work.png",
+      "physical_mm": [
+        178.0,
+        83.0
+      ],
+      "plot_function": "star_evrp.phase5_exhibits.figures",
+      "plot_source_sha256": "69a16b0d89ce9277708b144296da701846ec943ef570b5d81cc50c2cd830dada",
+      "png_sha256": "06562b6a2074ef7f5a1b9709acbd1461073a421082839d8a4c9c025f1f35fe77",
+      "profile": "archived four profiles",
+      "routes": 2321,
+      "source": "data/summary.json: archived.reliability_quality, archived.budget",
+      "source_map_sha256": "0125d2baa32f2b48bd90b5e73192a8bbe2b36816ec44b163f45442e033d619bb",
+      "summary_sha256": "d370a0bd456ded8b3ebd1e5495e5e07e486b9548b21b225e22ba3fbce9f4242b"
+    },
+    {
+      "caption": "Archived 96 holdout instances, exploratory intervals for quality only. Distinct profiles, not a continuous frontier. Profiles (plan cap/draw cap): c64 64/131,072; c24 24/131,072; s8192 128/8,192; c64 seed 2 repeats c64 with a second optimizer seed. Lower search draws at c64 did not make STaR faster than SLS.",
+      "cohort": "holdout",
+      "dpi": 400,
+      "filename": "figures/supplementary/S03_competitive_runtime.png",
+      "physical_mm": [
+        178.0,
+        83.0
+      ],
+      "plot_function": "star_evrp.phase5_exhibits.figures",
+      "plot_source_sha256": "69a16b0d89ce9277708b144296da701846ec943ef570b5d81cc50c2cd830dada",
+      "png_sha256": "ce249717b3483847496001010e223f521b461771179f430e35f0debad26857e0",
+      "profile": "archived four profiles",
+      "routes": 2321,
+      "source": "data/summary.json: archived.reliability_quality, archived.budget",
+      "source_map_sha256": "0125d2baa32f2b48bd90b5e73192a8bbe2b36816ec44b163f45442e033d619bb",
+      "summary_sha256": "d370a0bd456ded8b3ebd1e5495e5e07e486b9548b21b225e22ba3fbce9f4242b"
+    },
+    {
+      "caption": "Archived holdout c64. Left: post-selected ordered station-gap strata, descriptive contributions that sum to the pooled difference, not causal effects. Right: separate no-partial ablation and exploratory 95% parent-cluster interval.",
+      "cohort": "holdout",
+      "dpi": 400,
+      "filename": "figures/supplementary/S04_topology_and_partial.png",
+      "physical_mm": [
+        178.0,
+        78.0
+      ],
+      "plot_function": "star_evrp.phase5_exhibits.figures",
+      "plot_source_sha256": "69a16b0d89ce9277708b144296da701846ec943ef570b5d81cc50c2cd830dada",
+      "png_sha256": "050962d69987b106e5ecc3acef74633882eb6779a8a8e0c9d4d4f46f3e85d345",
+      "profile": "c64",
+      "routes": 2321,
+      "source": "data/summary.json: archived.mechanism, paired",
+      "source_map_sha256": "0125d2baa32f2b48bd90b5e73192a8bbe2b36816ec44b163f45442e033d619bb",
+      "summary_sha256": "d370a0bd456ded8b3ebd1e5495e5e07e486b9548b21b225e22ba3fbce9f4242b"
+    },
+    {
+      "caption": "Holdout c64 nonattainment classified by predominant scenario failure mode, with point-only routes shown separately (point estimate \u22650.95, one-sided Wilson lower bound below 0.95). Route categories are not scenario frequencies.",
+      "cohort": "holdout",
+      "dpi": 400,
+      "filename": "figures/supplementary/S05_failure_uncertainty.png",
+      "physical_mm": [
+        178.0,
+        81.0
+      ],
+      "plot_function": "star_evrp.phase5_exhibits.figures",
+      "plot_source_sha256": "69a16b0d89ce9277708b144296da701846ec943ef570b5d81cc50c2cd830dada",
+      "png_sha256": "cf3a4147d4e319cf8b3fb687fa8027bd92be8031b759d1d10049ea3a0d0362d8",
+      "profile": "c64",
+      "routes": 2321,
+      "source": "data/summary.json: failures",
+      "source_map_sha256": "0125d2baa32f2b48bd90b5e73192a8bbe2b36816ec44b163f45442e033d619bb",
+      "summary_sha256": "d370a0bd456ded8b3ebd1e5495e5e07e486b9548b21b225e22ba3fbce9f4242b"
+    },
+    {
+      "caption": "Registered first eligible R2-A route. Exact charging events are in the supplementary CSV; markers are offset for visibility. FSPC and STaR have overlapping completion quantiles; the case is not selected to favor STaR.",
+      "cohort": "holdout",
+      "dpi": 400,
+      "filename": "figures/supplementary/S06_registered_route.png",
+      "physical_mm": [
+        178.0,
+        79.0
+      ],
+      "plot_function": "star_evrp.phase5_exhibits.figures",
+      "plot_source_sha256": "69a16b0d89ce9277708b144296da701846ec943ef570b5d81cc50c2cd830dada",
+      "png_sha256": "7a1ea1812eaf5d0f21998381fe530b4a4113c1b28e289e0261f024256d305d43",
+      "profile": "c64",
+      "routes": 1,
+      "source": "data/summary.json: case_events, case_draws",
+      "source_map_sha256": "0125d2baa32f2b48bd90b5e73192a8bbe2b36816ec44b163f45442e033d619bb",
+      "summary_sha256": "d370a0bd456ded8b3ebd1e5495e5e07e486b9548b21b225e22ba3fbce9f4242b"
+    },
+    {
+      "caption": "Archived c64 route ECDF. All methods share a maximum of 64 unique plan trials, but FSPC's fixed-station quantity neighborhood often ends early; unhit caps are evidence consistent with exhaustion, not explicit runtime termination labels.",
+      "cohort": "holdout",
+      "dpi": 400,
+      "filename": "figures/supplementary/S08_actual_candidate_trials.png",
+      "physical_mm": [
+        85.0,
+        71.0
+      ],
+      "plot_function": "star_evrp.phase5_exhibits.figures",
+      "plot_source_sha256": "69a16b0d89ce9277708b144296da701846ec943ef570b5d81cc50c2cd830dada",
+      "png_sha256": "594242857ac386797c8debf77804cd0e9785bf0a2f8416c4b2c6c46710c091d1",
+      "profile": "c64",
+      "routes": 2321,
+      "source": "data/summary.json: archived_candidates",
+      "source_map_sha256": "0125d2baa32f2b48bd90b5e73192a8bbe2b36816ec44b163f45442e033d619bb",
+      "summary_sha256": "d370a0bd456ded8b3ebd1e5495e5e07e486b9548b21b225e22ba3fbce9f4242b"
+    }
+  ],
+  "tables": [
+    {
+      "caption": "Coverage of all 120 original fleets. No-charge routes remain unchanged and outside repair estimates. Point-below-target and Wilson nonattainment are distinct.",
+      "cohort": "all cohorts",
+      "filename": "tables/main/T01_population.tex",
+      "name": "T01_population",
+      "source": "data/population_by_instance.csv",
+      "source_sha256": "bb9d870b1dab63b9551df1e77b23c20d2d336bcd5df22973e5e26c9a9b84ac61"
+    },
+    {
+      "caption": "Main presentation methods only; SLS and FSPC also tested. T07 is mandatory disclosure. R and LB higher is better; completion is full depot return, native time units, lower is better. No pooled wall statistics. Archived Phase 3 and new Phase 5 runtime cohorts are separate. The 5-second guard is cooperative. No speedup is inferred from draw counts.",
+      "cohort": "all cohorts",
+      "filename": "tables/main/T02_main_methods.tex",
+      "name": "T02_main_methods",
+      "source": "data/summary.json: pool",
+      "source_sha256": "d5a83e0db84d3843366aa1c86efc8523041dd56825118c2bb259f4aca69faf42"
+    },
+    {
+      "caption": "STaR minus control; unadjusted exploratory parent-cluster 95% intervals. Positive favors reliability and attainment; negative favors completion.",
+      "cohort": "all cohorts",
+      "filename": "tables/main/T03_main_paired_effects.tex",
+      "name": "T03_main_paired_effects",
+      "source": "data/summary.json: paired",
+      "source_sha256": "765fb5385fdaf67be9093ddcd97bf2e804d567fc0623cfa95ed5c6ab32a6d29f"
+    },
+    {
+      "caption": "One component disabled at a time (NPC combines removal of amount changes with full allocation on new topology moves). All ablation effects exploratory. Native full completion.",
+      "cohort": "all cohorts",
+      "filename": "tables/main/T04_ablation_quality.tex",
+      "name": "T04_ablation_quality",
+      "source": "data/summary.json: pool",
+      "source_sha256": "f26041b043765757531d19623bbf4cb2fb1b238f2b5e20ea3bcf2852a2622a89"
+    },
+    {
+      "caption": "Per-route means. Holdout STaR/NPC come from Phase 3; other times are newly measured; development controls and ablations used separate runs. NAS screen rejections are zero but it still computes priorities. NPP full-batch search has no prefix pruning. Archived Phase 3 and new Phase 5 runtime cohorts are separate. The 5-second guard is cooperative. No speedup is inferred from draw counts.",
+      "cohort": "partitioned runtime",
+      "filename": "tables/main/T05_ablation_work.tex",
+      "name": "T05_ablation_work",
+      "source": "data/summary.json: work",
+      "source_sha256": "267a0a0c906c5e56dee1e74511e86f73c95935d3456ae81b954593387cdbe072"
+    },
+    {
+      "caption": "Attaining counts in distinct family and variant cells; originally exposed routes only. All 120 includes development; descriptive.",
+      "cohort": "holdout + all120",
+      "filename": "tables/main/T06_family_results.tex",
+      "name": "T06_family_results",
+      "source": "data/summary.json: family",
+      "source_sha256": "0676e68032eef1e08c17ef438c14a505265e69dbaabaea7109aa3ad7327673ad"
+    },
+    {
+      "caption": "Mandatory main-text disclosure, even when full SLS and FSPC exhibits are supplementary. 95% parent-cluster intervals. A shared maximum of 64 unique plans does not imply equal consumed work; FSPC is a restricted heuristic, not a quantity-only optimum. Archived Phase 3 and new Phase 5 runtime cohorts are separate. The 5-second guard is cooperative. No speedup is inferred from draw counts.",
+      "cohort": "holdout",
+      "filename": "tables/main/T07_primary_evidence.tex",
+      "name": "T07_primary_evidence",
+      "source": "data/summary.json: paired, pool",
+      "source_sha256": "d75bba2fc589672160c94901b9c2cd2088bc09bf944cdc83dffed48c55fa6c1f"
+    },
+    {
+      "caption": "All ten methods under c64. Combined timing not reported. All comparisons except the archived STaR\u2013FSPC holdout reliability contrast are exploratory or descriptive.",
+      "cohort": "all cohorts",
+      "filename": "tables/supplementary/S01_complete_benchmark.tex",
+      "name": "S01_complete_benchmark",
+      "source": "data/summary.json: pool",
+      "source_sha256": "34e7ca2c77b6525b62b0b3cb0a1557f5de8ad3931d2f02a1891b7e6b6e5b5b9b"
+    },
+    {
+      "caption": "One row per source instance, including empty exposure. NA is not zero. The long-format instance CSV covers all ten methods, with counters, uncertainty, time, and runtime cohort.",
+      "cohort": "all 120 instances",
+      "filename": "tables/supplementary/S02_all_instances.tex",
+      "name": "S02_all_instances",
+      "source": "data/instance_results.csv",
+      "source_sha256": "898cc8828918462d41b172b4105ad6f698159b9360161a4d51cc7c3799eea2b2"
+    },
+    {
+      "caption": "Original holdout profiles only. Different caps are not a single monotone sweep. Seed 2 reuses the same parents. Profiles (plan cap/draw cap): c64 64/131,072; c24 24/131,072; s8192 128/8,192; c64 seed 2 repeats c64 with a second optimizer seed.",
+      "cohort": "holdout original profiles",
+      "filename": "tables/supplementary/S03_archived_profiles.tex",
+      "name": "S03_archived_profiles",
+      "source": "data/summary.json: archived.budget",
+      "source_sha256": "9b926096afa74abc45fb3c0c4446e07a6e60be5c9f33bdcbad8829b26429d192"
+    },
+    {
+      "caption": "Full STaR minus ablation; unadjusted parent-cluster intervals, all exploratory. Additional paired plans/CPU/elapsed are in paired_effects.csv when comparable.",
+      "cohort": "all cohorts",
+      "filename": "tables/supplementary/S04_component_paired.tex",
+      "name": "S04_component_paired",
+      "source": "data/summary.json: paired",
+      "source_sha256": "a4f6028ac44689d61db2f2dcc40f62e37a16da150f12686584b98e944646bfb4"
+    },
+    {
+      "caption": "Archived consumed trials and counter-derived limits. Under c64, unhit limits are consistent with neighborhood exhaustion; they are not explicit termination labels. Under scenario caps an affordable remainder can be too small for the next batch. A shared maximum of 64 unique plans does not imply equal consumed work; FSPC is a restricted heuristic, not a quantity-only optimum.",
+      "cohort": "holdout original profiles",
+      "filename": "tables/supplementary/S05_work_distributions.tex",
+      "name": "S05_work_distributions",
+      "source": "data/summary.json: archived.work",
+      "source_sha256": "d53c35163082519a396c188a33b3ca3f1ec6e9e37c5b3fd8e98fcebd9a562a47"
+    },
+    {
+      "caption": "Predominant route-level failure classifications. Point-only: estimate >=0.95 but one-sided lower bound <0.95. The failure-mode data CSV also gives individual scenario counts and two-sided target straddling.",
+      "cohort": "holdout + all120",
+      "filename": "tables/supplementary/S06_failures.tex",
+      "name": "S06_failures",
+      "source": "data/failure_modes.csv",
+      "source_sha256": "85a9a24dc564e44e55690724290330c16f22e3a4f7ff6dcc9ab5cad03a18cd7d"
+    },
+    {
+      "caption": "Original saved holdout fixed-plan synthetic stresses only, no reoptimization.",
+      "cohort": "holdout",
+      "filename": "tables/supplementary/S07_robustness.tex",
+      "name": "S07_robustness",
+      "source": "data/summary.json: archived.robustness",
+      "source_sha256": "871dea90722448963050251e154ddd2b66e2bb181eaa48fc70e8d304f2a37a47"
+    },
+    {
+      "caption": "Observed ordered station-gap strata from STaR and FSPC selected plans. Post-selection contributions are additive arithmetically, not causal. Native time and energy units.",
+      "cohort": "holdout",
+      "filename": "tables/supplementary/S08_topology.tex",
+      "name": "S08_topology",
+      "source": "data/summary.json: archived.mechanism",
+      "source_sha256": "54c25581cb00a0dbf15f96dc5ab09b54154b5ee2732c221a6031f8abbb545ad2"
+    },
+    {
+      "caption": "Registered first eligible R2-A route; exact customer rows are retained in data/registered_route_events.csv. Station deadlines were not enforced. FSPC/STaR overlap is real.",
+      "cohort": "holdout",
+      "filename": "tables/supplementary/S09_registered_route.tex",
+      "name": "S09_registered_route",
+      "source": "data/registered_route_events.csv",
+      "source_sha256": "b51bdfc1b8a6f7f0ab616861cc510dbcae776d9e851861f6a49dadde14219e1e"
+    },
+    {
+      "caption": "Observed STaR direction over complete pairs; identical success counts tie, completion tolerance 1e-8. Observed, not true per-route dominance.",
+      "cohort": "holdout + all120",
+      "filename": "tables/supplementary/S10_directions.tex",
+      "name": "S10_directions",
+      "source": "data/summary.json: directions",
+      "source_sha256": "39c4ff2187ea334aee5803ab8ffa80afd97fa37cd6569e6fb17b9fd4cb10d4a3"
+    },
+    {
+      "caption": "Unadjusted pointwise intervals. Common attainment includes only both-LB-attaining pairs. Cross archive/new and pooled runtime inference omitted.",
+      "cohort": "all cohorts",
+      "filename": "tables/supplementary/S11_work_and_common_attainment.tex",
+      "name": "S11_work_and_common_attainment",
+      "source": "data/paired_effects.csv",
+      "source_sha256": "51f891441225e9e51147b020ece72b06007584ae46c95c796dad9f5586eb873b"
+    },
+    {
+      "caption": "Four byte-distinct contents, reused across partitions; not unseen station networks.",
+      "cohort": "dataset",
+      "filename": "tables/supplementary/S12_station_attributes.tex",
+      "name": "S12_station_attributes",
+      "source": "data/summary.json: archived.station_tables",
+      "source_sha256": "08ebe7f2c1f4629fe20a6fb9e6667063beb3f0847ab1e43697d93e2b2a8ddb37"
+    },
+    {
+      "caption": "All 48 original parent means retain sibling A/B and routes together. Descriptive effects; only pooled registered FSPC reliability is confirmatory.",
+      "cohort": "holdout",
+      "filename": "tables/supplementary/S13_holdout_parents.tex",
+      "name": "S13_holdout_parents",
+      "source": "data/summary.json: archived.parent_effects",
+      "source_sha256": "0da242cd38ed231d96bf21cc5dcae5df164089d2881261a8946a33bc469fd12f"
+    }
+  ]
+}

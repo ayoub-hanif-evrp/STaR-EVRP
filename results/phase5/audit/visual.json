@@ -1,0 +1,82 @@
+{
+  "date_local": "2026-11-24",
+  "figures": {
+    "figures/main/F01_benchmark_coverage.png": {
+      "notes": "Checked exposed counts and fraction labels for both variants; partition legend external.",
+      "reviewed": true,
+      "sha256": "68c34ef8790681d3d2a910b8f4f53fd68809e583d0f7daa7634d2fe03faf19f1"
+    },
+    "figures/main/F02_main_methods_reliability_attainment.png": {
+      "notes": "Separate reliability and LB axes, with count denominators and cohort legend.",
+      "reviewed": true,
+      "sha256": "11e80fae1eb7a091fdff88229c94cc955a65e356f3bfaf7f94ed807a8f45b869"
+    },
+    "figures/main/F03_main_methods_completion_and_repair.png": {
+      "notes": "Full-completion zero baseline; distinct restoration subset and readable counts.",
+      "reviewed": true,
+      "sha256": "f3c050a143e103f9e3e658515a7dc32f7fb68be73db99377e3019f454da18082"
+    },
+    "figures/main/F04_ablation_quality.png": {
+      "notes": "Zero lines and open/filled cohort symbols; no false separation for NPP zero effects.",
+      "reviewed": true,
+      "sha256": "ec87823870cae2161fe0b7d973520fe08acbaebb975b93132598a79da98202ac"
+    },
+    "figures/main/F05_ablation_work_and_runtime.png": {
+      "notes": "Reduced draw tick density to 5,000; wall and scenario axes remain separate.",
+      "reviewed": true,
+      "sha256": "0656fec3161f43d2be092ae106b7fee3b864eeca9c23ddfc711f4ef4d08b1e33"
+    },
+    "figures/main/F06_family_variant_attainment.png": {
+      "notes": "Both panels use the same attainment scale; row counts and colorbar readable.",
+      "reviewed": true,
+      "sha256": "2cf08492cb292bc0a885770b4b01eece39760d621448d279cfffd3b0d9e51700"
+    },
+    "figures/main/F07_stress_robustness.png": {
+      "notes": "Only CON and STaR; three archived stresses and zero baseline.",
+      "reviewed": true,
+      "sha256": "f9cd930ae89985a7fb4aa23f58bbc7c5227782b5a0af5db612f6195536cf7215"
+    },
+    "figures/supplementary/S01_registered_primary_contrast.png": {
+      "notes": "Pooled interval and family rows readable; parent points can legitimately overlap.",
+      "reviewed": true,
+      "sha256": "07d5eeeb79edf68f5841883c41460be85f03400dbd1974bee256df6f64f1c2f2"
+    },
+    "figures/supplementary/S02_competitive_quality_work.png": {
+      "notes": "Discrete profile markers, confidence bars only along quality axis; near-overlap allowed.",
+      "reviewed": true,
+      "sha256": "06562b6a2074ef7f5a1b9709acbd1461073a421082839d8a4c9c025f1f35fe77"
+    },
+    "figures/supplementary/S03_competitive_runtime.png": {
+      "notes": "Distinct method colors, elapsed axis separate; no interpolated budget frontier.",
+      "reviewed": true,
+      "sha256": "ce249717b3483847496001010e223f521b461771179f430e35f0debad26857e0"
+    },
+    "figures/supplementary/S04_topology_and_partial.png": {
+      "notes": "Post-selection strata plus distinct NPC comparison; counts and sign axes legible.",
+      "reviewed": true,
+      "sha256": "050962d69987b106e5ecc3acef74633882eb6779a8a8e0c9d4d4f46f3e85d345"
+    },
+    "figures/supplementary/S05_failure_uncertainty.png": {
+      "notes": "A/B panels show rare joint and point-only categories with readable external legend.",
+      "reviewed": true,
+      "sha256": "cf3a4147d4e319cf8b3fb687fa8027bd92be8031b759d1d10049ea3a0d0362d8"
+    },
+    "figures/supplementary/S06_registered_route.png": {
+      "notes": "Registered example; method legend external, genuine overlap explained in caption.",
+      "reviewed": true,
+      "sha256": "7a1ea1812eaf5d0f21998381fe530b4a4113c1b28e289e0261f024256d305d43"
+    },
+    "figures/supplementary/S07_full_robustness.png": {
+      "notes": "Redesigned to show stress minus original rather than duplicating absolute main bars.",
+      "reviewed": true,
+      "sha256": "29f00257e5b0d68dc20571665d5bb522cfba1baf2fd8d0cadee313974c258eea"
+    },
+    "figures/supplementary/S08_actual_candidate_trials.png": {
+      "notes": "Single-column bounds and trial-cap jump readable; dash patterns identify comparators.",
+      "reviewed": true,
+      "sha256": "594242857ac386797c8debf77804cd0e9785bf0a2f8416c4b2c6c46710c091d1"
+    }
+  },
+  "review": "Manually inspected every PNG using 675/850 px proofs at its target relative print width, with native-source inspection and format checks; no clipped labels, illegible legends, placeholder panels or misleading crop.",
+  "status": "PASS"
+}

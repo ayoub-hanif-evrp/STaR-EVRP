@@ -1,0 +1,338 @@
+{
+  "columns": [
+    "Cohort",
+    "Control",
+    "Metric",
+    "Pairs",
+    "Better",
+    "Tied",
+    "Worse"
+  ],
+  "rows": [
+    [
+      "96 holdout",
+      "CON",
+      "Reliability",
+      "2321",
+      "838",
+      "1415",
+      "68"
+    ],
+    [
+      "96 holdout",
+      "CON",
+      "Completion",
+      "2321",
+      "2023",
+      "289",
+      "9"
+    ],
+    [
+      "96 holdout",
+      "MWR",
+      "Reliability",
+      "2321",
+      "328",
+      "1909",
+      "84"
+    ],
+    [
+      "96 holdout",
+      "MWR",
+      "Completion",
+      "2321",
+      "420",
+      "1554",
+      "347"
+    ],
+    [
+      "96 holdout",
+      "QBR",
+      "Reliability",
+      "2321",
+      "188",
+      "2002",
+      "131"
+    ],
+    [
+      "96 holdout",
+      "QBR",
+      "Completion",
+      "2321",
+      "503",
+      "1528",
+      "290"
+    ],
+    [
+      "96 holdout",
+      "SLS",
+      "Reliability",
+      "2321",
+      "164",
+      "2042",
+      "115"
+    ],
+    [
+      "96 holdout",
+      "SLS",
+      "Completion",
+      "2321",
+      "348",
+      "1682",
+      "291"
+    ],
+    [
+      "96 holdout",
+      "FSPC",
+      "Reliability",
+      "2321",
+      "160",
+      "2050",
+      "111"
+    ],
+    [
+      "96 holdout",
+      "FSPC",
+      "Completion",
+      "2321",
+      "1215",
+      "1002",
+      "104"
+    ],
+    [
+      "96 holdout",
+      "STaR-NAS",
+      "Reliability",
+      "2321",
+      "6",
+      "2315",
+      "0"
+    ],
+    [
+      "96 holdout",
+      "STaR-NAS",
+      "Completion",
+      "2321",
+      "0",
+      "2316",
+      "5"
+    ],
+    [
+      "96 holdout",
+      "STaR-NPP",
+      "Reliability",
+      "2321",
+      "0",
+      "2321",
+      "0"
+    ],
+    [
+      "96 holdout",
+      "STaR-NPP",
+      "Completion",
+      "2321",
+      "0",
+      "2321",
+      "0"
+    ],
+    [
+      "96 holdout",
+      "STaR-NSP",
+      "Reliability",
+      "2321",
+      "159",
+      "2046",
+      "116"
+    ],
+    [
+      "96 holdout",
+      "STaR-NSP",
+      "Completion",
+      "2321",
+      "351",
+      "1684",
+      "286"
+    ],
+    [
+      "96 holdout",
+      "STaR-NPC",
+      "Reliability",
+      "2321",
+      "421",
+      "1696",
+      "204"
+    ],
+    [
+      "96 holdout",
+      "STaR-NPC",
+      "Completion",
+      "2321",
+      "1277",
+      "741",
+      "303"
+    ],
+    [
+      "All 120 (descriptive)",
+      "CON",
+      "Reliability",
+      "2891",
+      "1100",
+      "1707",
+      "84"
+    ],
+    [
+      "All 120 (descriptive)",
+      "CON",
+      "Completion",
+      "2891",
+      "2516",
+      "363",
+      "12"
+    ],
+    [
+      "All 120 (descriptive)",
+      "MWR",
+      "Reliability",
+      "2891",
+      "408",
+      "2375",
+      "108"
+    ],
+    [
+      "All 120 (descriptive)",
+      "MWR",
+      "Completion",
+      "2891",
+      "526",
+      "1949",
+      "416"
+    ],
+    [
+      "All 120 (descriptive)",
+      "QBR",
+      "Reliability",
+      "2891",
+      "248",
+      "2470",
+      "173"
+    ],
+    [
+      "All 120 (descriptive)",
+      "QBR",
+      "Completion",
+      "2891",
+      "605",
+      "1920",
+      "366"
+    ],
+    [
+      "All 120 (descriptive)",
+      "SLS",
+      "Reliability",
+      "2891",
+      "208",
+      "2522",
+      "161"
+    ],
+    [
+      "All 120 (descriptive)",
+      "SLS",
+      "Completion",
+      "2891",
+      "439",
+      "2087",
+      "365"
+    ],
+    [
+      "All 120 (descriptive)",
+      "FSPC",
+      "Reliability",
+      "2891",
+      "208",
+      "2546",
+      "137"
+    ],
+    [
+      "All 120 (descriptive)",
+      "FSPC",
+      "Completion",
+      "2891",
+      "1494",
+      "1266",
+      "131"
+    ],
+    [
+      "All 120 (descriptive)",
+      "STaR-NAS",
+      "Reliability",
+      "2891",
+      "6",
+      "2885",
+      "0"
+    ],
+    [
+      "All 120 (descriptive)",
+      "STaR-NAS",
+      "Completion",
+      "2891",
+      "0",
+      "2886",
+      "5"
+    ],
+    [
+      "All 120 (descriptive)",
+      "STaR-NPP",
+      "Reliability",
+      "2891",
+      "0",
+      "2891",
+      "0"
+    ],
+    [
+      "All 120 (descriptive)",
+      "STaR-NPP",
+      "Completion",
+      "2891",
+      "0",
+      "2891",
+      "0"
+    ],
+    [
+      "All 120 (descriptive)",
+      "STaR-NSP",
+      "Reliability",
+      "2891",
+      "202",
+      "2526",
+      "163"
+    ],
+    [
+      "All 120 (descriptive)",
+      "STaR-NSP",
+      "Completion",
+      "2891",
+      "442",
+      "2090",
+      "359"
+    ],
+    [
+      "All 120 (descriptive)",
+      "STaR-NPC",
+      "Reliability",
+      "2891",
+      "541",
+      "2083",
+      "267"
+    ],
+    [
+      "All 120 (descriptive)",
+      "STaR-NPC",
+      "Completion",
+      "2891",
+      "1550",
+      "957",
+      "384"
+    ]
+  ],
+  "source": "data/summary.json: directions"
+}

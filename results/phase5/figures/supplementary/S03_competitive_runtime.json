@@ -1,0 +1,116 @@
+{
+  "caption": "Archived 96 holdout instances, exploratory intervals for quality only. Distinct profiles, not a continuous frontier. Profiles (plan cap/draw cap): c64 64/131,072; c24 24/131,072; s8192 128/8,192; c64 seed 2 repeats c64 with a second optimizer seed. Lower search draws at c64 did not make STaR faster than SLS.",
+  "cohort": "holdout",
+  "data": [
+    {
+      "lower95": 0.9638002090313612,
+      "mean_R": 0.9699560534252477,
+      "method": "SLS",
+      "profile": "c64",
+      "search_wall_ms": 27.514239593691087,
+      "upper95": 0.9763915706945743
+    },
+    {
+      "lower95": 0.951803211881393,
+      "mean_R": 0.9607237397673417,
+      "method": "FSPC",
+      "profile": "c64",
+      "search_wall_ms": 8.375003143626586,
+      "upper95": 0.9700590970469881
+    },
+    {
+      "lower95": 0.9673361994016251,
+      "mean_R": 0.9731440327445067,
+      "method": "STaR",
+      "profile": "c64",
+      "search_wall_ms": 29.690588064165123,
+      "upper95": 0.9795988230250734
+    },
+    {
+      "lower95": 0.9432345418366505,
+      "mean_R": 0.9538856527358898,
+      "method": "SLS",
+      "profile": "c24",
+      "search_wall_ms": 10.58285355680084,
+      "upper95": 0.9639317873351015
+    },
+    {
+      "lower95": 0.9417822369042005,
+      "mean_R": 0.9533224903059027,
+      "method": "FSPC",
+      "profile": "c24",
+      "search_wall_ms": 5.079742308681167,
+      "upper95": 0.9647149878423307
+    },
+    {
+      "lower95": 0.9471271425836765,
+      "mean_R": 0.9581830676432572,
+      "method": "STaR",
+      "profile": "c24",
+      "search_wall_ms": 11.53822951240506,
+      "upper95": 0.9688277939498424
+    },
+    {
+      "lower95": 0.9657279329699474,
+      "mean_R": 0.9728170185264973,
+      "method": "SLS",
+      "profile": "s8192",
+      "search_wall_ms": 13.758079490049765,
+      "upper95": 0.9800128557210162
+    },
+    {
+      "lower95": 0.9532170638358509,
+      "mean_R": 0.9619884963377855,
+      "method": "FSPC",
+      "profile": "s8192",
+      "search_wall_ms": 7.092274536895504,
+      "upper95": 0.9710587096331804
+    },
+    {
+      "lower95": 0.9709815988100338,
+      "mean_R": 0.9766884963377855,
+      "method": "STaR",
+      "profile": "s8192",
+      "search_wall_ms": 23.716276345629275,
+      "upper95": 0.9825081139423076
+    },
+    {
+      "lower95": 0.9633178307314285,
+      "mean_R": 0.9702635071090048,
+      "method": "SLS",
+      "profile": "c64_seed2",
+      "search_wall_ms": 27.041436923928206,
+      "upper95": 0.9770498946294779
+    },
+    {
+      "lower95": 0.951758459875367,
+      "mean_R": 0.9606580784144765,
+      "method": "FSPC",
+      "profile": "c64_seed2",
+      "search_wall_ms": 8.114304308162,
+      "upper95": 0.9699591734160523
+    },
+    {
+      "lower95": 0.9673966422121661,
+      "mean_R": 0.9731626023265834,
+      "method": "STaR",
+      "profile": "c64_seed2",
+      "search_wall_ms": 29.397829384655353,
+      "upper95": 0.9795996439493083
+    }
+  ],
+  "dpi": 400,
+  "filename": "figures/supplementary/S03_competitive_runtime.png",
+  "physical_mm": [
+    178.0,
+    83.0
+  ],
+  "plot_function": "star_evrp.phase5_exhibits.figures",
+  "plot_source_sha256": "69a16b0d89ce9277708b144296da701846ec943ef570b5d81cc50c2cd830dada",
+  "png_sha256": "ce249717b3483847496001010e223f521b461771179f430e35f0debad26857e0",
+  "profile": "archived four profiles",
+  "routes": 2321,
+  "source": "data/summary.json: archived.reliability_quality, archived.budget",
+  "source_map_sha256": "0125d2baa32f2b48bd90b5e73192a8bbe2b36816ec44b163f45442e033d619bb",
+  "summary_sha256": "d370a0bd456ded8b3ebd1e5495e5e07e486b9548b21b225e22ba3fbce9f4242b"
+}

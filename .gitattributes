@@ -3,3 +3,10 @@
 /scripts/run_phase4_results.py -text
 /src/star_evrp/phase4_*.py -text
 /tests/test_phase4_results.py -text
+/results/phase5/** -text
+/configs/phase5.yaml -text
+/docs/PHASE5_ANALYSIS_PROTOCOL.md -text
+/scripts/run_phase5.py -text
+/scripts/finalize_phase5.py -text
+/src/star_evrp/phase5_*.py -text
+/tests/test_phase5_*.py -text

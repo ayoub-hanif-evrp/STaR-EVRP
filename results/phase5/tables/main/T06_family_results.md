@@ -1,0 +1,26 @@
+| Cohort | Family | V | n | CON LB | MWR LB | QBR LB | STaR LB |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 96 holdout | C1 | A | 67 | 50 | 67 | 67 | 67 |
+| 96 holdout | C1 | B | 19 | 16 | 19 | 19 | 19 |
+| 96 holdout | C2 | A | 188 | 155 | 176 | 187 | 187 |
+| 96 holdout | C2 | B | 142 | 110 | 142 | 142 | 142 |
+| 96 holdout | R1 | A | 328 | 269 | 314 | 327 | 328 |
+| 96 holdout | R1 | B | 368 | 296 | 367 | 368 | 368 |
+| 96 holdout | R2 | A | 237 | 126 | 152 | 180 | 189 |
+| 96 holdout | R2 | B | 191 | 111 | 143 | 161 | 173 |
+| 96 holdout | RC1 | A | 216 | 176 | 205 | 216 | 216 |
+| 96 holdout | RC1 | B | 163 | 139 | 163 | 163 | 163 |
+| 96 holdout | RC2 | A | 226 | 153 | 179 | 200 | 204 |
+| 96 holdout | RC2 | B | 176 | 85 | 125 | 153 | 155 |
+| All 120 (descriptive) | C1 | A | 70 | 52 | 70 | 70 | 70 |
+| All 120 (descriptive) | C1 | B | 23 | 19 | 23 | 23 | 23 |
+| All 120 (descriptive) | C2 | A | 215 | 178 | 203 | 214 | 214 |
+| All 120 (descriptive) | C2 | B | 171 | 127 | 171 | 171 | 171 |
+| All 120 (descriptive) | R1 | A | 417 | 322 | 399 | 415 | 417 |
+| All 120 (descriptive) | R1 | B | 470 | 374 | 469 | 470 | 470 |
+| All 120 (descriptive) | R2 | A | 303 | 153 | 188 | 221 | 231 |
+| All 120 (descriptive) | R2 | B | 239 | 132 | 180 | 202 | 214 |
+| All 120 (descriptive) | RC1 | A | 265 | 213 | 254 | 265 | 265 |
+| All 120 (descriptive) | RC1 | B | 215 | 187 | 215 | 215 | 215 |
+| All 120 (descriptive) | RC2 | A | 282 | 186 | 225 | 248 | 255 |
+| All 120 (descriptive) | RC2 | B | 221 | 115 | 165 | 195 | 197 |
