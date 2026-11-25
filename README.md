@@ -1,61 +1,49 @@
 # STaR-EVRP
 
-**STaR-EVRP** (Slack-Targeted Stochastic Charging Repair) studies whether changing charging decisions—without changing customer sequences—can improve route-level reliability of electric delivery routes under stochastic charging-station waiting times.
+Slack-Targeted Stochastic Charging Repair (STaR) optimizes station visits and charge amounts on fixed customer routes. The model uses deterministic travel and energy, linear charging and synthetic lognormal waits. Reliability is the chance of meeting all customer service-start and depot deadlines on a route. Completion includes late trajectories. Station operating hours, endogenous queues, fleet reassignment and dynamic recourse are outside the model.
 
-Phase 1 builds the simulation foundation. Phase 2 is historical; use the corrected development-only Phase 2.5 workflow in `docs/PHASE25_FINAL_REPORT.md` for current experiments. Do not use the legacy Phase 2 drivers to reproduce the corrected comparison.
+## Results
 
-Primary protocol: **Q = 700**, **h = 1.0**, development set = 24 instances. See `docs/PHASE1_FINAL_REPORT.md` for gate decisions and measured results.
+| Evidence | Where to start |
+| --- | --- |
+| **Phase 5 authoritative 120-instance comparison and ablations** | [Report](docs/PHASE5_FINAL_REPORT.md) · [Figures](results/phase5/figures) · [Tables](results/phase5/tables) · [Handoff ZIP](results/phase5/STaR_EVRP_FINAL_RESULTS_HANDOFF.zip) |
+| **Phase 6 supplementary mathematics and experiments** | [Report](docs/PHASE6_FINAL_REPORT.md) · [Mathematical audit](docs/PHASE6_MATHEMATICAL_AUDIT.md) · [Figures](results/phase6/figures) · [Tables](results/phase6/tables) · [Supplement ZIP](results/phase6/STaR_EVRP_PHASE6_SCIENTIFIC_SUPPLEMENT.zip) |
+| **Phase 3 registered evidence** | [Analysis plan](docs/PHASE3_PRE_REGISTERED_ANALYSIS.md) · [Results](docs/PHASE3_FINAL_REPORT.md) · [Reproduction](docs/PHASE3_REPRODUCIBILITY.md) |
+| **Phase 4 independent reconciliation** | [Audit report](docs/PHASE4_FINAL_REPORT.md) |
+| **Historical foundation and development** | [Phase 1](docs/PHASE1_FINAL_REPORT.md) · [Phase 2](docs/PHASE2_FINAL_REPORT.md) · [Phase 2.5](docs/PHASE25_FINAL_REPORT.md) |
 
-## Dataset
+The registered comparison is STaR versus FSPC on the original holdout. Phase 5 also reports SLS, ablations and the combined benchmark. Phase 6 comparisons are exploratory and reuse the existing parents and waiting model.
 
-Place / keep the published archive at:
+**Method acronyms.** CON is the deposited constructive baseline, MWR is mean-wait repair, QBR is quantile-based repair, SLS is scenario-based local search, and FSPC is fixed-station partial charging. AS1 is the Phase 6 zero/one-visit analytical optimizer and FT-SAA is its fixed-topology sample-average comparator. See the [full glossary](results/phase5/handoff/METHOD_GLOSSARY.md) for ablations and internal IDs.
 
-`dataset/EVRPTW_ChargingStations_Dataset/`
+## Reproduce results
 
-Do not modify original dataset files. Citation details are in that folder’s `README.md`.
+Use Python 3.12.10 and the dependency versions in the [Phase 3 freeze](results/phase3/manifests/freeze.json) and [Phase 6 protocol manifest](results/phase6/manifests/protocol.json) for archive equivalence. Install with `python -m pip install -e .`. Use a clean scratch directory for each rebuild. The following PowerShell commands regenerate derived exports from archived outcomes. They retain archived times.
 
-## Installation
+```powershell
+$env:OPENBLAS_NUM_THREADS='1'
+$env:OMP_NUM_THREADS='1'
+$env:MKL_NUM_THREADS='1'
+python -B -m pytest -p no:cacheprovider -q
 
-```bash
-python -m venv .venv
-.venv\Scripts\activate   # Windows
-pip install -e .
+New-Item -ItemType Directory results/phase5_repeat
+Copy-Item results/phase5/raw,results/phase5/plans,results/phase5/manifests,results/phase5/audit results/phase5_repeat -Recurse
+python -B scripts/run_phase5.py analyze --output results/phase5_repeat
+python -B scripts/run_phase5.py build-exhibits --output results/phase5_repeat
+
+New-Item -ItemType Directory results/phase6_rebuild
+Copy-Item results/phase6/raw,results/phase6/plans,results/phase6/manifests,results/phase6/audit results/phase6_rebuild -Recurse
+Remove-Item -LiteralPath results/phase6_rebuild/audit/diagnostics.json
+python -B scripts/run_phase6.py diagnose --output results/phase6_rebuild
+python -B scripts/run_phase6.py replay --output results/phase6_rebuild
+python -B scripts/run_phase6.py analyze --output results/phase6_rebuild
+python -B scripts/run_phase6.py build-exhibits --output results/phase6_rebuild
 ```
 
-Requires Python 3.11+.
+For a frozen Phase 3 optimization reproduction, check out `star-phase3-freeze-v1` in a separate worktree and follow the Phase 3 instructions. The historical replay CLI expects the extracted `raw/con` bundles. For Phase 4 onward the verified readers open [the CON archive](results/phase3/con_bundles.zip) directly. To restore it for the old CLI in a scratch copy, use `python -m zipfile -e results/phase3/con_bundles.zip DESTINATION`. On Windows use an absolute `\\?\`-prefixed destination if the reserved directory name prevents extraction. Never stage the extracted folder. See the [Phase 6 handoff](docs/PHASE6_RESULTS_HANDOFF.md) for execution and audit commands.
 
-## Reproduction
+## Repository map
 
-From the project root:
-
-```bash
-python scripts/inspect_dataset.py
-python scripts/generate_baselines.py --config configs/pilot.yaml
-python scripts/run_pilot.py --config configs/pilot.yaml
-python scripts/run_repair_probe.py --config configs/pilot.yaml
-python scripts/generate_figures.py
-python scripts/generate_tables.py
-python scripts/audit_results.py
-python -m pytest -q
-```
-
-Runs are resume-safe (completed JSON artifacts are skipped).
-
-## Layout
-
-- `src/star_evrp/` — core library
-- `configs/` — experiment YAML (`pilot.yaml`)
-- `scripts/` — CLI entry points
-- `tests/` — automated tests (41 passing)
-- `results/` — baselines, raw audits, figures, tables, reports
-- `docs/` — model, protocol, limitations, Phase 1 final report
-
-## Phase 1 gates (summary)
-
-| Gate | Decision |
-|------|----------|
-| G0 Reproducible foundation | **PASS** |
-| G1 Meaningful stochastic risk | **PASS** (strong) |
-| G2 Charging repair headroom | **PASS** (limited but positive) |
-
-Full evidence: `docs/PHASE1_FINAL_REPORT.md`.
+- [dataset](dataset/EVRPTW_ChargingStations_Dataset) contains the original benchmark and metadata.
+- [src](src/star_evrp), [configs](configs), [scripts](scripts) and [tests](tests) contain implementations, study settings, entry points and verification.
+- [docs](docs), [prompts](prompts) and [results](results) contain study protocols, research records and immutable released outcomes.

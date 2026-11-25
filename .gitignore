@@ -41,6 +41,19 @@ htmlcov/
 .mypy_cache/
 .ruff_cache/
 
+# Local reproducibility runs and figure or TeX proof sheets
+/results/phase3_reproduction/
+/results/phase4_repeat/
+/results/phase4_proofs/
+/results/phase5_repeat/
+/results/phase5_proofs/
+/results/phase6_rebuild/
+/results/phase6_proofs/
+/results/phase6_tex/
+/results/phase6_con_check/
+/results/phase6_pytest/
+/results/phase3/raw/con/
+
 # Local config overrides
 *.local.yaml
 .env
