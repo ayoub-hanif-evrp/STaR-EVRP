@@ -57,3 +57,6 @@ htmlcov/
 # Local config overrides
 *.local.yaml
 .env
+
+# Local conference proof, renderer and rebuild scratch
+/results/conference_p8_work/

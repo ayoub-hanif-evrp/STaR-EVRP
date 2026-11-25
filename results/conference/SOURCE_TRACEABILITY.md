@@ -1,7 +1,7 @@
 # Source traceability
 
-Reviewed base `d17616177b61cb98e11c1cd5408d7c981fae2b21`. Frozen executable `c657aa69d55178c85b4759475933b36d1bcc2181`.
-Phase 7 reads Phases 1–6 as immutable inputs. Figure 1 uses the original Phase 3 ZIP member, matching frozen validation/plan bundles and actual benchmark coordinates.
+Reviewed base `f243297cd60206b7ab75dcd52d38faf8bee73d5e`. Frozen executable `c657aa69d55178c85b4759475933b36d1bcc2181`.
+Phase 8 reads Phases 1–6 as immutable inputs and refines the prior Git release. Example figures use the original Phase 3 ZIP member, matching frozen validation/plan bundles and actual benchmark coordinates.
 
 ## Fig01
 
@@ -13,6 +13,9 @@ Phase 7 reads Phases 1–6 as immutable inputs. Figure 1 uses the original Phase
 - `dataset/EVRPTW_ChargingStations_Dataset/variant_A_original_TW/C1_10_3_stations.csv` — `d7a67285c17a39851c4bf2506098518ff98c03dafdb7863ba8ff76da571ba584`
 - `results/phase3/raw/c64/C1_10_3__A__0000.json.gz` — `b4f8fbf65ec1212808ae992803c275fdbf771bb0be8382ea1ab24e4bc2382efb`
 - `results/phase3/plans/c64/C1_10_3__A__0000.json.gz` — `ce1fdd67868aaa97b608f18d0dc5e34ac8de875d39ccf6fbb9b40e3804653b80`
+- `src/star_evrp/route_validator.py` — `2782dcbcce2a067c3e3085879b1efb2bf2d32ee677740f15af87d237a810f4c9`
+- `src/star_evrp/deterministic_simulator.py` — `8e226e99dd94fa2691f97bf237e1b651b822ba7324b6e9178f6005d94ca1c01d`
+- `configs/phase3_frozen.yaml` — `f55ab289ac935e65193ed455e48ec2e27112df117cd409dba2339439dde2ede4`
 
 ## Fig02
 
@@ -26,6 +29,7 @@ Phase 7 reads Phases 1–6 as immutable inputs. Figure 1 uses the original Phase
 - `src/star_evrp/scenario_tapes.py` — `e5928078589263c413578ca19f34cf2ed27e85afcaba0856209bd4a8c104d9dc`
 - `configs/phase3_frozen.yaml` — `f55ab289ac935e65193ed455e48ec2e27112df117cd409dba2339439dde2ede4`
 - `docs/PHASE6_MATHEMATICAL_AUDIT.md` — `7b4b983db6176d9ba6a7a01ee0ef675146a83b14bb67ee2284845d3c22a43d8e`
+- `src/star_evrp/phase3.py` — `42ad5475d1e1a4031247a46def65e831159d8f5fe4fc1b9f67a1d75f608f237b`
 
 ## Fig03
 
@@ -73,6 +77,35 @@ Phase 7 reads Phases 1–6 as immutable inputs. Figure 1 uses the original Phase
 - `results/phase5/data/paired_effects.csv` — `d2f1581ecb85c5e422c34429ebde6e365e376bbef0ae2f6548b39d848190a9c5`
 - `results/phase5/tables/main/T04_ablation_quality.csv` — `1976814ec1ab7b5c4970dd8794e7d6c6be41eab31104416cee0fb72e6bf92ec0`
 - `results/phase5/tables/main/T05_ablation_work.csv` — `4f614adea0515b9f1717938d21b8695596b0928b072554786be3c99fb708b164`
+
+## Sup01
+
+- `results/phase6/data/route_features.csv` — `39f95e2d1ebaa065930c02f3ef19be95adf2136bcfd2f153853b2c3f04a31027`
+- `results/phase3/con_bundles.zip` — `99b42e4e46f4a19f288ead588b36fcc43d499f025d5fc828d49b4ca7627c2d03`
+- `results/phase3/processed/provenance.json` — `4ef492c10a55006aa5ed6571217992b773fdb6d43c630d0d6978648a2f8766e6`
+- `results/phase5/data/route_results.csv` — `d503619a9e3a3c0e05e71ee17fa418b48e907e2c7d38cbb87384b3902d239aae`
+- `dataset/EVRPTW_ChargingStations_Dataset/variant_B_relaxed_TW/RC2_10_3.txt` — `81bc00064fc05776058b9a1cd49183a5ec7f33d23a240e0f7adacf49b6dfb88c`
+- `dataset/EVRPTW_ChargingStations_Dataset/variant_B_relaxed_TW/RC2_10_3_stations.csv` — `8b1934659fe1c6c7239352e90dcf60b7627a890314c8363ead8b7256d0d3e654`
+- `results/phase3/raw/c64/RC2_10_3__B__0000.json.gz` — `a29783d18cee7cd3fbb47b943853ac5e8b40b8f1d2a462a9f562e11ed7515241`
+- `results/phase3/plans/c64/RC2_10_3__B__0000.json.gz` — `c28128c26946dc8dd695591f43ef0d01ec6eb865d1d56ea398ca80d9bb96d701`
+- `src/star_evrp/route_validator.py` — `2782dcbcce2a067c3e3085879b1efb2bf2d32ee677740f15af87d237a810f4c9`
+- `src/star_evrp/deterministic_simulator.py` — `8e226e99dd94fa2691f97bf237e1b651b822ba7324b6e9178f6005d94ca1c01d`
+- `configs/phase3_frozen.yaml` — `f55ab289ac935e65193ed455e48ec2e27112df117cd409dba2339439dde2ede4`
+
+## Sup02
+
+- `results/phase6/data/route_features.csv` — `39f95e2d1ebaa065930c02f3ef19be95adf2136bcfd2f153853b2c3f04a31027`
+- `results/phase3/con_bundles.zip` — `99b42e4e46f4a19f288ead588b36fcc43d499f025d5fc828d49b4ca7627c2d03`
+- `results/phase3/processed/provenance.json` — `4ef492c10a55006aa5ed6571217992b773fdb6d43c630d0d6978648a2f8766e6`
+- `results/phase5/data/route_results.csv` — `d503619a9e3a3c0e05e71ee17fa418b48e907e2c7d38cbb87384b3902d239aae`
+- `dataset/EVRPTW_ChargingStations_Dataset/variant_B_relaxed_TW/RC2_10_9.txt` — `f2cb8efcb8a5657d62a2a17c9368ec6287dda1b66d855b0cd8a84b6f6f614eba`
+- `dataset/EVRPTW_ChargingStations_Dataset/variant_B_relaxed_TW/RC2_10_9_stations.csv` — `8b1934659fe1c6c7239352e90dcf60b7627a890314c8363ead8b7256d0d3e654`
+- `results/phase3/raw/c64/RC2_10_9__B__0000.json.gz` — `24ff9f9382fff6f4db1517e0a9057a59f75ec30324cf9e21278292b63efab2be`
+- `results/phase3/plans/c64/RC2_10_9__B__0000.json.gz` — `3384eb2b4ef80ad6acf7337ccc4d932129b158265233695e0a61243dbe7046f1`
+- `results/phase6/data/paired_routes.csv` — `f4a05d0f49b4330b66f94e8fbaad85b9e6e419d9023db47444684166528d6161`
+- `src/star_evrp/route_validator.py` — `2782dcbcce2a067c3e3085879b1efb2bf2d32ee677740f15af87d237a810f4c9`
+- `src/star_evrp/deterministic_simulator.py` — `8e226e99dd94fa2691f97bf237e1b651b822ba7324b6e9178f6005d94ca1c01d`
+- `configs/phase3_frozen.yaml` — `f55ab289ac935e65193ed455e48ec2e27112df117cd409dba2339439dde2ede4`
 
 ## Diagram semantics
 

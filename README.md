@@ -2,11 +2,14 @@
 
 Slack-Targeted Stochastic Charging Repair (STaR) optimizes station visits and charge amounts on fixed customer routes. The model uses deterministic travel and energy, linear charging and synthetic lognormal waits. Reliability is the chance of meeting all customer service-start and depot deadlines on a route. Completion includes late trajectories. Station operating hours, endogenous queues, fleet reassignment and dynamic recourse are outside the model.
 
-## Results
+## Conference exhibits
+
+The publication package contains five main figures, three main tables, and two supplementary route diagnostics. Start with the [exhibit index](results/conference/EXHIBIT_INDEX.csv), [refinement and cleanup report](docs/CONFERENCE_EXHIBITS_REFINEMENT_REPORT.md), or [handoff ZIP](results/conference/STaR_EVRP_CONFERENCE_EXHIBITS.zip).
+
+## Historical evidence
 
 | Evidence | Where to start |
 | --- | --- |
-| **Conference figures and tables** | [Exhibit index](results/conference/EXHIBIT_INDEX.csv) · [Publication handoff ZIP](results/conference/STaR_EVRP_CONFERENCE_EXHIBITS.zip) |
 | **Phase 5 authoritative 120-instance comparison and ablations** | [Report](docs/PHASE5_FINAL_REPORT.md) · [Figures](results/phase5/figures) · [Tables](results/phase5/tables) · [Handoff ZIP](results/phase5/STaR_EVRP_FINAL_RESULTS_HANDOFF.zip) |
 | **Phase 6 supplementary mathematics and experiments** | [Report](docs/PHASE6_FINAL_REPORT.md) · [Mathematical audit](docs/PHASE6_MATHEMATICAL_AUDIT.md) · [Figures](results/phase6/figures) · [Tables](results/phase6/tables) · [Supplement ZIP](results/phase6/STaR_EVRP_PHASE6_SCIENTIFIC_SUPPLEMENT.zip) |
 | **Phase 3 registered evidence** | [Analysis plan](docs/PHASE3_PRE_REGISTERED_ANALYSIS.md) · [Results](docs/PHASE3_FINAL_REPORT.md) · [Reproduction](docs/PHASE3_REPRODUCIBILITY.md) |
@@ -26,6 +29,7 @@ $env:OPENBLAS_NUM_THREADS='1'
 $env:OMP_NUM_THREADS='1'
 $env:MKL_NUM_THREADS='1'
 python -B -m pytest -p no:cacheprovider -q
+python -B scripts/build_conference_exhibits.py build --output results/conference_p8_work/rebuild
 
 New-Item -ItemType Directory results/phase5_repeat
 Copy-Item results/phase5/raw,results/phase5/plans,results/phase5/manifests,results/phase5/audit results/phase5_repeat -Recurse

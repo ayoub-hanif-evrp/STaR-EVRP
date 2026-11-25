@@ -15,9 +15,9 @@ from zlib import crc32
 
 from PIL import Image, ImageOps
 
-from star_evrp.conference_data import BASE, FROZEN, near, protected_hashes
+from star_evrp.conference_data import AUDIT, BASE, FROZEN, HISTORICAL_BASE, IGNORE_ADDITION, near, protected_hashes
 from star_evrp.conference_exhibits import TABLE_STEMS, table_latex, text
-from star_evrp.conference_figures import FLOW, STEMS
+from star_evrp.conference_figures import ARTWORK, FLOW, STEMS, SUPPLEMENTARY
 from star_evrp.data_loader import load_instance
 from star_evrp.phase3 import read_bundle
 from star_evrp.phase4_release import markdown
@@ -28,7 +28,9 @@ ZIP_NAME="STaR_EVRP_CONFERENCE_EXHIBITS.zip"
 SOURCE_FILES=(
     "src/star_evrp/conference_data.py","src/star_evrp/conference_figures.py",
     "src/star_evrp/conference_exhibits.py","src/star_evrp/conference_audit.py",
-    "scripts/build_conference_exhibits.py","tests/test_conference_exhibits.py",
+    "src/star_evrp/conference_physics.py","scripts/build_conference_exhibits.py","tests/test_conference_exhibits.py",
+    "prompts/PROMPT_08_CONFERENCE_EXHIBITS_REFINEMENT_AND_CLEANUP.md",
+    "docs/CONFERENCE_EXHIBITS_REFINEMENT_REPORT.md",
 )
 
 
@@ -36,20 +38,26 @@ def verify_input_protection(root,out):
     pre=read_json(root/"results/conference/audit/preflight.json")
     require(pre["status"]=="pass" and pre["frozen"]==FROZEN,"Missing original preflight")
     protected=protected_hashes(root)
-    require(protected==pre["protected_sha256"],"Protected file hash changed since preflight")
-    base=set(git(root,"ls-tree","-r","--name-only",BASE).decode().splitlines())
-    changed=git(root,"diff","--name-only",BASE).decode().splitlines()
-    allowed=("README.md",".gitattributes","docs/CONFERENCE_EXHIBITS_REPORT.md",*SOURCE_FILES,
-             "prompts/PROMPT_07_CONFERENCE_FIGURES_AND_TABLES.md")
-    require(all(p in allowed or p.startswith("results/conference/") or p not in base for p in changed),
-            "Unexpected historical changes")
+    expected=dict(pre["protected_sha256"])
+    prior_ignore=expected.pop(".gitignore")
+    current_ignore=(root/".gitignore").read_bytes()
+    original_ignore=git(root,"show",f"{HISTORICAL_BASE}:.gitignore")
+    require(current_ignore.replace(b"\r\n",b"\n")==original_ignore+IGNORE_ADDITION
+            and prior_ignore in (sha(original_ignore),sha(original_ignore.replace(b"\n",b"\r\n"))),
+            "Unexpected ignore-rule modification")
+    require(protected==expected,"Protected file hash changed since Phase 7 preflight")
+    prior_audit=git(root,"ls-tree","-r","--name-only",BASE,"results/conference/audit").decode().splitlines()
+    require(all(file_sha(root/p)==sha(git(root,"show",f"{BASE}:{p}")) for p in prior_audit),
+            "Phase 7 original audit bytes changed")
+    changed=git(root,"diff","--name-only",HISTORICAL_BASE).decode().splitlines()
     phase_counts={}
     for phase in (5,6):
         release=root/f"results/phase{phase}"
         hashes=read_json(release/"audit/final_gate.json")["file_sha256"]
         require(all(file_sha(release/n)==v for n,v in hashes.items()),f"Phase {phase} release changed")
         phase_counts[str(phase)]=len(hashes)
-    write_json(out/"audit/preservation.json",dict(status="pass",base=BASE,frozen=FROZEN,protected_count=len(protected),
+    write_json(out/AUDIT/"preservation.json",dict(status="pass",base=BASE,frozen=FROZEN,protected_count=len(protected),original_inventory=len(protected)+1,
+               reviewed_ignore_only=True,prior_audit_files=len(prior_audit),
                release_counts=phase_counts,archived_optimizer_calls=0,stochastic_replay_calls=0,changed_paths=changed))
 
 
@@ -98,9 +106,81 @@ def verify_map(root,out):
         meta["zoom_limits"][0]<=float(r["x"])<=meta["zoom_limits"][1] and
         meta["zoom_limits"][2]<=float(r["y"])<=meta["zoom_limits"][3] for r in stops),"Shared map bounds omit stops")
     for displayed,saved in zip(meta["ordered_stops"],stops,strict=True):
-        require(all(str(displayed[k])==v for k,v in saved.items()),"Map renderer used different data")
+        require(all(("NA" if displayed[k] is None else str(displayed[k]))==v for k,v in saved.items()),"Map renderer used different data")
     return {"chosen":chosen,"original_zip_verified":True,"stops":len(stops),"actual_nodes":len(nodes),"shared_bounds":True}
 
+
+def verify_example(root,out,name,folder,stem):
+    from star_evrp.conference_physics import physical_events
+    from star_evrp.phase3 import _route
+    from star_evrp.phase5_experiments import case_inputs
+    from star_evrp.phase4_results import canonical, plan_link
+    from star_evrp.phase6_archive import freeze_context
+    from star_evrp.route_validator import validate_repair
+
+    details=read_json(out/"data"/f"{name}_route_selection.json")
+    chosen=details["chosen"]
+    k=(chosen["parent"],chosen["variant"])
+    freeze=freeze_context(root)
+    case=next(r for r in freeze["holdout"] if (r["parent_key"],r["variant"])==k)
+    instance,physics,original,_,member_hash=case_inputs(root,case,freeze["config"],sha(canonical(freeze)))
+    require(member_hash==details["con_bundle_member_sha256"],"Example original member diagnostic hash")
+    require(all(details[n]==case[n] for n in ("instance_sha256","stations_sha256")),"Example input identity")
+    baseline=_route(original[chosen["route"]])
+    events=csv_rows(out/"data"/f"{name}_route_stops.csv")
+    charging=csv_rows(out/"data"/f"{name}_charging_events.csv")
+    summaries=csv_rows(out/"data"/f"{name}_physical_summary.csv")
+    metrics=csv_rows(out/"data"/f"{name}_metrics.csv")
+    nodes=csv_rows(out/"data"/f"{name}_instance_nodes.csv")
+    require([(int(r["node"]),r["type"],float(r["x"]),float(r["y"])) for r in nodes] ==
+            [(n.node_id,n.node_type.value,n.x,n.y) for n in instance.nodes],"Example benchmark node coordinates")
+    require(charging==[r for r in events if r["type"]=="station"],"Charging event ledger differs")
+    methods=("FSPC","STaR") if name=="Sup02" else ("CON","STaR")
+    require(tuple(r["method"] for r in metrics)==methods,"Example methods")
+    for summary,item in zip(summaries,metrics,strict=True):
+        method=item["method"]
+        code={"CON":"B0","FSPC":"B4","STaR":"STaR"}[method]
+        raw=next(r for r in read_bundle(root/item["source"])["rows"]
+                 if (r["method"],r["route_id"])==(code,chosen["route"]))
+        plan=next(r for r in read_bundle(root/item["source"].replace("/raw/","/plans/"))["rows"]
+                  if (r["method"],r["route_id"])==(code,chosen["route"]))
+        plan_link(raw,plan,original[chosen["route"]])
+        trace=validate_repair(instance,baseline,_route(plan),physics)
+        check,totals=physical_events(instance,physics,trace,method)
+        require([r["node"] for r in check if r["type"]=="customer"]==details["customer_order"],"Customer order")
+        relevant=[r for r in events if r["plan"]==method]
+        same=lambda row,reference: row=={k:("NA" if v is None else str(v)) for k,v in reference.items()}
+        require(all(same(a,b) for a,b in zip(relevant,check,strict=True)) and same(summary,totals),"Physical ledger drift")
+        validation=raw["validation"]
+        require(int(item["successes"])==validation["successes"] and float(item["completion"])==validation["completion"]
+                and item["plan_digest"]==raw["plan_sha256"],"Example archive metrics")
+    meta=read_json(out/folder/f"{stem}.json")["plotted"]
+    if name=="Sup01":
+        limits=meta["zoom_limits"]
+        require(meta["aspect"].startswith("equal") and all(limits[0]<=float(r["x"])<=limits[1] and
+                limits[2]<=float(r["y"])<=limits[3] for r in events),"Supplementary map omits route stops")
+    if name.startswith("Sup"):
+        require(meta["selection"]==details and all(same(a,b) for a,b in zip(events,meta["stops"],strict=True)),
+                "Supplementary rendering inputs differ")
+    return dict(chosen=chosen,events=len(events),station_visits=len(charging),physics_tolerance=summaries[0]["tolerance"])
+
+
+def verify_example_selection(root,out):
+    from star_evrp.conference_physics import example_candidates
+    from star_evrp.phase4_results import indexed
+    from star_evrp.phase6_archive import key
+
+    data=indexed(csv_rows(root/"results/phase6/data/route_features.csv"),key)
+    winner,options=example_candidates(data)
+    saved=read_json(out/"data/Sup01_route_selection.json")
+    require(all(saved[k]==v for k,v in json.loads(json.dumps(winner)).items()),"Complex route selection drift")
+    require(len(options)==len(csv_rows(out/"data/Sup01_route_selection.csv")),"Complex selection counts")
+    pairs=[r for r in csv_rows(root/"results/phase6/data/paired_routes.csv")
+           if r["partition"]=="holdout" and r["comparison"]=="FSPC" and float(r["R_pp"])<0]
+    worst=min(pairs,key=lambda r:(int(r["star_successes"])-int(r["control_successes"]),r["parent"],r["variant"],int(r["route"])))
+    saved=read_json(out/"data/Sup02_route_selection.json")
+    require(saved["candidate_count"]==len(pairs) and all(str(saved["chosen"][k])==worst[k]
+            for k in ("parent","variant","route")),"Adverse route selection drift")
 
 def verify_flow(root,out):
     graph=read_json(out/"data/Fig02_flow.json")
@@ -131,6 +211,11 @@ def verify_flow(root,out):
     for claim,reference,source,needles in check:
         require(all(needle in source for needle in needles),f"Diagram semantics stale: {claim}")
         result.append(dict(check=claim,source=reference,status="pass"))
+    need=('yield "remove"','yield "replace"','yield "insert"','yield "relocate"',
+          'yield "quantity"','yield "transfer"','self.allocation(route, "minimal"','self.allocation(route, "speed"')
+    require(all(token in search for token in need) and len(graph["operators"])==6,"Move illustrations or source stale")
+    require(all([v for v in m["before"] if v.isdigit()]==[v for v in m["after"] if v.isdigit()]
+                for m in graph["operators"]),"Conceptual moves reorder customers")
     require(not graph["validation"]["feedback"] and "validation(" not in search,"Diagram uses optimization feedback")
     require(any(edge[:2]==["score","rank"] for edge in graph["edges"]),"Missing incumbent loop")
     return result
@@ -163,9 +248,11 @@ def svg_format(path,mm):
     svg=ElementTree.parse(path).getroot()
     types=[item.tag.rsplit("}",1)[-1] for item in svg.iter()]
     require("text" in types and "path" in types and "image" not in types,"SVG is not editable vector")
+    styles="".join(item.text or "" for item in svg.findall(".//{http://www.w3.org/2000/svg}style"))
+    require(styles.count("data:font/ttf;base64,")==2 and "@font-face" in styles,"SVG fonts are not portable")
     for key,target in zip(("width","height"),mm,strict=True):
         near(float(svg.attrib[key].removesuffix("pt")),target*72/25.4,"SVG physical size",atol=.005)
-    return {"text_objects":types.count("text"),"paths":types.count("path")}
+    return {"text_objects":types.count("text"),"paths":types.count("path"),"embedded_font_faces":2}
 
 
 def pdf_format(path,mm,pdfium):
@@ -186,11 +273,12 @@ def pdf_format(path,mm,pdfium):
 def audit(root,out,pdfium):
     verify_input_protection(root,out)
     fmt={}
-    assets=out/"figures"
-    require({p.name for p in assets.iterdir()}=={f"{stem}.{ext}" for stem in STEMS for ext in ("png","pdf","svg","json")},
-            "Wrong number of figure exports")
-    for stem in STEMS:
-        where=assets/stem
+    for folder,stems in (("figures",STEMS),("supplementary",SUPPLEMENTARY)):
+        require({p.name for p in (out/folder).iterdir()}==
+                {f"{stem}.{ext}" for stem in stems for ext in ("png","pdf","svg","json")},
+                f"Wrong number of exports in {folder}")
+    for stem,folder in ARTWORK.items():
+        where=out/folder/stem
         card=read_json(where.with_suffix(".json"))
         require(card["dpi"]==400 and card["physical_mm"][0]==178 and card["font"]=="DejaVu Sans","Figure style mismatch")
         require(all(file_sha(root/n)==h for n,h in card["source_sha256"].items()),"Figure has stale archived source")
@@ -213,28 +301,34 @@ def audit(root,out,pdfium):
         r=needed["rendered"]
         require(there.with_suffix(".tex").read_text(encoding="utf-8")==table_latex(stem,h,r) and
                 there.with_suffix(".md").read_text(encoding="utf-8")==markdown(h,r),"Display table drift")
-    write_json(out/"audit/formats.json",dict(status="pass",formats=fmt,tables=len(TABLE_STEMS)))
-    write_json(out/"audit/spatial_and_logic.json",dict(status="pass",map=verify_map(root,out),flow=verify_flow(root,out)))
+    write_json(out/AUDIT/"formats.json",dict(status="pass",formats=fmt,tables=len(TABLE_STEMS)))
+    verify_example_selection(root,out)
+    physics={stem[:5]:verify_example(root,out,stem[:5],folder,stem)
+             for stem,folder in ARTWORK.items() if stem[:5] in ("Fig01","Sup01","Sup02")}
+    write_json(out/AUDIT/"spatial_and_logic.json",dict(status="pass",map=verify_map(root,out),
+               flow=verify_flow(root,out),physics=physics))
 
 
 def proofs(out,scratch,pdfium):
     from matplotlib import get_data_path
 
     scratch.mkdir(parents=True,exist_ok=True)
-    assets=out/"figures"
     rendered={}
-    for stem in STEMS:
+    for stem,folder in ARTWORK.items():
+        assets=out/folder
         path=assets/(stem+".png")
         with Image.open(path) as img:
             small=img.convert("RGB")
             small.thumbnail((675,1000),Image.Resampling.LANCZOS)
             small.save(scratch/f"{stem}_png_675.png")
             ImageOps.grayscale(small).save(scratch/f"{stem}_gray_675.png")
+            ImageOps.grayscale(img).save(scratch/f"{stem}_png_gray_native.png")
         pdf_path=assets/(stem+".pdf")
         with pdfium.PdfDocument(pdf_path) as pdf:
             with closing(pdf[0]) as page:
                 native=page.render(scale=400/72).to_pil().copy()
                 native.save(scratch/f"{stem}_pdf_native.png")
+                ImageOps.grayscale(native).save(scratch/f"{stem}_pdf_gray_native.png")
                 reduced=native.copy()
                 reduced.thumbnail((675,1000),Image.Resampling.LANCZOS)
                 reduced.save(scratch/f"{stem}_pdf_675.png")
@@ -258,11 +352,11 @@ def proofs(out,scratch,pdfium):
     run=subprocess.run(cmd,cwd=scratch,capture_output=True)
     log=scratch/"conference_tables.log"
     transcript=run.stdout+run.stderr+(b"\n"+log.read_bytes() if log.exists() else b"")
-    write_bytes(out/"audit/tectonic.txt",transcript)
+    write_bytes(out/AUDIT/"tectonic.txt",transcript)
     bad=re.findall(rb".*(?:Overfull|Too wide|Missing character).*",transcript,re.I)
     report=dict(status="fail",command=cmd,exit=run.returncode,overfull_or_missing=[r.decode(errors="replace") for r in bad],
                 version=subprocess.check_output(["tectonic","-V"],text=True).strip())
-    where=out/"audit/table_compilation.json"
+    where=out/AUDIT/"table_compilation.json"
     write_json(where,report)
     require(run.returncode==0 and not bad,"TeX compile failed or overfull")
     with pdfium.PdfDocument(scratch/"conference_tables.pdf") as doc:
@@ -283,33 +377,40 @@ def proofs(out,scratch,pdfium):
                   sha256={stem:file_sha(out/"tables"/f"{stem}.tex") for stem in TABLE_STEMS},
                   proof_pdf_sha256=file_sha(scratch/"conference_tables.pdf"))
     write_json(where,report)
-    write_json(out/"audit/proof_renders.json",dict(status="pass",figures=rendered,
+    write_json(out/AUDIT/"proof_renders.json",dict(status="pass",figures=rendered,
         renderer=str(pdfium.PYPDFIUM_INFO),bundled_rendering_engine=str(pdfium.PDFIUM_INFO),grayscale=True))
 
 
 def package(root,out,extract_dir):
-    protected=read_json(out/"audit/preservation.json")
-    numeric=read_json(out/"audit/numerical.json")
-    semantics=read_json(out/"audit/spatial_and_logic.json")
-    formats=read_json(out/"audit/formats.json")
-    proofs_done=read_json(out/"audit/proof_renders.json")
-    compile_result=read_json(out/"audit/table_compilation.json")
-    visual=read_json(out/"audit/visual.json")
-    tests=read_json(out/"audit/tests.json")
-    repeat=read_json(out/"audit/reproducibility.json")
-    for doc in (protected,numeric,semantics,formats,proofs_done,compile_result,visual,tests,repeat):
+    protected=read_json(out/AUDIT/"preservation.json")
+    numeric=read_json(out/AUDIT/"numerical.json")
+    semantics=read_json(out/AUDIT/"spatial_and_logic.json")
+    formats=read_json(out/AUDIT/"formats.json")
+    proofs_done=read_json(out/AUDIT/"proof_renders.json")
+    compile_result=read_json(out/AUDIT/"table_compilation.json")
+    visual=read_json(out/AUDIT/"visual.json")
+    tests=read_json(out/AUDIT/"tests.json")
+    repeat=read_json(out/AUDIT/"reproducibility.json")
+    cleanup=read_json(out/AUDIT/"cleanup.json")
+    preflight=read_json(out/AUDIT/"preflight.json")
+    verify_input_protection(root,out)
+    for doc in (preflight,protected,numeric,semantics,formats,proofs_done,compile_result,visual,tests,repeat,cleanup):
         require(doc["status"]=="pass","A required publication check failed")
     require(repeat["missing_input_rejected"] and all(file_sha(out/n)==x for n,x in repeat["derived_sha256"].items()),
             "Stale rebuild evidence")
     require(all(file_sha(out/"tables"/f"{stem}.tex")==compile_result["sha256"][stem] for stem in TABLE_STEMS),
             "TeX proof was not produced from the packaged tables")
-    require(all(visual["figures"][s]["sha256"]==formats["formats"][s]["sha256"] and
-                visual["figures"][s]["native_reduced_gray"] for s in STEMS),"Missing or stale visual review")
+    for stem,folder in ARTWORK.items():
+        reviewed=visual["figures"][stem]
+        require(reviewed["native_reduced_gray"] and set(reviewed["reviewed_formats"])=={"png","pdf","svg"}
+                and reviewed["sha256"]==formats["formats"][stem]["sha256"],"Missing or stale visual review")
+        require(all(file_sha(out/folder/f"{stem}.{ext}")==digest for ext,digest in reviewed["sha256"].items()),
+                "Current figures differ from visually reviewed exports")
     require(all(visual["tables"][s]["tex_sha256"]==compile_result["sha256"][s] for s in TABLE_STEMS),"Unreviewed table print proof")
     code={n:file_sha(root/n) for n in SOURCE_FILES}
     refs={}
-    for stem in STEMS:
-        refs.update(read_json(out/"figures"/f"{stem}.json")["source_sha256"])
+    for stem,folder in ARTWORK.items():
+        refs.update(read_json(out/folder/f"{stem}.json")["source_sha256"])
     for stem in TABLE_STEMS:
         refs.update(read_json(out/"data"/f"{stem}_display.json")["source_sha256"])
     for source in ("results/phase5/STaR_EVRP_FINAL_RESULTS_HANDOFF.zip","results/phase6/STaR_EVRP_PHASE6_SCIENTIFIC_SUPPLEMENT.zip",
@@ -317,12 +418,13 @@ def package(root,out,extract_dir):
         refs[source]=file_sha(root/source)
     for name,digest in refs.items():
         require(file_sha(root/name)==digest,"Stale input hash")
-    gates={f"C7-G{i}":"PASS" for i in range(7)}
-    write_json(out/"audit/final_gates.json",dict(status="pass",gates=gates,figures=len(STEMS),tables=len(TABLE_STEMS),
+    gates={f"G{i}":"PASS" for i in range(8)}
+    write_json(out/AUDIT/"final_gates.json",dict(status="pass",gates=gates,figures=len(STEMS),supplementary=len(SUPPLEMENTARY),tables=len(TABLE_STEMS),
                 tests=tests,planned_file_formats=["PNG at 400 DPI","vector PDF","editable SVG","CSV","LaTeX","Markdown"]))
-    skip={"MANIFEST.json",ZIP_NAME,"audit/zip_envelope.json"}
+    # The root closure is detached. Phase 7's historical envelope remains part of that audit record.
+    skip={"MANIFEST.json",ZIP_NAME,f"{AUDIT}/zip_envelope.json"}
     members={p.relative_to(out).as_posix():p for p in sorted(out.rglob("*")) if p.is_file() and p.relative_to(out).as_posix() not in skip}
-    write_json(out/"MANIFEST.json",dict(schema=1,base=BASE,frozen=FROZEN,source_sha256=refs,code_sha256=code,
+    write_json(out/"MANIFEST.json",dict(schema=2,base=BASE,frozen=FROZEN,source_sha256=refs,code_sha256=code,
                output_sha256={n:file_sha(p) for n,p in members.items()},gates=gates))
     members["MANIFEST.json"]=out/"MANIFEST.json"
     buffer=BytesIO()
@@ -345,5 +447,5 @@ def package(root,out,extract_dir):
         require(all(file_sha(extract_dir/n)==file_sha(source) for n,source in members.items()),"ZIP extraction byte mismatch")
     result=dict(status="pass",name=ZIP_NAME,sha256=file_sha(out/ZIP_NAME),verified_members=len(members),
                 extracted_bytes_verified=True)
-    write_json(out/"audit/zip_envelope.json",result)
+    write_json(out/AUDIT/"zip_envelope.json",result)
     return result

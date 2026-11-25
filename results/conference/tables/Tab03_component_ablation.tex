@@ -3,15 +3,15 @@
 \setlength{\tabcolsep}{4pt}
 \renewcommand{\arraystretch}{1.12}
 \noindent
-\begin{tabular}{@{}lrrrr@{}}
+\begin{tabular}{@{}lrrrrr@{}}
 \toprule
-\textbf{Component removed} & \textbf{Mean R (\%)} & \textbf{Attained} & \textbf{Search draws} & \textbf{Reliability loss (pp)} \\
+\textbf{Component removed} & \textbf{Mean R (\%)} & \textbf{Attained} & \textbf{Search draws} & \textbf{Draw difference} & \textbf{Reliability loss (pp)} \\
 \midrule
-\textbf{None (full STaR)} & 97.31 & 2,211 & 13,024 & --- \\
-Partial charging & 94.19 & 2,096 & 8,400 & 3.120 \\
-Slack prioritization & 97.01 & 2,197 & 13,080 & 0.308 \\
-Analytical screening & 97.31 & 2,207 & 13,569 & 0.007 \\
-Progressive evaluation & 97.31 & 2,211 & 18,927 & 0.000 \\
+\textbf{None (full STaR)} & 97.31 & 2,211 & 13,024 & \textemdash{} & \textemdash{} \\
+Partial charging & 94.19 & 2,096 & 8,400 & -4,624 & 3.120 \\
+Slack prioritization & 97.01 & 2,197 & 13,080 & +56 & 0.308 \\
+Analytical screening & 97.31 & 2,207 & 13,569 & +545 & 0.007 \\
+Progressive evaluation & 97.31 & 2,211 & 18,927 & +5,903 & 0.000 \\
 \bottomrule
 \end{tabular}
 \endgroup

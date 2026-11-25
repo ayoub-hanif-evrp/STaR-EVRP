@@ -4,6 +4,8 @@ Fig02_star_framework,figure,figures/Fig02_star_framework.pdf,"PDF, SVG, PNG; JSO
 Fig03_paired_reliability,figure,figures/Fig03_paired_reliability.pdf,"PDF, SVG, PNG; JSON sidecar","2,321 holdout routes",FIGURE_CAPTIONS.md
 Fig04_charging_complexity,figure,figures/Fig04_charging_complexity.pdf,"PDF, SVG, PNG; JSON sidecar","2,321 holdout routes",FIGURE_CAPTIONS.md
 Fig05_quality_simulation_effort,figure,figures/Fig05_quality_simulation_effort.pdf,"PDF, SVG, PNG; JSON sidecar",118-route Phase 6 timing panel,FIGURE_CAPTIONS.md
+Sup01_complex_route_repair,supplementary figure,supplementary/Sup01_complex_route_repair.pdf,"PDF, SVG, PNG; JSON sidecar",Outcome-selected holdout route,SUPPLEMENTARY_NOTES.md
+Sup02_deteriorated_route_diagnostic,supplementary figure,supplementary/Sup02_deteriorated_route_diagnostic.pdf,"PDF, SVG, PNG; JSON sidecar",Outcome-selected holdout route,SUPPLEMENTARY_NOTES.md
 Tab01_experimental_configuration,table,tables/Tab01_experimental_configuration.tex,"TeX, CSV, Markdown",Full benchmark and holdout design,TABLE_NOTES.md
 Tab02_method_comparison,table,tables/Tab02_method_comparison.tex,"TeX, CSV, Markdown","2,321 holdout routes",TABLE_NOTES.md
 Tab03_component_ablation,table,tables/Tab03_component_ablation.tex,"TeX, CSV, Markdown","2,321 holdout routes",TABLE_NOTES.md

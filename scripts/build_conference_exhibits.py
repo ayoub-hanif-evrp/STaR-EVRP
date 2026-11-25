@@ -34,10 +34,10 @@ def main():
     if args.command=="build":
         verify_input_protection(root,out)
         build(root,out,args.width_mm)
-        print(f"Built five figures and three tables in {out}")
+        print(f"Built five main figures, three tables and two supplementary figures in {out}")
         return
     if args.command=="package":
-        scratch=(root/(args.scratch or Path("results/conference_zip_check"))).resolve()
+        scratch=(root/(args.scratch or Path("results/conference_p8_work/zip_check"))).resolve()
         require(not scratch.exists() and not scratch.is_relative_to(out),"Use an empty ZIP proof directory outside the release")
         print(package(root,out,scratch))
         return
@@ -51,7 +51,7 @@ def main():
         audit(root,out,pypdfium2)
         print(f"Verified archives, figure formats, spatial plan and diagram in {out}")
     else:
-        scratch=(root/(args.scratch or Path("results/conference_proofs"))).resolve()
+        scratch=(root/(args.scratch or Path("results/conference_p8_work/proofs"))).resolve()
         require(not scratch.is_relative_to(out),"Proofs must be outside the release directory")
         proofs(out,scratch,pypdfium2)
         print(f"Rendered figure proofs and compiled all three tables at {scratch}")

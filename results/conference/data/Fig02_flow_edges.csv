@@ -10,4 +10,6 @@ feasible,propose,invalid or duplicate (common retry line)
 screen,propose,model reliability reject (common retry line)
 prefix,propose,bound or budget reject (common retry line)
 score,propose,no strict gain (common retry line)
-propose,return,no remaining improving proposal or cooperative stop
+propose,return,proposal stream exhausted or a cooperative guard stops search
+return,validation,independent final assessment; no search feedback
+prefix,propose,advance if full extension cannot be completed while guards permit

@@ -1,7 +1,7 @@
 | Parameter | Configuration |
 | --- | --- |
 | Benchmark | Extended Homberger, 1,000 customers per instance. 120 instances from 60 A/B parents. |
-| Split and route coverage | 24 development and 96 holdout instances (48 holdout parents). 8,606 routes / 2,891 exposed overall. Holdout: 6,864 / 2,321. |
+| Split and route coverage | 24 development and 96 holdout instances (12 and 48 parents, respectively). 8,606 routes / 2,891 exposed overall. Holdout: 6,864 / 2,321. |
 | Route and energy model | Fixed customers and order, capacity Q = 700, consumption h = 1. Euclidean travel, linear station-specific charging, native units. |
 | Station waits | Independent synthetic lognormal waits per visit. 4 reused station attribute tables. Station hours disabled. |
 | Search and target | 95% route target. Maximum 64 distinct trials, 131,072 search draws and 5 s cooperative guard. Trials include the original plan. |

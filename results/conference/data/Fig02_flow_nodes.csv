@@ -1,5 +1,5 @@
 id,label,lines,source
-initialize,Start from CON,"Feasible ordered plan | Station laws, target, caps | Trace + score on 512 draws","competitive_search.py:188–224; route_evaluator.py:56–75, 87–107"
+initialize,Start from original route,"Feasible ordered plan | Station laws, target, caps | Trace + score on 512 draws","competitive_search.py:188–224; route_evaluator.py:56–75, 87–107"
 rank,Rank visits and gaps,Lowest upper bound first | Prioritize gaps near the | most critical station,competitive_search.py:150–158; timing.py:73–92
 propose,Interleave moves,"Adjust or transfer charge | Remove, replace, relocate | or insert, then allocate","competitive_search.py:48–169, 225–249; charge_plan.py:49–73"
 feasible,Check candidate,Skip duplicate plans | Require energy feasibility | and zero-wait timing,competitive_search.py:235–250; route_evaluator.py:56–74; deterministic_simulator.py:166–282

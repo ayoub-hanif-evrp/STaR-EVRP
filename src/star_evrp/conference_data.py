@@ -4,15 +4,11 @@ from collections import Counter
 from math import isclose
 from statistics import fmean, median
 
-from star_evrp.charge_plan import ChargePlan, customer_node_ids
-from star_evrp.phase3 import _route
+from star_evrp.conference_physics import deteriorated_candidates, example_candidates, route_example
 from star_evrp.phase4_results import (bootstrap, canonical, file_sha, git, grouped, indexed, plan_link, read_json,
-                                     require, require_keys, sha, strata)
-from star_evrp.phase5_experiments import case_inputs
+                                     require, require_keys, strata)
 from star_evrp.phase6_archive import csv_rows, freeze_context, key, load_archive, roster, write_csv, write_json
 from star_evrp.phase6_run import _loads, _payloads
-from star_evrp.route_validator import validate_repair
-from star_evrp.types import NodeType
 
 METHODS = {
     "CON": "Original route", "MWR": "Mean-wait repair", "QBR": "Quantile repair",
@@ -23,7 +19,10 @@ ABLATIONS = {
     "STaR-NAS": "Analytical screening", "STaR-NPP": "Progressive evaluation",
 }
 FROZEN = "c657aa69d55178c85b4759475933b36d1bcc2181"
-BASE = "d17616177b61cb98e11c1cd5408d7c981fae2b21"
+HISTORICAL_BASE = "d17616177b61cb98e11c1cd5408d7c981fae2b21"
+BASE = "f243297cd60206b7ab75dcd52d38faf8bee73d5e"
+AUDIT = "audit/phase8"
+IGNORE_ADDITION = b"\n# Local conference proof, renderer and rebuild scratch\n/results/conference_p8_work/\n"
 PRIMARY = (0.012420292977165015, 0.008630955453232267, 0.016503459913289817)
 SOURCE_5 = "results/phase5/data/"
 SOURCE_6 = "results/phase6/data/"
@@ -35,7 +34,7 @@ SOURCES = {
     "Fig01": (SOURCE_6+"route_features.csv", "results/phase3/con_bundles.zip",
               "results/phase3/processed/provenance.json", SOURCE_5+"route_results.csv"),
     "Fig02": tuple(f"src/star_evrp/{name}" for name in FROZEN_SEARCH)
-             + ("configs/phase3_frozen.yaml", "docs/PHASE6_MATHEMATICAL_AUDIT.md"),
+             + ("configs/phase3_frozen.yaml", "docs/PHASE6_MATHEMATICAL_AUDIT.md","src/star_evrp/phase3.py"),
     "Fig03": (SOURCE_5+"paired_effects.csv", SOURCE_5+"route_results.csv",
               "results/phase3/tables/parent_effects.csv", SOURCE_6+"paired_directions.csv"),
     "Fig04": (SOURCE_6+"mechanism_strata.csv", SOURCE_6+"route_features.csv", SOURCE_6+"paired_routes.csv",
@@ -66,9 +65,9 @@ def protected_hashes(root):
     tag=git(root,"rev-parse","star-phase3-freeze-v1^{}").decode().strip()
     require(tag==FROZEN,"Changed optimizer tag")
     git(root,"merge-base","--is-ancestor",BASE,"HEAD")
-    base=git(root,"ls-tree","-r","--name-only",BASE).decode().splitlines()
-    protected=set(base)-{"README.md",".gitattributes"}
-    changed=set(git(root,"diff","--name-only",BASE).decode().splitlines())
+    base=git(root,"ls-tree","-r","--name-only",HISTORICAL_BASE).decode().splitlines()
+    protected=set(base)-{"README.md",".gitattributes",".gitignore"}
+    changed=set(git(root,"diff","--name-only",HISTORICAL_BASE).decode().splitlines())
     require(not changed & protected,"Protected archive changed")
     return selected_paths(root,*sorted(protected))
 
@@ -259,7 +258,7 @@ def complexity(root,rows,keys,parents,cfg,pairs,primary,features):
                                   net_share=100*bins[-1]["contribution_pp"]/primary["mean_pp"])
 
 
-def route_map(root,rows,keys,plans,features,freeze,token):
+def map_candidates(rows,keys,plans,features):
     all_options=[]
     for k in keys:
         parent,variant,rid=k
@@ -283,41 +282,11 @@ def route_map(root,rows,keys,plans,features,freeze,token):
     eligible=[r for r in all_options if r["tier"] is not None]
     require(bool(eligible),"No physical topology change in archive")
     chosen=min(eligible,key=lambda r:r["tier"])
-    k=chosen["parent"],chosen["variant"],chosen["route"]
-    case=next(r for r in freeze["holdout"] if (r["parent_key"],r["variant"])==k[:2])
-    instance,physics,original,_,base_hash=case_inputs(root,case,freeze["config"],token)
-    baseline=_route(original[k[2]])
-    nodes=[dict(node=node.node_id,type=node.node_type.value,x=node.x,y=node.y) for node in instance.nodes]
-    require(sum(x["type"]=="customer" for x in nodes)==1000,"Example is not the 1,000-customer case")
-    stops,metrics,source_files=[],[],[instance.instance_path.relative_to(root).as_posix(),
-                                    instance.stations_path.relative_to(root).as_posix()]
-    for method in ("CON","STaR"):
-        row,plan=rows[*k,method],plans["holdout",*k,method]
-        plan_link(row,plan,original[k[2]])
-        source_files.extend((row["source"],row["source"].replace("/raw/","/plans/")))
-        route=_route(plan)
-        trace=validate_repair(instance,baseline,route,physics)
-        require(customer_node_ids(instance,baseline)==customer_node_ids(instance,route) and k[2]==route.route_id,
-                "Spatial example changed customers or identity")
-        fp=ChargePlan.from_route(instance,route).fingerprint()
-        require(fp==plan["fingerprint"] and trace.end_clock==plan["zero_wait_completion"],"Spatial plan replay differs")
-        for i,event in enumerate(trace.stops):
-            node=instance.node(event.node_id)
-            require(node.node_id==route.stops[i].node_id and event.energy_charged==plan["events"][i][4],"Stop trace differs")
-            stops.append(dict(plan=method,index=i,node=node.node_id,type=node.node_type.value,x=node.x,y=node.y,
-                              charged=event.energy_charged,battery_arrival=event.battery_on_arrival,
-                              battery_departure=event.battery_on_departure,arrival=event.arrival_time,departure=event.departure_time))
-        v=row["validation"]
-        metrics.append(dict(method=method,successes=v["successes"],scenarios=v["n"],reliability=v["reliability"],
-                            completion=v["completion"],wilson_lower=v["wilson95_lower_one_sided"],attained=v["attained"],
-                            tape_seed=v["tape_seed"],fingerprint=fp,plan_digest=row["plan_sha256"],source=row["source"]))
-    require(metrics[0]["tape_seed"]==metrics[1]["tape_seed"],"Map scores need same tape")
-    flags=dict(chosen=chosen,eligible_tier_counts=dict(Counter(str(r["tier"]) for r in all_options)),
-               rule="First by original customer count, parent, variant, route ID within first nonempty tier",
-               fallback=chosen["tier"]!=1,con_bundle_member=f"raw/con/{k[0]}__{k[1]}.json.gz",con_bundle_member_sha256=base_hash,
-               instance_sha256=case["instance_sha256"],stations_sha256=case["stations_sha256"],
-               example_scope="Outcome-selected illustration; other routes unchanged in this comparison")
-    return flags, all_options, nodes, stops, metrics, source_files
+    require((chosen["parent"],chosen["variant"],chosen["route"])==("C1_10_3","A",106),
+            "The Phase 7 main example must remain fixed")
+    return dict(chosen=chosen,eligible_tier_counts=dict(Counter(str(r["tier"]) for r in all_options)),
+                rule="First by original customer count, parent, variant, route ID within first nonempty tier",
+                fallback=chosen["tier"]!=1,example_scope="Outcome-selected holdout illustration"), all_options
 
 
 def timing_panel(root,cfg):
@@ -435,23 +404,40 @@ def gather(root,out):
         source_count=len(plans["holdout",*k,"CON"]["station_positions"])
         chosen_count=len(plans["holdout",*k,"STaR"]["station_positions"])
         require((r["source_visits"],r["selected_visits"])==(source_count,chosen_count),"Charging-visit counts differ from plans")
-    flags,selection,nodes,stops,metrics,map_paths=route_map(root,rows,ks,plans,phase6_features,freeze,sha(canonical(freeze)))
+    main,main_options=map_candidates(rows,ks,plans,phase6_features)
+    complex_case,complex_options=example_candidates(phase6_features)
+    adverse,adverse_options=deteriorated_candidates(rows,ks)
+    examples={name:route_example(root,rows,plans,freeze,selection,methods)
+              for name,selection,methods in (("Fig01",main,("CON","STaR")),
+                    ("Sup01",complex_case,("CON","STaR")),("Sup02",adverse,("FSPC","STaR")))}
+    for name,options in (("Fig01",main_options),("Sup01",complex_options),("Sup02",adverse_options)):
+        example=examples[name]
+        for suffix,items in (("route_selection",options),("instance_nodes",example["nodes"]),
+                             ("route_stops",example["stops"]),("metrics",example["metrics"]),
+                             ("physical_summary",example["totals"])):
+            write_csv(out/"data"/f"{name}_{suffix}.csv",items)
+        write_csv(out/"data"/f"{name}_charging_events.csv",
+                  [r for r in example["stops"] if r["type"]=="station"])
+        write_json(out/"data"/f"{name}_route_selection.json",example["selection"])
     timing,ti_effects,ti_routes,ti_pairs,ti_notes=timing_panel(root,cfg)
-    flat=(("Fig01_route_selection",selection),("Fig01_instance_nodes",nodes),("Fig01_route_stops",stops),
-          ("Fig01_metrics",metrics),("Fig03_paired_routes",matched),("Fig03_parent_effects",blocks),
+    flat=(("Fig03_paired_routes",matched),("Fig03_parent_effects",blocks),
           ("Fig03_contrast_summary",effects[:2]),("Fig04_source_visit_bins",bins),("Fig04_route_inputs",complex_routes),
           ("Fig05_guard_summary",timing),("Fig05_paired_intervals",ti_effects),("Fig05_route_aggregates",ti_routes),
           ("Fig05_paired_routes",ti_pairs),("Tab01_population",source["partitions"]),("Tab02_exact",comparison),("Tab03_exact",ablation))
     for name,data in flat:
         write_csv(out/"data"/f"{name}.csv",data)
-    write_json(out/"data/Fig01_route_selection.json",flags)
     write_json(out/"data/Tab01_configuration.json",source)
-    references={name:selected_paths(root,*paths,*(map_paths if name=="Fig01" else ())) for name,paths in SOURCES.items()}
-    result=dict(config=source,map_selection=flags,map_metrics=metrics,map_nodes=nodes,map_stops=stops,
+    references={name:selected_paths(root,*paths) for name,paths in SOURCES.items()}
+    for name,example in examples.items():
+        diagnostic=("results/phase6/data/paired_routes.csv",) if name=="Sup02" else ()
+        references[name]=selected_paths(root,*SOURCES["Fig01"],*example["paths"],*diagnostic,
+                                        "src/star_evrp/route_validator.py","src/star_evrp/deterministic_simulator.py",
+                                        "configs/phase3_frozen.yaml")
+    result=dict(config=source,examples=examples,
                 paired=effects[:2],complexity=bins,complexity_notes=stats,timing=timing,timing_effects=ti_effects,timing_notes=ti_notes,
                 comparison=comparison,ablation=ablation,prior_archive=prior,sources=references)
-    write_json(out/"audit/numerical.json",dict(status="pass",phase3_bundles=prior["phase3_batches"],phase5_routes=len(records),
-                holdout_exposed=len(ks),holdout_parents=len(parents),primary_fraction=PRIMARY,route_selection=flags,
+    write_json(out/AUDIT/"numerical.json",dict(status="pass",phase3_bundles=prior["phase3_batches"],phase5_routes=len(records),
+                holdout_exposed=len(ks),holdout_parents=len(parents),primary_fraction=PRIMARY,route_selection={n:r["selection"] for n,r in examples.items()},
                 signed_direction_counts={r["comparator"]:[r["higher"],r["equal"],r["lower"]] for r in effects[:2]},
                 complexity_counts={r["bin"]:[r["n"],r["nonattained"]] for r in bins},
                 timing_repeats=ti_notes["measurements"],all_tables_crosschecked=True,replayed_optimizers=0,
