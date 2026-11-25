@@ -158,8 +158,6 @@ def fig01(data, width):
     xmax, ymax = np.max(xy, axis=0) + 28
     metrics = {m["method"]: m for m in example["metrics"]}
     charges = {(r["plan"], r["node"]): r for r in example["charges"]}
-    # Station callouts kept inside the axes and clear of customers / route legs.
-    station_offsets = {("CON", 1253): (22, -55), ("STaR", 1248): (22, 14)}
     customer_offsets = {
         ("CON", 1): (8, -16), ("CON", 2): (12, 6),
         ("STaR", 1): (8, -16), ("STaR", 2): (12, 6),
