@@ -1,0 +1,38 @@
+[
+    {
+        "path":  "results/phase6_pytest/tmp1cf319p7",
+        "category":  "generated test scratch",
+        "reason":  "Owned by the Phase 6 test runs",
+        "files":  0,
+        "bytes":  0,
+        "action":  "retained",
+        "after_verification":  "UnauthorizedAccessException"
+    },
+    {
+        "path":  "results/phase6_pytest/tmpl07dops8",
+        "category":  "generated test scratch",
+        "reason":  "Owned by the Phase 6 test runs",
+        "files":  0,
+        "bytes":  0,
+        "action":  "retained",
+        "after_verification":  "UnauthorizedAccessException"
+    },
+    {
+        "path":  "results/phase6_pytest/tmppjst83qj",
+        "category":  "generated test scratch",
+        "reason":  "Owned by the Phase 6 test runs",
+        "files":  0,
+        "bytes":  0,
+        "action":  "retained",
+        "after_verification":  "UnauthorizedAccessException"
+    },
+    {
+        "path":  "results/phase6_pytest/verified",
+        "category":  "generated test scratch",
+        "reason":  "Owned by the Phase 6 test runs",
+        "files":  0,
+        "bytes":  0,
+        "action":  "removed",
+        "after_verification":  "verified absent"
+    }
+]

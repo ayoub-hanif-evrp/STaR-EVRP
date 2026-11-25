@@ -1,0 +1,39 @@
+path,category,status,bytes,reason,action
+.gitattributes,tracked scientific or repository support,tracked,559,Protect corpus and research evidence or update only explicit navigation files,preserve
+.gitignore,tracked scientific or repository support,tracked,439,Protect corpus and research evidence or update only explicit navigation files,preserve
+README.md,tracked scientific or repository support,tracked,2028,Protect corpus and research evidence or update only explicit navigation files,preserve
+configs,tracked scientific or repository support,tracked,7239,Protect corpus and research evidence or update only explicit navigation files,preserve
+dataset,tracked scientific or repository support,tracked,41853456,Protect corpus and research evidence or update only explicit navigation files,preserve
+docs,tracked scientific or repository support,tracked,116383,Protect corpus and research evidence or update only explicit navigation files,preserve
+prompts,tracked scientific or repository support,tracked,184125,Protect corpus and research evidence or update only explicit navigation files,preserve
+pyproject.toml,tracked scientific or repository support,tracked,604,Protect corpus and research evidence or update only explicit navigation files,preserve
+requirements.txt,tracked scientific or repository support,tracked,36,Protect corpus and research evidence or update only explicit navigation files,preserve
+results,tracked scientific or repository support,tracked,203795865,Protect corpus and research evidence or update only explicit navigation files,preserve
+scripts,tracked scientific or repository support,tracked,52642,Protect corpus and research evidence or update only explicit navigation files,preserve
+src,tracked scientific or repository support,tracked,531932,Protect corpus and research evidence or update only explicit navigation files,preserve
+tests,tracked scientific or repository support,tracked,65074,Protect corpus and research evidence or update only explicit navigation files,preserve
+results/phase4_repeat,disposable,local,NA,Recompute with documented commands; reviewed published evidence remains,already absent
+results/phase5_repeat,disposable,local,NA,Recompute with documented commands; reviewed published evidence remains,already absent
+results/phase4_proofs,disposable,local,NA,Recompute with documented commands; reviewed published evidence remains,already absent
+results/phase5_proofs,disposable,local,NA,Recompute with documented commands; reviewed published evidence remains,already absent
+.pytest_cache,disposable,local,NA,"Local interpreter, build or test cache",already absent
+.mypy_cache,disposable,local,NA,"Local interpreter, build or test cache",already absent
+.ruff_cache,disposable,local,NA,"Local interpreter, build or test cache",already absent
+src/star_evrp.egg-info,disposable,local,NA,"Local interpreter, build or test cache",already absent
+src/star_evrp/__pycache__,disposable,local,NA,"Local interpreter, build or test cache",already absent
+tests/__pycache__,disposable,local,NA,"Local interpreter, build or test cache",already absent
+dataset/EVRPTW_ChargingStations_Dataset/code/__pycache__,disposable,local,NA,"Local interpreter, build or test cache",already absent
+results/phase3/raw/con,disposable,local,NA,"ZIP exact historical bundles, extract for original Phase 3 CLI",already absent
+results/phase6_rebuild,disposable,local,NA,Recompute with documented commands; reviewed published evidence remains,already absent
+results/phase6_proofs,disposable,local,NA,Recompute with documented commands; reviewed published evidence remains,already absent
+results/phase6_tex,disposable,local,NA,Recompute with documented commands; reviewed published evidence remains,already absent
+results/phase6_con_check,disposable,local,NA,Recompute with documented commands; reviewed published evidence remains,already absent
+docs/.gitkeep,disposable,tracked empty marker,0,"Empty placeholder in nonempty directory, absent from frozen manifests",already absent
+results/figures/.gitkeep,disposable,tracked empty marker,0,"Empty placeholder in nonempty directory, absent from frozen manifests",already absent
+results/processed/.gitkeep,disposable,tracked empty marker,0,"Empty placeholder in nonempty directory, absent from frozen manifests",already absent
+results/raw/.gitkeep,disposable,tracked empty marker,0,"Empty placeholder in nonempty directory, absent from frozen manifests",already absent
+results/reports/.gitkeep,disposable,tracked empty marker,0,"Empty placeholder in nonempty directory, absent from frozen manifests",already absent
+results/tables/.gitkeep,disposable,tracked empty marker,0,"Empty placeholder in nonempty directory, absent from frozen manifests",already absent
+scripts/.gitkeep,disposable,tracked empty marker,0,"Empty placeholder in nonempty directory, absent from frozen manifests",already absent
+dataset/.../.ipynb_checkpoints/,ambiguous user data,ignored,642743,9 local checkpoint files have no byte-identical dataset copy,preserve
+prompts/PROMPT_06_MATHEMATICAL_STRENGTHENING_AND_REPOSITORY_CLEANUP.md,user specification,pre-existing untracked,57583,Authoritative specification,include in scientific commit

@@ -10,3 +10,9 @@
 /scripts/finalize_phase5.py -text
 /src/star_evrp/phase5_*.py -text
 /tests/test_phase5_*.py -text
+/results/phase6/** -text
+/configs/phase6.yaml -text
+/docs/PHASE6_*.md -text
+/scripts/run_phase6.py -text
+/src/star_evrp/phase6_*.py -text
+/tests/test_phase6_*.py -text

@@ -1,0 +1,13 @@
+# Phase 6 execution notes
+
+Production commands were `python -B -m pytest -p no:cacheprovider -q tests/test_phase6_math.py`, `python -B scripts/run_phase6.py preflight` and `python -B scripts/run_phase6.py production`. Production conducted the archived diagnostics, all three panel stages and both validation-tape replays in sequence. The protocol's SHA-256 map binds the executable inputs. Advisory HiGHS messages during MIP search were followed by the recorded solver and replay statuses.
+
+Two prereun synthetic checks initially failed. The customer cutoff had to reproduce the frozen subtraction comparison at a rounding boundary, and the MILP fixture's third proposed success violated the original toy deadlines. The cutoff and fixture were corrected before the protocol was frozen. Eleven mathematical tests then passed. The independent real-route check used `star_evrp.phase6_math_reference.reference` on all CON and AS1 plans from the frozen AS1 panel.
+
+`analyze`, `build-exhibits` and `audit` were run on existing outputs. The independent certificate audit downgraded one FT-SAA run label to completion-only because its solver tie-stage candidate lacked a valid replay. The original labels, raw work, solver stages, selected plans and validation results are preserved. No optimizer was rerun or tuned after seeing the comparisons.
+
+Visual review used native PNG files and 675 px double-column copies. The review tightened the AS1 peer-effect scale while retaining CON in its table, aligned timing panels, and used consistent timing symbols. Tectonic's first compile could not load the optional `geometry` package from its local cache. A retry used native TeX width settings and compiled five pages. The observed page count comes from its XDV log, since compressed PDF objects are unsuitable for plaintext page counting.
+
+The first full pytest attempt was interrupted after two temporary file tests failed and another temporary-file operation stalled. Setting a repository scratch path alone left the sandbox-created temporary-directory permission constraint. A separate full run executed outside the sandbox with a repository-local temporary location. The accepted transcript and exit status are saved separately. The historical tests are unchanged.
+
+Clean comparison runs used `results/phase5_repeat` and `results/phase6_rebuild` from immutable archived inputs. Phase 5 ran `analyze`, `build-exhibits` and `audit` on the repeat folder, and Phase 6 ran `diagnose`, `analyze` and `build-exhibits` on the separate folder. Timings are archived observations in those rebuilds. All compared canonical data, table and figure files matched.

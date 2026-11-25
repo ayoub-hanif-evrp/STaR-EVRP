@@ -1,0 +1,1 @@
+{"command":["-B","-m","pytest","-p","no:cacheprovider","-q","tests/test_phase6_math.py"],"exit":0,"status":"pass","utc":"2026-11-24T22:36:24.844232+00:00"}

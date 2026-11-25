@@ -1,0 +1,14 @@
+| Cohort | Plan | n | 0 | 1 | 2 | 3 | 4+ |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| all120 | CON all | 8606 | 5715 | 1959 | 188 | 239 | 505 |
+| all120 | CON exposed | 2891 | 0 | 1959 | 188 | 239 | 505 |
+| all120 | STaR exposed | 2891 | 0 | 1795 | 295 | 240 | 561 |
+| all120 | STaR nonattained | 149 | 0 | 3 | 6 | 17 | 123 |
+| development | CON all | 1742 | 1172 | 372 | 29 | 51 | 118 |
+| development | CON exposed | 570 | 0 | 372 | 29 | 51 | 118 |
+| development | STaR exposed | 570 | 0 | 343 | 42 | 50 | 135 |
+| development | STaR nonattained | 39 | 0 | 0 | 1 | 6 | 32 |
+| holdout | CON all | 6864 | 4543 | 1587 | 159 | 188 | 387 |
+| holdout | CON exposed | 2321 | 0 | 1587 | 159 | 188 | 387 |
+| holdout | STaR exposed | 2321 | 0 | 1452 | 253 | 190 | 426 |
+| holdout | STaR nonattained | 110 | 0 | 3 | 5 | 11 | 91 |

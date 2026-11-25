@@ -1,0 +1,1 @@
+{"command":"python -B, repository-local tempfile.tempdir, pytest -p no:cacheprovider -q","exit":0,"passed":92,"status":"pass"}
