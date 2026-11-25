@@ -16,3 +16,8 @@
 /scripts/run_phase6.py -text
 /src/star_evrp/phase6_*.py -text
 /tests/test_phase6_*.py -text
+/results/conference/** -text
+/src/star_evrp/conference_*.py -text
+/scripts/build_conference_exhibits.py -text
+/tests/test_conference_exhibits.py -text
+/docs/CONFERENCE_EXHIBITS_REPORT.md -text

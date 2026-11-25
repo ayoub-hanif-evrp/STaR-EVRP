@@ -1,0 +1,86 @@
+[
+    {
+        "path":  "results/conference_final_a",
+        "files":  65,
+        "bytes":  2286891,
+        "action":  "removed",
+        "verified_absent":  true
+    },
+    {
+        "path":  "results/conference_final_b",
+        "files":  65,
+        "bytes":  2286891,
+        "action":  "removed",
+        "verified_absent":  true
+    },
+    {
+        "path":  "results/conference_missing_input",
+        "files":  0,
+        "bytes":  0,
+        "action":  "removed",
+        "verified_absent":  true
+    },
+    {
+        "path":  "results/conference_pdf_tools_readable",
+        "files":  138,
+        "bytes":  9010082,
+        "action":  "removed",
+        "verified_absent":  true
+    },
+    {
+        "path":  "results/conference_proofs",
+        "files":  46,
+        "bytes":  6014703,
+        "action":  "removed",
+        "verified_absent":  true
+    },
+    {
+        "path":  "results/conference_repeat_a",
+        "files":  63,
+        "bytes":  2278947,
+        "action":  "removed",
+        "verified_absent":  true
+    },
+    {
+        "path":  "results/conference_repeat_b",
+        "files":  63,
+        "bytes":  2278947,
+        "action":  "removed",
+        "verified_absent":  true
+    },
+    {
+        "path":  "results/conference_repeat_c",
+        "files":  65,
+        "bytes":  2282479,
+        "action":  "removed",
+        "verified_absent":  true
+    },
+    {
+        "path":  "results/conference_repeat_d",
+        "files":  65,
+        "bytes":  2282479,
+        "action":  "removed",
+        "verified_absent":  true
+    },
+    {
+        "path":  "results/conference_repeat_e",
+        "files":  65,
+        "bytes":  2286212,
+        "action":  "removed",
+        "verified_absent":  true
+    },
+    {
+        "path":  "results/conference_repeat_f",
+        "files":  65,
+        "bytes":  2286212,
+        "action":  "removed",
+        "verified_absent":  true
+    },
+    {
+        "path":  "results/conference_test_scratch",
+        "files":  0,
+        "bytes":  0,
+        "action":  "removed",
+        "verified_absent":  true
+    }
+]

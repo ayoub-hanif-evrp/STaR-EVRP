@@ -1,0 +1,118 @@
+note: using only cached resource files
+note: Running TeX ...
+note: Rerunning TeX because "conference_tables.aux" changed ...
+note: Running xdvipdfmx ...
+note: Writing `conference_tables.log` (3.1943359375 KiB)
+note: Writing `conference_tables.pdf` (31.1357421875 KiB)
+note: Skipped writing 1 intermediate files (use --keep-intermediates to keep them)
+Fontconfig error: Cannot load default config file: No such file: (null)
+warning: conference_tables.tex:22: Underfull \hbox (badness 10000) in paragraph at lines 22--22
+warning: conference_tables.tex:26: Underfull \hbox (badness 1097) in paragraph at lines 26--26
+warning: conference_tables.tex:30: Overfull \hbox (5.92834pt too wide) in paragraph at lines 16--30
+warning: conference_tables.tex:22: Underfull \hbox (badness 10000) in paragraph at lines 22--22
+warning: conference_tables.tex:26: Underfull \hbox (badness 1097) in paragraph at lines 26--26
+warning: conference_tables.tex:30: Overfull \hbox (5.92834pt too wide) in paragraph at lines 16--30
+warning: warnings were issued by the TeX engine; use --print and/or --keep-logs for details.
+
+**
+(conference_tables.tex
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-02-24> (article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+(size10.clo
+File: size10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count181
+\c@section=\count182
+\c@subsection=\count183
+\c@subsubsection=\count184
+\c@paragraph=\count185
+\c@subparagraph=\count186
+\c@figure=\count187
+\c@table=\count188
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+) (booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen139
+\lightrulewidth=\dimen140
+\cmidrulewidth=\dimen141
+\belowrulesep=\dimen142
+\belowbottomsep=\dimen143
+\aboverulesep=\dimen144
+\abovetopsep=\dimen145
+\cmidrulesep=\dimen146
+\cmidrulekern=\dimen147
+\defaultaddspace=\dimen148
+\@cmidla=\count189
+\@cmidlb=\count190
+\@aboverulesep=\dimen149
+\@belowrulesep=\dimen150
+\@thisruleclass=\count191
+\@lastruleclass=\count192
+\@thisrulewidth=\dimen151
+) (l3backend-xetex.def
+File: l3backend-xetex.def 2022-02-07 L3 backend support: XeTeX
+\c__kernel_sys_dvipdfmx_version_int=\count193
+\l__color_backend_stack_int=\count194
+\g__color_backend_stack_int=\count195
+\g__graphics_track_int=\count196
+\l__pdf_internal_box=\box50
+\g__pdf_backend_object_int=\count197
+\g__pdf_backend_annotation_int=\count198
+\g__pdf_backend_link_int=\count199
+) (conference_tables.aux)
+\openout1 = `conference_tables.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 11.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 1
+1.
+
+(ts1cmr.fd
+File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 16.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 16.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 16.
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--22
+[]\TU/confsans/m/n/9 Route and energy
+ []
+
+
+Underfull \hbox (badness 1097) in paragraph at lines 26--26
+[]\TU/confsans/m/n/9 Validation and infer-
+ []
+
+
+Overfull \hbox (5.92834pt too wide) in paragraph at lines 16--30
+[][] 
+ []
+
+[1
+
+] [2
+
+] [3
+
+] (conference_tables.aux) )
+Output written on conference_tables.xdv (3 pages, 17748 bytes).

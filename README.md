@@ -6,6 +6,7 @@ Slack-Targeted Stochastic Charging Repair (STaR) optimizes station visits and ch
 
 | Evidence | Where to start |
 | --- | --- |
+| **Conference figures and tables** | [Exhibit index](results/conference/EXHIBIT_INDEX.csv) · [Publication handoff ZIP](results/conference/STaR_EVRP_CONFERENCE_EXHIBITS.zip) |
 | **Phase 5 authoritative 120-instance comparison and ablations** | [Report](docs/PHASE5_FINAL_REPORT.md) · [Figures](results/phase5/figures) · [Tables](results/phase5/tables) · [Handoff ZIP](results/phase5/STaR_EVRP_FINAL_RESULTS_HANDOFF.zip) |
 | **Phase 6 supplementary mathematics and experiments** | [Report](docs/PHASE6_FINAL_REPORT.md) · [Mathematical audit](docs/PHASE6_MATHEMATICAL_AUDIT.md) · [Figures](results/phase6/figures) · [Tables](results/phase6/tables) · [Supplement ZIP](results/phase6/STaR_EVRP_PHASE6_SCIENTIFIC_SUPPLEMENT.zip) |
 | **Phase 3 registered evidence** | [Analysis plan](docs/PHASE3_PRE_REGISTERED_ANALYSIS.md) · [Results](docs/PHASE3_FINAL_REPORT.md) · [Reproduction](docs/PHASE3_REPRODUCIBILITY.md) |

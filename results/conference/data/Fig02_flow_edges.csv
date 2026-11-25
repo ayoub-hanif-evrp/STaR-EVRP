@@ -1,0 +1,13 @@
+from,to,condition
+initialize,rank,initial feasible trace and full score
+rank,propose,critical visits and gaps
+propose,feasible,next unique plan within guards
+feasible,screen,valid deterministic trace
+screen,prefix,"bypass if incumbent below empirical target, or screen passes"
+prefix,score,optimistic score strictly beats incumbent and full tape extension completes
+score,rank,strict improvement before wall guard; update incumbent and restart
+feasible,propose,invalid or duplicate (common retry line)
+screen,propose,model reliability reject (common retry line)
+prefix,propose,bound or budget reject (common retry line)
+score,propose,no strict gain (common retry line)
+propose,return,no remaining improving proposal or cooperative stop

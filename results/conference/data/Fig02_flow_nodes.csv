@@ -1,0 +1,9 @@
+id,label,lines,source
+initialize,Start from CON,"Feasible ordered plan | Station laws, target, caps | Trace + score on 512 draws","competitive_search.py:188–224; route_evaluator.py:56–75, 87–107"
+rank,Rank visits and gaps,Lowest upper bound first | Prioritize gaps near the | most critical station,competitive_search.py:150–158; timing.py:73–92
+propose,Interleave moves,"Adjust or transfer charge | Remove, replace, relocate | or insert, then allocate","competitive_search.py:48–169, 225–249; charge_plan.py:49–73"
+feasible,Check candidate,Skip duplicate plans | Require energy feasibility | and zero-wait timing,competitive_search.py:235–250; route_evaluator.py:56–74; deterministic_simulator.py:166–282
+screen,Analytical screen,If incumbent attains: | reject when marginal bound | falls below target¹,competitive_search.py:251–258; timing.py:73–92
+prefix,Prefix evaluation,Score a 128-draw prefix | Prune if it cannot improve | Otherwise extend to 512,competitive_search.py:259–269; route_evaluator.py:76–107
+score,Compare full scores,"Favor target attainment | Attain: min return, max R | Below: max R, min return",competitive_search.py:269–277; search_common.py:22–28
+return,Return incumbent,"When proposals end with | no improvement, or a | cooperative guard stops","competitive_search.py:225–234, 270–279; budget.py:35–48"
