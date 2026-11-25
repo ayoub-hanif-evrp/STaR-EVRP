@@ -148,16 +148,22 @@ def export(fig, out, stem, panels, captions, sources, plot_sha):
 
 def fig01(data, width):
     example = data["example"]
-    fig = new_figure(width, 78)
+    fig = new_figure(width, 88)
     axes = fig.subplots(1, 2)
-    fig.subplots_adjust(left=0.06, right=0.98, top=0.86, bottom=0.16, wspace=0.16)
+    # Extra top room for two-line headings; bottom room separates x labels from the legend.
+    fig.subplots_adjust(left=0.08, right=0.98, top=0.82, bottom=0.30, wspace=0.20)
     maps = {k: [s for s in example["stops"] if s["plan"] == k] for k in ("CON", "STaR")}
     xy = [(s["x"], s["y"]) for s in example["stops"]]
-    xmin, ymin = np.min(xy, axis=0) - 20
-    xmax, ymax = np.max(xy, axis=0) + 20
+    xmin, ymin = np.min(xy, axis=0) - 28
+    xmax, ymax = np.max(xy, axis=0) + 28
     metrics = {m["method"]: m for m in example["metrics"]}
     charges = {(r["plan"], r["node"]): r for r in example["charges"]}
-    label_offsets = {("CON", 1253): (10, 14), ("STaR", 1248): (10, -22)}
+    # Station callouts kept inside the axes and clear of customers / route legs.
+    station_offsets = {("CON", 1253): (22, -55), ("STaR", 1248): (22, 14)}
+    customer_offsets = {
+        ("CON", 1): (8, -16), ("CON", 2): (12, 6),
+        ("STaR", 1): (8, -16), ("STaR", 2): (12, 6),
+    }
     types = {"customer": ("o", BLUE), "station": ("s", AMBER), "depot": ("D", NAVY)}
     for ax, method, letter in ((axes[0], "CON", "a"), (axes[1], "STaR", "b")):
         path = maps[method]
@@ -188,31 +194,26 @@ def fig01(data, width):
                 marker=marker, c=face, edgecolors="white", linewidths=0.5, zorder=5,
             )
         for stop in [s for s in path if s["type"] == "customer"]:
+            dx, dy = customer_offsets.get((method, stop["customer_order"]), (6, 6))
             ax.annotate(
                 str(stop["customer_order"]), (stop["x"], stop["y"]),
-                xytext=(4, 4), textcoords="offset points", fontsize=6.8, color=NAVY, zorder=8,
+                xytext=(dx, dy), textcoords="offset points", fontsize=7.0, color=NAVY, zorder=8,
             )
-        for stop in [s for s in path if s["type"] == "station"]:
-            charge = charges[method, stop["node"]]["charged"]
-            dx, dy = label_offsets.get((method, stop["node"]), (8, 8))
-            ax.annotate(
-                f'{stop["node"]} ({charge:.2f})',
-                xy=(stop["x"], stop["y"]),
-                xytext=(dx, dy), textcoords="offset points",
-                fontsize=6.8, color=NAVY, zorder=9,
-                arrowprops=dict(arrowstyle="-", color=SLATE, lw=0.5),
-            )
+        station = next(s for s in path if s["type"] == "station")
+        charge = charges[method, station["node"]]["charged"]
         rel = 100 * metrics[method]["reliability"]
-        ax.text(
-            0.03, 0.97, f"R {rel:.2f}%",
-            transform=ax.transAxes, va="top", fontsize=7.4, color=NAVY, weight="bold",
+        # Reliability and station/charge live in the heading to avoid on-map collisions.
+        ax.set_title(
+            f"({letter})  {method}  ·  R = {rel:.2f}%\n"
+            f"station {station['node']} ({charge:.2f})",
+            loc="left", pad=6, fontsize=8.3, fontweight="bold", color=NAVY, linespacing=1.2,
         )
         ax.set_xlim(xmin, xmax)
         ax.set_ylim(ymin, ymax)
         ax.set_aspect("equal", adjustable="box")
         ax.set_xlabel("x")
-        ax.set_ylabel("y" if letter == "a" else "")
-        heading(ax, letter, "CON" if method == "CON" else "STaR")
+        if letter == "a":
+            ax.set_ylabel("y")
         ax.grid(color=GRID, lw=0.4)
     handles = [
         Line2D([0], [0], color=SLATE, lw=1.4, ls=(0, (3, 2)), label="CON path"),
@@ -223,31 +224,40 @@ def fig01(data, width):
     ]
     fig.legend(
         handles=handles, loc="lower center", ncol=5, frameon=False, fontsize=7.0,
-        bbox_to_anchor=(0.5, 0.01),
+        bbox_to_anchor=(0.5, 0.015), borderaxespad=0.0,
     )
     return fig, 2
 
 
 def fig02(data, width):
-    fig = new_figure(width, 74)
-    ax0, ax1 = fig.subplots(1, 2)
-    fig.subplots_adjust(left=0.08, right=0.97, top=0.86, bottom=0.16, wspace=0.34)
+    fig = new_figure(width, 82)
+    # Give the forest panel more horizontal room for interval labels.
+    grid = fig.add_gridspec(1, 2, left=0.09, right=0.99, top=0.88, bottom=0.22,
+                            width_ratios=(1.0, 1.55), wspace=0.38)
+    ax0 = fig.add_subplot(grid[0, 0])
+    ax1 = fig.add_subplot(grid[0, 1])
     methods = data["comparison"]
     names = [r["method"] for r in methods]
     values = [r["reliability_pct"] for r in methods]
     colors = [COLORS[n] for n in names]
     bars = ax0.bar(names, values, color=colors, width=0.72, edgecolor="white", linewidth=0.4, zorder=2)
-    ax0.axhline(95, color=SLATE, lw=0.9, ls=(0, (2.5, 1.8)), zorder=1)
-    ax0.set_ylim(0, 108)
+    ax0.axhline(95, color=SLATE, lw=0.95, ls=(0, (2.5, 1.8)), zorder=1)
+    ax0.set_ylim(0, 115)
     ax0.set_ylabel("Mean route reliability (%)")
     for bar, value in zip(bars, values):
+        lift = 2.4 if abs(value - 95.0) < 0.4 else 1.5
         ax0.text(
-            bar.get_x() + bar.get_width() / 2, value + 1.4, f"{value:.2f}",
+            bar.get_x() + bar.get_width() / 2, value + lift, f"{value:.2f}",
             ha="center", va="bottom", fontsize=7.2, color=NAVY,
         )
-    ax0.text(0.98, 0.06, "95% individual target", transform=ax0.transAxes, ha="right",
-             fontsize=6.6, color=SLATE)
     heading(ax0, "a", "Mean reliability")
+    # Target clarification below the bars, outside the bar bodies.
+    ax0.text(
+        0.5, -0.18,
+        "Dashed line: 95% nominal individual target (not Wilson attainment)",
+        transform=ax0.transAxes, ha="center", va="top", fontsize=6.2, color=SLATE,
+        clip_on=False,
+    )
     ax0.grid(axis="y", color=GRID, lw=0.5)
 
     paired = data["paired"]
@@ -260,25 +270,38 @@ def fig02(data, width):
             fmt="o", color=COLORS["STaR"], ecolor=SLATE, elinewidth=1.1,
             capsize=3.2, markersize=5.5, zorder=3,
         )
-        ax1.text(
-            row["hi95_pp"] + 0.4, yi,
-            f'{row["mean_pp"]:+.2f} [{row["lo95_pp"]:+.2f}, {row["hi95_pp"]:+.2f}]',
-            va="center", fontsize=6.7, color=NAVY,
-        )
+        label = f'{row["mean_pp"]:+.2f} [{row["lo95_pp"]:+.2f}, {row["hi95_pp"]:+.2f}]'
+        if row["comparison"] == "CON":
+            # Long CON interval: label to the left of the whisker so it cannot clip.
+            ax1.annotate(
+                label, xy=(row["lo95_pp"], yi),
+                xytext=(-6, 0), textcoords="offset points",
+                va="center", ha="right", fontsize=6.3, color=NAVY,
+                bbox=dict(boxstyle="round,pad=0.12", fc="white", ec="none", alpha=0.9),
+            )
+        else:
+            ax1.annotate(
+                label, xy=(row["hi95_pp"], yi),
+                xytext=(6, 0), textcoords="offset points",
+                va="center", ha="left", fontsize=6.3, color=NAVY,
+            )
     ax1.axvline(0, color=SLATE, lw=0.85, ls=(0, (2, 2)), zorder=1)
     ax1.set_yticks(y)
     ax1.set_yticklabels([f"STaR − {r['comparison']}" for r in paired])
     ax1.set_xlabel("Reliability difference (pp)")
-    ax1.set_xlim(min(0.0, min(r["lo95_pp"] for r in paired) - 1), max(r["hi95_pp"] for r in paired) + 7)
+    short_right = max(r["hi95_pp"] for r in paired if r["comparison"] != "CON") + 8.0
+    long_right = max(r["hi95_pp"] for r in paired) + 2.0
+    ax1.set_xlim(-0.8, max(short_right, long_right))
+    ax1.set_ylim(-0.45, len(paired) - 0.45)
     heading(ax1, "b", "Paired differences")
     ax1.grid(axis="x", color=GRID, lw=0.5)
     return fig, 2
 
 
 def fig03(data, width):
-    fig = new_figure(width, 74)
+    fig = new_figure(width, 76)
     ax0, ax1 = fig.subplots(1, 2)
-    fig.subplots_adjust(left=0.10, right=0.98, top=0.86, bottom=0.16, wspace=0.34)
+    fig.subplots_adjust(left=0.10, right=0.98, top=0.86, bottom=0.18, wspace=0.34)
     bins = data["complexity"]
     labels = [f"{r['bin']}\n(n={r['n']:,})" for r in bins]
     x = np.arange(len(bins))
@@ -291,6 +314,7 @@ def fig03(data, width):
     ax0.errorbar(x, means, yerr=yerr, fmt="none", ecolor=NAVY, elinewidth=1.0, capsize=3, zorder=3)
     ax0.set_xticks(x, labels)
     ax0.set_ylabel("STaR − CON reliability (pp)")
+    ax0.set_xlabel("Original charging visits")
     ax0.axhline(0, color=SLATE, lw=0.7, ls=(0, (2, 2)))
     for i, r in enumerate(bins):
         ax0.text(i, r["hi95_pp"] + 0.9, f'{r["mean_pp"]:.2f}', ha="center", fontsize=7.0, color=NAVY)
@@ -301,6 +325,7 @@ def fig03(data, width):
     ax1.bar(x, rates, color=AMBER, width=0.62, edgecolor="white", zorder=2, alpha=0.92)
     ax1.set_xticks(x, labels)
     ax1.set_ylabel("STaR Wilson nonattainment (%)")
+    ax1.set_xlabel("Original charging visits")
     ax1.set_ylim(0, max(rates) * 1.28)
     for i, r in enumerate(bins):
         ax1.text(
@@ -314,26 +339,25 @@ def fig03(data, width):
 
 
 def fig04(data, width):
-    fig = new_figure(width, 52)
-    ax = fig.add_subplot(1, 1, 1)
-    fig.subplots_adjust(left=0.24, right=0.96, top=0.78, bottom=0.24)
+    # Compact single-column width (~88 mm) inside the 178 mm canvas.
+    fig = new_figure(width, 48)
+    ax = fig.add_axes([0.28, 0.28, 0.42, 0.52])
     npp = data["npp"]
     labels = ["STaR", "STaR−NPP"]
     values = [npp["full_draws"], npp["npp_draws"]]
     colors = [TEAL, "#94A3B8"]
     y = np.arange(len(labels))[::-1]
-    ax.barh(y, values, color=colors, height=0.55, edgecolor="white")
+    ax.barh(y, values, color=colors, height=0.52, edgecolor="white")
     ax.set_yticks(y, labels)
     ax.set_xlabel("Mean incremental search draws")
-    ax.set_xlim(0, max(values) * 1.22)
+    ax.set_xlim(0, max(values) * 1.28)
     for yi, value in zip(y, values):
-        ax.text(value + max(values) * 0.02, yi, f"{value:,.0f}", va="center", fontsize=8.0, color=NAVY)
-    ax.text(
-        0.98, 0.12,
-        f'≈{npp["saved_draws"]:,.0f} fewer draws ({npp["reduction_pct"]:.1f}% vs NPP)',
-        transform=ax.transAxes, ha="right", fontsize=7.2, color=NAVY,
+        ax.text(value + max(values) * 0.02, yi, f"{value:,.0f}", va="center", fontsize=7.6, color=NAVY)
+    ax.set_title(
+        f'Progressive prefix  ·  {npp["reduction_pct"]:.1f}% fewer draws\n'
+        "identical recorded reliability / attainment / completion",
+        loc="left", pad=8, fontsize=8.2,
     )
-    ax.set_title("Progressive prefix evaluation", loc="left", pad=6)
     ax.grid(axis="x", color=GRID, lw=0.5)
     return fig, 1
 

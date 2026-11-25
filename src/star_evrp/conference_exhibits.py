@@ -42,17 +42,19 @@ def captions(data):
         ),
         STEMS[1]: (
             "Exploratory comparison on 2,321 exposed holdout routes from 48 parents. Panel (a) shows mean route "
-            "reliability for CON, MWR, QBR and STaR with a 95% individual Wilson-attainment reference line "
-            "(not a group-mean guarantee). Panel (b) shows paired route-weighted STaR minus each benchmark in "
+            "reliability for CON, MWR, QBR and STaR. The dashed line marks the nominal individual 95% reliability "
+            "target used in optimization; it is not the Wilson lower-bound attainment criterion and not a "
+            "group-mean guarantee. Panel (b) shows paired route-weighted STaR minus each benchmark in "
             f'percentage points with pointwise 95% family-stratified parent-cluster intervals: CON {fmt(paired["CON"])}; '
             f'MWR {fmt(paired["MWR"])}; QBR {fmt(paired["QBR"])}. All three contrasts are exploratory. '
             "The registered confirmatory contrast is disclosed only in ARCHIVAL_EVIDENCE.md."
         ),
         STEMS[2]: (
             "Holdout routes grouped by original CON charging visits (1, 2, 3+; n="
-            f'{bins[0]["n"]:,}, {bins[1]["n"]:,}, {bins[2]["n"]:,}). Panel (a) shows exploratory STaR−CON mean '
-            "reliability gains (pp) with parent-cluster intervals. Panel (b) shows remaining STaR Wilson "
-            f'nonattainment rates {bins[0]["nonattainment_pct"]:.2f}%, {bins[1]["nonattainment_pct"]:.2f}%, '
+            f'{bins[0]["n"]:,}, {bins[1]["n"]:,}, {bins[2]["n"]:,}). Horizontal axes report original charging visits. '
+            "Panel (a) shows exploratory STaR−CON mean reliability gains (pp) with parent-cluster intervals. "
+            "Panel (b) shows remaining STaR Wilson nonattainment rates "
+            f'{bins[0]["nonattainment_pct"]:.2f}%, {bins[1]["nonattainment_pct"]:.2f}%, '
             f'{bins[2]["nonattainment_pct"]:.2f}% with denominators '
             f'{bins[0]["nonattained"]}/{bins[0]["n"]:,}, {bins[1]["nonattained"]}/{bins[1]["n"]:,}, '
             f'{bins[2]["nonattained"]}/{bins[2]["n"]:,}. Routes with 3+ visits account for '
@@ -62,11 +64,10 @@ def captions(data):
         STEMS[3]: (
             "Component illustration on the same 2,321 holdout routes. Horizontal bars compare mean incremental "
             f'Monte Carlo search draws for full STaR ({npp["full_draws"]:,.0f}) and STaR without progressive '
-            f'prefix evaluation ({npp["npp_draws"]:,.0f}). Progressive evaluation saved approximately '
-            f'{npp["saved_draws"]:,.0f} draws ({npp["reduction_pct"]:.1f}% relative to NPP). Per-route reliability, '
-            "attainment and completion are identical for STaR and STaR−NPP in the archived records. "
-            "This establishes observed simulation-work savings, not elapsed wall-time speedup or equivalence "
-            "under arbitrary binding budgets."
+            f'prefix evaluation ({npp["npp_draws"]:,.0f}). Progressive evaluation uses '
+            f'{npp["reduction_pct"]:.1f}% fewer search draws (≈{npp["saved_draws"]:,.0f}). Archived per-route '
+            "reliability, Wilson attainment and completion are identical for STaR and STaR−NPP. This is a "
+            "simulation-work comparison only; it does not establish elapsed wall-time speedup."
         ),
     }
 
