@@ -1,0 +1,1 @@
+{"ablation_R":{"STaR":97.31,"STaR-NAS":97.31,"STaR-NPC":94.19,"STaR-NPP":97.31,"STaR-NSP":97.01},"contrasts_pp":{"CON":[16.35,14.57,18.12],"MWR":[2.02,1.6,2.43],"QBR":[2.1,1.36,2.91]},"fig01_successes":[3063,10000],"mean_R":{"CON":80.97,"MWR":95.29,"QBR":95.21,"STaR":97.31},"npp_draw_delta":5903.110728134425,"visit_bins_n":[1587,159,575],"visit_bins_nonattained":[4,4,102]}

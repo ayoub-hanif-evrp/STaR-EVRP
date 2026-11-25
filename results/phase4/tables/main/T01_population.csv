@@ -1,9 +1,0 @@
-Population,A,B,Total
-Holdout problems,48,48,96
-CON routes,3602,3262,6864
-Initially exposed,1262,1059,2321
-No station visit,2340,2203,4543
-B0 point below 0.95,331,297,628
-B0 lower-bound nonattainment,333,302,635
-Holdout parents,48,48,48
-Distinct station CSVs,4,4,4

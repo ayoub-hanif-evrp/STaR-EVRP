@@ -1,1 +1,0 @@
-{"focused":{"command":"pytest -p no:cacheprovider -q tests/test_conference_exhibits.py","exit":0,"passes":7,"repository_tempdir":true},"full":{"command":"pytest -p no:cacheprovider -q","exit":0,"passes":99,"repository_tempdir":true},"status":"pass"}

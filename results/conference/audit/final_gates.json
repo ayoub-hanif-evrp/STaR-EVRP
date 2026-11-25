@@ -1,1 +1,32 @@
-{"figures":5,"gates":{"C7-G0":"PASS","C7-G1":"PASS","C7-G2":"PASS","C7-G3":"PASS","C7-G4":"PASS","C7-G5":"PASS","C7-G6":"PASS"},"planned_file_formats":["PNG at 400 DPI","vector PDF","editable SVG","CSV","LaTeX","Markdown"],"status":"pass","tables":3,"tests":{"focused":{"command":"pytest -p no:cacheprovider -q tests/test_conference_exhibits.py","exit":0,"passes":7,"repository_tempdir":true},"full":{"command":"pytest -p no:cacheprovider -q","exit":0,"passes":99,"repository_tempdir":true},"status":"pass"}}
+{
+  "status": "pass",
+  "gates": {
+    "G0": "pass",
+    "G1": "pass",
+    "G2": "pass",
+    "G3": "pass",
+    "G4": "pass",
+    "G5": "pass",
+    "G6": "pass",
+    "G7": "pass"
+  },
+  "figures": 4,
+  "tables": 3,
+  "panels": [
+    2,
+    2,
+    2,
+    1
+  ],
+  "methods": [
+    "CON",
+    "MWR",
+    "QBR",
+    "STaR"
+  ],
+  "methodology_figure": false,
+  "extra_comparator_series": false,
+  "new_optimization": false,
+  "tests_passed": 56,
+  "archive_tag": "star-research-archive-v1"
+}

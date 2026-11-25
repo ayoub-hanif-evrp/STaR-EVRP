@@ -1,0 +1,632 @@
+[
+  {
+    "path": "results/phase2",
+    "action": "delete",
+    "files": 1450,
+    "bytes": 2615837,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "results/phase25",
+    "action": "delete",
+    "files": 128,
+    "bytes": 107653551,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "results/phase3",
+    "action": "delete",
+    "files": 1205,
+    "bytes": 32937612,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "results/phase4",
+    "action": "delete",
+    "files": 137,
+    "bytes": 9525219,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "results/phase5",
+    "action": "delete",
+    "files": 586,
+    "bytes": 43690097,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "results/phase6",
+    "action": "delete",
+    "files": 799,
+    "bytes": 15346694,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "results/baselines",
+    "action": "delete",
+    "files": 25,
+    "bytes": 3789375,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "results/raw",
+    "action": "delete",
+    "files": 34,
+    "bytes": 2645752,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "results/processed",
+    "action": "delete",
+    "files": 1,
+    "bytes": 341,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "results/reports",
+    "action": "delete",
+    "files": 2,
+    "bytes": 476,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "results/figures",
+    "action": "delete",
+    "files": 6,
+    "bytes": 881090,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "results/tables",
+    "action": "delete",
+    "files": 18,
+    "bytes": 12076,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "results/manifests",
+    "action": "delete",
+    "files": 2,
+    "bytes": 44439,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "prompts/PROMPT_01_FOUNDATION.md",
+    "action": "delete",
+    "files": 1,
+    "bytes": 45954,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "prompts/PROMPT_02_ALGORITHM.md",
+    "action": "delete",
+    "files": 1,
+    "bytes": 41885,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "prompts/PROMPT_03_POST_PHASE25_FINAL.md",
+    "action": "delete",
+    "files": 1,
+    "bytes": 23861,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "prompts/PROMPT_04_RESULTS_AUDIT_FIGURES_TABLES.md",
+    "action": "delete",
+    "files": 1,
+    "bytes": 34808,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "prompts/PROMPT_05_FINAL_BENCHMARK_ABLATIONS_EXHIBITS.md",
+    "action": "delete",
+    "files": 1,
+    "bytes": 37617,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "prompts/PROMPT_06_MATHEMATICAL_STRENGTHENING_AND_REPOSITORY_CLEANUP.md",
+    "action": "delete",
+    "files": 1,
+    "bytes": 57768,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "prompts/PROMPT_07_CONFERENCE_FIGURES_AND_TABLES.md",
+    "action": "delete",
+    "files": 1,
+    "bytes": 50074,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "prompts/PROMPT_08_CONFERENCE_EXHIBITS_REFINEMENT_AND_CLEANUP.md",
+    "action": "delete",
+    "files": 1,
+    "bytes": 33538,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "docs/CONFERENCE_EXHIBITS_REFINEMENT_REPORT.md",
+    "action": "delete",
+    "files": 1,
+    "bytes": 7686,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "docs/CONFERENCE_EXHIBITS_REPORT.md",
+    "action": "delete",
+    "files": 1,
+    "bytes": 6829,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "docs/FIGURE_INDEX.md",
+    "action": "delete",
+    "files": 1,
+    "bytes": 1625,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "docs/PHASE1_FINAL_REPORT.md",
+    "action": "delete",
+    "files": 1,
+    "bytes": 13921,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "docs/PHASE25_CORRECTIONS.md",
+    "action": "delete",
+    "files": 1,
+    "bytes": 4773,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "docs/PHASE25_FINAL_REPORT.md",
+    "action": "delete",
+    "files": 1,
+    "bytes": 6995,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "docs/PHASE25_METHOD_COMPARISON.md",
+    "action": "delete",
+    "files": 1,
+    "bytes": 4403,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "docs/PHASE2_CORRECTIONS.md",
+    "action": "delete",
+    "files": 1,
+    "bytes": 1810,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "docs/PHASE2_EXPERIMENT_PROTOCOL.md",
+    "action": "delete",
+    "files": 1,
+    "bytes": 1686,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "docs/PHASE2_FIGURE_INDEX.md",
+    "action": "delete",
+    "files": 1,
+    "bytes": 1397,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "docs/PHASE2_FINAL_REPORT.md",
+    "action": "delete",
+    "files": 1,
+    "bytes": 9217,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "docs/PHASE2_METHOD.md",
+    "action": "delete",
+    "files": 1,
+    "bytes": 1286,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "docs/PHASE2_READINESS.md",
+    "action": "delete",
+    "files": 1,
+    "bytes": 1468,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "docs/PHASE3_FIGURE_INDEX.md",
+    "action": "delete",
+    "files": 1,
+    "bytes": 2889,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "docs/PHASE3_FINAL_REPORT.md",
+    "action": "delete",
+    "files": 1,
+    "bytes": 5298,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "docs/PHASE3_FREEZE_PROTOCOL.md",
+    "action": "delete",
+    "files": 1,
+    "bytes": 3520,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "docs/PHASE3_MANUSCRIPT_DRAFT.md",
+    "action": "delete",
+    "files": 1,
+    "bytes": 9842,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "docs/PHASE3_PAPER_OUTLINE.md",
+    "action": "delete",
+    "files": 1,
+    "bytes": 948,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "docs/PHASE3_PREFLIGHT.md",
+    "action": "delete",
+    "files": 1,
+    "bytes": 1885,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "docs/PHASE3_REPRODUCIBILITY.md",
+    "action": "delete",
+    "files": 1,
+    "bytes": 3638,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "docs/PHASE4_CAPTIONS_AND_NOTES.md",
+    "action": "delete",
+    "files": 1,
+    "bytes": 1594,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "docs/PHASE4_FINAL_REPORT.md",
+    "action": "delete",
+    "files": 1,
+    "bytes": 7554,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "docs/PHASE4_RESULTS_HANDOFF.md",
+    "action": "delete",
+    "files": 1,
+    "bytes": 2339,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "docs/PHASE5_ANALYSIS_PROTOCOL.md",
+    "action": "delete",
+    "files": 1,
+    "bytes": 4000,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "docs/PHASE5_FINAL_REPORT.md",
+    "action": "delete",
+    "files": 1,
+    "bytes": 5951,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "docs/PHASE5_RESULTS_HANDOFF.md",
+    "action": "delete",
+    "files": 1,
+    "bytes": 2845,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "docs/PHASE6_ANALYSIS_PROTOCOL.md",
+    "action": "delete",
+    "files": 1,
+    "bytes": 6750,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "docs/PHASE6_DIAGNOSTIC_REPORT.md",
+    "action": "delete",
+    "files": 1,
+    "bytes": 2391,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "docs/PHASE6_FINAL_REPORT.md",
+    "action": "delete",
+    "files": 1,
+    "bytes": 11207,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "docs/PHASE6_MATHEMATICAL_AUDIT.md",
+    "action": "delete",
+    "files": 1,
+    "bytes": 13135,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "docs/PHASE6_REPOSITORY_CLEANUP.md",
+    "action": "delete",
+    "files": 1,
+    "bytes": 3068,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "docs/PHASE6_RESULTS_HANDOFF.md",
+    "action": "delete",
+    "files": 1,
+    "bytes": 2661,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "scripts/analyze_phase25.py",
+    "action": "delete",
+    "files": 1,
+    "bytes": 18784,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "scripts/audit_phase2_results.py",
+    "action": "delete",
+    "files": 1,
+    "bytes": 699,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "scripts/audit_results.py",
+    "action": "delete",
+    "files": 1,
+    "bytes": 1780,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "scripts/build_phase2_figures.py",
+    "action": "delete",
+    "files": 1,
+    "bytes": 674,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "scripts/build_phase2_tables.py",
+    "action": "delete",
+    "files": 1,
+    "bytes": 685,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "scripts/finalize_phase4_quality.py",
+    "action": "delete",
+    "files": 1,
+    "bytes": 4139,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "scripts/finalize_phase5.py",
+    "action": "delete",
+    "files": 1,
+    "bytes": 3843,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "scripts/generate_baselines.py",
+    "action": "delete",
+    "files": 1,
+    "bytes": 893,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "scripts/generate_figures.py",
+    "action": "delete",
+    "files": 1,
+    "bytes": 745,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "scripts/generate_tables.py",
+    "action": "delete",
+    "files": 1,
+    "bytes": 629,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "scripts/phase3.py",
+    "action": "delete",
+    "files": 1,
+    "bytes": 1595,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "scripts/run_phase25.py",
+    "action": "delete",
+    "files": 1,
+    "bytes": 617,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "scripts/run_phase2_ablations.py",
+    "action": "delete",
+    "files": 1,
+    "bytes": 833,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "scripts/run_phase2_d1_reconcile.py",
+    "action": "delete",
+    "files": 1,
+    "bytes": 781,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "scripts/run_phase2_development.py",
+    "action": "delete",
+    "files": 1,
+    "bytes": 1215,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "scripts/run_phase2_smoke.py",
+    "action": "delete",
+    "files": 1,
+    "bytes": 828,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "scripts/run_phase4_results.py",
+    "action": "delete",
+    "files": 1,
+    "bytes": 1845,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "scripts/run_phase5.py",
+    "action": "delete",
+    "files": 1,
+    "bytes": 2151,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "scripts/run_phase6.py",
+    "action": "delete",
+    "files": 1,
+    "bytes": 3833,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "scripts/run_pilot.py",
+    "action": "delete",
+    "files": 1,
+    "bytes": 745,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "scripts/run_repair_probe.py",
+    "action": "delete",
+    "files": 1,
+    "bytes": 4671,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "scripts/verify_phase25_search.py",
+    "action": "delete",
+    "files": 1,
+    "bytes": 3721,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "scripts/inspect_dataset.py",
+    "action": "delete",
+    "files": 1,
+    "bytes": 769,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "tests/test_phase3.py",
+    "action": "delete",
+    "files": 1,
+    "bytes": 2514,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "tests/test_phase4_results.py",
+    "action": "delete",
+    "files": 1,
+    "bytes": 6302,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "tests/test_phase5_results.py",
+    "action": "delete",
+    "files": 1,
+    "bytes": 4222,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "tests/test_phase5_ablations.py",
+    "action": "delete",
+    "files": 1,
+    "bytes": 3185,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "tests/test_phase6_results.py",
+    "action": "delete",
+    "files": 1,
+    "bytes": 1241,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "tests/test_phase6_math.py",
+    "action": "delete",
+    "files": 1,
+    "bytes": 7640,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "tests/test_phase25.py",
+    "action": "delete",
+    "files": 1,
+    "bytes": 7432,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "configs/phase25.yaml",
+    "action": "delete",
+    "files": 1,
+    "bytes": 553,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "configs/phase2_ablation.yaml",
+    "action": "delete",
+    "files": 1,
+    "bytes": 652,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "configs/phase2_dev.yaml",
+    "action": "delete",
+    "files": 1,
+    "bytes": 815,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "configs/phase2_smoke.yaml",
+    "action": "delete",
+    "files": 1,
+    "bytes": 718,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "configs/phase5.yaml",
+    "action": "delete",
+    "files": 1,
+    "bytes": 1026,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "configs/phase6.yaml",
+    "action": "delete",
+    "files": 1,
+    "bytes": 576,
+    "archive": "star-research-archive-v1"
+  },
+  {
+    "path": "configs/pilot.yaml",
+    "action": "delete",
+    "files": 1,
+    "bytes": 673,
+    "archive": "star-research-archive-v1"
+  }
+]

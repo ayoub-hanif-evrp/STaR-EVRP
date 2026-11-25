@@ -1,0 +1,10 @@
+{
+  "before_tracked_files": 5445,
+  "before_tracked_bytes": 272499521,
+  "after_tracked_files_approx_pre_stage": 976,
+  "after_tracked_bytes_approx_pre_stage": 44689356,
+  "deleted_payload_bytes_approx": 227810165,
+  "archive_tag": "star-research-archive-v1",
+  "archive_commit": "1ad987a328679263e5d8ba40330ffe1a11409db1",
+  "note": "Historical Git objects remain; active checkout payload reduced. Scratch under results/conference_p9_work is local-only."
+}

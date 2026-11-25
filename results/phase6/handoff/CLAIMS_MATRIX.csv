@@ -1,9 +1,0 @@
-claim,source,qualification
-Registered reliability improved against implemented FSPC,Phase 5 T07,Only Phase 3 registered claim; actual work differed
-"The held-out archival SLS result includes quality, work and elapsed time",Phase 5 T07,"Report +0.32 pp, 34.59% fewer draws and slower wall time; no general dominance"
-Independent one-visit threshold and expected-return formula,Mathematical audit,"Fixed plan, one stochastic visit, specified clocks and wait law"
-Fixed-tape prefix optimistic score,Mathematical audit,No global or path-equivalence assumption under a binding budget
-Observed family and source-slack differences,F06-02 and mechanism_strata.csv,No causal attribution and no outcome-driven strata
-AS1 restricted-domain panel comparison,F06-03 and T06-03 when gate opens,"Existing parents, no extension to multi-visit global optimum"
-FT-SAA solver comparison,F06-04 and T06-04,"Include limits, fallback and conditional certification; no equal computation claim"
-Common nominal runtime guards,F06-05 and T06-05,Retain overshoot and actual timings; inference by parent after aggregating repeats

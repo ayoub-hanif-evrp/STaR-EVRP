@@ -1,5 +1,0 @@
-| Cohort | Problems | Parents | All routes | Exposed | No charge | CON point <.95 | CON not LB |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| 96 holdout | 96 | 48 | 6864 | 2321 | 4543 | 628 | 635 |
-| 24 development | 24 | 12 | 1742 | 570 | 1172 | 198 | 198 |
-| All 120 (descriptive) | 120 | 60 | 8606 | 2891 | 5715 | 826 | 833 |

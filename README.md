@@ -1,54 +1,46 @@
 # STaR-EVRP
 
-Slack-Targeted Stochastic Charging Repair (STaR) optimizes station visits and charge amounts on fixed customer routes. The model uses deterministic travel and energy, linear charging and synthetic lognormal waits. Reliability is the chance of meeting all customer service-start and depot deadlines on a route. Completion includes late trajectories. Station operating hours, endogenous queues, fleet reassignment and dynamic recourse are outside the model.
+Slack-Targeted Stochastic Charging Repair (STaR) retunes station visits and charge amounts on **fixed** customer routes under synthetic lognormal station waits. Reliability is the chance of meeting all customer and depot timing constraints on a route. Completion includes late trajectories.
 
-## Conference exhibits
+## Publication package (Prompt 09)
 
-The publication package contains five main figures, three main tables, and two supplementary route diagnostics. Start with the [exhibit index](results/conference/EXHIBIT_INDEX.csv), [refinement and cleanup report](docs/CONFERENCE_EXHIBITS_REFINEMENT_REPORT.md), or [handoff ZIP](results/conference/STaR_EVRP_CONFERENCE_EXHIBITS.zip).
+Displayed comparative methods: **CON**, **MWR**, **QBR**, and **STaR**, plus four STaR component ablations. Exactly four main figures (panels 2/2/2/1) and three main tables. There is **no** generated methodology figure.
 
-## Historical evidence
+Start here:
 
-| Evidence | Where to start |
-| --- | --- |
-| **Phase 5 authoritative 120-instance comparison and ablations** | [Report](docs/PHASE5_FINAL_REPORT.md) · [Figures](results/phase5/figures) · [Tables](results/phase5/tables) · [Handoff ZIP](results/phase5/STaR_EVRP_FINAL_RESULTS_HANDOFF.zip) |
-| **Phase 6 supplementary mathematics and experiments** | [Report](docs/PHASE6_FINAL_REPORT.md) · [Mathematical audit](docs/PHASE6_MATHEMATICAL_AUDIT.md) · [Figures](results/phase6/figures) · [Tables](results/phase6/tables) · [Supplement ZIP](results/phase6/STaR_EVRP_PHASE6_SCIENTIFIC_SUPPLEMENT.zip) |
-| **Phase 3 registered evidence** | [Analysis plan](docs/PHASE3_PRE_REGISTERED_ANALYSIS.md) · [Results](docs/PHASE3_FINAL_REPORT.md) · [Reproduction](docs/PHASE3_REPRODUCIBILITY.md) |
-| **Phase 4 independent reconciliation** | [Audit report](docs/PHASE4_FINAL_REPORT.md) |
-| **Historical foundation and development** | [Phase 1](docs/PHASE1_FINAL_REPORT.md) · [Phase 2](docs/PHASE2_FINAL_REPORT.md) · [Phase 2.5](docs/PHASE25_FINAL_REPORT.md) |
+- [Exhibit index](results/conference/EXHIBIT_INDEX.csv)
+- [Captions](results/conference/FIGURE_CAPTIONS.md) · [Table notes](results/conference/TABLE_NOTES.md)
+- [Claims and limitations](results/conference/CLAIMS_AND_LIMITATIONS.md)
+- [Archival disclosures (FSPC/SLS/Phase 6)](results/conference/ARCHIVAL_EVIDENCE.md)
+- [Handoff ZIP](results/conference/STaR_EVRP_CONFERENCE_EXHIBITS.zip)
+- [Prompt 09 report](docs/PROMPT09_FINAL_REPORT.md)
 
-The registered comparison is STaR versus FSPC on the original holdout. Phase 5 also reports SLS, ablations and the combined benchmark. Phase 6 comparisons are exploratory and reuse the existing parents and waiting model.
+Primary quantitative population: **96-instance original holdout**, 48 parents, **2,321** charging-exposed routes. The 120-instance benchmark includes 24 development instances and is descriptive only.
 
-**Method acronyms.** CON is the deposited constructive baseline, MWR is mean-wait repair, QBR is quantile-based repair, SLS is scenario-based local search, and FSPC is fixed-station partial charging. AS1 is the Phase 6 zero/one-visit analytical optimizer and FT-SAA is its fixed-topology sample-average comparator. See the [full glossary](results/phase5/handoff/METHOD_GLOSSARY.md) for ablations and internal IDs.
+Registered confirmatory contrast (text disclosure only): **STaR − FSPC +1.24 pp [0.86, 1.65]**. See `ARCHIVAL_EVIDENCE.md`.
 
-## Reproduce results
-
-Use Python 3.12.10 and the dependency versions in the [Phase 3 freeze](results/phase3/manifests/freeze.json) and [Phase 6 protocol manifest](results/phase6/manifests/protocol.json) for archive equivalence. Install with `python -m pip install -e .`. Use a clean scratch directory for each rebuild. The following PowerShell commands regenerate derived exports from archived outcomes. They retain archived times.
+## Rebuild exhibits
 
 ```powershell
-$env:OPENBLAS_NUM_THREADS='1'
-$env:OMP_NUM_THREADS='1'
-$env:MKL_NUM_THREADS='1'
-python -B -m pytest -p no:cacheprovider -q
-python -B scripts/build_conference_exhibits.py build --output results/conference_p8_work/rebuild
-
-New-Item -ItemType Directory results/phase5_repeat
-Copy-Item results/phase5/raw,results/phase5/plans,results/phase5/manifests,results/phase5/audit results/phase5_repeat -Recurse
-python -B scripts/run_phase5.py analyze --output results/phase5_repeat
-python -B scripts/run_phase5.py build-exhibits --output results/phase5_repeat
-
-New-Item -ItemType Directory results/phase6_rebuild
-Copy-Item results/phase6/raw,results/phase6/plans,results/phase6/manifests,results/phase6/audit results/phase6_rebuild -Recurse
-Remove-Item -LiteralPath results/phase6_rebuild/audit/diagnostics.json
-python -B scripts/run_phase6.py diagnose --output results/phase6_rebuild
-python -B scripts/run_phase6.py replay --output results/phase6_rebuild
-python -B scripts/run_phase6.py analyze --output results/phase6_rebuild
-python -B scripts/run_phase6.py build-exhibits --output results/phase6_rebuild
+$env:OPENBLAS_NUM_THREADS='1'; $env:OMP_NUM_THREADS='1'; $env:MKL_NUM_THREADS='1'
+python -m pip install -e .
+python -B -m pytest tests/test_conference_exhibits.py -q
+python -B scripts/build_conference_exhibits.py build --output results/conference
 ```
 
-For a frozen Phase 3 optimization reproduction, check out `star-phase3-freeze-v1` in a separate worktree and follow the Phase 3 instructions. The historical replay CLI expects the extracted `raw/con` bundles. For Phase 4 onward the verified readers open [the CON archive](results/phase3/con_bundles.zip) directly. To restore it for the old CLI in a scratch copy, use `python -m zipfile -e results/phase3/con_bundles.zip DESTINATION`. On Windows use an absolute `\\?\`-prefixed destination if the reserved directory name prevents extraction. Never stage the extracted folder. See the [Phase 6 handoff](docs/PHASE6_RESULTS_HANDOFF.md) for execution and audit commands.
+Inputs are self-contained under `results/conference/data/inputs/`. No network and no historical phase folders are required for an ordinary rebuild.
+
+## Historical research archive
+
+Full Phase 1–8 evidence (including deleted active `results/phase*` trees) is pinned at tag **`star-research-archive-v1`**. Recovery commands: [docs/ARCHIVE_AND_REPRODUCTION.md](docs/ARCHIVE_AND_REPRODUCTION.md). Frozen optimizer: tag `star-phase3-freeze-v1`.
 
 ## Repository map
 
-- [dataset](dataset/EVRPTW_ChargingStations_Dataset) contains the original benchmark and metadata.
-- [src](src/star_evrp), [configs](configs), [scripts](scripts) and [tests](tests) contain implementations, study settings, entry points and verification.
-- [docs](docs), [prompts](prompts) and [results](results) contain study protocols, research records and immutable released outcomes.
+- `dataset/` — original EVRPTW charging-station benchmark
+- `src/star_evrp/` — frozen core + publication builders
+- `configs/` — frozen and split configuration
+- `scripts/` — supported build/extract/check entry points
+- `tests/` — core + publication tests
+- `docs/` — model, archive recovery, Prompt 09 release notes
+- `results/conference/` — active publication package
+- `prompts/PROMPT_09_…` — binding publication instruction

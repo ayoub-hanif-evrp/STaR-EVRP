@@ -1,3 +1,0 @@
-# Scientific scope
-
-Keep the original Phase 3 primary and Phase 5 SLS, FSPC and work disclosures. The benchmark has fixed CON customers and synthetic station lognormal waits. All four station CSV contents occurred in development. No new independent charging environment, fleet recourse, queues or station hours was tested. Panel estimates describe selected routes only. Intervals are unadjusted and conditional on the validation draws. Report FT-SAA replay flags and model tolerances, and maintain the distinction between bounds, empirical rates and Wilson classification. Draw savings and actual elapsed time need separate interpretation. AS1 and FT-SAA are supplementary experiments.
